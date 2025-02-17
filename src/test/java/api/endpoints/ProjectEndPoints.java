@@ -1,11 +1,5 @@
 package api.endpoints;
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
-import static org.hamcrest.Matchers.*;
-import org.json.JSONObject;
-import org.testng.ITestContext;
-import org.testng.annotations.Test;
-
 import api.payload.Project;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -90,6 +84,40 @@ public class ProjectEndPoints {
 			return response;
 		}
 		
+		
+		
+		
+		//Get Project
+				public static Response getActiveProject(String CompanyId)		//implementation of (get/read project) endpoint
+				{
+					//String bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5NTA5Mzg5LCJleHAiOjE3Mzk1OTU3ODksImlhdCI6MTczOTUwOTM4OX0.z7ZWFneFR1Z-N4hrN4ruiNcN3ZHvZ8rq3axLI99QGLU";
+
+					Response response = 
+					given()
+						.headers("Authorization","Bearer "+bearerToken)
+						.pathParam("CompanyId", CompanyId)
+					.when()
+						.get(Routes.get_activeProject_url);							//refer URL from Routes class
+					return response;
+				}
+				
+				
+				
+				
+				
+		//Get Project
+				public static Response getArchivedProject(String CompanyId)		//implementation of (get/read project) endpoint
+				{
+					//String bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5NTA5Mzg5LCJleHAiOjE3Mzk1OTU3ODksImlhdCI6MTczOTUwOTM4OX0.z7ZWFneFR1Z-N4hrN4ruiNcN3ZHvZ8rq3axLI99QGLU";
+
+					Response response = 
+					given()
+						.headers("Authorization","Bearer "+bearerToken)
+						.pathParam("CompanyId", CompanyId)
+					.when()
+						.get(Routes.get_archivedProject_url);							//refer URL from Routes class
+					return response;
+				}		
 		
 
 }
