@@ -6,11 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="api.test.DDtests">
+      <class name="api.test.ProjectTests">
         <methods>
-          <include name="testCreateProject"/>
+          <include name="test_GetActiveProject"/>
+          <include name="test_GetArchivedProject"/>
+          <include name="setupData"/>
         </methods>
-      </class> <!-- api.test.DDtests -->
+      </class> <!-- api.test.ProjectTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -29,8 +29,8 @@ public class Routes {
 	public static String get_url = base_url+"/api/Project/GetProjectByProjectId/{projectId}";
 	public static String update_url = base_url+"/api/Project/UpdateProject/{projectId}";
 	public static String delete_url = base_url+"/api/Project/DeleteProject?ProjectId={projectId}&deletedBy=\"Shubham Jagtap\"";
-	public static String get_activeProject_url = base_url+"/api/Project/GetActiveProject/{CompanyId}";
-	public static String get_archivedProject_url =	base_url+"/api/Project/GetArchivedProject/{CompanyId}";
+	public static String get_activeProject_url = base_url+"/api/Project/GetActiveProject/{CompanyId}/{UserId}";
+	public static String get_archivedProject_url =	base_url+"/api/Project/GetArchivedProject/{CompanyId}/{UserId}";
 	//public static String post_url = base_url+"/api/Project";
 	//public static String post_url = base_url+"/api/Project";
 	//public static String post_url = base_url+"/api/Project";

@@ -119,8 +119,8 @@ public class ProjectTests {
     @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_GetActiveProject() {
         try {
-            logger.info("Getting active project with Company Id: C0001");
-            Response response = ProjectEndPoints.getActiveProject("C0001");
+            logger.info("Getting active project with Company Id: C0001 and User ID: UID22");
+            Response response = ProjectEndPoints.getActiveProject("C0001", "UID22");
             response.then().log().all();
             
             Assert.assertEquals(response.getStatusCode(), 200);
@@ -134,8 +134,8 @@ public class ProjectTests {
     @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_GetArchivedProject() {
         try {
-            logger.info("Getting archived project with Company Id: C0001");
-            Response response = ProjectEndPoints.getArchivedProject("C0001");
+            logger.info("Getting archived project with Company Id: C0001 and User ID: UID22");
+            Response response = ProjectEndPoints.getArchivedProject("C0001", "UID22");
             response.then().log().all();
             
             Assert.assertEquals(response.getStatusCode(), 200);

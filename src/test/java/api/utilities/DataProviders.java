@@ -8,8 +8,8 @@ public class DataProviders {
 	@DataProvider(name = "getAllData")
     public Object[][] getAllData() throws IOException {
         // Path to the Excel file and the sheet name
-        String xlfile = "C:\\RestAssured_tool\\test data DDT\\sheet1.xlsx";  // Replace with the actual path
-        String xlsheet = "sheet2"; 												// Replace with your sheet name
+        String xlfile = "C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\testData_DDT\\sheet1.xlsx";  // Replace with the actual path
+        String xlsheet = "sheet1"; 												// Replace with your sheet name
         
         // Get the row count and column count
         int rowCount = XLUtils.getRowCount(xlfile, xlsheet);

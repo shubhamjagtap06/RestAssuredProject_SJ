@@ -32,7 +32,7 @@ public class ExtentReportManager implements ITestListener {
 
         
         // Define report folder and ensure it exists
-        String reportFolder = System.getProperty("user.dir") + "\\ExtentReports_CM";
+        String reportFolder = System.getProperty("user.dir") + "\\ExtentReports1_CM";
         //String reportFolder = "C:\\RestAssuredProject\\RestAssuredProject_SJ-master\\New1_ExtentReports";
         //String reportFolder = "D:\\CM_Reports";
         File reportDir = new File(reportFolder);
