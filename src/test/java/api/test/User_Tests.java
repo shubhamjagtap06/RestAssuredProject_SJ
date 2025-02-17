@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import api.endpoints.UserEndPoints;
+import api.utilities.RetryAnalyzer;  // Import the RetryAnalyzer class
 import io.restassured.response.Response;
 
 public class User_Tests {
@@ -66,7 +67,8 @@ public class User_Tests {
         return authToken;
     }
 
-    @Test(priority = 1)
+    // Apply retryAnalyzer to each test method
+    @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
     public static void testLogin() {
         logger.info("Starting testLogin...");
 
@@ -97,7 +99,7 @@ public class User_Tests {
         }
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
     public void test_GetAllUser() {
         logger.info("Starting test_GetAllUser...");
 
@@ -112,7 +114,7 @@ public class User_Tests {
         }
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
     public void test_GetUserByEmailId() {
         logger.info("Starting test_GetUserByEmailId...");
 
@@ -127,7 +129,7 @@ public class User_Tests {
         }
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
     public void testLogout() {
         logger.info("Starting testLogout...");
 

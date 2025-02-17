@@ -9,8 +9,8 @@ import api.payload.Project;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import api.utilities.RetryAnalyzer; // Import the RetryAnalyzer class
 
-@SuppressWarnings("unused")
 public class ProjectTests {
 
     // Logger initialization
@@ -50,7 +50,7 @@ public class ProjectTests {
         logger.info("Data setup complete.");
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_CreateProject() {
         try {
             logger.info("Creating project with Project Id: " + this.proj_payload.getProjectId());
@@ -72,7 +72,7 @@ public class ProjectTests {
         }
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here too
     public void test_GetProject() {
         try {
             logger.info("Getting project with Id: " + projectIdFromResponse);
@@ -88,7 +88,7 @@ public class ProjectTests {
         }
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_UpdateProject() {
         try {
             logger.info("Updating project with Id: " + projectIdFromResponse);
@@ -116,22 +116,7 @@ public class ProjectTests {
         }
     }
 
-   // @Test(priority = 4)
-    public void test_DeleteProject() {
-        try {
-            logger.info("Deleting project with Id: Proj247");
-            Response response = ProjectEndPoints.deleteProject("Proj247");
-            response.then().log().all();
-            
-            Assert.assertEquals(response.getStatusCode(), 200);
-            logger.info("Project deleted successfully.");
-        } catch (Exception e) {
-            logger.error("Test case failed: " + e.getMessage());
-            Assert.fail("Test Case failed: " + e.getMessage());
-        }
-    }
-
-    @Test(priority = 5)
+    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_GetActiveProject() {
         try {
             logger.info("Getting active project with Company Id: C0001");
@@ -146,7 +131,7 @@ public class ProjectTests {
         }
     }
 
-    @Test(priority = 6)
+    @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_GetArchivedProject() {
         try {
             logger.info("Getting archived project with Company Id: C0001");

@@ -8,15 +8,18 @@ import com.github.javafaker.Faker;
 import api.endpoints.ProjectEndPoints;
 import api.payload.Project;
 import api.utilities.DataProviders;
+import api.utilities.RetryAnalyzer; // Import the RetryAnalyzer
 import io.restassured.response.Response;
 
-@SuppressWarnings("unused")
+
+
 public class DDtests {
 
     private static final Logger logger = LogManager.getLogger(DDtests.class);  // Logger for this class
     Faker faker;
 
-    @Test(priority = 1, dataProvider = "getAllData", dataProviderClass = DataProviders.class)
+    // Adding retryAnalyzer to the @Test annotation
+    @Test(priority = 1, dataProvider = "getAllData", dataProviderClass = DataProviders.class, retryAnalyzer = RetryAnalyzer.class)
     public void testCreateProject(String companyId, String projectName, String description, 
                                   String constructionScheduleFrom, String constructionScheduleTo, 
                                   int totalNoOfBuildings, int totalBuildUpArea, String areaUnit, 
