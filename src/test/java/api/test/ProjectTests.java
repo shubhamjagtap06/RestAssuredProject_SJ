@@ -2,6 +2,8 @@ package api.test;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
 import api.endpoints.ProjectEndPoints;
@@ -17,9 +19,12 @@ public class ProjectTests {
     private static final Logger logger = LogManager.getLogger(ProjectTests.class);
 
     public String projectIdFromResponse;
-    
+
     Faker faker;
     Project proj_payload;
+
+    // Declare User-Agent as a class variable
+    private String userAgent;
 
     @BeforeClass // This should execute before methods in endpoints
     public void setupData() {
@@ -50,12 +55,20 @@ public class ProjectTests {
         logger.info("Data setup complete.");
     }
 
+    // Inject User-Agent value from the XML configuration
+    @BeforeMethod
+    @Parameters("User-Agent")
+    public void setupUserAgent(String userAgent) {
+        this.userAgent = userAgent;
+    }
+
     @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_CreateProject() {
         try {
             logger.info("Creating project with Project Id: " + this.proj_payload.getProjectId());
             
-            Response response = ProjectEndPoints.createProject(proj_payload);
+            // Pass the User-Agent header to simulate browser behavior
+            Response response = ProjectEndPoints.createProject(proj_payload, userAgent); // Pass userAgent to the endpoint
             response.then().log().all();
             
             // Assert response status code
@@ -77,7 +90,8 @@ public class ProjectTests {
         try {
             logger.info("Getting project with Id: " + projectIdFromResponse);
             
-            Response response = ProjectEndPoints.getProject(projectIdFromResponse);
+            // Pass the User-Agent header to simulate browser behavior
+            Response response = ProjectEndPoints.getProject(projectIdFromResponse, userAgent); // Pass userAgent to the endpoint
             response.then().log().all();
             
             Assert.assertEquals(response.getStatusCode(), 200);
@@ -101,14 +115,15 @@ public class ProjectTests {
             proj_payload.setUpdatedBy("Shubham Jagtap Updated");
             proj_payload.setProgress(20);
             
-            Response response = ProjectEndPoints.updateProject(projectIdFromResponse, proj_payload);
+            // Pass the User-Agent header to simulate browser behavior
+            Response response = ProjectEndPoints.updateProject(projectIdFromResponse, proj_payload, userAgent); // Pass userAgent to the endpoint
             response.then().log().all();
             
             Assert.assertEquals(response.getStatusCode(), 200);
             logger.info("Project updated successfully.");
 
             // Verify update
-            Response responseAfterUpdate = ProjectEndPoints.getProject(projectIdFromResponse);
+            Response responseAfterUpdate = ProjectEndPoints.getProject(projectIdFromResponse, userAgent); // Pass userAgent to the endpoint
             responseAfterUpdate.then().log().all();
         } catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
@@ -120,7 +135,9 @@ public class ProjectTests {
     public void test_GetActiveProject() {
         try {
             logger.info("Getting active project with Company Id: C0001 and User ID: UID22");
-            Response response = ProjectEndPoints.getActiveProject("C0001", "UID22");
+            
+            // Pass the User-Agent header to simulate browser behavior
+            Response response = ProjectEndPoints.getActiveProject("C0001", "UID22", userAgent); // Pass userAgent to the endpoint
             response.then().log().all();
             
             Assert.assertEquals(response.getStatusCode(), 200);
@@ -135,7 +152,9 @@ public class ProjectTests {
     public void test_GetArchivedProject() {
         try {
             logger.info("Getting archived project with Company Id: C0001 and User ID: UID22");
-            Response response = ProjectEndPoints.getArchivedProject("C0001", "UID22");
+            
+            // Pass the User-Agent header to simulate browser behavior
+            Response response = ProjectEndPoints.getArchivedProject("C0001", "UID22", userAgent); // Pass userAgent to the endpoint
             response.then().log().all();
             
             Assert.assertEquals(response.getStatusCode(), 200);

@@ -54,7 +54,7 @@ public class DDtests {
 
             // Make the API call to create the project
             logger.info("Making API call to create project...");
-            Response response = ProjectEndPoints.createProject(projPayload);
+            Response response = ProjectEndPoints.createProject1(projPayload);
 
             // Log the response from the API
             response.then().log().all();
