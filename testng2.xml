@@ -1,0 +1,51 @@
+<!-- <Multi_Browser_Testing> Edge and Chrome Browser</Multi_Browser_Testing> -->
+<suite name="RESTAssuredSuite" parallel="tests" thread-count="4">
+
+    <listeners>
+        <listener class-name="api.utilities.ExtentReportManager" />
+    </listeners>
+
+    <!-- Test for Chrome Browser -->
+    <test name="ProjectTests_01_Chrome">
+        <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"/>
+        <classes>
+            <class name="api.test.ProjectTests"/>
+        </classes>
+    </test>
+
+    <test name="DataDrivenTests_02_Chrome">
+        <classes>
+            <class name="api.test.DDtests"/>
+        </classes>
+    </test>
+
+    <test name="UserTests_03_Chrome">
+        <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"/>
+        <classes>
+            <class name="api.test.User_Tests"/>
+        </classes>
+    </test>
+
+    <!-- Test for Edge Browser -->
+    <test name="ProjectTests_01_Edge">
+        <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64"/>
+        <classes>
+            <class name="api.test.ProjectTests"/>
+        </classes>
+    </test>
+
+    <!-- <test name="DataDrivenTests_02_Edge">
+        <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64"/>
+        <classes>
+            <class name="api.test.DDtests"/>
+        </classes>
+    </test> -->
+
+    <test name="UserTests_03_Edge">
+        <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64"/>
+        <classes>
+            <class name="api.test.User_Tests"/>
+        </classes>
+    </test>
+
+</suite>

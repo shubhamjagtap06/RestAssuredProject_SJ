@@ -4,13 +4,33 @@
   <listeners>
     <listener class-name="api.utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="4" parallel="tests" name="DataDrivenTests_02_Chrome(failed)">
+  <test thread-count="4" parallel="tests" name="UserTests_03(failed)">
     <classes>
-      <class name="api.test.DDtests">
+      <class name="api.test.User_Tests">
         <methods>
-          <include name="testCreateProject"/>
+          <include name="setupUserAgent"/>
+          <include name="test_GetUserByEmailId"/>
+          <include name="testLogin"/>
+          <include name="testLogout"/>
+          <include name="test_GetAllUser"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- api.test.DDtests -->
+      </class> <!-- api.test.User_Tests -->
     </classes>
-  </test> <!-- DataDrivenTests_02_Chrome(failed) -->
+  </test> <!-- UserTests_03(failed) -->
+  <test thread-count="4" parallel="tests" name="ProjectTests_01(failed)">
+    <classes>
+      <class name="api.test.ProjectTests">
+        <methods>
+          <include name="test_UpdateProject"/>
+          <include name="test_GetActiveProject"/>
+          <include name="setupUserAgent"/>
+          <include name="test_GetArchivedProject"/>
+          <include name="setupData"/>
+          <include name="test_GetProject"/>
+          <include name="test_CreateProject"/>
+        </methods>
+      </class> <!-- api.test.ProjectTests -->
+    </classes>
+  </test> <!-- ProjectTests_01(failed) -->
 </suite> <!-- Failed suite [RESTAssuredSuite] -->
