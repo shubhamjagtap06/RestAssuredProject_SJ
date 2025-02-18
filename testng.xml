@@ -11,7 +11,7 @@
     <classes>
     	<class name="api.test.ProjectTests"/>
       	<class name="api.test.DDtests"/>
-      	<!-- <class name="api.test.User_Tests"/>
- -->    </classes>
+      	<class name="api.test.User_Tests"/>
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
