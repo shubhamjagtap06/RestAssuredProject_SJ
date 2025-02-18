@@ -8,11 +8,25 @@
     <classes>
       <class name="api.test.ProjectTests">
         <methods>
+          <include name="test_UpdateProject"/>
+          <include name="setupUserAgent"/>
           <include name="test_GetActiveProject"/>
           <include name="test_GetArchivedProject"/>
           <include name="setupData"/>
+          <include name="test_GetProject"/>
+          <include name="test_CreateProject"/>
         </methods>
       </class> <!-- api.test.ProjectTests -->
+      <class name="api.test.User_Tests">
+        <methods>
+          <include name="setupUserAgent"/>
+          <include name="test_GetUserByEmailId"/>
+          <include name="testLogin"/>
+          <include name="testLogout"/>
+          <include name="test_GetAllUser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- api.test.User_Tests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

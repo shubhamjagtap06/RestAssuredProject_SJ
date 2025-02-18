@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-18T17:24:53 IST" name="RESTAssuredSuite" finished-at="2025-02-18T17:24:55 IST" duration-ms="2665">
+  <suite started-at="2025-02-18T18:11:27 IST" name="RESTAssuredSuite" finished-at="2025-02-18T18:11:29 IST" duration-ms="2258">
     <groups>
     </groups>
-    <test started-at="2025-02-18T17:24:53 IST" name="UserTests_03_Chrome" finished-at="2025-02-18T17:24:55 IST" duration-ms="2145">
+    <test started-at="2025-02-18T18:11:27 IST" name="UserTests_03" finished-at="2025-02-18T18:11:29 IST" duration-ms="1949">
       <class name="api.test.User_Tests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.User_Tests@35e5d0e5]" started-at="2025-02-18T17:24:53 IST" name="setup" finished-at="2025-02-18T17:24:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.User_Tests@73173f63]" started-at="2025-02-18T18:11:27 IST" name="setup" finished-at="2025-02-18T18:11:27 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.User_Tests@35e5d0e5]" started-at="2025-02-18T17:24:53 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.User_Tests@73173f63]" started-at="2025-02-18T18:11:27 IST" name="setupUserAgent" finished-at="2025-02-18T18:11:27 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
-        <test-method signature="testLogin()[pri:1, instance:api.test.User_Tests@35e5d0e5]" started-at="2025-02-18T17:24:53 IST" name="testLogin" finished-at="2025-02-18T17:24:55 IST" duration-ms="1820" status="PASS">
+        <test-method signature="testLogin()[pri:1, instance:api.test.User_Tests@73173f63]" started-at="2025-02-18T18:11:27 IST" name="testLogin" finished-at="2025-02-18T18:11:29 IST" duration-ms="1656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.User_Tests@35e5d0e5]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.User_Tests@73173f63]" started-at="2025-02-18T18:11:29 IST" name="setupUserAgent" finished-at="2025-02-18T18:11:29 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_GetAllUser()[pri:2, instance:api.test.User_Tests@35e5d0e5]" started-at="2025-02-18T17:24:55 IST" name="test_GetAllUser" finished-at="2025-02-18T17:24:55 IST" duration-ms="69" status="PASS">
+        <test-method signature="test_GetAllUser()[pri:2, instance:api.test.User_Tests@73173f63]" started-at="2025-02-18T18:11:29 IST" name="test_GetAllUser" finished-at="2025-02-18T18:11:29 IST" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_GetAllUser -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.User_Tests@35e5d0e5]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.User_Tests@73173f63]" started-at="2025-02-18T18:11:29 IST" name="setupUserAgent" finished-at="2025-02-18T18:11:29 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,15 +52,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_GetUserByEmailId()[pri:3, instance:api.test.User_Tests@35e5d0e5]" started-at="2025-02-18T17:24:55 IST" name="test_GetUserByEmailId" finished-at="2025-02-18T17:24:55 IST" duration-ms="80" status="PASS">
+        <test-method signature="test_GetUserByEmailId()[pri:3, instance:api.test.User_Tests@73173f63]" started-at="2025-02-18T18:11:29 IST" name="test_GetUserByEmailId" finished-at="2025-02-18T18:11:29 IST" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_GetUserByEmailId -->
-        <test-method signature="testLogout()[pri:4, instance:api.test.User_Tests@35e5d0e5]" started-at="2025-02-18T17:24:55 IST" name="testLogout" finished-at="2025-02-18T17:24:55 IST" duration-ms="53" status="PASS">
+        <test-method signature="testLogout()[pri:4, instance:api.test.User_Tests@73173f63]" started-at="2025-02-18T18:11:29 IST" name="testLogout" finished-at="2025-02-18T18:11:29 IST" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogout -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.User_Tests@35e5d0e5]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.User_Tests@73173f63]" started-at="2025-02-18T18:11:29 IST" name="setupUserAgent" finished-at="2025-02-18T18:11:29 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,10 +72,10 @@
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
       </class> <!-- api.test.User_Tests -->
-    </test> <!-- UserTests_03_Chrome -->
-    <test started-at="2025-02-18T17:24:53 IST" name="DataDrivenTests_02_Chrome" finished-at="2025-02-18T17:24:55 IST" duration-ms="2376">
+    </test> <!-- UserTests_03 -->
+    <test started-at="2025-02-18T18:11:27 IST" name="DataDrivenTests_02" finished-at="2025-02-18T18:11:29 IST" duration-ms="2225">
       <class name="api.test.DDtests">
-        <test-method signature="testCreateProject(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,int,boolean,boolean,boolean)[pri:1, instance:api.test.DDtests@4097cac]" started-at="2025-02-18T17:24:54 IST" name="testCreateProject" data-provider="getAllData" finished-at="2025-02-18T17:24:55 IST" duration-ms="995" status="PASS">
+        <test-method signature="testCreateProject(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,int,boolean,boolean,boolean)[pri:1, instance:api.test.DDtests@ec2cc4]" started-at="2025-02-18T18:11:28 IST" name="testCreateProject" data-provider="getAllData" finished-at="2025-02-18T18:11:29 IST" duration-ms="925" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -151,7 +151,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateProject -->
-        <test-method signature="testCreateProject(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,int,boolean,boolean,boolean)[pri:1, instance:api.test.DDtests@4097cac]" started-at="2025-02-18T17:24:55 IST" name="testCreateProject" data-provider="getAllData" finished-at="2025-02-18T17:24:55 IST" duration-ms="69" status="PASS">
+        <test-method signature="testCreateProject(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,int,boolean,boolean,boolean)[pri:1, instance:api.test.DDtests@ec2cc4]" started-at="2025-02-18T18:11:29 IST" name="testCreateProject" data-provider="getAllData" finished-at="2025-02-18T18:11:29 IST" duration-ms="81" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -228,161 +228,78 @@
           </reporter-output>
         </test-method> <!-- testCreateProject -->
       </class> <!-- api.test.DDtests -->
-    </test> <!-- DataDrivenTests_02_Chrome -->
-    <test started-at="2025-02-18T17:24:53 IST" name="ProjectTests_01_Edge" finished-at="2025-02-18T17:24:55 IST" duration-ms="2505">
+    </test> <!-- DataDrivenTests_02 -->
+    <test started-at="2025-02-18T18:11:27 IST" name="ProjectTests_01" finished-at="2025-02-18T18:11:29 IST" duration-ms="2258">
       <class name="api.test.ProjectTests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.ProjectTests@7e276594]" started-at="2025-02-18T17:24:53 IST" name="setupData" finished-at="2025-02-18T17:24:53 IST" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T18:11:27 IST" name="setupData" finished-at="2025-02-18T18:11:27 IST" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@7e276594]" started-at="2025-02-18T17:24:53 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:53 IST" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T18:11:27 IST" name="setupUserAgent" finished-at="2025-02-18T18:11:27 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64]]>
+                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_CreateProject()[pri:1, instance:api.test.ProjectTests@7e276594]" started-at="2025-02-18T17:24:53 IST" name="test_CreateProject" finished-at="2025-02-18T17:24:55 IST" duration-ms="1947" status="PASS">
+        <test-method signature="test_CreateProject()[pri:1, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T18:11:27 IST" name="test_CreateProject" finished-at="2025-02-18T18:11:29 IST" duration-ms="1735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CreateProject -->
-        <test-method signature="test_GetProject()[pri:2, instance:api.test.ProjectTests@7e276594]" started-at="2025-02-18T17:24:55 IST" name="test_GetProject" finished-at="2025-02-18T17:24:55 IST" duration-ms="26" status="PASS">
+        <test-method signature="test_GetProject()[pri:2, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T18:11:29 IST" name="test_GetProject" finished-at="2025-02-18T18:11:29 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_GetProject -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@7e276594]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T18:11:29 IST" name="setupUserAgent" finished-at="2025-02-18T18:11:29 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64]]>
+                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_UpdateProject()[pri:3, instance:api.test.ProjectTests@7e276594]" started-at="2025-02-18T17:24:55 IST" name="test_UpdateProject" finished-at="2025-02-18T17:24:55 IST" duration-ms="58" status="PASS">
+        <test-method signature="test_UpdateProject()[pri:3, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T18:11:29 IST" name="test_UpdateProject" finished-at="2025-02-18T18:11:29 IST" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_UpdateProject -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@7e276594]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T18:11:29 IST" name="setupUserAgent" finished-at="2025-02-18T18:11:29 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64]]>
+                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_GetActiveProject()[pri:5, instance:api.test.ProjectTests@7e276594]" started-at="2025-02-18T17:24:55 IST" name="test_GetActiveProject" finished-at="2025-02-18T17:24:55 IST" duration-ms="23" status="PASS">
+        <test-method signature="test_GetActiveProject()[pri:5, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T18:11:29 IST" name="test_GetActiveProject" finished-at="2025-02-18T18:11:29 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_GetActiveProject -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@7e276594]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T18:11:29 IST" name="setupUserAgent" finished-at="2025-02-18T18:11:29 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64]]>
+                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_GetArchivedProject()[pri:6, instance:api.test.ProjectTests@7e276594]" started-at="2025-02-18T17:24:55 IST" name="test_GetArchivedProject" finished-at="2025-02-18T17:24:55 IST" duration-ms="15" status="PASS">
+        <test-method signature="test_GetArchivedProject()[pri:6, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T18:11:29 IST" name="test_GetArchivedProject" finished-at="2025-02-18T18:11:29 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_GetArchivedProject -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@7e276594]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupUserAgent -->
-      </class> <!-- api.test.ProjectTests -->
-    </test> <!-- ProjectTests_01_Edge -->
-    <test started-at="2025-02-18T17:24:53 IST" name="ProjectTests_01_Chrome" finished-at="2025-02-18T17:24:55 IST" duration-ms="2545">
-      <class name="api.test.ProjectTests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T17:24:53 IST" name="setupData" finished-at="2025-02-18T17:24:53 IST" duration-ms="150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupData -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T17:24:53 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:53 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_CreateProject()[pri:1, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T17:24:53 IST" name="test_CreateProject" finished-at="2025-02-18T17:24:55 IST" duration-ms="1946" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_CreateProject -->
-        <test-method signature="test_GetProject()[pri:2, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T17:24:55 IST" name="test_GetProject" finished-at="2025-02-18T17:24:55 IST" duration-ms="25" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_GetProject -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_UpdateProject()[pri:3, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T17:24:55 IST" name="test_UpdateProject" finished-at="2025-02-18T17:24:55 IST" duration-ms="57" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_UpdateProject -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_GetActiveProject()[pri:5, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T17:24:55 IST" name="test_GetActiveProject" finished-at="2025-02-18T17:24:55 IST" duration-ms="24" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_GetActiveProject -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_GetArchivedProject()[pri:6, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T17:24:55 IST" name="test_GetArchivedProject" finished-at="2025-02-18T17:24:55 IST" duration-ms="16" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_GetArchivedProject -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.ProjectTests@4983159f]" started-at="2025-02-18T18:11:29 IST" name="setupUserAgent" finished-at="2025-02-18T18:11:29 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -394,74 +311,6 @@
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
       </class> <!-- api.test.ProjectTests -->
-    </test> <!-- ProjectTests_01_Chrome -->
-    <test started-at="2025-02-18T17:24:55 IST" name="UserTests_03_Edge" finished-at="2025-02-18T17:24:55 IST" duration-ms="256">
-      <class name="api.test.User_Tests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.User_Tests@77d2e85]" started-at="2025-02-18T17:24:55 IST" name="setup" finished-at="2025-02-18T17:24:55 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLogin()[pri:1, instance:api.test.User_Tests@77d2e85]" started-at="2025-02-18T17:24:55 IST" name="testLogin" finished-at="2025-02-18T17:24:55 IST" duration-ms="139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.User_Tests@77d2e85]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupUserAgent -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.User_Tests@77d2e85]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_GetAllUser()[pri:2, instance:api.test.User_Tests@77d2e85]" started-at="2025-02-18T17:24:55 IST" name="test_GetAllUser" finished-at="2025-02-18T17:24:55 IST" duration-ms="48" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_GetAllUser -->
-        <test-method signature="test_GetUserByEmailId()[pri:3, instance:api.test.User_Tests@77d2e85]" started-at="2025-02-18T17:24:55 IST" name="test_GetUserByEmailId" finished-at="2025-02-18T17:24:55 IST" duration-ms="28" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_GetUserByEmailId -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.User_Tests@77d2e85]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupUserAgent -->
-        <test-method signature="testLogout()[pri:4, instance:api.test.User_Tests@77d2e85]" started-at="2025-02-18T17:24:55 IST" name="testLogout" finished-at="2025-02-18T17:24:55 IST" duration-ms="27" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogout -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.User_Tests@77d2e85]" started-at="2025-02-18T17:24:55 IST" name="setupUserAgent" finished-at="2025-02-18T17:24:55 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupUserAgent -->
-      </class> <!-- api.test.User_Tests -->
-    </test> <!-- UserTests_03_Edge -->
+    </test> <!-- ProjectTests_01 -->
   </suite> <!-- RESTAssuredSuite -->
 </testng-results>

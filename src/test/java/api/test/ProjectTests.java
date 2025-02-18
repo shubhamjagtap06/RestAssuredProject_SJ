@@ -62,6 +62,8 @@ public class ProjectTests {
         this.userAgent = userAgent;
     }
 
+    
+    
     @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_CreateProject() {
         try {
@@ -85,6 +87,8 @@ public class ProjectTests {
         }
     }
 
+    
+    
     @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here too
     public void test_GetProject() {
         try {
@@ -102,6 +106,8 @@ public class ProjectTests {
         }
     }
 
+    
+    
     @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_UpdateProject() {
         try {
@@ -130,6 +136,8 @@ public class ProjectTests {
             Assert.fail("Test Case failed: " + e.getMessage());
         }
     }
+    
+    
 
     @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_GetActiveProject() {
@@ -148,6 +156,8 @@ public class ProjectTests {
         }
     }
 
+    
+    
     @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_GetArchivedProject() {
         try {
