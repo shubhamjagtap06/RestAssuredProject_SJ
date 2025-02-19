@@ -19,6 +19,7 @@ public class ProjectTests {
     private static final Logger logger = LogManager.getLogger(ProjectTests.class);
 
     public String projectIdFromResponse;
+    public String UpdatedprojectIdFromResponse;
 
     Faker faker;
     Project proj_payload;
@@ -34,8 +35,9 @@ public class ProjectTests {
         proj_payload = new Project(); // Prepare object  
 
         // Generating projectId and setting project details
-        String generatedProjectId = "Proj" + faker.number().numberBetween(100, 999);
-        proj_payload.setProjectId(generatedProjectId);
+        //String generatedProjectId = "Proj" + faker.number().numberBetween(100, 999);
+        //proj_payload.setProjectId(generatedProjectId);
+        proj_payload.setProjectId("string");
         proj_payload.setCompanyId(faker.idNumber().toString());
         proj_payload.setProjectName(faker.name().fullName());
         proj_payload.setDescription(faker.name().lastName());
@@ -113,11 +115,12 @@ public class ProjectTests {
         try {
             logger.info("Updating project with Id: " + projectIdFromResponse);
             
+            proj_payload.setProjectId(projectIdFromResponse);
             proj_payload.setProjectName(faker.name().firstName());
             proj_payload.setDescription(faker.name().lastName());
             proj_payload.setTotalNoOfBuildings(15);
             proj_payload.setAreaUnit("sqft");
-            proj_payload.setAddedBy("Shubham Jagtap Updated");
+            proj_payload.setAddedBy("Shubham Jagtap Added");
             proj_payload.setUpdatedBy("Shubham Jagtap Updated");
             proj_payload.setProgress(20);
             
@@ -127,11 +130,35 @@ public class ProjectTests {
             
             Assert.assertEquals(response.getStatusCode(), 200);
             logger.info("Project updated successfully.");
+            
+         // Retrieve projectId from updated project response
+            UpdatedprojectIdFromResponse = response.jsonPath().getString("projects.projectId");
+            logger.info("Project Id (From updated response): " + UpdatedprojectIdFromResponse);
+            Assert.assertNotNull(UpdatedprojectIdFromResponse);  // Ensure the projectId exists
 
             // Verify update
-            Response responseAfterUpdate = ProjectEndPoints.getProject(projectIdFromResponse, userAgent); // Pass userAgent to the endpoint
+            System.out.println("Updated Project id from updated response: "+UpdatedprojectIdFromResponse);
+            Response responseAfterUpdate = ProjectEndPoints.getProject(UpdatedprojectIdFromResponse, userAgent); // Pass userAgent to the endpoint
             responseAfterUpdate.then().log().all();
-        } catch (Exception e) {
+            
+            System.out.println("Updated Response got");
+            
+         // Validate the updated values:
+            
+			/*
+			 * System.out.println("pp:"
+			 * +responseAfterUpdate.jsonPath().getList("totalNoOfBuildings").get(0));
+			 * System.out.println("pq:" +proj_payload.getTotalNoOfBuildings());
+			 * Assert.assertEquals(responseAfterUpdate.jsonPath().getList(
+			 * "totalNoOfBuildings").get(0), proj_payload.getTotalNoOfBuildings());
+			 * System.out.println("pp:"
+			 * +responseAfterUpdate.jsonPath().getList("progress").get(0));
+			 * System.out.println("pq:" +proj_payload.getProgress());
+			 * Assert.assertEquals(responseAfterUpdate.jsonPath().getList("progress").get(0)
+			 * , proj_payload.getProgress());
+			 */
+            
+		} catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
             Assert.fail("Test Case failed: " + e.getMessage());
         }

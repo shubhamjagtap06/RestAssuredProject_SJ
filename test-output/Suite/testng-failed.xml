@@ -7,16 +7,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"/>
     <classes>
-      <class name="api.test.User_Tests">
+      <class name="api.test.ProjectTests">
         <methods>
+          <include name="test_UpdateProject"/>
           <include name="setupUserAgent"/>
-          <include name="test_GetUserByEmailId"/>
-          <include name="testLogin"/>
-          <include name="testLogout"/>
-          <include name="test_GetAllUser"/>
-          <include name="setup"/>
+          <include name="setupData"/>
         </methods>
-      </class> <!-- api.test.User_Tests -->
+      </class> <!-- api.test.ProjectTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

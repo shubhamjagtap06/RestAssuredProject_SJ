@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite thread-count="4" parallel="tests" name="Failed suite [RESTAssuredSuite]">
   <listeners>
     <listener class-name="api.utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="4" parallel="tests" name="ProjectTests_01_Edge(failed)">
+    <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64"/>
+    <classes>
+      <class name="api.test.ProjectTests">
+        <methods>
+          <include name="test_UpdateProject"/>
+          <include name="setupUserAgent"/>
+          <include name="setupData"/>
+        </methods>
+      </class> <!-- api.test.ProjectTests -->
+    </classes>
+  </test> <!-- ProjectTests_01_Edge(failed) -->
+  <test thread-count="4" parallel="tests" name="ProjectTests_01_Chrome(failed)">
     <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"/>
     <classes>
-      <class name="api.test.User_Tests">
+      <class name="api.test.ProjectTests">
         <methods>
+          <include name="test_UpdateProject"/>
           <include name="setupUserAgent"/>
-          <include name="test_GetUserByEmailId"/>
-          <include name="testLogin"/>
-          <include name="testLogout"/>
-          <include name="test_GetAllUser"/>
-          <include name="setup"/>
+          <include name="setupData"/>
         </methods>
-      </class> <!-- api.test.User_Tests -->
+      </class> <!-- api.test.ProjectTests -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- ProjectTests_01_Chrome(failed) -->
+</suite> <!-- Failed suite [RESTAssuredSuite] -->

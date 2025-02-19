@@ -5,6 +5,10 @@ import org.testng.ITestResult;
 import org.testng.ITestContext;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import com.aventstack.extentreports.ExtentReports;
@@ -46,13 +50,11 @@ public class ExtentReportManager implements ITestListener {
         }
 
         
-		File index1File = new File(reportFolder + "\\index.html");
-        if (index1File.exists()) {
-            boolean deleted = index1File.delete();
-            if (deleted) {
-                System.out.println("Deleted index.html file.");
-            }
-        } 
+		/*
+		 * File index1File = new File(reportFolder + "\\index.html"); if
+		 * (index1File.exists()) { boolean deleted = index1File.delete(); if (deleted) {
+		 * System.out.println("Deleted index.html file."); } }
+		 */
         
         // Clear previous reports to avoid conflicts
         File[] files = reportDir.listFiles();
@@ -117,5 +119,45 @@ public class ExtentReportManager implements ITestListener {
         System.out.println("Extent Report: onFinish is called");
         extent.flush();  // Ensure the report is written at the end of the test suite
         System.out.println("Extent Report written successfully.");
+        
+        
+        
+     // Copy the generated report to the same folder with "_copy" suffix as timestamp and repname not working
+        try {
+        	String repName1 = "index.html";
+            // Get the original report file path
+            File originalReportFile = new File(System.getProperty("user.dir") + "\\ExtentReports1_CM\\" + repName1);
+            if (originalReportFile.exists()) {
+                // Create a new file name for the copy (e.g., append "_copy" to the original report name)
+            	
+                String copiedReportName = repName1.replace("index.html", repName);
+                File copiedReportFile = new File(System.getProperty("user.dir") + "\\ExtentReports1_CM\\" + copiedReportName);
+
+                // Copy the original report to the new file
+                Path originalPath = originalReportFile.toPath();
+                Path copiedPath = copiedReportFile.toPath();
+                Files.copy(originalPath, copiedPath, StandardCopyOption.REPLACE_EXISTING);
+
+                System.out.println("Report copied successfully to: " + copiedReportFile.getAbsolutePath());
+            } else {
+                System.out.println("Original report file not found to copy.");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.err.println("Error copying the report: " + e.getMessage());
+        }
+    }
+    
+    String reportFolder = System.getProperty("user.dir") + "\\ExtentReports1_CM";
+    	File index2File = new File(reportFolder + "\\index.html");
+    {
+    	if (index2File.exists()) 
+    	{
+        boolean deleted = index2File.delete();
+        if (deleted) 
+        			{
+        	System.out.println("Deleted index.html file.");
+        			}
+         } 
     }
 }
