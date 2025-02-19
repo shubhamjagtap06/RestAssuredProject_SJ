@@ -30,7 +30,7 @@ public class ProjectEndPoints {
             .header("User-Agent", userAgent)  // Add User-Agent here
             .body(payload)
         .when()
-            .post(Routes.post_url);  // Refer URL from Routes class
+            .post(Routes_project.post_url);  // Refer URL from Routes class
         
         return response;
     }
@@ -51,7 +51,7 @@ public class ProjectEndPoints {
               // Add User-Agent here
             .body(payload)
         .when()
-            .post(Routes.post_url);  // Refer URL from Routes class
+            .post(Routes_project.post_url);  // Refer URL from Routes class
         
         return response;
     }
@@ -67,7 +67,7 @@ public class ProjectEndPoints {
             .pathParam("projectId", ProjectId)
             .header("User-Agent", userAgent)  // Add User-Agent here
         .when()
-            .get(Routes.get_url);  // Refer URL from Routes class
+            .get(Routes_project.get_url);  // Refer URL from Routes class
         return response;
     }
 
@@ -85,7 +85,7 @@ public class ProjectEndPoints {
             .header("User-Agent", userAgent)  // Add User-Agent here
             .body(payload)
         .when()
-            .post(Routes.update_url);  // Refer URL from Routes class
+            .post(Routes_project.update_url);  // Refer URL from Routes class
         return response;
     }
 
@@ -100,7 +100,7 @@ public class ProjectEndPoints {
             .pathParam("projectId", ProjectId)
             .header("User-Agent", userAgent)  // Add User-Agent here
         .when()
-            .post(Routes.delete_url);  // Refer URL from Routes class
+            .post(Routes_project.delete_url);  // Refer URL from Routes class
         return response;
     }
 
@@ -116,7 +116,7 @@ public class ProjectEndPoints {
             .pathParam("UserId", UserId)
             .header("User-Agent", userAgent)  // Add User-Agent here
         .when()
-            .get(Routes.get_activeProject_url);  // Refer URL from Routes class
+            .get(Routes_project.get_activeProject_url);  // Refer URL from Routes class
         return response;
     }
 
@@ -132,7 +132,7 @@ public class ProjectEndPoints {
             .pathParam("UserId", UserId)
             .header("User-Agent", userAgent)  // Add User-Agent here
         .when()
-            .get(Routes.get_archivedProject_url);  // Refer URL from Routes class
+            .get(Routes_project.get_archivedProject_url);  // Refer URL from Routes class
         return response;
     }
 }

@@ -21,8 +21,7 @@
 	
   <dependencies>
   
-  
-  	<dependency>
+  	 <dependency>
 		<groupId>io.rest-assured</groupId>
 		<artifactId>rest-assured</artifactId>
 		<version>5.5.0</version>
@@ -93,17 +92,16 @@
 		<artifactId>poi-ooxml</artifactId>
 		<version>5.2.3</version>
 	</dependency>
-	
 	<dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-api</artifactId>
-    <version>2.20.0</version> <!-- Make sure this is a recent version -->
-</dependency>
-<dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-core</artifactId>
-    <version>2.20.0</version> <!-- Ensure this is a recent version -->
-</dependency>
+	    <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-api</artifactId>
+	    <version>2.20.0</version> <!-- Make sure this is a recent version -->
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-core</artifactId>
+	    <version>2.20.0</version> <!-- Ensure this is a recent version -->
+	</dependency>
   
   </dependencies>
 </project>

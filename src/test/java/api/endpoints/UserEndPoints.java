@@ -12,7 +12,7 @@ public class UserEndPoints {
     public static Response userLogin(String userAgent) {  // Accepting userAgent as parameter
         String requestBody = "{\n" +
                 "  \"email\": \"" + "shubham.jagtap@neilsoft.com" + "\",\n" +  	// Make sure the value is within double quotes
-                "  \"password\": \"" + "Neilsoft@11" + "\"\n" +  				// Same here, wrap the password value in quotes
+                "  \"password\": \"" + "Neilsoft@2" + "\"\n" +  				// Same here, wrap the password value in quotes
                 "}";
         
         Response response =
@@ -26,17 +26,16 @@ public class UserEndPoints {
     }
     
     
- // User login
-    public static Response userLogin1() {  // Accepting userAgent as parameter
+ // User login method for DDT test
+    public static Response userLogin1() {  
         String requestBody = "{\n" +
                 "  \"email\": \"" + "shubham.jagtap@neilsoft.com" + "\",\n" +  	// Make sure the value is within double quotes
-                "  \"password\": \"" + "Neilsoft@11" + "\"\n" +  				// Same here, wrap the password value in quotes
+                "  \"password\": \"" + "Neilsoft@2" + "\"\n" +  				// Same here, wrap the password value in quotes
                 "}";
         
         Response response =
                 given()
-                    .contentType(ContentType.JSON)
-                    //.header("User-Agent", userAgent)  // Adding User-Agent header
+                    .contentType(ContentType.JSON) 
                     .body(requestBody)
                 .when()
                     .post(Routes_user.login_url);
@@ -81,6 +80,34 @@ public class UserEndPoints {
                     .body(userinfo)
                 .when()
                     .post(Routes_user.logout_url);
+        return response;
+    }
+    
+    
+    //Forgot Password
+    public static Response forgotPassword(String emailId, String userAgent) {  // Accepting userAgent as parameter
+        bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response =
+                given()
+                    .headers("Authorization", "Bearer " + bearerToken)
+                    .header("User-Agent", userAgent)  // Adding User-Agent header
+                    .pathParam("EmailId", emailId)
+                .when()
+                    .post(Routes_user.forgotPassword_url);
+        return response;
+    }
+    
+    
+    //Send otp to email
+    public static Response sendOtpToEmail(String emailId, String userAgent) {  // Accepting userAgent as parameter
+        bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response =
+                given()
+                    .headers("Authorization", "Bearer " + bearerToken)
+                    .header("User-Agent", userAgent)  // Adding User-Agent header
+                    .pathParam("EmailId", emailId)
+                .when()
+                    .post(Routes_user.sendOtpToEmail_url);
         return response;
     }
 }

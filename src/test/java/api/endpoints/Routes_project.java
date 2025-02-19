@@ -17,7 +17,7 @@ package api.endpoints;
 
 
 //ONLY URLs
-public class Routes {
+public class Routes_project {
 	
 	
 	public static String base_url = "http://10.1.0.83:8000";		//to access everywhere in project

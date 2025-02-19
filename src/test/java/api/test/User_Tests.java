@@ -161,7 +161,7 @@ public class User_Tests {
         }
     }
 
-    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
+    @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class)
     public void testLogout() {
         logger.info("Starting testLogout...");
 
@@ -188,6 +188,38 @@ public class User_Tests {
             logger.info("User logged out successfully.");
         } catch (Exception e) {
             logger.error("Logout failed", e);
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
+    public void test_forgotPassword() {
+        logger.info("Starting test_forgotPassword...");
+
+        try {
+            Response response = UserEndPoints.forgotPassword("shubham.jagtap@neilsoft.com", userAgent);  // Pass the User-Agent
+            response.then().log().all();
+            Assert.assertEquals(response.getStatusCode(), 200);
+            logger.info("Forgot password link sent successfully");
+        } catch (Exception e) {
+            logger.error("Failed to send forgot password link", e);
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
+    public void test_sendOtpToEmail() {
+        logger.info("Starting test_sendOtpToEmail...");
+
+        try {
+            Response response = UserEndPoints.sendOtpToEmail("shubham.jagtap@neilsoft.com", userAgent);  // Pass the User-Agent
+            response.then().log().all();
+            Assert.assertEquals(response.getStatusCode(), 200);
+            logger.info("Send OTP to email sent successfully");
+        } catch (Exception e) {
+            logger.error("Failed to send OTP to email", e);
             Assert.fail("Test Case failed: " + e.getMessage());
         }
     }
