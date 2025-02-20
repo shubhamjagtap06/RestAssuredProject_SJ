@@ -13,10 +13,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import api.utilities.RetryAnalyzer; // Import the RetryAnalyzer class
 
-public class ProjectTests {
+public class Project_Tests {
 
     // Logger initialization
-    private static final Logger logger = LogManager.getLogger(ProjectTests.class);
+    private static final Logger logger = LogManager.getLogger(Project_Tests.class);
 
     public String projectIdFromResponse;
     public String UpdatedprojectIdFromResponse;
@@ -196,6 +196,24 @@ public class ProjectTests {
             
             Assert.assertEquals(response.getStatusCode(), 200);
             logger.info("Archived project retrieved successfully.");
+        } catch (Exception e) {
+            logger.error("Test case failed: " + e.getMessage());
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    @Test(priority = 7, retryAnalyzer = RetryAnalyzer.class) 
+    public void test_GetProjectDetails() {
+        try {
+            logger.info("Getting project with Id: Proj 430");
+            
+            // Pass the User-Agent header to simulate browser behavior
+            Response response = ProjectEndPoints.getProjectDetails("Proj430", userAgent); // Pass userAgent to the endpoint
+            response.then().log().all();
+            
+            Assert.assertEquals(response.getStatusCode(), 200);
+            logger.info("Project details got successfully.");
         } catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
             Assert.fail("Test Case failed: " + e.getMessage());

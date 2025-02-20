@@ -56,7 +56,7 @@ public class ProjectEndPoints {
         return response;
     }
 
-    // Get Project
+   // Get Project
     public static Response getProject(String ProjectId, String userAgent) {  // implementation of (get/read project) endpoint
         // Set User-Agent for multi-browser testing
         //String userAgent = System.getProperty("userAgent", "Mozilla/5.0"); // Default to "Mozilla/5.0" if not provided
@@ -133,6 +133,20 @@ public class ProjectEndPoints {
             .header("User-Agent", userAgent)  // Add User-Agent here
         .when()
             .get(Routes_project.get_archivedProject_url);  // Refer URL from Routes class
+        return response;
+    }
+    
+    
+ // Get Project details by project Id
+    public static Response getProjectDetails(String ProjectId, String userAgent) {  // implementation of (get/read project) endpoint
+        
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("projectId", ProjectId)
+            .header("User-Agent", userAgent)  // Add User-Agent here
+        .when()
+            .get(Routes_project.get_ProjectDetailsByProjId_url);  // Refer URL from Routes class
         return response;
     }
 }

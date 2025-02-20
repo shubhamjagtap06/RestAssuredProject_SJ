@@ -31,10 +31,7 @@ public class Routes_project {
 	public static String delete_url = base_url+"/api/Project/DeleteProject?ProjectId={projectId}&deletedBy=\"Shubham Jagtap\"";
 	public static String get_activeProject_url = base_url+"/api/Project/GetActiveProject/{CompanyId}/{UserId}";
 	public static String get_archivedProject_url =	base_url+"/api/Project/GetArchivedProject/{CompanyId}/{UserId}";
-	//public static String post_url = base_url+"/api/Project";
-	//public static String post_url = base_url+"/api/Project";
-	//public static String post_url = base_url+"/api/Project";
-	//public static String post_url = base_url+"/api/Project";
+	public static String get_ProjectDetailsByProjId_url = base_url+"/api/Project/GetProjectDetails/{projectId}";
 	
 	
 	
