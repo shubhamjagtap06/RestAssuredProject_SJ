@@ -51,6 +51,7 @@ public class Building_Tests {
         //String generatedProjectId = "Proj" + faker.number().numberBetween(100, 999);
         //proj_payload.setProjectId(generatedProjectId);
         building_payload.setProjectId(sharedProjectIdFromResponse);
+       // building_payload.setProjectId(sharedProjectIdFromResponse);
         building_payload.setBuildingId(faker.idNumber().toString());
         building_payload.setBuildingName(faker.name().fullName());
         building_payload.setConstructionScheduleFrom("2025-02-01T12:03:55.621Z");
@@ -98,7 +99,7 @@ public class Building_Tests {
     }
     
     
-    //@Test(priority = 1, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here too
+    @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here too
     public void test_GetBuildings() {
         try {
             logger.info("Getting all Buildings");
