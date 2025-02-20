@@ -67,7 +67,7 @@ public class User_Tests {
         Response response = UserEndPoints.userLogin(userAgent);
 
         // Log the response for debugging
-        response.then().log().all();
+        //response.then().log().all();
 
         // Assert that the login request was successful (HTTP status 200)
         Assert.assertEquals(response.getStatusCode(), 200, "Login failed with status code: " + response.getStatusCode());

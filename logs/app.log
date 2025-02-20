@@ -1,1076 +1,182 @@
-2025-02-19 14:56:18 [main] INFO : Setting up data for tests...
-2025-02-19 14:56:18 [main] INFO : Data setup complete.
-2025-02-19 14:56:18 [main] INFO : Creating project with Project Id: Proj458
-2025-02-19 14:56:18 [main] INFO : Getting JWT token...
-2025-02-19 14:56:19 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU3MTY5LCJleHAiOjE3NDAwNDM1NjksImlhdCI6MTczOTk1NzE2OX0.pdkKgmLb3sSsGzD06nbAXdLeMpsWbjUgAka5V688REk
-2025-02-19 14:56:19 [main] INFO : Project created successfully.
-2025-02-19 14:56:19 [main] INFO : Project Id (From response): Proj521
-2025-02-19 14:56:19 [main] INFO : Getting project with Id: Proj521
-2025-02-19 14:56:19 [main] INFO : Project retrieved successfully.
-2025-02-19 14:56:19 [main] INFO : Updating project with Id: Proj521
-2025-02-19 14:56:19 [main] INFO : Project updated successfully.
-2025-02-19 14:56:19 [main] INFO : Project Id (From updated response): Proj458
-2025-02-19 14:56:19 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 14:56:19 [main] INFO : Active project retrieved successfully.
-2025-02-19 14:56:19 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 14:56:19 [main] INFO : Archived project retrieved successfully.
-2025-02-19 14:57:36 [main] INFO : Setting up data for tests...
-2025-02-19 14:57:36 [main] INFO : Data setup complete.
-2025-02-19 14:57:36 [main] INFO : Creating project with Project Id: string
-2025-02-19 14:57:36 [main] INFO : Getting JWT token...
-2025-02-19 14:57:37 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU3MjQ4LCJleHAiOjE3NDAwNDM2NDgsImlhdCI6MTczOTk1NzI0OH0.eTleuiyIsolhC-JfkCOrvH24cUth1dO8mqRmKZPm5lE
-2025-02-19 14:57:38 [main] INFO : Project created successfully.
-2025-02-19 14:57:38 [main] INFO : Project Id (From response): Proj522
-2025-02-19 14:57:38 [main] INFO : Getting project with Id: Proj522
-2025-02-19 14:57:38 [main] INFO : Project retrieved successfully.
-2025-02-19 14:57:38 [main] INFO : Updating project with Id: Proj522
-2025-02-19 14:57:38 [main] INFO : Project updated successfully.
-2025-02-19 14:57:38 [main] INFO : Project Id (From updated response): string
-2025-02-19 14:57:38 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 14:57:38 [main] INFO : Active project retrieved successfully.
-2025-02-19 14:57:38 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 14:57:38 [main] INFO : Archived project retrieved successfully.
-2025-02-19 14:58:00 [main] INFO : Setting up data for tests...
-2025-02-19 14:58:00 [main] INFO : Data setup complete.
-2025-02-19 14:58:00 [main] INFO : Creating project with Project Id: string
-2025-02-19 14:58:00 [main] INFO : Getting JWT token...
-2025-02-19 14:58:01 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU3MjcyLCJleHAiOjE3NDAwNDM2NzIsImlhdCI6MTczOTk1NzI3Mn0.T4U9VKe5kG_VWPNVkKOSmxay_Dq9v2Ci7GUtbRISqlk
-2025-02-19 14:58:02 [main] INFO : Project created successfully.
-2025-02-19 14:58:02 [main] INFO : Project Id (From response): Proj523
-2025-02-19 14:58:02 [main] INFO : Getting project with Id: Proj523
-2025-02-19 14:58:02 [main] INFO : Project retrieved successfully.
-2025-02-19 14:58:02 [main] INFO : Updating project with Id: Proj523
-2025-02-19 14:58:02 [main] INFO : Project updated successfully.
-2025-02-19 14:58:02 [main] INFO : Project Id (From updated response): string
-2025-02-19 14:58:02 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 14:58:02 [main] INFO : Active project retrieved successfully.
-2025-02-19 14:58:02 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 14:58:02 [main] INFO : Archived project retrieved successfully.
-2025-02-19 15:00:01 [main] INFO : Setting up data for tests...
-2025-02-19 15:00:01 [main] INFO : Data setup complete.
-2025-02-19 15:00:01 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:00:01 [main] INFO : Getting JWT token...
-2025-02-19 15:00:03 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU3MzkzLCJleHAiOjE3NDAwNDM3OTMsImlhdCI6MTczOTk1NzM5M30.HoewGbejrFn7P5rJktZ_rpOUWMCkhrFp5vk710lVtYU
-2025-02-19 15:00:03 [main] INFO : Project created successfully.
-2025-02-19 15:00:03 [main] INFO : Project Id (From response): Proj524
-2025-02-19 15:00:03 [main] INFO : Getting project with Id: Proj524
-2025-02-19 15:00:03 [main] INFO : Project retrieved successfully.
-2025-02-19 15:00:03 [main] INFO : Updating project with Id: Proj524
-2025-02-19 15:00:03 [main] INFO : Project updated successfully.
-2025-02-19 15:00:03 [main] INFO : Project Id (From updated response): Proj524
-2025-02-19 15:00:03 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:00:03 [main] INFO : Active project retrieved successfully.
-2025-02-19 15:00:03 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:00:03 [main] INFO : Archived project retrieved successfully.
-2025-02-19 15:01:45 [main] INFO : Setting up data for tests...
-2025-02-19 15:01:45 [main] INFO : Data setup complete.
-2025-02-19 15:01:45 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:01:45 [main] INFO : Getting JWT token...
-2025-02-19 15:01:46 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU3NDk2LCJleHAiOjE3NDAwNDM4OTYsImlhdCI6MTczOTk1NzQ5Nn0.uN8pBwvw0MsnIDnwTgr6Shx0nlO2yorc2ksWb1brhZQ
-2025-02-19 15:01:46 [main] INFO : Project created successfully.
-2025-02-19 15:01:46 [main] INFO : Project Id (From response): Proj525
-2025-02-19 15:01:46 [main] INFO : Getting project with Id: Proj525
-2025-02-19 15:01:46 [main] INFO : Project retrieved successfully.
-2025-02-19 15:01:46 [main] INFO : Updating project with Id: Proj525
-2025-02-19 15:01:46 [main] INFO : Project updated successfully.
-2025-02-19 15:01:46 [main] INFO : Project Id (From updated response): Proj525
-2025-02-19 15:01:46 [main] ERROR: Test case failed: For input string: "[15]"
-2025-02-19 15:01:46 [main] INFO : Updating project with Id: Proj525
-2025-02-19 15:01:46 [main] INFO : Project updated successfully.
-2025-02-19 15:01:46 [main] INFO : Project Id (From updated response): Proj525
-2025-02-19 15:01:46 [main] ERROR: Test case failed: For input string: "[15]"
-2025-02-19 15:01:47 [main] INFO : Updating project with Id: Proj525
-2025-02-19 15:01:47 [main] INFO : Project updated successfully.
-2025-02-19 15:01:47 [main] INFO : Project Id (From updated response): Proj525
-2025-02-19 15:01:47 [main] ERROR: Test case failed: For input string: "[15]"
-2025-02-19 15:01:47 [main] INFO : Updating project with Id: Proj525
-2025-02-19 15:01:47 [main] INFO : Project updated successfully.
-2025-02-19 15:01:47 [main] INFO : Project Id (From updated response): Proj525
-2025-02-19 15:01:47 [main] ERROR: Test case failed: For input string: "[15]"
-2025-02-19 15:01:47 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:01:47 [main] INFO : Active project retrieved successfully.
-2025-02-19 15:01:47 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:01:47 [main] INFO : Archived project retrieved successfully.
-2025-02-19 15:04:21 [main] INFO : Setting up data for tests...
-2025-02-19 15:04:21 [main] INFO : Data setup complete.
-2025-02-19 15:04:21 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:04:21 [main] INFO : Getting JWT token...
-2025-02-19 15:04:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU3NjUzLCJleHAiOjE3NDAwNDQwNTMsImlhdCI6MTczOTk1NzY1M30.GxtoUxizhIQ6cp36F0P095pj-7LNpkBnlTSSoa3L5mA
-2025-02-19 15:04:23 [main] INFO : Project created successfully.
-2025-02-19 15:04:23 [main] INFO : Project Id (From response): Proj526
-2025-02-19 15:04:23 [main] INFO : Getting project with Id: Proj526
-2025-02-19 15:04:23 [main] INFO : Project retrieved successfully.
-2025-02-19 15:04:23 [main] INFO : Updating project with Id: Proj526
-2025-02-19 15:04:23 [main] INFO : Project updated successfully.
-2025-02-19 15:04:23 [main] INFO : Project Id (From updated response): Proj526
-2025-02-19 15:04:23 [main] ERROR: Test case failed: For input string: "[15]"
-2025-02-19 15:04:23 [main] INFO : Updating project with Id: Proj526
-2025-02-19 15:04:23 [main] INFO : Project updated successfully.
-2025-02-19 15:04:23 [main] INFO : Project Id (From updated response): Proj526
-2025-02-19 15:04:23 [main] ERROR: Test case failed: For input string: "[15]"
-2025-02-19 15:04:23 [main] INFO : Updating project with Id: Proj526
-2025-02-19 15:04:23 [main] INFO : Project updated successfully.
-2025-02-19 15:04:23 [main] INFO : Project Id (From updated response): Proj526
-2025-02-19 15:04:23 [main] ERROR: Test case failed: For input string: "[15]"
-2025-02-19 15:04:23 [main] INFO : Updating project with Id: Proj526
-2025-02-19 15:04:23 [main] INFO : Project updated successfully.
-2025-02-19 15:04:23 [main] INFO : Project Id (From updated response): Proj526
-2025-02-19 15:04:23 [main] ERROR: Test case failed: For input string: "[15]"
-2025-02-19 15:04:23 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:04:23 [main] INFO : Active project retrieved successfully.
-2025-02-19 15:04:23 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:04:23 [main] INFO : Archived project retrieved successfully.
-2025-02-19 15:05:43 [main] INFO : Setting up data for tests...
-2025-02-19 15:05:43 [main] INFO : Data setup complete.
-2025-02-19 15:05:43 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:05:43 [main] INFO : Getting JWT token...
-2025-02-19 15:05:44 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU3NzM0LCJleHAiOjE3NDAwNDQxMzQsImlhdCI6MTczOTk1NzczNH0.akgnLySeLWrD0MvXREQtGwsmDAboS5wNIGeXtNFhSNw
-2025-02-19 15:05:44 [main] INFO : Project created successfully.
-2025-02-19 15:05:44 [main] INFO : Project Id (From response): Proj527
-2025-02-19 15:05:44 [main] INFO : Getting project with Id: Proj527
-2025-02-19 15:05:44 [main] INFO : Project retrieved successfully.
-2025-02-19 15:05:44 [main] INFO : Updating project with Id: Proj527
-2025-02-19 15:05:44 [main] INFO : Project updated successfully.
-2025-02-19 15:05:44 [main] INFO : Project Id (From updated response): Proj527
-2025-02-19 15:05:44 [main] INFO : Updating project with Id: Proj527
-2025-02-19 15:05:44 [main] INFO : Project updated successfully.
-2025-02-19 15:05:44 [main] INFO : Project Id (From updated response): Proj527
-2025-02-19 15:05:44 [main] INFO : Updating project with Id: Proj527
-2025-02-19 15:05:44 [main] INFO : Project updated successfully.
-2025-02-19 15:05:44 [main] INFO : Project Id (From updated response): Proj527
-2025-02-19 15:05:44 [main] INFO : Updating project with Id: Proj527
-2025-02-19 15:05:44 [main] INFO : Project updated successfully.
-2025-02-19 15:05:44 [main] INFO : Project Id (From updated response): Proj527
-2025-02-19 15:05:44 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:05:44 [main] INFO : Active project retrieved successfully.
-2025-02-19 15:05:44 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:05:44 [main] INFO : Archived project retrieved successfully.
-2025-02-19 15:06:44 [main] INFO : Setting up data for tests...
-2025-02-19 15:06:44 [main] INFO : Data setup complete.
-2025-02-19 15:06:44 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:06:44 [main] INFO : Getting JWT token...
-2025-02-19 15:06:45 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU3Nzk1LCJleHAiOjE3NDAwNDQxOTUsImlhdCI6MTczOTk1Nzc5NX0.UYAdp7a913TMW3rfNe2lmSeYY3Po_5YQlgILRUhaCf4
-2025-02-19 15:06:45 [main] INFO : Project created successfully.
-2025-02-19 15:06:45 [main] INFO : Project Id (From response): Proj528
-2025-02-19 15:06:45 [main] INFO : Getting project with Id: Proj528
-2025-02-19 15:06:45 [main] INFO : Project retrieved successfully.
-2025-02-19 15:06:45 [main] INFO : Updating project with Id: Proj528
-2025-02-19 15:06:45 [main] INFO : Project updated successfully.
-2025-02-19 15:06:45 [main] INFO : Project Id (From updated response): Proj528
-2025-02-19 15:06:45 [main] INFO : Updating project with Id: Proj528
-2025-02-19 15:06:45 [main] INFO : Project updated successfully.
-2025-02-19 15:06:45 [main] INFO : Project Id (From updated response): Proj528
-2025-02-19 15:06:45 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:06:45 [main] INFO : Active project retrieved successfully.
-2025-02-19 15:06:45 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:06:45 [main] INFO : Archived project retrieved successfully.
-2025-02-19 15:07:49 [main] INFO : Setting up data for tests...
-2025-02-19 15:07:49 [main] INFO : Data setup complete.
-2025-02-19 15:07:49 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:07:49 [main] INFO : Getting JWT token...
-2025-02-19 15:07:50 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU3ODYwLCJleHAiOjE3NDAwNDQyNjAsImlhdCI6MTczOTk1Nzg2MH0.R-9SsctaLJULiAQ2Z4NisatccBpllpIz2lIm2gZo-0s
-2025-02-19 15:07:50 [main] INFO : Project created successfully.
-2025-02-19 15:07:50 [main] INFO : Project Id (From response): Proj529
-2025-02-19 15:07:50 [main] INFO : Getting project with Id: Proj529
-2025-02-19 15:07:50 [main] INFO : Project retrieved successfully.
-2025-02-19 15:07:50 [main] INFO : Updating project with Id: Proj529
-2025-02-19 15:07:50 [main] INFO : Project updated successfully.
-2025-02-19 15:07:50 [main] INFO : Project Id (From updated response): Proj529
-2025-02-19 15:10:54 [main] INFO : Setting up data for tests...
-2025-02-19 15:10:54 [main] INFO : Data setup complete.
-2025-02-19 15:10:54 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:10:54 [main] INFO : Getting JWT token...
-2025-02-19 15:10:55 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU4MDQ1LCJleHAiOjE3NDAwNDQ0NDUsImlhdCI6MTczOTk1ODA0NX0.1-SXodyCgUMlabP6I6aBB7w91wWOekBFspgI_-GMk9w
-2025-02-19 15:10:55 [main] INFO : Project created successfully.
-2025-02-19 15:10:55 [main] INFO : Project Id (From response): Proj530
-2025-02-19 15:10:55 [main] INFO : Getting project with Id: Proj530
-2025-02-19 15:10:55 [main] INFO : Project retrieved successfully.
-2025-02-19 15:10:55 [main] INFO : Updating project with Id: Proj530
-2025-02-19 15:10:55 [main] INFO : Project updated successfully.
-2025-02-19 15:10:55 [main] INFO : Project Id (From updated response): Proj530
-2025-02-19 15:11:23 [main] INFO : Setting up data for tests...
-2025-02-19 15:11:24 [main] INFO : Data setup complete.
-2025-02-19 15:11:24 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:11:24 [main] INFO : Getting JWT token...
-2025-02-19 15:11:25 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU4MDc1LCJleHAiOjE3NDAwNDQ0NzUsImlhdCI6MTczOTk1ODA3NX0.s40iTAtJHMeBm3C62ucPMFxP9gpNrDbKKREBp2k-mJU
-2025-02-19 15:11:25 [main] INFO : Project created successfully.
-2025-02-19 15:11:25 [main] INFO : Project Id (From response): Proj531
-2025-02-19 15:11:25 [main] INFO : Getting project with Id: Proj531
-2025-02-19 15:11:25 [main] INFO : Project retrieved successfully.
-2025-02-19 15:11:25 [main] INFO : Updating project with Id: Proj531
-2025-02-19 15:11:25 [main] INFO : Project updated successfully.
-2025-02-19 15:11:25 [main] INFO : Project Id (From updated response): Proj531
-2025-02-19 15:18:10 [main] INFO : Setting up data for tests...
-2025-02-19 15:18:10 [main] INFO : Data setup complete.
-2025-02-19 15:18:10 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:18:10 [main] INFO : Getting JWT token...
-2025-02-19 15:18:11 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU4NDgyLCJleHAiOjE3NDAwNDQ4ODIsImlhdCI6MTczOTk1ODQ4Mn0.qKpBCjEwlxX6rOT5DtW5DfV0scn3z93s07HeC64JY2I
-2025-02-19 15:18:12 [main] INFO : Project created successfully.
-2025-02-19 15:18:12 [main] INFO : Project Id (From response): Proj532
-2025-02-19 15:18:12 [main] INFO : Getting project with Id: Proj532
-2025-02-19 15:18:12 [main] INFO : Project retrieved successfully.
-2025-02-19 15:18:12 [main] INFO : Updating project with Id: Proj532
-2025-02-19 15:18:12 [main] INFO : Project updated successfully.
-2025-02-19 15:18:12 [main] INFO : Project Id (From updated response): Proj532
-2025-02-19 15:18:12 [main] INFO : Updating project with Id: Proj532
-2025-02-19 15:18:12 [main] INFO : Project updated successfully.
-2025-02-19 15:18:12 [main] INFO : Project Id (From updated response): Proj532
-2025-02-19 15:19:16 [main] INFO : Setting up data for tests...
-2025-02-19 15:19:16 [main] INFO : Data setup complete.
-2025-02-19 15:19:16 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:19:16 [main] INFO : Getting JWT token...
-2025-02-19 15:19:18 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU4NTQ4LCJleHAiOjE3NDAwNDQ5NDgsImlhdCI6MTczOTk1ODU0OH0.sarXMWLagS7G9wbsHupjo07fvzbS8gyOyjvajRaSHSk
-2025-02-19 15:19:18 [main] INFO : Project created successfully.
-2025-02-19 15:19:18 [main] INFO : Project Id (From response): Proj533
-2025-02-19 15:19:18 [main] INFO : Getting project with Id: Proj533
-2025-02-19 15:19:18 [main] INFO : Project retrieved successfully.
-2025-02-19 15:19:18 [main] INFO : Updating project with Id: Proj533
-2025-02-19 15:19:18 [main] INFO : Project updated successfully.
-2025-02-19 15:19:18 [main] INFO : Project Id (From updated response): Proj533
-2025-02-19 15:19:18 [main] INFO : Updating project with Id: Proj533
-2025-02-19 15:19:18 [main] INFO : Project updated successfully.
-2025-02-19 15:19:18 [main] INFO : Project Id (From updated response): Proj533
-2025-02-19 15:21:06 [main] INFO : Setting up data for tests...
-2025-02-19 15:21:07 [main] INFO : Data setup complete.
-2025-02-19 15:21:07 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:21:07 [main] INFO : Getting JWT token...
-2025-02-19 15:21:08 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU4NjU4LCJleHAiOjE3NDAwNDUwNTgsImlhdCI6MTczOTk1ODY1OH0.56kwKXW9WHSFKyDuVvqn0uFpL-lJZ9CMxdmP_3rGXZ4
-2025-02-19 15:21:08 [main] INFO : Project created successfully.
-2025-02-19 15:21:08 [main] INFO : Project Id (From response): Proj534
-2025-02-19 15:21:08 [main] INFO : Getting project with Id: Proj534
-2025-02-19 15:21:08 [main] INFO : Project retrieved successfully.
-2025-02-19 15:21:08 [main] INFO : Updating project with Id: Proj534
-2025-02-19 15:21:08 [main] INFO : Project updated successfully.
-2025-02-19 15:21:08 [main] INFO : Project Id (From updated response): Proj534
-2025-02-19 15:21:08 [main] INFO : Updating project with Id: Proj534
-2025-02-19 15:21:08 [main] INFO : Project updated successfully.
-2025-02-19 15:21:08 [main] INFO : Project Id (From updated response): Proj534
-2025-02-19 15:21:32 [main] INFO : Setting up data for tests...
-2025-02-19 15:21:33 [main] INFO : Data setup complete.
-2025-02-19 15:21:33 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:21:33 [main] INFO : Getting JWT token...
-2025-02-19 15:21:34 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU4Njg0LCJleHAiOjE3NDAwNDUwODQsImlhdCI6MTczOTk1ODY4NH0.Qfa_vBB_5wDahVQqS0DVWYmH9ZwBFGAIn_CLdie5bOc
-2025-02-19 15:21:34 [main] INFO : Project created successfully.
-2025-02-19 15:21:34 [main] INFO : Project Id (From response): Proj535
-2025-02-19 15:21:34 [main] INFO : Getting project with Id: Proj535
-2025-02-19 15:21:34 [main] INFO : Project retrieved successfully.
-2025-02-19 15:21:34 [main] INFO : Updating project with Id: Proj535
-2025-02-19 15:21:34 [main] INFO : Project updated successfully.
-2025-02-19 15:21:34 [main] INFO : Project Id (From updated response): Proj535
-2025-02-19 15:21:34 [main] INFO : Updating project with Id: Proj535
-2025-02-19 15:21:34 [main] INFO : Project updated successfully.
-2025-02-19 15:21:34 [main] INFO : Project Id (From updated response): Proj535
-2025-02-19 15:23:12 [main] INFO : Setting up data for tests...
-2025-02-19 15:23:12 [main] INFO : Data setup complete.
-2025-02-19 15:23:12 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:23:12 [main] INFO : Getting JWT token...
-2025-02-19 15:23:14 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU4Nzg0LCJleHAiOjE3NDAwNDUxODQsImlhdCI6MTczOTk1ODc4NH0.JriP55lNbKhd_kbkoDyetRX2uxuOZFJ5sCp4GHADZaM
-2025-02-19 15:23:14 [main] INFO : Project created successfully.
-2025-02-19 15:23:14 [main] INFO : Project Id (From response): Proj536
-2025-02-19 15:23:14 [main] INFO : Getting project with Id: Proj536
-2025-02-19 15:23:14 [main] INFO : Project retrieved successfully.
-2025-02-19 15:23:14 [main] INFO : Updating project with Id: Proj536
-2025-02-19 15:23:14 [main] INFO : Project updated successfully.
-2025-02-19 15:23:14 [main] INFO : Project Id (From updated response): Proj536
-2025-02-19 15:23:14 [main] INFO : Updating project with Id: Proj536
-2025-02-19 15:23:14 [main] INFO : Project updated successfully.
-2025-02-19 15:23:14 [main] INFO : Project Id (From updated response): Proj536
-2025-02-19 15:26:14 [main] INFO : Setting up data for tests...
-2025-02-19 15:26:14 [main] INFO : Data setup complete.
-2025-02-19 15:26:14 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:26:14 [main] INFO : Getting JWT token...
-2025-02-19 15:26:15 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU4OTY2LCJleHAiOjE3NDAwNDUzNjYsImlhdCI6MTczOTk1ODk2Nn0.jVjbjhi3ZdJ0b-khtQKA-o2YpHNcxZbj5w0u4rrE8io
-2025-02-19 15:26:16 [main] INFO : Project created successfully.
-2025-02-19 15:26:16 [main] INFO : Project Id (From response): Proj537
-2025-02-19 15:26:16 [main] INFO : Getting project with Id: Proj537
-2025-02-19 15:26:16 [main] INFO : Project retrieved successfully.
-2025-02-19 15:26:16 [main] INFO : Updating project with Id: Proj537
-2025-02-19 15:26:16 [main] INFO : Project updated successfully.
-2025-02-19 15:26:16 [main] INFO : Project Id (From updated response): Proj537
-2025-02-19 15:26:51 [main] INFO : Setting up data for tests...
-2025-02-19 15:26:51 [main] INFO : Data setup complete.
-2025-02-19 15:26:51 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:26:51 [main] INFO : Getting JWT token...
-2025-02-19 15:26:52 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU5MDAyLCJleHAiOjE3NDAwNDU0MDIsImlhdCI6MTczOTk1OTAwMn0.IaUrFScspY-FnGgHBsw8C9XTgfQbM3c8HPkXcBa7Scc
-2025-02-19 15:26:52 [main] INFO : Project created successfully.
-2025-02-19 15:26:52 [main] INFO : Project Id (From response): Proj538
-2025-02-19 15:26:52 [main] INFO : Getting project with Id: Proj538
-2025-02-19 15:26:52 [main] INFO : Project retrieved successfully.
-2025-02-19 15:26:52 [main] INFO : Updating project with Id: Proj538
-2025-02-19 15:26:52 [main] INFO : Project updated successfully.
-2025-02-19 15:26:52 [main] INFO : Project Id (From updated response): Proj538
-2025-02-19 15:26:53 [main] INFO : Updating project with Id: Proj538
-2025-02-19 15:26:53 [main] INFO : Project updated successfully.
-2025-02-19 15:26:53 [main] INFO : Project Id (From updated response): Proj538
-2025-02-19 15:29:58 [main] INFO : Setting up data for tests...
-2025-02-19 15:29:58 [main] INFO : Data setup complete.
-2025-02-19 15:29:58 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:29:58 [main] INFO : Getting JWT token...
-2025-02-19 15:29:59 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU5MTkwLCJleHAiOjE3NDAwNDU1OTAsImlhdCI6MTczOTk1OTE5MH0.im6uJXrZ_RnF9Wqz28EfcThbfCevL8LA-vdHN1Ngrco
-2025-02-19 15:30:00 [main] INFO : Project created successfully.
-2025-02-19 15:30:00 [main] INFO : Project Id (From response): Proj539
-2025-02-19 15:30:00 [main] INFO : Getting project with Id: Proj539
-2025-02-19 15:30:00 [main] INFO : Project retrieved successfully.
-2025-02-19 15:30:00 [main] INFO : Updating project with Id: Proj539
-2025-02-19 15:30:00 [main] INFO : Project updated successfully.
-2025-02-19 15:30:00 [main] INFO : Project Id (From updated response): Proj539
-2025-02-19 15:30:48 [main] INFO : Setting up data for tests...
-2025-02-19 15:30:48 [main] INFO : Data setup complete.
-2025-02-19 15:30:48 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:30:48 [main] INFO : Getting JWT token...
-2025-02-19 15:30:49 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU5MjQwLCJleHAiOjE3NDAwNDU2NDAsImlhdCI6MTczOTk1OTI0MH0.3SgbUEZR_FpS7w2zs8q7QVEf-iTDF3pW9uruxqc0IY4
-2025-02-19 15:30:50 [main] INFO : Project created successfully.
-2025-02-19 15:30:50 [main] INFO : Project Id (From response): Proj540
-2025-02-19 15:30:50 [main] INFO : Getting project with Id: Proj540
-2025-02-19 15:30:50 [main] INFO : Project retrieved successfully.
-2025-02-19 15:30:50 [main] INFO : Updating project with Id: Proj540
-2025-02-19 15:30:50 [main] INFO : Project updated successfully.
-2025-02-19 15:30:50 [main] INFO : Project Id (From updated response): Proj540
-2025-02-19 15:31:29 [main] INFO : Setting up data for tests...
-2025-02-19 15:31:29 [main] INFO : Data setup complete.
-2025-02-19 15:31:29 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:31:29 [main] INFO : Getting JWT token...
-2025-02-19 15:31:30 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU5MjgwLCJleHAiOjE3NDAwNDU2ODAsImlhdCI6MTczOTk1OTI4MH0.6br5ttr6bYzmfpRUGDw5rmc4UvdtSnPeXjlUdr2HCxo
-2025-02-19 15:31:30 [main] INFO : Project created successfully.
-2025-02-19 15:31:30 [main] INFO : Project Id (From response): Proj541
-2025-02-19 15:31:30 [main] INFO : Getting project with Id: Proj541
-2025-02-19 15:31:31 [main] INFO : Project retrieved successfully.
-2025-02-19 15:31:31 [main] INFO : Updating project with Id: Proj541
-2025-02-19 15:31:31 [main] INFO : Project updated successfully.
-2025-02-19 15:31:31 [main] INFO : Project Id (From updated response): Proj541
-2025-02-19 15:33:08 [main] INFO : Setting up data for tests...
-2025-02-19 15:33:08 [main] INFO : Data setup complete.
-2025-02-19 15:33:08 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:33:08 [main] INFO : Getting JWT token...
-2025-02-19 15:33:09 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU5Mzc5LCJleHAiOjE3NDAwNDU3NzksImlhdCI6MTczOTk1OTM3OX0.W-wYQFxv2e99C2-x_s-5Geauhlu5mDRGmkrkvkLaypU
-2025-02-19 15:33:09 [main] INFO : Project created successfully.
-2025-02-19 15:33:09 [main] INFO : Project Id (From response): Proj542
-2025-02-19 15:33:09 [main] INFO : Getting project with Id: Proj542
-2025-02-19 15:33:09 [main] INFO : Project retrieved successfully.
-2025-02-19 15:33:09 [main] INFO : Updating project with Id: Proj542
-2025-02-19 15:33:09 [main] INFO : Project updated successfully.
-2025-02-19 15:33:09 [main] INFO : Project Id (From updated response): Proj542
-2025-02-19 15:33:09 [main] INFO : Updating project with Id: Proj542
-2025-02-19 15:33:09 [main] INFO : Project updated successfully.
-2025-02-19 15:33:09 [main] INFO : Project Id (From updated response): Proj542
-2025-02-19 15:34:01 [main] INFO : Setting up data for tests...
-2025-02-19 15:34:01 [main] INFO : Data setup complete.
-2025-02-19 15:34:01 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:34:01 [main] INFO : Getting JWT token...
-2025-02-19 15:34:02 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU5NDMyLCJleHAiOjE3NDAwNDU4MzIsImlhdCI6MTczOTk1OTQzMn0.VRoCDmzWyreyFhXHJOzj0k839PKv2ov_NAwxjCGNpiI
-2025-02-19 15:34:02 [main] INFO : Project created successfully.
-2025-02-19 15:34:02 [main] INFO : Project Id (From response): Proj543
-2025-02-19 15:34:02 [main] INFO : Getting project with Id: Proj543
-2025-02-19 15:34:02 [main] INFO : Project retrieved successfully.
-2025-02-19 15:34:02 [main] INFO : Updating project with Id: Proj543
-2025-02-19 15:34:03 [main] INFO : Project updated successfully.
-2025-02-19 15:34:03 [main] INFO : Project Id (From updated response): Proj543
-2025-02-19 15:34:35 [main] INFO : Setting up data for tests...
-2025-02-19 15:34:35 [main] INFO : Data setup complete.
-2025-02-19 15:34:35 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:34:35 [main] INFO : Getting JWT token...
-2025-02-19 15:34:36 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU5NDY2LCJleHAiOjE3NDAwNDU4NjYsImlhdCI6MTczOTk1OTQ2Nn0.kwBUy1zC5vHW3QnJiRb8j1lSFL31blEEEt23-teCrek
-2025-02-19 15:34:36 [main] INFO : Project created successfully.
-2025-02-19 15:34:36 [main] INFO : Project Id (From response): Proj544
-2025-02-19 15:34:36 [main] INFO : Getting project with Id: Proj544
-2025-02-19 15:34:36 [main] INFO : Project retrieved successfully.
-2025-02-19 15:34:36 [main] INFO : Updating project with Id: Proj544
-2025-02-19 15:34:36 [main] INFO : Project updated successfully.
-2025-02-19 15:34:36 [main] INFO : Project Id (From updated response): Proj544
-2025-02-19 15:37:14 [main] INFO : Setting up data for tests...
-2025-02-19 15:37:14 [main] INFO : Data setup complete.
-2025-02-19 15:37:14 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:37:14 [main] INFO : Getting JWT token...
-2025-02-19 15:37:16 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU5NjI2LCJleHAiOjE3NDAwNDYwMjYsImlhdCI6MTczOTk1OTYyNn0.9bQ9XFZ8ju8g5IpJ-eCLg21eA5PZWZVuSv6bS2qyKXw
-2025-02-19 15:37:16 [main] INFO : Project created successfully.
-2025-02-19 15:37:16 [main] INFO : Project Id (From response): Proj545
-2025-02-19 15:37:16 [main] INFO : Getting project with Id: Proj545
-2025-02-19 15:37:16 [main] INFO : Project retrieved successfully.
-2025-02-19 15:37:16 [main] INFO : Updating project with Id: Proj545
-2025-02-19 15:37:16 [main] INFO : Project updated successfully.
-2025-02-19 15:37:16 [main] INFO : Project Id (From updated response): Proj545
-2025-02-19 15:37:16 [main] ERROR: Test case failed: For input string: "[15]"
-2025-02-19 15:37:16 [main] INFO : Updating project with Id: Proj545
-2025-02-19 15:37:16 [main] INFO : Project updated successfully.
-2025-02-19 15:37:16 [main] INFO : Project Id (From updated response): Proj545
-2025-02-19 15:37:16 [main] ERROR: Test case failed: For input string: "[15]"
-2025-02-19 15:37:51 [main] INFO : Setting up data for tests...
-2025-02-19 15:37:51 [main] INFO : Data setup complete.
-2025-02-19 15:37:51 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:37:51 [main] INFO : Getting JWT token...
-2025-02-19 15:37:52 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU5NjYyLCJleHAiOjE3NDAwNDYwNjIsImlhdCI6MTczOTk1OTY2Mn0.e3XDn-ZWfvjvtKOlu7nDe5syKPkcKj47k9YQ661zd-E
-2025-02-19 15:37:52 [main] INFO : Project created successfully.
-2025-02-19 15:37:52 [main] INFO : Project Id (From response): Proj546
-2025-02-19 15:37:52 [main] INFO : Getting project with Id: Proj546
-2025-02-19 15:37:52 [main] INFO : Project retrieved successfully.
-2025-02-19 15:37:52 [main] INFO : Updating project with Id: Proj546
-2025-02-19 15:37:52 [main] INFO : Project updated successfully.
-2025-02-19 15:37:52 [main] INFO : Project Id (From updated response): Proj546
-2025-02-19 15:37:52 [main] ERROR: Test case failed: For input string: "[15]"
-2025-02-19 15:37:52 [main] INFO : Updating project with Id: Proj546
-2025-02-19 15:37:52 [main] INFO : Project updated successfully.
-2025-02-19 15:37:52 [main] INFO : Project Id (From updated response): Proj546
-2025-02-19 15:37:52 [main] ERROR: Test case failed: For input string: "[15]"
-2025-02-19 15:41:12 [main] INFO : Setting up data for tests...
-2025-02-19 15:41:13 [main] INFO : Data setup complete.
-2025-02-19 15:41:13 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:41:13 [main] INFO : Getting JWT token...
-2025-02-19 15:41:14 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTU5ODY0LCJleHAiOjE3NDAwNDYyNjQsImlhdCI6MTczOTk1OTg2NH0.OrFkgTraKLQN4f_WhtAaHrTpZENbD5FbSL3ilNnRQIA
-2025-02-19 15:41:14 [main] INFO : Project created successfully.
-2025-02-19 15:41:14 [main] INFO : Project Id (From response): Proj547
-2025-02-19 15:41:14 [main] INFO : Getting project with Id: Proj547
-2025-02-19 15:41:14 [main] INFO : Project retrieved successfully.
-2025-02-19 15:41:14 [main] INFO : Updating project with Id: Proj547
-2025-02-19 15:41:14 [main] INFO : Project updated successfully.
-2025-02-19 15:41:14 [main] INFO : Project Id (From updated response): Proj547
-2025-02-19 15:45:31 [main] INFO : Setting up data for tests...
-2025-02-19 15:45:31 [main] INFO : Data setup complete.
-2025-02-19 15:45:31 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:45:31 [main] INFO : Getting JWT token...
-2025-02-19 15:45:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwMTIyLCJleHAiOjE3NDAwNDY1MjIsImlhdCI6MTczOTk2MDEyMn0.3YwEd7sjm0pdSDZZpCjh3CJkT-8esG6Ao82es5MCpw8
-2025-02-19 15:45:32 [main] INFO : Project created successfully.
-2025-02-19 15:45:32 [main] INFO : Project Id (From response): Proj548
-2025-02-19 15:45:32 [main] INFO : Getting project with Id: Proj548
-2025-02-19 15:45:32 [main] INFO : Project retrieved successfully.
-2025-02-19 15:45:32 [main] INFO : Updating project with Id: Proj548
-2025-02-19 15:45:32 [main] INFO : Project updated successfully.
-2025-02-19 15:45:32 [main] INFO : Project Id (From updated response): Proj548
-2025-02-19 15:45:32 [main] INFO : Updating project with Id: Proj548
-2025-02-19 15:45:32 [main] INFO : Project updated successfully.
-2025-02-19 15:45:32 [main] INFO : Project Id (From updated response): Proj548
-2025-02-19 15:45:57 [main] INFO : Starting setup...
-2025-02-19 15:45:57 [main] INFO : Config file loaded successfully.
-2025-02-19 15:46:23 [main] INFO : Setting up data for tests...
-2025-02-19 15:46:23 [main] INFO : Data setup complete.
-2025-02-19 15:46:23 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:46:23 [main] INFO : Getting JWT token...
-2025-02-19 15:46:25 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwMTc1LCJleHAiOjE3NDAwNDY1NzUsImlhdCI6MTczOTk2MDE3NX0.nwgLvPp_3_3Wd9Xvelk3MYqGVuZnwVUE9IJZCoZrwhw
-2025-02-19 15:46:25 [main] INFO : Project created successfully.
-2025-02-19 15:46:25 [main] INFO : Project Id (From response): Proj549
-2025-02-19 15:46:25 [main] INFO : Getting project with Id: Proj549
-2025-02-19 15:46:25 [main] INFO : Project retrieved successfully.
-2025-02-19 15:46:25 [main] INFO : Updating project with Id: Proj549
-2025-02-19 15:46:25 [main] INFO : Project updated successfully.
-2025-02-19 15:46:25 [main] INFO : Project Id (From updated response): Proj549
-2025-02-19 15:46:25 [main] INFO : Updating project with Id: Proj549
-2025-02-19 15:46:25 [main] INFO : Project updated successfully.
-2025-02-19 15:46:25 [main] INFO : Project Id (From updated response): Proj549
-2025-02-19 15:48:31 [main] INFO : Setting up data for tests...
-2025-02-19 15:48:31 [main] INFO : Data setup complete.
-2025-02-19 15:48:31 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:48:31 [main] INFO : Getting JWT token...
-2025-02-19 15:48:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwMzAzLCJleHAiOjE3NDAwNDY3MDMsImlhdCI6MTczOTk2MDMwM30.6by2Vb2_SFsBSIlCw0R-VmmL19eAix2q4xH5mArxzlo
-2025-02-19 15:48:33 [main] INFO : Project created successfully.
-2025-02-19 15:48:33 [main] INFO : Project Id (From response): Proj550
-2025-02-19 15:48:33 [main] INFO : Getting project with Id: Proj550
-2025-02-19 15:48:33 [main] INFO : Project retrieved successfully.
-2025-02-19 15:48:33 [main] INFO : Updating project with Id: Proj550
-2025-02-19 15:48:33 [main] INFO : Project updated successfully.
-2025-02-19 15:48:33 [main] INFO : Project Id (From updated response): Proj550
-2025-02-19 15:51:14 [main] INFO : Setting up data for tests...
-2025-02-19 15:51:14 [main] INFO : Data setup complete.
-2025-02-19 15:51:14 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:51:14 [main] INFO : Getting JWT token...
-2025-02-19 15:51:16 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNDY2LCJleHAiOjE3NDAwNDY4NjYsImlhdCI6MTczOTk2MDQ2Nn0.i--KaDPHJNNGTD8UMVFfGEK3r-nq98rT9eHl0FU3BVE
-2025-02-19 15:51:16 [main] INFO : Project created successfully.
-2025-02-19 15:51:16 [main] INFO : Project Id (From response): Proj551
-2025-02-19 15:51:16 [main] INFO : Getting project with Id: Proj551
-2025-02-19 15:51:16 [main] INFO : Project retrieved successfully.
-2025-02-19 15:51:16 [main] INFO : Updating project with Id: Proj551
-2025-02-19 15:51:16 [main] INFO : Project updated successfully.
-2025-02-19 15:51:16 [main] INFO : Project Id (From updated response): Proj551
-2025-02-19 15:51:16 [main] INFO : Updating project with Id: Proj551
-2025-02-19 15:51:16 [main] INFO : Project updated successfully.
-2025-02-19 15:51:16 [main] INFO : Project Id (From updated response): Proj551
-2025-02-19 15:51:55 [main] INFO : Setting up data for tests...
-2025-02-19 15:51:55 [main] INFO : Data setup complete.
-2025-02-19 15:51:55 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:51:55 [main] INFO : Getting JWT token...
-2025-02-19 15:51:56 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTA3LCJleHAiOjE3NDAwNDY5MDcsImlhdCI6MTczOTk2MDUwN30.PFBajWK-CiKiHCtcF9vC1rSJXnCUvhHCXiQpCAbKoW8
-2025-02-19 15:51:56 [main] INFO : Project created successfully.
-2025-02-19 15:51:56 [main] INFO : Project Id (From response): Proj552
-2025-02-19 15:51:57 [main] INFO : Getting project with Id: Proj552
-2025-02-19 15:51:57 [main] INFO : Project retrieved successfully.
-2025-02-19 15:51:57 [main] INFO : Updating project with Id: Proj552
-2025-02-19 15:51:57 [main] INFO : Project updated successfully.
-2025-02-19 15:51:57 [main] INFO : Project Id (From updated response): Proj552
-2025-02-19 15:52:43 [main] INFO : Setting up data for tests...
-2025-02-19 15:52:43 [main] INFO : Data setup complete.
-2025-02-19 15:52:43 [main] INFO : Creating project with Project Id: string
-2025-02-19 15:52:43 [main] INFO : Getting JWT token...
-2025-02-19 15:52:44 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTU0LCJleHAiOjE3NDAwNDY5NTQsImlhdCI6MTczOTk2MDU1NH0.VxXL0TU8OP_96iGvYIjEMmq-me8I2bVAD76EaL3kOaE
-2025-02-19 15:52:44 [main] INFO : Project created successfully.
-2025-02-19 15:52:44 [main] INFO : Project Id (From response): Proj553
-2025-02-19 15:52:44 [main] INFO : Getting project with Id: Proj553
-2025-02-19 15:52:44 [main] INFO : Project retrieved successfully.
-2025-02-19 15:52:44 [main] INFO : Updating project with Id: Proj553
-2025-02-19 15:52:44 [main] INFO : Project updated successfully.
-2025-02-19 15:52:44 [main] INFO : Project Id (From updated response): Proj553
-2025-02-19 15:52:44 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:52:44 [main] INFO : Active project retrieved successfully.
-2025-02-19 15:52:44 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:52:44 [main] INFO : Archived project retrieved successfully.
-2025-02-19 15:52:55 [TestNG-tests-4] INFO : Setting up data for tests...
-2025-02-19 15:52:55 [TestNG-tests-3] INFO : Starting setup...
-2025-02-19 15:52:55 [TestNG-tests-1] INFO : Setting up data for tests...
-2025-02-19 15:52:55 [TestNG-tests-3] INFO : Config file loaded successfully.
-2025-02-19 15:52:55 [TestNG-tests-3] INFO : Starting testLogin...
-2025-02-19 15:52:55 [TestNG-tests-1] INFO : Data setup complete.
-2025-02-19 15:52:55 [TestNG-tests-4] INFO : Data setup complete.
-2025-02-19 15:52:55 [TestNG-tests-4] INFO : Creating project with Project Id: string
-2025-02-19 15:52:55 [TestNG-tests-1] INFO : Creating project with Project Id: string
-2025-02-19 15:52:55 [TestNG-tests-4] INFO : Getting JWT token...
-2025-02-19 15:52:55 [TestNG-tests-1] INFO : Getting JWT token...
-2025-02-19 15:52:56 [TestNG-tests-2] INFO : Starting testCreateProject with companyId: ABC01
-2025-02-19 15:52:56 [TestNG-tests-2] INFO : Project payload: api.payload.Project@25bdb927
-2025-02-19 15:52:56 [TestNG-tests-2] INFO : Making API call to create project...
-2025-02-19 15:52:56 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:52:56 [TestNG-tests-1] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTY3LCJleHAiOjE3NDAwNDY5NjcsImlhdCI6MTczOTk2MDU2N30.Rhxo5JwUL7X2HzperOFQSgBVetgCStc7VvRsFLqq0kA
-2025-02-19 15:52:56 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTY3LCJleHAiOjE3NDAwNDY5NjcsImlhdCI6MTczOTk2MDU2N30.Rhxo5JwUL7X2HzperOFQSgBVetgCStc7VvRsFLqq0kA
-2025-02-19 15:52:56 [TestNG-tests-4] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTY3LCJleHAiOjE3NDAwNDY5NjcsImlhdCI6MTczOTk2MDU2N30.Rhxo5JwUL7X2HzperOFQSgBVetgCStc7VvRsFLqq0kA
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : Starting test_GetAllUser...
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTY3LCJleHAiOjE3NDAwNDY5NjcsImlhdCI6MTczOTk2MDU2N30.Rhxo5JwUL7X2HzperOFQSgBVetgCStc7VvRsFLqq0kA
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : Retrieved all users successfully.
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : Starting test_GetUserByEmailId...
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTY3LCJleHAiOjE3NDAwNDY5NjcsImlhdCI6MTczOTk2MDU2N30.Rhxo5JwUL7X2HzperOFQSgBVetgCStc7VvRsFLqq0kA
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : Retrieved user by email successfully.
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : Starting test_forgotPassword...
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTY3LCJleHAiOjE3NDAwNDY5NjcsImlhdCI6MTczOTk2MDU2N30.Rhxo5JwUL7X2HzperOFQSgBVetgCStc7VvRsFLqq0kA
-2025-02-19 15:52:57 [TestNG-tests-4] INFO : Project created successfully.
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Project created successfully with status code: 200
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Starting testCreateProject with companyId: ABC01
-2025-02-19 15:52:57 [TestNG-tests-4] INFO : Project Id (From response): Proj554
-2025-02-19 15:52:57 [TestNG-tests-4] INFO : Getting project with Id: Proj554
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Project payload: api.payload.Project@5d716f5f
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Making API call to create project...
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:52:57 [TestNG-tests-1] INFO : Project created successfully.
-2025-02-19 15:52:57 [TestNG-tests-4] INFO : Project retrieved successfully.
-2025-02-19 15:52:57 [TestNG-tests-4] INFO : Updating project with Id: Proj554
-2025-02-19 15:52:57 [TestNG-tests-1] INFO : Project Id (From response): Proj555
-2025-02-19 15:52:57 [TestNG-tests-1] INFO : Getting project with Id: Proj555
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTY3LCJleHAiOjE3NDAwNDY5NjcsImlhdCI6MTczOTk2MDU2N30.Rhxo5JwUL7X2HzperOFQSgBVetgCStc7VvRsFLqq0kA
-2025-02-19 15:52:57 [TestNG-tests-4] INFO : Project updated successfully.
-2025-02-19 15:52:57 [TestNG-tests-1] INFO : Project retrieved successfully.
-2025-02-19 15:52:57 [TestNG-tests-1] INFO : Updating project with Id: Proj555
-2025-02-19 15:52:57 [TestNG-tests-4] INFO : Project Id (From updated response): Proj554
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Project created successfully with status code: 200
-2025-02-19 15:52:57 [TestNG-tests-1] INFO : Project updated successfully.
-2025-02-19 15:52:57 [TestNG-tests-1] INFO : Project Id (From updated response): Proj555
-2025-02-19 15:52:57 [TestNG-tests-1] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:52:57 [TestNG-tests-4] INFO : Updating project with Id: Proj554
-2025-02-19 15:52:57 [TestNG-tests-1] INFO : Active project retrieved successfully.
-2025-02-19 15:52:57 [TestNG-tests-4] INFO : Project updated successfully.
-2025-02-19 15:52:57 [TestNG-tests-1] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Starting setup...
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Config file loaded successfully.
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Starting testLogin...
-2025-02-19 15:52:57 [TestNG-tests-4] INFO : Project Id (From updated response): Proj554
-2025-02-19 15:52:57 [TestNG-tests-1] INFO : Archived project retrieved successfully.
-2025-02-19 15:52:57 [TestNG-tests-4] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:52:57 [TestNG-tests-4] INFO : Active project retrieved successfully.
-2025-02-19 15:52:57 [TestNG-tests-4] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:52:57 [TestNG-tests-4] INFO : Archived project retrieved successfully.
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Starting test_GetAllUser...
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : Forgot password link sent successfully
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : Starting test_sendOtpToEmail...
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTY4LCJleHAiOjE3NDAwNDY5NjgsImlhdCI6MTczOTk2MDU2OH0.9E-nLqrjohmx3EC4KBo2Bcc6YW9MFZ7qXfbWZ4NQOHE
-2025-02-19 15:52:57 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTY4LCJleHAiOjE3NDAwNDY5NjgsImlhdCI6MTczOTk2MDU2OH0.9E-nLqrjohmx3EC4KBo2Bcc6YW9MFZ7qXfbWZ4NQOHE
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Retrieved all users successfully.
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Starting test_GetUserByEmailId...
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTY4LCJleHAiOjE3NDAwNDY5NjgsImlhdCI6MTczOTk2MDU2OH0.9E-nLqrjohmx3EC4KBo2Bcc6YW9MFZ7qXfbWZ4NQOHE
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Retrieved user by email successfully.
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Starting test_forgotPassword...
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:52:57 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTY4LCJleHAiOjE3NDAwNDY5NjgsImlhdCI6MTczOTk2MDU2OH0.9E-nLqrjohmx3EC4KBo2Bcc6YW9MFZ7qXfbWZ4NQOHE
-2025-02-19 15:52:58 [TestNG-tests-2] INFO : Forgot password link sent successfully
-2025-02-19 15:52:58 [TestNG-tests-2] INFO : Starting test_sendOtpToEmail...
-2025-02-19 15:52:58 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:52:58 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTY4LCJleHAiOjE3NDAwNDY5NjgsImlhdCI6MTczOTk2MDU2OH0.9E-nLqrjohmx3EC4KBo2Bcc6YW9MFZ7qXfbWZ4NQOHE
-2025-02-19 15:52:58 [TestNG-tests-3] INFO : Send OTP to email sent successfully
-2025-02-19 15:52:58 [TestNG-tests-3] INFO : Starting testLogout...
-2025-02-19 15:52:58 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:52:58 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTY5LCJleHAiOjE3NDAwNDY5NjksImlhdCI6MTczOTk2MDU2OX0.cWa0L9lXIzEDGZysEXOcqI_HbjHoDF3b7AlTdIGk3Hk
-2025-02-19 15:52:58 [TestNG-tests-3] INFO : User logged out successfully.
-2025-02-19 15:52:58 [TestNG-tests-2] INFO : Send OTP to email sent successfully
-2025-02-19 15:52:58 [TestNG-tests-2] INFO : Starting testLogout...
-2025-02-19 15:52:58 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:52:58 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNTY5LCJleHAiOjE3NDAwNDY5NjksImlhdCI6MTczOTk2MDU2OX0.cWa0L9lXIzEDGZysEXOcqI_HbjHoDF3b7AlTdIGk3Hk
-2025-02-19 15:52:58 [TestNG-tests-2] INFO : User logged out successfully.
-2025-02-19 15:53:57 [TestNG-tests-3] INFO : Starting setup...
-2025-02-19 15:53:57 [TestNG-tests-1] INFO : Setting up data for tests...
-2025-02-19 15:53:57 [TestNG-tests-3] INFO : Config file loaded successfully.
-2025-02-19 15:53:57 [TestNG-tests-3] INFO : Starting testLogin...
-2025-02-19 15:53:57 [TestNG-tests-1] INFO : Data setup complete.
-2025-02-19 15:53:57 [TestNG-tests-1] INFO : Creating project with Project Id: string
-2025-02-19 15:53:57 [TestNG-tests-1] INFO : Getting JWT token...
-2025-02-19 15:53:58 [TestNG-tests-2] INFO : Starting testCreateProject with companyId: ABC01
-2025-02-19 15:53:58 [TestNG-tests-2] INFO : Project payload: api.payload.Project@60f590c9
-2025-02-19 15:53:58 [TestNG-tests-2] INFO : Making API call to create project...
-2025-02-19 15:53:58 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:53:58 [TestNG-tests-1] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNjI4LCJleHAiOjE3NDAwNDcwMjgsImlhdCI6MTczOTk2MDYyOH0.ajoGqa5ASmRYfUCfsfFFb1i94oUuGG2MFgOG_kha6KI
-2025-02-19 15:53:58 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNjI4LCJleHAiOjE3NDAwNDcwMjgsImlhdCI6MTczOTk2MDYyOH0.ajoGqa5ASmRYfUCfsfFFb1i94oUuGG2MFgOG_kha6KI
-2025-02-19 15:53:58 [TestNG-tests-3] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
-2025-02-19 15:53:58 [TestNG-tests-3] INFO : Starting test_GetAllUser...
-2025-02-19 15:53:58 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:53:58 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNjI5LCJleHAiOjE3NDAwNDcwMjksImlhdCI6MTczOTk2MDYyOX0.2F5eHF9XtOgye1iz-mHoitW2-pwyb6ThcP5BoY-jgkc
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : Retrieved all users successfully.
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : Starting test_GetUserByEmailId...
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNjI5LCJleHAiOjE3NDAwNDcwMjksImlhdCI6MTczOTk2MDYyOX0.2F5eHF9XtOgye1iz-mHoitW2-pwyb6ThcP5BoY-jgkc
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : Retrieved user by email successfully.
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : Starting test_forgotPassword...
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNjI5LCJleHAiOjE3NDAwNDcwMjksImlhdCI6MTczOTk2MDYyOX0.2F5eHF9XtOgye1iz-mHoitW2-pwyb6ThcP5BoY-jgkc
-2025-02-19 15:53:59 [TestNG-tests-2] INFO : Project created successfully with status code: 200
-2025-02-19 15:53:59 [TestNG-tests-1] INFO : Project created successfully.
-2025-02-19 15:53:59 [TestNG-tests-2] INFO : Starting testCreateProject with companyId: ABC01
-2025-02-19 15:53:59 [TestNG-tests-1] INFO : Project Id (From response): Proj557
-2025-02-19 15:53:59 [TestNG-tests-2] INFO : Project payload: api.payload.Project@6338b084
-2025-02-19 15:53:59 [TestNG-tests-2] INFO : Making API call to create project...
-2025-02-19 15:53:59 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:53:59 [TestNG-tests-1] INFO : Getting project with Id: Proj557
-2025-02-19 15:53:59 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNjI5LCJleHAiOjE3NDAwNDcwMjksImlhdCI6MTczOTk2MDYyOX0.2F5eHF9XtOgye1iz-mHoitW2-pwyb6ThcP5BoY-jgkc
-2025-02-19 15:53:59 [TestNG-tests-1] INFO : Project retrieved successfully.
-2025-02-19 15:53:59 [TestNG-tests-1] INFO : Updating project with Id: Proj557
-2025-02-19 15:53:59 [TestNG-tests-2] INFO : Project created successfully with status code: 200
-2025-02-19 15:53:59 [TestNG-tests-1] INFO : Project updated successfully.
-2025-02-19 15:53:59 [TestNG-tests-1] INFO : Project Id (From updated response): Proj557
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : Forgot password link sent successfully
-2025-02-19 15:53:59 [TestNG-tests-1] INFO : Updating project with Id: Proj557
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : Starting test_sendOtpToEmail...
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:53:59 [TestNG-tests-1] INFO : Project updated successfully.
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNjMwLCJleHAiOjE3NDAwNDcwMzAsImlhdCI6MTczOTk2MDYzMH0.Jn2lETAMUjkgw9VMA4SkM_B7mS8ilhmSrndq6hDMTUw
-2025-02-19 15:53:59 [TestNG-tests-1] INFO : Project Id (From updated response): Proj557
-2025-02-19 15:53:59 [TestNG-tests-1] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:53:59 [TestNG-tests-1] INFO : Active project retrieved successfully.
-2025-02-19 15:53:59 [TestNG-tests-1] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:53:59 [TestNG-tests-1] INFO : Archived project retrieved successfully.
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : Send OTP to email sent successfully
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : Starting testLogout...
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNjMwLCJleHAiOjE3NDAwNDcwMzAsImlhdCI6MTczOTk2MDYzMH0.Jn2lETAMUjkgw9VMA4SkM_B7mS8ilhmSrndq6hDMTUw
-2025-02-19 15:53:59 [TestNG-tests-3] INFO : User logged out successfully.
-2025-02-19 15:55:29 [TestNG-tests-4] INFO : Setting up data for tests...
-2025-02-19 15:55:29 [TestNG-tests-3] INFO : Starting setup...
-2025-02-19 15:55:29 [TestNG-tests-1] INFO : Setting up data for tests...
-2025-02-19 15:55:29 [TestNG-tests-3] INFO : Config file loaded successfully.
-2025-02-19 15:55:29 [TestNG-tests-3] INFO : Starting testLogin...
-2025-02-19 15:55:29 [TestNG-tests-4] INFO : Data setup complete.
-2025-02-19 15:55:29 [TestNG-tests-1] INFO : Data setup complete.
-2025-02-19 15:55:29 [TestNG-tests-1] INFO : Creating project with Project Id: string
-2025-02-19 15:55:29 [TestNG-tests-1] INFO : Getting JWT token...
-2025-02-19 15:55:29 [TestNG-tests-4] INFO : Creating project with Project Id: string
-2025-02-19 15:55:29 [TestNG-tests-4] INFO : Getting JWT token...
-2025-02-19 15:55:30 [TestNG-tests-2] INFO : Starting testCreateProject with companyId: ABC01
-2025-02-19 15:55:30 [TestNG-tests-2] INFO : Project payload: api.payload.Project@68d7af98
-2025-02-19 15:55:30 [TestNG-tests-2] INFO : Making API call to create project...
-2025-02-19 15:55:30 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:55:31 [TestNG-tests-4] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzIxLCJleHAiOjE3NDAwNDcxMjEsImlhdCI6MTczOTk2MDcyMX0.9QCem0Jgikk4P4rx4kGvkcaMixnKjnR6VtD-Lhbssrs
-2025-02-19 15:55:31 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzIxLCJleHAiOjE3NDAwNDcxMjEsImlhdCI6MTczOTk2MDcyMX0.9QCem0Jgikk4P4rx4kGvkcaMixnKjnR6VtD-Lhbssrs
-2025-02-19 15:55:31 [TestNG-tests-1] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzIxLCJleHAiOjE3NDAwNDcxMjEsImlhdCI6MTczOTk2MDcyMX0.9QCem0Jgikk4P4rx4kGvkcaMixnKjnR6VtD-Lhbssrs
-2025-02-19 15:55:31 [TestNG-tests-3] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
-2025-02-19 15:55:31 [TestNG-tests-3] INFO : Starting test_GetAllUser...
-2025-02-19 15:55:31 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:55:31 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzIyLCJleHAiOjE3NDAwNDcxMjIsImlhdCI6MTczOTk2MDcyMn0.8UMRNWpMScY1GM8_XScODiZhCUtcO-HKAmAxwJThu2U
-2025-02-19 15:55:31 [TestNG-tests-3] INFO : Retrieved all users successfully.
-2025-02-19 15:55:31 [TestNG-tests-3] INFO : Starting test_GetUserByEmailId...
-2025-02-19 15:55:31 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:55:31 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzIyLCJleHAiOjE3NDAwNDcxMjIsImlhdCI6MTczOTk2MDcyMn0.8UMRNWpMScY1GM8_XScODiZhCUtcO-HKAmAxwJThu2U
-2025-02-19 15:55:31 [TestNG-tests-3] INFO : Retrieved user by email successfully.
-2025-02-19 15:55:31 [TestNG-tests-3] INFO : Starting test_forgotPassword...
-2025-02-19 15:55:31 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:55:31 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzIyLCJleHAiOjE3NDAwNDcxMjIsImlhdCI6MTczOTk2MDcyMn0.8UMRNWpMScY1GM8_XScODiZhCUtcO-HKAmAxwJThu2U
-2025-02-19 15:55:31 [TestNG-tests-2] INFO : Project created successfully with status code: 200
-2025-02-19 15:55:31 [TestNG-tests-4] INFO : Project created successfully.
-2025-02-19 15:55:31 [TestNG-tests-2] INFO : Starting testCreateProject with companyId: ABC01
-2025-02-19 15:55:31 [TestNG-tests-1] INFO : Project created successfully.
-2025-02-19 15:55:31 [TestNG-tests-4] INFO : Project Id (From response): Proj559
-2025-02-19 15:55:31 [TestNG-tests-4] INFO : Getting project with Id: Proj559
-2025-02-19 15:55:31 [TestNG-tests-1] INFO : Project Id (From response): Proj559
-2025-02-19 15:55:31 [TestNG-tests-1] INFO : Getting project with Id: Proj559
-2025-02-19 15:55:31 [TestNG-tests-2] INFO : Project payload: api.payload.Project@261d3f15
-2025-02-19 15:55:31 [TestNG-tests-2] INFO : Making API call to create project...
-2025-02-19 15:55:31 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:55:31 [TestNG-tests-1] INFO : Project retrieved successfully.
-2025-02-19 15:55:31 [TestNG-tests-4] INFO : Project retrieved successfully.
-2025-02-19 15:55:31 [TestNG-tests-1] INFO : Updating project with Id: Proj559
-2025-02-19 15:55:31 [TestNG-tests-4] INFO : Updating project with Id: Proj559
-2025-02-19 15:55:31 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzIyLCJleHAiOjE3NDAwNDcxMjIsImlhdCI6MTczOTk2MDcyMn0.8UMRNWpMScY1GM8_XScODiZhCUtcO-HKAmAxwJThu2U
-2025-02-19 15:55:31 [TestNG-tests-1] INFO : Project updated successfully.
-2025-02-19 15:55:31 [TestNG-tests-4] INFO : Project updated successfully.
-2025-02-19 15:55:31 [TestNG-tests-1] INFO : Project Id (From updated response): Proj559
-2025-02-19 15:55:31 [TestNG-tests-4] INFO : Project Id (From updated response): Proj559
-2025-02-19 15:55:31 [TestNG-tests-2] INFO : Project created successfully with status code: 200
-2025-02-19 15:55:32 [TestNG-tests-3] INFO : Forgot password link sent successfully
-2025-02-19 15:55:32 [TestNG-tests-3] INFO : Starting test_sendOtpToEmail...
-2025-02-19 15:55:32 [TestNG-tests-4] INFO : Updating project with Id: Proj559
-2025-02-19 15:55:32 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:55:32 [TestNG-tests-1] INFO : Updating project with Id: Proj559
-2025-02-19 15:55:32 [TestNG-tests-4] INFO : Project updated successfully.
-2025-02-19 15:55:32 [TestNG-tests-1] INFO : Project updated successfully.
-2025-02-19 15:55:32 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzIyLCJleHAiOjE3NDAwNDcxMjIsImlhdCI6MTczOTk2MDcyMn0.8UMRNWpMScY1GM8_XScODiZhCUtcO-HKAmAxwJThu2U
-2025-02-19 15:55:32 [TestNG-tests-4] INFO : Project Id (From updated response): Proj559
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Starting setup...
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Config file loaded successfully.
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Starting testLogin...
-2025-02-19 15:55:32 [TestNG-tests-1] INFO : Project Id (From updated response): Proj559
-2025-02-19 15:55:32 [TestNG-tests-4] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:55:32 [TestNG-tests-1] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:55:32 [TestNG-tests-4] INFO : Active project retrieved successfully.
-2025-02-19 15:55:32 [TestNG-tests-4] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:55:32 [TestNG-tests-1] INFO : Active project retrieved successfully.
-2025-02-19 15:55:32 [TestNG-tests-1] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:55:32 [TestNG-tests-4] INFO : Archived project retrieved successfully.
-2025-02-19 15:55:32 [TestNG-tests-1] INFO : Archived project retrieved successfully.
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Starting test_GetAllUser...
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzIyLCJleHAiOjE3NDAwNDcxMjIsImlhdCI6MTczOTk2MDcyMn0.8UMRNWpMScY1GM8_XScODiZhCUtcO-HKAmAxwJThu2U
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Retrieved all users successfully.
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Starting test_GetUserByEmailId...
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzIzLCJleHAiOjE3NDAwNDcxMjMsImlhdCI6MTczOTk2MDcyM30.aL32vYGdl6etTkmLUsDLlEXmdCHadew6XMBL6Sg4YCU
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Retrieved user by email successfully.
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Starting test_forgotPassword...
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzIzLCJleHAiOjE3NDAwNDcxMjMsImlhdCI6MTczOTk2MDcyM30.aL32vYGdl6etTkmLUsDLlEXmdCHadew6XMBL6Sg4YCU
-2025-02-19 15:55:32 [TestNG-tests-3] INFO : Send OTP to email sent successfully
-2025-02-19 15:55:32 [TestNG-tests-3] INFO : Starting testLogout...
-2025-02-19 15:55:32 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:55:32 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzIzLCJleHAiOjE3NDAwNDcxMjMsImlhdCI6MTczOTk2MDcyM30.aL32vYGdl6etTkmLUsDLlEXmdCHadew6XMBL6Sg4YCU
-2025-02-19 15:55:32 [TestNG-tests-3] INFO : User logged out successfully.
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Forgot password link sent successfully
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Starting test_sendOtpToEmail...
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzIzLCJleHAiOjE3NDAwNDcxMjMsImlhdCI6MTczOTk2MDcyM30.aL32vYGdl6etTkmLUsDLlEXmdCHadew6XMBL6Sg4YCU
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Send OTP to email sent successfully
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Starting testLogout...
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzIzLCJleHAiOjE3NDAwNDcxMjMsImlhdCI6MTczOTk2MDcyM30.aL32vYGdl6etTkmLUsDLlEXmdCHadew6XMBL6Sg4YCU
-2025-02-19 15:55:32 [TestNG-tests-2] INFO : User logged out successfully.
-2025-02-19 15:56:13 [TestNG-tests-3] INFO : Starting setup...
-2025-02-19 15:56:13 [TestNG-tests-1] INFO : Setting up data for tests...
-2025-02-19 15:56:13 [TestNG-tests-3] INFO : Config file loaded successfully.
-2025-02-19 15:56:13 [TestNG-tests-3] INFO : Starting testLogin...
-2025-02-19 15:56:13 [TestNG-tests-4] INFO : Setting up data for tests...
-2025-02-19 15:56:14 [TestNG-tests-1] INFO : Data setup complete.
-2025-02-19 15:56:14 [TestNG-tests-4] INFO : Data setup complete.
-2025-02-19 15:56:14 [TestNG-tests-4] INFO : Creating project with Project Id: string
-2025-02-19 15:56:14 [TestNG-tests-1] INFO : Creating project with Project Id: string
-2025-02-19 15:56:14 [TestNG-tests-4] INFO : Getting JWT token...
-2025-02-19 15:56:14 [TestNG-tests-1] INFO : Getting JWT token...
-2025-02-19 15:56:14 [TestNG-tests-2] INFO : Starting testCreateProject with companyId: ABC01
-2025-02-19 15:56:14 [TestNG-tests-2] INFO : Project payload: api.payload.Project@49df24a3
-2025-02-19 15:56:14 [TestNG-tests-2] INFO : Making API call to create project...
-2025-02-19 15:56:14 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:56:15 [TestNG-tests-4] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzY1LCJleHAiOjE3NDAwNDcxNjUsImlhdCI6MTczOTk2MDc2NX0.AHxFWdZsSBY0uF3Z1d0p59_bQKRVj5AqZziD7vhPVhI
-2025-02-19 15:56:15 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzY1LCJleHAiOjE3NDAwNDcxNjUsImlhdCI6MTczOTk2MDc2NX0.AHxFWdZsSBY0uF3Z1d0p59_bQKRVj5AqZziD7vhPVhI
-2025-02-19 15:56:15 [TestNG-tests-1] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzY1LCJleHAiOjE3NDAwNDcxNjUsImlhdCI6MTczOTk2MDc2NX0.AHxFWdZsSBY0uF3Z1d0p59_bQKRVj5AqZziD7vhPVhI
-2025-02-19 15:56:15 [TestNG-tests-3] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
-2025-02-19 15:56:15 [TestNG-tests-3] INFO : Starting test_GetAllUser...
-2025-02-19 15:56:15 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:56:15 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzY2LCJleHAiOjE3NDAwNDcxNjYsImlhdCI6MTczOTk2MDc2Nn0.VHjXe4p_sl781qcFa7ePPxTXaNIX_YAdDIQF-_T_z5I
-2025-02-19 15:56:15 [TestNG-tests-3] INFO : Retrieved all users successfully.
-2025-02-19 15:56:15 [TestNG-tests-3] INFO : Starting test_GetUserByEmailId...
-2025-02-19 15:56:15 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:56:15 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzY2LCJleHAiOjE3NDAwNDcxNjYsImlhdCI6MTczOTk2MDc2Nn0.VHjXe4p_sl781qcFa7ePPxTXaNIX_YAdDIQF-_T_z5I
-2025-02-19 15:56:15 [TestNG-tests-3] INFO : Retrieved user by email successfully.
-2025-02-19 15:56:15 [TestNG-tests-3] INFO : Starting test_forgotPassword...
-2025-02-19 15:56:15 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:56:15 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzY2LCJleHAiOjE3NDAwNDcxNjYsImlhdCI6MTczOTk2MDc2Nn0.VHjXe4p_sl781qcFa7ePPxTXaNIX_YAdDIQF-_T_z5I
-2025-02-19 15:56:15 [TestNG-tests-4] INFO : Project created successfully.
-2025-02-19 15:56:15 [TestNG-tests-1] INFO : Project created successfully.
-2025-02-19 15:56:15 [TestNG-tests-2] INFO : Project created successfully with status code: 200
-2025-02-19 15:56:15 [TestNG-tests-2] INFO : Starting testCreateProject with companyId: ABC01
-2025-02-19 15:56:15 [TestNG-tests-4] INFO : Project Id (From response): Proj561
-2025-02-19 15:56:15 [TestNG-tests-1] INFO : Project Id (From response): Proj561
-2025-02-19 15:56:15 [TestNG-tests-4] INFO : Getting project with Id: Proj561
-2025-02-19 15:56:15 [TestNG-tests-1] INFO : Getting project with Id: Proj561
-2025-02-19 15:56:15 [TestNG-tests-2] INFO : Project payload: api.payload.Project@5ed7daf3
-2025-02-19 15:56:15 [TestNG-tests-2] INFO : Making API call to create project...
-2025-02-19 15:56:15 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:56:15 [TestNG-tests-4] INFO : Project retrieved successfully.
-2025-02-19 15:56:15 [TestNG-tests-1] INFO : Project retrieved successfully.
-2025-02-19 15:56:15 [TestNG-tests-1] INFO : Updating project with Id: Proj561
-2025-02-19 15:56:15 [TestNG-tests-4] INFO : Updating project with Id: Proj561
-2025-02-19 15:56:15 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzY2LCJleHAiOjE3NDAwNDcxNjYsImlhdCI6MTczOTk2MDc2Nn0.VHjXe4p_sl781qcFa7ePPxTXaNIX_YAdDIQF-_T_z5I
-2025-02-19 15:56:15 [TestNG-tests-1] INFO : Project updated successfully.
-2025-02-19 15:56:15 [TestNG-tests-4] INFO : Project updated successfully.
-2025-02-19 15:56:15 [TestNG-tests-2] INFO : Project created successfully with status code: 200
-2025-02-19 15:56:15 [TestNG-tests-4] INFO : Project Id (From updated response): Proj561
-2025-02-19 15:56:15 [TestNG-tests-1] INFO : Project Id (From updated response): Proj561
-2025-02-19 15:56:16 [TestNG-tests-1] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:56:16 [TestNG-tests-4] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:56:16 [TestNG-tests-1] INFO : Active project retrieved successfully.
-2025-02-19 15:56:16 [TestNG-tests-4] INFO : Active project retrieved successfully.
-2025-02-19 15:56:16 [TestNG-tests-1] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:56:16 [TestNG-tests-4] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Starting setup...
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Config file loaded successfully.
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Starting testLogin...
-2025-02-19 15:56:16 [TestNG-tests-4] INFO : Archived project retrieved successfully.
-2025-02-19 15:56:16 [TestNG-tests-1] INFO : Archived project retrieved successfully.
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Starting test_GetAllUser...
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzY2LCJleHAiOjE3NDAwNDcxNjYsImlhdCI6MTczOTk2MDc2Nn0.VHjXe4p_sl781qcFa7ePPxTXaNIX_YAdDIQF-_T_z5I
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Retrieved all users successfully.
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Starting test_GetUserByEmailId...
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzY2LCJleHAiOjE3NDAwNDcxNjYsImlhdCI6MTczOTk2MDc2Nn0.VHjXe4p_sl781qcFa7ePPxTXaNIX_YAdDIQF-_T_z5I
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Retrieved user by email successfully.
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Starting test_forgotPassword...
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzY2LCJleHAiOjE3NDAwNDcxNjYsImlhdCI6MTczOTk2MDc2Nn0.VHjXe4p_sl781qcFa7ePPxTXaNIX_YAdDIQF-_T_z5I
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Forgot password link sent successfully
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Starting test_sendOtpToEmail...
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzY3LCJleHAiOjE3NDAwNDcxNjcsImlhdCI6MTczOTk2MDc2N30.taq7Qaz_tYFfCDR5Z8B28rIygYaD-GZxeffDtNYVO_4
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Send OTP to email sent successfully
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Starting testLogout...
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : Getting JWT token...
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzY3LCJleHAiOjE3NDAwNDcxNjcsImlhdCI6MTczOTk2MDc2N30.taq7Qaz_tYFfCDR5Z8B28rIygYaD-GZxeffDtNYVO_4
-2025-02-19 15:56:16 [TestNG-tests-2] INFO : User logged out successfully.
-2025-02-19 15:56:18 [TestNG-tests-3] INFO : Forgot password link sent successfully
-2025-02-19 15:56:18 [TestNG-tests-3] INFO : Starting test_sendOtpToEmail...
-2025-02-19 15:56:18 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:56:18 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzY5LCJleHAiOjE3NDAwNDcxNjksImlhdCI6MTczOTk2MDc2OX0.XkY692VTUT6vNEUXp5FWZ7g9jz4-MZvgrXs7pE1lOG4
-2025-02-19 15:56:18 [TestNG-tests-3] INFO : Send OTP to email sent successfully
-2025-02-19 15:56:18 [TestNG-tests-3] INFO : Starting testLogout...
-2025-02-19 15:56:18 [TestNG-tests-3] INFO : Getting JWT token...
-2025-02-19 15:56:18 [TestNG-tests-3] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYwNzY5LCJleHAiOjE3NDAwNDcxNjksImlhdCI6MTczOTk2MDc2OX0.XkY692VTUT6vNEUXp5FWZ7g9jz4-MZvgrXs7pE1lOG4
-2025-02-19 15:56:18 [TestNG-tests-3] INFO : User logged out successfully.
-2025-02-19 16:01:31 [main] INFO : Setting up data for tests...
-2025-02-19 16:01:31 [main] INFO : Data setup complete.
-2025-02-19 16:01:31 [main] INFO : Creating project with Project Id: string
-2025-02-19 16:01:31 [main] INFO : Getting JWT token...
-2025-02-19 16:01:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYxMDgzLCJleHAiOjE3NDAwNDc0ODMsImlhdCI6MTczOTk2MTA4M30.tSkZvHbDhmYHszG__5Snh1AJpycICQPnGPh3_Fd8w_Q
-2025-02-19 16:01:33 [main] INFO : Project created successfully.
-2025-02-19 16:01:33 [main] INFO : Project Id (From response): Proj563
-2025-02-19 16:01:33 [main] INFO : Getting project with Id: Proj563
-2025-02-19 16:01:33 [main] INFO : Project retrieved successfully.
-2025-02-19 16:01:33 [main] INFO : Updating project with Id: Proj563
-2025-02-19 16:01:33 [main] INFO : Project updated successfully.
-2025-02-19 16:01:33 [main] INFO : Project Id (From updated response): Proj563
-2025-02-19 16:01:33 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 16:01:33 [main] INFO : Active project retrieved successfully.
-2025-02-19 16:01:33 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 16:01:33 [main] INFO : Archived project retrieved successfully.
-2025-02-19 16:04:08 [main] INFO : Setting up data for tests...
-2025-02-19 16:04:08 [main] INFO : Data setup complete.
-2025-02-19 16:04:08 [main] INFO : Creating project with Project Id: string
-2025-02-19 16:04:08 [main] INFO : Getting JWT token...
-2025-02-19 16:04:09 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYxMjM5LCJleHAiOjE3NDAwNDc2MzksImlhdCI6MTczOTk2MTIzOX0.RAnx0dklFeWCFNNqrA2lGMQWRRAfqiAiUHyxPcDTLJs
-2025-02-19 16:04:09 [main] INFO : Project created successfully.
-2025-02-19 16:04:09 [main] INFO : Project Id (From response): Proj564
-2025-02-19 16:04:09 [main] INFO : Getting project with Id: Proj564
-2025-02-19 16:04:10 [main] INFO : Project retrieved successfully.
-2025-02-19 16:04:10 [main] INFO : Updating project with Id: Proj564
-2025-02-19 16:04:10 [main] INFO : Project updated successfully.
-2025-02-19 16:04:10 [main] INFO : Project Id (From updated response): Proj564
-2025-02-19 16:04:10 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 16:04:10 [main] INFO : Active project retrieved successfully.
-2025-02-19 16:04:10 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 16:04:10 [main] INFO : Archived project retrieved successfully.
-2025-02-19 16:05:40 [main] INFO : Setting up data for tests...
-2025-02-19 16:05:40 [main] INFO : Data setup complete.
-2025-02-19 16:05:40 [main] INFO : Creating project with Project Id: string
-2025-02-19 16:05:40 [main] INFO : Getting JWT token...
-2025-02-19 16:05:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYxMzMyLCJleHAiOjE3NDAwNDc3MzIsImlhdCI6MTczOTk2MTMzMn0.BfjB5lpl9W9KFKQXQKWRF7VBhH6ytGAbYHXJeaxN3pw
-2025-02-19 16:05:42 [main] INFO : Project created successfully.
-2025-02-19 16:05:42 [main] INFO : Project Id (From response): Proj565
-2025-02-19 16:05:42 [main] INFO : Getting project with Id: Proj565
-2025-02-19 16:05:42 [main] INFO : Project retrieved successfully.
-2025-02-19 16:05:42 [main] INFO : Updating project with Id: Proj565
-2025-02-19 16:05:42 [main] INFO : Project updated successfully.
-2025-02-19 16:05:42 [main] INFO : Project Id (From updated response): Proj565
-2025-02-19 16:05:42 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 16:05:42 [main] INFO : Active project retrieved successfully.
-2025-02-19 16:05:42 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 16:05:42 [main] INFO : Archived project retrieved successfully.
-2025-02-19 16:08:37 [main] INFO : Setting up data for tests...
-2025-02-19 16:08:37 [main] INFO : Data setup complete.
-2025-02-19 16:08:37 [main] INFO : Creating project with Project Id: string
-2025-02-19 16:08:37 [main] INFO : Getting JWT token...
-2025-02-19 16:08:38 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYxNTA4LCJleHAiOjE3NDAwNDc5MDgsImlhdCI6MTczOTk2MTUwOH0.BfcwUHuZx6OGE7q0EOuDz3SFIK9MhvbJ7ocqxojeNF0
-2025-02-19 16:08:38 [main] INFO : Project created successfully.
-2025-02-19 16:08:38 [main] INFO : Project Id (From response): Proj566
-2025-02-19 16:08:38 [main] INFO : Getting project with Id: Proj566
-2025-02-19 16:08:38 [main] INFO : Project retrieved successfully.
-2025-02-19 16:08:38 [main] INFO : Updating project with Id: Proj566
-2025-02-19 16:08:38 [main] INFO : Project updated successfully.
-2025-02-19 16:08:38 [main] INFO : Project Id (From updated response): Proj566
-2025-02-19 16:08:38 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 16:08:38 [main] INFO : Active project retrieved successfully.
-2025-02-19 16:08:38 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 16:08:38 [main] INFO : Archived project retrieved successfully.
-2025-02-19 16:15:28 [main] INFO : Setting up data for tests...
-2025-02-19 16:15:28 [main] INFO : Data setup complete.
-2025-02-19 16:15:28 [main] INFO : Creating project with Project Id: string
-2025-02-19 16:15:28 [main] INFO : Getting JWT token...
-2025-02-19 16:15:29 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYxOTE5LCJleHAiOjE3NDAwNDgzMTksImlhdCI6MTczOTk2MTkxOX0.911Gv_pm00gu5SicChaEeAoM-OpFJxmFd1I97112WRs
-2025-02-19 16:15:29 [main] INFO : Project created successfully.
-2025-02-19 16:15:29 [main] INFO : Project Id (From response): Proj567
-2025-02-19 16:15:29 [main] INFO : Getting project with Id: Proj567
-2025-02-19 16:15:29 [main] INFO : Project retrieved successfully.
-2025-02-19 16:15:29 [main] INFO : Updating project with Id: Proj567
-2025-02-19 16:15:29 [main] INFO : Project updated successfully.
-2025-02-19 16:15:29 [main] INFO : Project Id (From updated response): Proj567
-2025-02-19 16:15:29 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 16:15:29 [main] INFO : Active project retrieved successfully.
-2025-02-19 16:15:29 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 16:15:29 [main] INFO : Archived project retrieved successfully.
-2025-02-19 16:16:45 [main] INFO : Setting up data for tests...
-2025-02-19 16:16:45 [main] INFO : Data setup complete.
-2025-02-19 16:16:45 [main] INFO : Creating project with Project Id: string
-2025-02-19 16:16:45 [main] INFO : Getting JWT token...
-2025-02-19 16:16:46 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYxOTk2LCJleHAiOjE3NDAwNDgzOTYsImlhdCI6MTczOTk2MTk5Nn0.vuWTo6HmdT_kq5NOgBaLVWuyrVfFlyH8q0p4ZlKYpHE
-2025-02-19 16:16:46 [main] INFO : Project created successfully.
-2025-02-19 16:16:46 [main] INFO : Project Id (From response): Proj568
-2025-02-19 16:16:46 [main] INFO : Getting project with Id: Proj568
-2025-02-19 16:16:46 [main] INFO : Project retrieved successfully.
-2025-02-19 16:16:46 [main] INFO : Updating project with Id: Proj568
-2025-02-19 16:16:46 [main] INFO : Project updated successfully.
-2025-02-19 16:16:46 [main] INFO : Project Id (From updated response): Proj568
-2025-02-19 16:16:46 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-19 16:16:46 [main] INFO : Active project retrieved successfully.
-2025-02-19 16:16:46 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-19 16:16:46 [main] INFO : Archived project retrieved successfully.
-2025-02-19 16:20:23 [main] INFO : Starting setup...
-2025-02-19 16:20:23 [main] INFO : Config file loaded successfully.
-2025-02-19 16:20:23 [main] INFO : Starting testLogin...
-2025-02-19 16:20:24 [main] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
-2025-02-19 16:20:24 [main] INFO : Starting test_GetAllUser...
-2025-02-19 16:20:24 [main] INFO : Getting JWT token...
-2025-02-19 16:20:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYyMjE1LCJleHAiOjE3NDAwNDg2MTUsImlhdCI6MTczOTk2MjIxNX0.aEeHAkZiXXBMA897L1AloxHvt9UB6MaZjG_JXegexjQ
-2025-02-19 16:20:24 [main] INFO : Retrieved all users successfully.
-2025-02-19 16:20:24 [main] INFO : Starting test_GetUserByEmailId...
-2025-02-19 16:20:24 [main] INFO : Getting JWT token...
-2025-02-19 16:20:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYyMjE1LCJleHAiOjE3NDAwNDg2MTUsImlhdCI6MTczOTk2MjIxNX0.aEeHAkZiXXBMA897L1AloxHvt9UB6MaZjG_JXegexjQ
-2025-02-19 16:20:24 [main] INFO : Retrieved user by email successfully.
-2025-02-19 16:20:24 [main] INFO : Starting testLogout...
-2025-02-19 16:20:24 [main] INFO : Getting JWT token...
-2025-02-19 16:20:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYyMjE1LCJleHAiOjE3NDAwNDg2MTUsImlhdCI6MTczOTk2MjIxNX0.aEeHAkZiXXBMA897L1AloxHvt9UB6MaZjG_JXegexjQ
-2025-02-19 16:20:24 [main] INFO : User logged out successfully.
-2025-02-19 16:26:03 [main] INFO : Starting setup...
-2025-02-19 16:26:03 [main] INFO : Config file loaded successfully.
-2025-02-19 16:26:03 [main] INFO : Starting testLogin...
-2025-02-19 16:26:04 [main] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
-2025-02-19 16:26:04 [main] INFO : Starting test_GetAllUser...
-2025-02-19 16:26:04 [main] INFO : Getting JWT token...
-2025-02-19 16:26:04 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYyNTU1LCJleHAiOjE3NDAwNDg5NTUsImlhdCI6MTczOTk2MjU1NX0.W0YNh8hDqBgiQ_XuAjZidPSxMzumOkynoYSYgwfjDjc
-2025-02-19 16:26:04 [main] INFO : Retrieved all users successfully.
-2025-02-19 16:26:04 [main] INFO : Starting test_GetUserByEmailId...
-2025-02-19 16:26:04 [main] INFO : Getting JWT token...
-2025-02-19 16:26:04 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYyNTU1LCJleHAiOjE3NDAwNDg5NTUsImlhdCI6MTczOTk2MjU1NX0.W0YNh8hDqBgiQ_XuAjZidPSxMzumOkynoYSYgwfjDjc
-2025-02-19 16:26:04 [main] INFO : Retrieved user by email successfully.
-2025-02-19 16:26:04 [main] INFO : Starting testLogout...
-2025-02-19 16:26:04 [main] INFO : Getting JWT token...
-2025-02-19 16:26:04 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzM5OTYyNTU1LCJleHAiOjE3NDAwNDg5NTUsImlhdCI6MTczOTk2MjU1NX0.W0YNh8hDqBgiQ_XuAjZidPSxMzumOkynoYSYgwfjDjc
-2025-02-19 16:26:04 [main] INFO : User logged out successfully.
-2025-02-20 10:23:06 [main] INFO : Setting up data for tests...
-2025-02-20 10:23:06 [main] INFO : Data setup complete.
-2025-02-20 10:23:06 [main] INFO : Creating project with Project Id: string
-2025-02-20 10:23:06 [main] INFO : Getting JWT token...
-2025-02-20 10:23:08 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDI3MTc4LCJleHAiOjE3NDAxMTM1NzgsImlhdCI6MTc0MDAyNzE3OH0.aKHL6RIZLgwO10dekjeiSp3gIcQpweCnLAnf9q4Qr1o
-2025-02-20 10:23:08 [main] INFO : Project created successfully.
-2025-02-20 10:23:08 [main] INFO : Project Id (From response): Proj570
-2025-02-20 10:23:08 [main] INFO : Getting project with Id: Proj570
-2025-02-20 10:23:08 [main] INFO : Project retrieved successfully.
-2025-02-20 10:23:08 [main] INFO : Updating project with Id: Proj570
-2025-02-20 10:23:08 [main] INFO : Project updated successfully.
-2025-02-20 10:23:08 [main] INFO : Project Id (From updated response): Proj570
-2025-02-20 10:23:08 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-20 10:23:08 [main] INFO : Active project retrieved successfully.
-2025-02-20 10:23:08 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-20 10:23:08 [main] INFO : Archived project retrieved successfully.
-2025-02-20 10:23:08 [main] INFO : Getting project with Id: Proj 430
-2025-02-20 10:23:08 [main] INFO : Project details got successfully.
-2025-02-20 11:29:19 [main] INFO : Getting all Buildings
-2025-02-20 11:29:19 [main] INFO : Getting JWT token...
-2025-02-20 11:29:20 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxMTUwLCJleHAiOjE3NDAxMTc1NTAsImlhdCI6MTc0MDAzMTE1MH0._i-hsPB94unmDl6YNaj2KwsVQ5CCjZTGMohX2J2L458
-2025-02-20 11:29:20 [main] INFO : All Buildings retrieved successfully.
-2025-02-20 11:32:55 [main] INFO : Getting all Buildings
-2025-02-20 11:32:55 [main] INFO : Getting JWT token...
-2025-02-20 11:32:56 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxMzY2LCJleHAiOjE3NDAxMTc3NjYsImlhdCI6MTc0MDAzMTM2Nn0.mPhmpjLisxlnk1PU7uGVms1oX-yApqKJa3cqGx45WnM
-2025-02-20 11:32:56 [main] INFO : Getting all Buildings
-2025-02-20 11:32:56 [main] INFO : Getting JWT token...
-2025-02-20 11:32:56 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxMzY3LCJleHAiOjE3NDAxMTc3NjcsImlhdCI6MTc0MDAzMTM2N30.Tg61KAu0vTo1pEbDqPp9oYXcIs8INLhy_ARLEp2ZGxo
-2025-02-20 11:32:57 [main] INFO : Getting all Buildings
-2025-02-20 11:32:57 [main] INFO : Getting JWT token...
-2025-02-20 11:32:57 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxMzY3LCJleHAiOjE3NDAxMTc3NjcsImlhdCI6MTc0MDAzMTM2N30.Tg61KAu0vTo1pEbDqPp9oYXcIs8INLhy_ARLEp2ZGxo
-2025-02-20 11:32:57 [main] INFO : Getting all Buildings
-2025-02-20 11:32:57 [main] INFO : Getting JWT token...
-2025-02-20 11:32:57 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxMzY3LCJleHAiOjE3NDAxMTc3NjcsImlhdCI6MTc0MDAzMTM2N30.Tg61KAu0vTo1pEbDqPp9oYXcIs8INLhy_ARLEp2ZGxo
-2025-02-20 11:33:31 [main] INFO : Getting all Buildings
-2025-02-20 11:33:31 [main] INFO : Getting JWT token...
-2025-02-20 11:33:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxNDAyLCJleHAiOjE3NDAxMTc4MDIsImlhdCI6MTc0MDAzMTQwMn0.jAB-bRD2jCKiqJMRiVhUVgwo292Qou2utZ5B-oejv7Y
-2025-02-20 11:33:32 [main] INFO : All Buildings retrieved successfully.
-2025-02-20 11:36:15 [main] INFO : Setting up data for tests...
-2025-02-20 11:36:15 [main] INFO : Data setup complete.
-2025-02-20 11:36:15 [main] INFO : Creating project with Project Id: string
-2025-02-20 11:36:15 [main] INFO : Getting JWT token...
-2025-02-20 11:36:16 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxNTY2LCJleHAiOjE3NDAxMTc5NjYsImlhdCI6MTc0MDAzMTU2Nn0.RxoWocbGsHsLCWQNpmoVjhqZmjoR5Dzu-HmQ3eKoVl0
-2025-02-20 11:36:17 [main] INFO : Project created successfully.
-2025-02-20 11:36:17 [main] INFO : Project Id (From response): Proj571
-2025-02-20 11:36:17 [main] INFO : Getting project with Id: Proj571
-2025-02-20 11:36:17 [main] INFO : Project retrieved successfully.
-2025-02-20 11:36:17 [main] INFO : Updating project with Id: Proj571
-2025-02-20 11:36:17 [main] INFO : Project updated successfully.
-2025-02-20 11:36:17 [main] INFO : Project Id (From updated response): Proj571
-2025-02-20 11:36:17 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
-2025-02-20 11:36:17 [main] INFO : Active project retrieved successfully.
-2025-02-20 11:36:17 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
-2025-02-20 11:36:17 [main] INFO : Archived project retrieved successfully.
-2025-02-20 11:36:17 [main] INFO : Getting project with Id: Proj 430
-2025-02-20 11:36:17 [main] INFO : Project details got successfully.
-2025-02-20 11:36:18 [main] INFO : Starting testCreateProject with companyId: ABC01
-2025-02-20 11:36:18 [main] INFO : Project payload: api.payload.Project@147ea894
-2025-02-20 11:36:18 [main] INFO : Making API call to create project...
-2025-02-20 11:36:18 [main] INFO : Getting JWT token...
-2025-02-20 11:36:18 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxNTY4LCJleHAiOjE3NDAxMTc5NjgsImlhdCI6MTc0MDAzMTU2OH0.2TEODwhD2h03v5vAO17t2TbG77kj5AysRTn-ZgAsbWQ
-2025-02-20 11:36:18 [main] INFO : Project created successfully with status code: 200
-2025-02-20 11:36:18 [main] INFO : Starting testCreateProject with companyId: ABC01
-2025-02-20 11:36:18 [main] INFO : Project payload: api.payload.Project@55a46bf3
-2025-02-20 11:36:18 [main] INFO : Making API call to create project...
-2025-02-20 11:36:18 [main] INFO : Getting JWT token...
-2025-02-20 11:36:18 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxNTY4LCJleHAiOjE3NDAxMTc5NjgsImlhdCI6MTc0MDAzMTU2OH0.2TEODwhD2h03v5vAO17t2TbG77kj5AysRTn-ZgAsbWQ
-2025-02-20 11:36:18 [main] INFO : Project created successfully with status code: 200
-2025-02-20 11:36:18 [main] INFO : Starting setup...
-2025-02-20 11:36:18 [main] INFO : Config file loaded successfully.
-2025-02-20 11:36:18 [main] INFO : Starting testLogin...
-2025-02-20 11:36:18 [main] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
-2025-02-20 11:36:18 [main] INFO : Starting test_GetAllUser...
-2025-02-20 11:36:18 [main] INFO : Getting JWT token...
-2025-02-20 11:36:18 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxNTY4LCJleHAiOjE3NDAxMTc5NjgsImlhdCI6MTc0MDAzMTU2OH0.2TEODwhD2h03v5vAO17t2TbG77kj5AysRTn-ZgAsbWQ
-2025-02-20 11:36:18 [main] INFO : Retrieved all users successfully.
-2025-02-20 11:36:18 [main] INFO : Starting test_GetUserByEmailId...
-2025-02-20 11:36:18 [main] INFO : Getting JWT token...
-2025-02-20 11:36:18 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxNTY4LCJleHAiOjE3NDAxMTc5NjgsImlhdCI6MTc0MDAzMTU2OH0.2TEODwhD2h03v5vAO17t2TbG77kj5AysRTn-ZgAsbWQ
-2025-02-20 11:36:18 [main] INFO : Retrieved user by email successfully.
-2025-02-20 11:36:18 [main] INFO : Starting test_forgotPassword...
-2025-02-20 11:36:18 [main] INFO : Getting JWT token...
-2025-02-20 11:36:18 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxNTY4LCJleHAiOjE3NDAxMTc5NjgsImlhdCI6MTc0MDAzMTU2OH0.2TEODwhD2h03v5vAO17t2TbG77kj5AysRTn-ZgAsbWQ
-2025-02-20 11:36:19 [main] INFO : Forgot password link sent successfully
-2025-02-20 11:36:19 [main] INFO : Starting test_sendOtpToEmail...
-2025-02-20 11:36:19 [main] INFO : Getting JWT token...
-2025-02-20 11:36:19 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxNTcwLCJleHAiOjE3NDAxMTc5NzAsImlhdCI6MTc0MDAzMTU3MH0.gkhhqnt0d9JxdZMqUozLGJSqpI7w7-tgvBsXw_C59sw
-2025-02-20 11:36:20 [main] INFO : Send OTP to email sent successfully
-2025-02-20 11:36:20 [main] INFO : Starting testLogout...
-2025-02-20 11:36:20 [main] INFO : Getting JWT token...
-2025-02-20 11:36:20 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxNTcwLCJleHAiOjE3NDAxMTc5NzAsImlhdCI6MTc0MDAzMTU3MH0.gkhhqnt0d9JxdZMqUozLGJSqpI7w7-tgvBsXw_C59sw
-2025-02-20 11:36:20 [main] INFO : User logged out successfully.
-2025-02-20 11:36:20 [main] INFO : Getting all Buildings
-2025-02-20 11:36:20 [main] INFO : Getting JWT token...
-2025-02-20 11:36:20 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDMxNTcwLCJleHAiOjE3NDAxMTc5NzAsImlhdCI6MTc0MDAzMTU3MH0.gkhhqnt0d9JxdZMqUozLGJSqpI7w7-tgvBsXw_C59sw
-2025-02-20 11:36:20 [main] INFO : All Buildings retrieved successfully.
+2025-02-20 17:49:34 [main] INFO : Setting up data for tests...
+2025-02-20 17:49:34 [main] INFO : Data setup complete.
+2025-02-20 17:49:34 [main] INFO : Creating project with Project Id: string
+2025-02-20 17:49:34 [main] INFO : Getting JWT token...
+2025-02-20 17:49:35 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDUzOTY1LCJleHAiOjE3NDAxNDAzNjUsImlhdCI6MTc0MDA1Mzk2NX0.hpg9b6bJNZzRe1CZS1fDLCXyesfUFfwCySlermOqBg0
+2025-02-20 17:49:35 [main] INFO : Project created successfully.
+2025-02-20 17:49:35 [main] INFO : Project Id (From response): Proj595
+2025-02-20 17:49:35 [main] INFO : Project ID saved to config.properties: Proj595
+2025-02-20 17:49:35 [main] ERROR: Error saving Project ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_projectId.properties" (The filename, directory name, or volume label syntax is incorrect)
+2025-02-20 17:49:35 [main] INFO : Getting project with Id: Proj595
+2025-02-20 17:49:35 [main] INFO : Project retrieved successfully.
+2025-02-20 17:49:35 [main] INFO : Updating project with Id: Proj595
+2025-02-20 17:49:35 [main] INFO : Project updated successfully.
+2025-02-20 17:49:35 [main] INFO : Project Id (From updated response): Proj595
+2025-02-20 17:49:35 [main] ERROR: Test case failed: Cannot invoke "java.util.List.get(int)" because the return value of "io.restassured.path.json.JsonPath.getList(String)" is null
+2025-02-20 17:49:35 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
+2025-02-20 17:49:35 [main] INFO : Active project retrieved successfully.
+2025-02-20 17:49:35 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
+2025-02-20 17:49:35 [main] INFO : Archived project retrieved successfully.
+2025-02-20 17:49:35 [main] INFO : Getting project with Id:Proj595
+2025-02-20 17:49:35 [main] INFO : Project details got successfully.
+2025-02-20 17:49:35 [main] INFO : Setting up data for tests...
+2025-02-20 17:49:35 [main] INFO : Loaded Project ID from config.properties: Proj595
+2025-02-20 17:49:36 [main] INFO : Data setup complete.
+2025-02-20 17:49:36 [main] INFO : Adding Building to Project Id: Proj595
+2025-02-20 17:49:36 [main] INFO : Getting JWT token...
+2025-02-20 17:49:36 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDUzOTY2LCJleHAiOjE3NDAxNDAzNjYsImlhdCI6MTc0MDA1Mzk2Nn0.ygodjEF0_13wj0XtMRfqNqnhyQfTS8aBNmgOxL96_Jk
+2025-02-20 17:49:36 [main] INFO : Building is added successfully to Project ID:Proj595
+2025-02-20 17:49:36 [main] INFO : Building Id (From response): 6b3df013-189b-4689-b868-af4b90c21720
+2025-02-20 17:57:11 [main] INFO : Setting up data for tests...
+2025-02-20 17:57:11 [main] INFO : Data setup complete.
+2025-02-20 17:57:11 [main] INFO : Creating project with Project Id: string
+2025-02-20 17:57:11 [main] INFO : Getting JWT token...
+2025-02-20 17:57:13 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU0NDIzLCJleHAiOjE3NDAxNDA4MjMsImlhdCI6MTc0MDA1NDQyM30.jT-v7CnuaRNa-Cl9uX67fdB7n48rhxuSFOMXoFG_jjk
+2025-02-20 17:57:13 [main] INFO : Project created successfully.
+2025-02-20 17:57:13 [main] INFO : Project Id (From response): Proj596
+2025-02-20 17:57:13 [main] INFO : Project ID saved to config.properties: Proj596
+2025-02-20 17:57:13 [main] ERROR: Error saving Project ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_projectId.properties" (The filename, directory name, or volume label syntax is incorrect)
+2025-02-20 17:57:13 [main] INFO : Getting project with Id: Proj596
+2025-02-20 17:57:13 [main] INFO : Project retrieved successfully.
+2025-02-20 17:57:13 [main] INFO : Updating project with Id: Proj596
+2025-02-20 17:57:13 [main] INFO : Project updated successfully.
+2025-02-20 17:57:13 [main] INFO : Project Id (From updated response): Proj596
+2025-02-20 17:57:13 [main] INFO : Project Id exists and is not null: Proj596
+2025-02-20 17:57:13 [main] ERROR: Test case failed: Cannot invoke "java.util.List.get(int)" because the return value of "io.restassured.path.json.JsonPath.getList(String)" is null
+2025-02-20 17:57:13 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
+2025-02-20 17:57:13 [main] INFO : Active project retrieved successfully.
+2025-02-20 17:57:13 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
+2025-02-20 17:57:13 [main] INFO : Archived project retrieved successfully.
+2025-02-20 17:57:13 [main] INFO : Getting project with Id:Proj596
+2025-02-20 17:57:13 [main] INFO : Project details got successfully.
+2025-02-20 17:57:13 [main] INFO : Setting up data for tests...
+2025-02-20 17:57:13 [main] INFO : Loaded Project ID from config.properties: Proj596
+2025-02-20 17:57:13 [main] INFO : Data setup complete.
+2025-02-20 17:57:13 [main] INFO : Adding Building to Project Id: Proj596
+2025-02-20 17:57:13 [main] INFO : Getting JWT token...
+2025-02-20 17:57:13 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU0NDIzLCJleHAiOjE3NDAxNDA4MjMsImlhdCI6MTc0MDA1NDQyM30.jT-v7CnuaRNa-Cl9uX67fdB7n48rhxuSFOMXoFG_jjk
+2025-02-20 17:57:13 [main] INFO : Building is added successfully to Project ID:Proj596
+2025-02-20 17:57:13 [main] INFO : Building Id (From response): b2bcbbef-6360-4838-8d1a-0e8fee542e7d
+2025-02-20 18:06:05 [main] INFO : Setting up data for tests...
+2025-02-20 18:06:06 [main] INFO : Data setup complete.
+2025-02-20 18:06:06 [main] INFO : Creating project with Project Id: string
+2025-02-20 18:06:06 [main] INFO : Getting JWT token...
+2025-02-20 18:06:07 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU0OTU3LCJleHAiOjE3NDAxNDEzNTcsImlhdCI6MTc0MDA1NDk1N30.vmXYef3e4JemO11I7OrKJoHX50SH0JyreM8BKLgIY2g
+2025-02-20 18:06:07 [main] INFO : Project created successfully.
+2025-02-20 18:06:07 [main] INFO : Project Id (From response): Proj597
+2025-02-20 18:06:07 [main] INFO : Project ID saved to config.properties: Proj597
+2025-02-20 18:06:07 [main] ERROR: Error saving Project ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_projectId.properties" (The filename, directory name, or volume label syntax is incorrect)
+2025-02-20 18:06:07 [main] INFO : Getting project with Id: Proj597
+2025-02-20 18:06:07 [main] INFO : Project retrieved successfully.
+2025-02-20 18:06:07 [main] INFO : Updating project with Id: Proj597
+2025-02-20 18:06:07 [main] INFO : Project updated successfully.
+2025-02-20 18:06:07 [main] INFO : Project Id (From updated response): Proj597
+2025-02-20 18:06:07 [main] INFO : Project Id exists and is not null: Proj597
+2025-02-20 18:06:07 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
+2025-02-20 18:06:07 [main] INFO : Active project retrieved successfully.
+2025-02-20 18:06:07 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
+2025-02-20 18:06:07 [main] INFO : Archived project retrieved successfully.
+2025-02-20 18:06:07 [main] INFO : Getting project with Id:Proj597
+2025-02-20 18:06:07 [main] INFO : Project details got successfully.
+2025-02-20 18:06:07 [main] INFO : Setting up data for tests...
+2025-02-20 18:06:07 [main] INFO : Loaded Project ID from config.properties: Proj597
+2025-02-20 18:06:07 [main] INFO : Data setup complete.
+2025-02-20 18:06:07 [main] INFO : Adding Building to Project Id: Proj597
+2025-02-20 18:06:07 [main] INFO : Getting JWT token...
+2025-02-20 18:06:07 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU0OTU4LCJleHAiOjE3NDAxNDEzNTgsImlhdCI6MTc0MDA1NDk1OH0.cVEoJDTxmslS7z4IpsLUlNKxNFGyUwReZZq0nYus-8o
+2025-02-20 18:06:07 [main] INFO : Building is added successfully to Project ID:Proj597
+2025-02-20 18:06:07 [main] INFO : Building Id (From response): c825d3dd-c546-433a-87cf-18b19555cc74
+2025-02-20 18:08:27 [main] INFO : Setting up data for tests...
+2025-02-20 18:08:27 [main] INFO : Data setup complete.
+2025-02-20 18:08:27 [main] INFO : Creating project with Project Id: string
+2025-02-20 18:08:27 [main] INFO : Getting JWT token...
+2025-02-20 18:08:29 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU1MDk5LCJleHAiOjE3NDAxNDE0OTksImlhdCI6MTc0MDA1NTA5OX0.d2lG_C5Y2XnbM8B2mZU6i0Sh8hovZOHqSQd22LzbvuA
+2025-02-20 18:08:29 [main] INFO : Project created successfully.
+2025-02-20 18:08:29 [main] INFO : Project Id (From response): Proj598
+2025-02-20 18:08:29 [main] INFO : Project ID saved to config.properties: Proj598
+2025-02-20 18:08:29 [main] ERROR: Error saving Project ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_projectId.properties" (The filename, directory name, or volume label syntax is incorrect)
+2025-02-20 18:08:29 [main] INFO : Getting project with Id: Proj598
+2025-02-20 18:08:29 [main] INFO : Project retrieved successfully.
+2025-02-20 18:08:29 [main] INFO : Updating project with Id: Proj598
+2025-02-20 18:08:29 [main] INFO : Project updated successfully.
+2025-02-20 18:08:29 [main] INFO : Project Id (From updated response): Proj598
+2025-02-20 18:08:29 [main] INFO : Project Id exists and is not null: Proj598
+2025-02-20 18:08:29 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
+2025-02-20 18:08:29 [main] INFO : Active project retrieved successfully.
+2025-02-20 18:08:29 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
+2025-02-20 18:08:29 [main] INFO : Archived project retrieved successfully.
+2025-02-20 18:08:29 [main] INFO : Getting project with Id:Proj598
+2025-02-20 18:08:29 [main] INFO : Project details got successfully.
+2025-02-20 18:08:29 [main] INFO : Setting up data for tests...
+2025-02-20 18:08:29 [main] INFO : Loaded Project ID from config.properties: Proj598
+2025-02-20 18:08:29 [main] INFO : Data setup complete.
+2025-02-20 18:08:29 [main] INFO : Adding Building to Project Id: Proj598
+2025-02-20 18:08:29 [main] INFO : Getting JWT token...
+2025-02-20 18:08:29 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU1MTAwLCJleHAiOjE3NDAxNDE1MDAsImlhdCI6MTc0MDA1NTEwMH0.gtDnwlZDMpXP_CXuGtiELCf4Oj9vQ8ZRpFRdpamQKwQ
+2025-02-20 18:08:29 [main] INFO : Building is added successfully to Project ID:Proj598
+2025-02-20 18:08:29 [main] INFO : Building Id (From response): 549a2cc9-3467-46d9-8e2e-a3b86a9c821f
+2025-02-20 18:11:15 [main] INFO : Setting up data for tests...
+2025-02-20 18:11:15 [main] INFO : Data setup complete.
+2025-02-20 18:11:15 [main] INFO : Creating project with Project Id: string
+2025-02-20 18:11:15 [main] INFO : Getting JWT token...
+2025-02-20 18:11:16 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU1MjY2LCJleHAiOjE3NDAxNDE2NjYsImlhdCI6MTc0MDA1NTI2Nn0.6gNrEvv-8JYxgN7MMqP7Vs3cRnOu5BWa6SI1BFRuA_k
+2025-02-20 18:11:16 [main] INFO : Project created successfully.
+2025-02-20 18:11:16 [main] INFO : Project Id (From response): Proj599
+2025-02-20 18:11:16 [main] INFO : Project ID saved to config.properties: Proj599
+2025-02-20 18:11:16 [main] ERROR: Error saving Project ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_projectId.properties" (The filename, directory name, or volume label syntax is incorrect)
+2025-02-20 18:11:16 [main] INFO : Getting project with Id: Proj599
+2025-02-20 18:11:16 [main] INFO : Project retrieved successfully.
+2025-02-20 18:11:16 [main] INFO : Updating project with Id: Proj599
+2025-02-20 18:11:16 [main] INFO : Project updated successfully.
+2025-02-20 18:11:16 [main] INFO : Project Id (From updated response): Proj599
+2025-02-20 18:11:16 [main] INFO : Project Id exists and is not null: Proj599
+2025-02-20 18:11:16 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
+2025-02-20 18:11:16 [main] INFO : Active project retrieved successfully.
+2025-02-20 18:11:16 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
+2025-02-20 18:11:16 [main] INFO : Archived project retrieved successfully.
+2025-02-20 18:11:16 [main] INFO : Getting project with Id:Proj599
+2025-02-20 18:11:16 [main] INFO : Project details got successfully.
+2025-02-20 18:11:17 [main] INFO : Starting testCreateProject with companyId: ABC01
+2025-02-20 18:11:17 [main] INFO : Project payload: api.payload.Project@6b61a4b0
+2025-02-20 18:11:17 [main] INFO : Making API call to create project...
+2025-02-20 18:11:17 [main] INFO : Getting JWT token...
+2025-02-20 18:11:17 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU1MjY4LCJleHAiOjE3NDAxNDE2NjgsImlhdCI6MTc0MDA1NTI2OH0.UnnlW7LbtE493MjWgqig8_9pehHY02fPymJ2us0uuAI
+2025-02-20 18:11:17 [main] INFO : Project created successfully with status code: 200
+2025-02-20 18:11:17 [main] INFO : Starting testCreateProject with companyId: ABC01
+2025-02-20 18:11:17 [main] INFO : Project payload: api.payload.Project@749054a3
+2025-02-20 18:11:17 [main] INFO : Making API call to create project...
+2025-02-20 18:11:17 [main] INFO : Getting JWT token...
+2025-02-20 18:11:17 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU1MjY4LCJleHAiOjE3NDAxNDE2NjgsImlhdCI6MTc0MDA1NTI2OH0.UnnlW7LbtE493MjWgqig8_9pehHY02fPymJ2us0uuAI
+2025-02-20 18:11:17 [main] INFO : Project created successfully with status code: 200
+2025-02-20 18:11:17 [main] INFO : Starting setup...
+2025-02-20 18:11:17 [main] INFO : Config file loaded successfully.
+2025-02-20 18:11:17 [main] INFO : Starting testLogin...
+2025-02-20 18:11:18 [main] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
+2025-02-20 18:11:18 [main] INFO : Starting test_GetAllUser...
+2025-02-20 18:11:18 [main] INFO : Getting JWT token...
+2025-02-20 18:11:18 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU1MjY4LCJleHAiOjE3NDAxNDE2NjgsImlhdCI6MTc0MDA1NTI2OH0.UnnlW7LbtE493MjWgqig8_9pehHY02fPymJ2us0uuAI
+2025-02-20 18:11:18 [main] INFO : Retrieved all users successfully.
+2025-02-20 18:11:18 [main] INFO : Starting test_GetUserByEmailId...
+2025-02-20 18:11:18 [main] INFO : Getting JWT token...
+2025-02-20 18:11:18 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU1MjY4LCJleHAiOjE3NDAxNDE2NjgsImlhdCI6MTc0MDA1NTI2OH0.UnnlW7LbtE493MjWgqig8_9pehHY02fPymJ2us0uuAI
+2025-02-20 18:11:18 [main] INFO : Retrieved user by email successfully.
+2025-02-20 18:11:18 [main] INFO : Starting test_forgotPassword...
+2025-02-20 18:11:18 [main] INFO : Getting JWT token...
+2025-02-20 18:11:18 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU1MjY4LCJleHAiOjE3NDAxNDE2NjgsImlhdCI6MTc0MDA1NTI2OH0.UnnlW7LbtE493MjWgqig8_9pehHY02fPymJ2us0uuAI
+2025-02-20 18:11:23 [main] INFO : Forgot password link sent successfully
+2025-02-20 18:11:23 [main] INFO : Starting test_sendOtpToEmail...
+2025-02-20 18:11:23 [main] INFO : Getting JWT token...
+2025-02-20 18:11:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU1Mjc0LCJleHAiOjE3NDAxNDE2NzQsImlhdCI6MTc0MDA1NTI3NH0.wNRky4323WKSPHQy5narr2kDwUA9qWecJG8oDJ9QDWo
+2025-02-20 18:11:24 [main] INFO : Send OTP to email sent successfully
+2025-02-20 18:11:24 [main] INFO : Starting testLogout...
+2025-02-20 18:11:24 [main] INFO : Getting JWT token...
+2025-02-20 18:11:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU1Mjc0LCJleHAiOjE3NDAxNDE2NzQsImlhdCI6MTc0MDA1NTI3NH0.wNRky4323WKSPHQy5narr2kDwUA9qWecJG8oDJ9QDWo
+2025-02-20 18:11:24 [main] INFO : User logged out successfully.
+2025-02-20 18:11:24 [main] INFO : Setting up data for tests...
+2025-02-20 18:11:24 [main] INFO : Loaded Project ID from config.properties: Proj599
+2025-02-20 18:11:24 [main] INFO : Data setup complete.
+2025-02-20 18:11:24 [main] INFO : Adding Building to Project Id: Proj599
+2025-02-20 18:11:24 [main] INFO : Getting JWT token...
+2025-02-20 18:11:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMDU1Mjc0LCJleHAiOjE3NDAxNDE2NzQsImlhdCI6MTc0MDA1NTI3NH0.wNRky4323WKSPHQy5narr2kDwUA9qWecJG8oDJ9QDWo
+2025-02-20 18:11:24 [main] INFO : Building is added successfully to Project ID:Proj599
+2025-02-20 18:11:24 [main] INFO : Building Id (From response): dedd26b7-d6e2-4925-92b2-0ef77f9ed1c7
