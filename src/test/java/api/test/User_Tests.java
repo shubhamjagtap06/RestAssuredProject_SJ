@@ -20,7 +20,6 @@ import io.restassured.http.Header;
 public class User_Tests {
 
     private static final Logger logger = LogManager.getLogger(User_Tests.class);
-
     private static String email;
     private static String password;
     public String jwtToken;
@@ -33,9 +32,9 @@ public class User_Tests {
     private static String role;
     private static String updatedBy;
     private static Boolean isActive;
-
     private String userAgent;
 
+    
     @BeforeClass
     public void setup() throws IOException {
         logger.info("Starting setup...");
@@ -46,7 +45,6 @@ public class User_Tests {
             properties.load(fis);
             User_Tests.email = properties.getProperty("email");
             User_Tests.password = properties.getProperty("password");
-
             logger.info("Config file loaded successfully.");
         } catch (IOException e) {
             logger.error("Error loading config file", e);
@@ -60,23 +58,20 @@ public class User_Tests {
         this.userAgent = userAgent;
     }
 
+    
     public static String getToken(String userAgent) {
         logger.info("Getting JWT token...");
 
         // Call the loginUser method to get the response
         Response response = UserEndPoints.userLogin(userAgent);
-
         // Log the response for debugging
         //response.then().log().all();
-
         // Assert that the login request was successful (HTTP status 200)
         Assert.assertEquals(response.getStatusCode(), 200, "Login failed with status code: " + response.getStatusCode());
-
         // Check if the token exists
         String authToken = response.jsonPath().getString("jwtToken");
         Assert.assertNotNull(authToken, "Auth token should not be null");
         logger.info("JWT Token obtained: {}", authToken);
-
         return authToken;
     }
     
@@ -85,33 +80,27 @@ public class User_Tests {
 
         // Call the loginUser method to get the response
         Response response = UserEndPoints.userLogin1();
-
-        // Log the response for debugging
-        response.then().log().all();
-
         // Assert that the login request was successful (HTTP status 200)
         Assert.assertEquals(response.getStatusCode(), 200, "Login failed with status code: " + response.getStatusCode());
-
         // Check if the token exists
         String authToken = response.jsonPath().getString("jwtToken");
         Assert.assertNotNull(authToken, "Auth token should not be null");
         logger.info("JWT Token obtained: {}", authToken);
-
         return authToken;
     }
 
+    
+    
+    //Test Login
     @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
     public void testLogin() {
         logger.info("Starting testLogin...");
 
         try {
             Response response = UserEndPoints.userLogin(userAgent);  // Pass the User-Agent
-
             // Log the response for debugging
             response.then().log().all();
-
             Assert.assertEquals(response.getStatusCode(), 200, "Login failed with status code: " + response.getStatusCode());
-
             // Extract and log user information from the response
             userId = response.jsonPath().getString("user.userId");
             companyId = response.jsonPath().getString("user.companyId");
@@ -123,18 +112,18 @@ public class User_Tests {
             role = response.jsonPath().getString("user.role");
             updatedBy = response.jsonPath().getString("user.updatedBy");
             isActive = response.jsonPath().getBoolean("user.isActive");
-
             logger.info("User logged in successfully. UserID: {}, CompanyID: {}", userId, companyId);
         } catch (Exception e) {
             logger.error("Login failed", e);
             Assert.fail("Test Case failed: " + e.getMessage());
         }
     }
-
+    
+    
+    //Get all Users
     @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
     public void test_GetAllUser() {
         logger.info("Starting test_GetAllUser...");
-
         try {
             Response response = UserEndPoints.getAllUser(userAgent);  // Pass the User-Agent
             response.then().log().all();
@@ -146,10 +135,12 @@ public class User_Tests {
         }
     }
 
+    
+    
+    //Get User by Email Id
     @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
     public void test_GetUserByEmailId() {
         logger.info("Starting test_GetUserByEmailId...");
-
         try {
             Response response = UserEndPoints.getUserByEmailId("shubham.jagtap@neilsoft.com", userAgent);  // Pass the User-Agent
             response.then().log().all();
@@ -161,10 +152,11 @@ public class User_Tests {
         }
     }
 
+    
+    //Test Logout
     @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class)
     public void testLogout() {
         logger.info("Starting testLogout...");
-
         // Create the logout request body using user information from the login response
         String logoutRequestBody = "{\n" +
                 "  \"userId\": \"" + userId + "\",\n" +
@@ -180,7 +172,6 @@ public class User_Tests {
                 "  \"recEndDate\": \"2025-02-15T07:37:17.339Z\",\n" +
                 "  \"isActive\": " + isActive + "\n" +
                 "}";
-
         try {
             Response response = UserEndPoints.userLogout(logoutRequestBody, userAgent);  // Pass the User-Agent
             response.then().log().all();
@@ -193,10 +184,11 @@ public class User_Tests {
     }
     
     
+    
+    //Test Forgot Password
     @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
     public void test_forgotPassword() {
         logger.info("Starting test_forgotPassword...");
-
         try {
             Response response = UserEndPoints.forgotPassword("shubham.jagtap@neilsoft.com", userAgent);  // Pass the User-Agent
             response.then().log().all();
@@ -209,10 +201,11 @@ public class User_Tests {
     }
     
     
+    
+    //Test sendOtpToEmail
     @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
     public void test_sendOtpToEmail() {
         logger.info("Starting test_sendOtpToEmail...");
-
         try {
             Response response = UserEndPoints.sendOtpToEmail("shubham.jagtap@neilsoft.com", userAgent);  // Pass the User-Agent
             response.then().log().all();

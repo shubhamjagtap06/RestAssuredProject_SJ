@@ -14,7 +14,6 @@ public class UserEndPoints {
                 "  \"email\": \"" + "shubham.jagtap@neilsoft.com" + "\",\n" +  	// Make sure the value is within double quotes
                 "  \"password\": \"" + "Neilsoft@2" + "\"\n" +  				// Same here, wrap the password value in quotes
                 "}";
-        
         Response response =
                 given()
                     .contentType(ContentType.JSON)
@@ -32,7 +31,6 @@ public class UserEndPoints {
                 "  \"email\": \"" + "shubham.jagtap@neilsoft.com" + "\",\n" +  	// Make sure the value is within double quotes
                 "  \"password\": \"" + "Neilsoft@2" + "\"\n" +  				// Same here, wrap the password value in quotes
                 "}";
-        
         Response response =
                 given()
                     .contentType(ContentType.JSON) 
@@ -70,7 +68,6 @@ public class UserEndPoints {
     // User logout
     public static Response userLogout(String userinfo, String userAgent) {  // Accepting userAgent as parameter
         bearerToken = api.test.User_Tests.getToken(userAgent);
-        
         Response response =
                 given()
                     .headers("Authorization", "Bearer " + bearerToken)

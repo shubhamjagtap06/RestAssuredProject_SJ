@@ -27,10 +27,8 @@ public class DDtests {
                                   boolean isDeleted, boolean isArchived) {
         try {
             logger.info("Starting testCreateProject with companyId: {}", companyId);
-            
             faker = new Faker();
             Project projPayload = new Project();
-
             // Setting up the project data
             projPayload.setProjectId("Proj" + faker.number().numberBetween(100, 999));  // Use the generated project ID
             projPayload.setCompanyId(companyId);
@@ -51,17 +49,13 @@ public class DDtests {
 
             // Log the payload being sent
             logger.info("Project payload: {}", projPayload);
-
             // Make the API call to create the project
             logger.info("Making API call to create project...");
             Response response = ProjectEndPoints.createProject1(projPayload);
-
             // Log the response from the API
             response.then().log().all();
-
             // Assert that the response status code is 200 (success)
             Assert.assertEquals(response.getStatusCode(), 200, "Project creation failed with status code: " + response.getStatusCode());
-
             // Log success message
             logger.info("Project created successfully with status code: {}", response.getStatusCode());
         } catch (Exception e) {

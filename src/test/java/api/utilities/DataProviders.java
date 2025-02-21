@@ -10,7 +10,6 @@ public class DataProviders {
         // Path to the Excel file and the sheet name
         String xlfile = "C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\testData_DDT\\sheet1.xlsx";  // Replace with the actual path
         String xlsheet = "sheet1"; 																		  // Replace with your sheet name
-        
         // Get the row count and column count
         int rowCount = XLUtils.getRowCount(xlfile, xlsheet);
         int colCount = XLUtils.getCellCount(xlfile, xlsheet, 0);  // Column count of the first row
@@ -21,12 +20,11 @@ public class DataProviders {
         Object[][] data = new Object[rowCount][colCount];
         
         
-     // Loop through each row and column to fetch the data
+        // Loop through each row and column to fetch the data
         for (int i = 0; i < rowCount; i++) {
             for (int j = 0; j < colCount; j++) {
                 // Get cell data and store it in the 2D array
                 String cellData = XLUtils.getCellData(xlfile, xlsheet, i + 1, j); // +1 for skipping header row
-                
                 // Check if the cell is empty and handle accordingly
                 if (cellData == null || cellData.trim().isEmpty()) {
                     data[i][j] = getDefaultValue(j);  // Get a default value based on the column index

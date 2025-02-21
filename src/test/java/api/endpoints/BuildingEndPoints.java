@@ -11,8 +11,7 @@ public class BuildingEndPoints {
 	 
 	// Get Buildings
 	    public static Response getBuildings(String userAgent) {  // implementation of (get/read project) endpoint
-	       
-	    	// Get the token for authorization
+	       // Get the token for authorization
 	        bearerToken = api.test.User_Tests.getToken(userAgent);
 	        Response response = 
 	        given()
@@ -22,6 +21,7 @@ public class BuildingEndPoints {
 	            .get(Routes_building.getBuildings_url);  // Refer URL from Routes class
 	        return response;
 	    }
+	    
 	    
 	    
 	  // Add Building
@@ -37,7 +37,6 @@ public class BuildingEndPoints {
 	            .body(payload)
 	        .when()
 	            .post(Routes_building.addBuilding_url);  // Refer URL from Routes class
-	        
 	        return response;
 	    }
 }

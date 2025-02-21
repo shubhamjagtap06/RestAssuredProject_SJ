@@ -43,12 +43,11 @@ public class Project_Tests {
         proj_payload = new Project(); // Prepare object  
 
         // Generating projectId and setting project details
-        //String generatedProjectId = "Proj" + faker.number().numberBetween(100, 999);
-        //proj_payload.setProjectId(generatedProjectId);
         proj_payload.setProjectId("string");
         //proj_payload.setCompanyId("C0001");
         proj_payload.setCompanyId("string");
-        proj_payload.setProjectName("INTERSTELLAR");
+        //proj_payload.setProjectName("INTERSTELLAR");
+        proj_payload.setProjectName(faker.name().firstName());
         proj_payload.setDescription(faker.name().lastName());
         proj_payload.setConstructionScheduleFrom("2025-01-01T12:03:55.621Z");
         proj_payload.setConstructionScheduleTo("2025-12-31T12:03:55.621Z");
@@ -62,10 +61,10 @@ public class Project_Tests {
         proj_payload.setDeleted(false);
         proj_payload.setArchived(false);
         proj_payload.setLastUpdated(0); // Now, proj_payload has data
-        
         logger.info("Data setup complete.");
     }
 
+    
     // Inject User-Agent value from the XML configuration
     @BeforeMethod
     @Parameters("User-Agent")
@@ -116,6 +115,9 @@ public class Project_Tests {
         }
     }
     
+    
+    
+    //Get Project with project Id
     @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here too
     public void test_GetProject() {
         try {
@@ -133,6 +135,7 @@ public class Project_Tests {
         }
     }
 
+    
     
     
     @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
@@ -156,12 +159,13 @@ public class Project_Tests {
             Assert.assertEquals(response.getStatusCode(), 200);
             logger.info("Project updated successfully.");
             
+            
          // Retrieve projectId from updated project response
             UpdatedprojectIdFromResponse = response.jsonPath().getString("projects.projectId");
             logger.info("Project Id (From updated response): " + UpdatedprojectIdFromResponse);
             Assert.assertNotNull(UpdatedprojectIdFromResponse);  // Ensure the projectId exists
             logger.info("Project Id exists and is not null: " + UpdatedprojectIdFromResponse);
-            // Verify update
+         // Verify update
 			/*
 			 * System.out.println("Updated Project id from updated response: "
 			 * +UpdatedprojectIdFromResponse); Response responseAfterUpdate =
@@ -189,8 +193,9 @@ public class Project_Tests {
     }
     
     
+    
 
-    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
+    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_GetActiveProject() {
         try {
             logger.info("Getting active project with Company Id: C0001 and User ID: UID22");
@@ -209,7 +214,8 @@ public class Project_Tests {
 
     
     
-    @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
+    
+    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_GetArchivedProject() {
         try {
             logger.info("Getting archived project with Company Id: C0001 and User ID: UID22");
@@ -227,7 +233,8 @@ public class Project_Tests {
     }
     
     
-    @Test(priority = 7, retryAnalyzer = RetryAnalyzer.class) 
+    
+    @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class) 
     public void test_GetProjectDetails() {
         try {
             logger.info("Getting project with Id:" +sharedProjectIdFromResponse);

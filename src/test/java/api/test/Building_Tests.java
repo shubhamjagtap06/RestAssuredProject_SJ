@@ -21,15 +21,16 @@ import api.utilities.RetryAnalyzer; // Import the RetryAnalyzer class
 
 public class Building_Tests {
 	
-	// Logger initialization
+ // Logger initialization
     private static final Logger logger = LogManager.getLogger(Building_Tests.class);
-    // Declare User-Agent as a class variable
+  
+ // Declare User-Agent as a class variable
     private String userAgent;
  // Declare sharedProjectId as a class-level variable
     public static String sharedProjectIdFromResponse;
     public String buildingIdFromResponse;
-    public String UpdatedprojectIdFromResponse;
-    //public static String projectIdFromResponse = Project_Tests.sharedProjectIdFromResponse;
+    
+    
     
     
     Faker faker;
@@ -38,20 +39,21 @@ public class Building_Tests {
     public String currentDate = DateUtil.getCurrentDateInISOFormat();
     
     
-    @BeforeClass // This should execute before methods in endpoints
+    
+    
+    @BeforeClass 
+    // This should execute before methods in endpoints
     public void setupData() {
         logger.info("Setting up data for tests...");
-
-     // Load the sharedProjectId from config.properties
+        // Load the sharedProjectId from config.properties
         loadSharedProjectIdFromConfigFile();
         faker = new Faker(); // Prepare object
         building_payload = new Building(); // Prepare object  
 
-        // Generating projectId and setting project details
-        //String generatedProjectId = "Proj" + faker.number().numberBetween(100, 999);
-        //proj_payload.setProjectId(generatedProjectId);
+        // Generating and Setting projectId
         building_payload.setProjectId(sharedProjectIdFromResponse);
-       // building_payload.setProjectId(sharedProjectIdFromResponse);
+        //building_payload.setProjectId("string");
+        // Setting project details
         building_payload.setBuildingId(faker.idNumber().toString());
         building_payload.setBuildingName(faker.name().fullName());
         building_payload.setConstructionScheduleFrom("2025-02-01T12:03:55.621Z");
@@ -68,11 +70,12 @@ public class Building_Tests {
         building_payload.setDeleted(false);
         building_payload.setArchived(false);	// Now, building_payload has data
         
-        
         logger.info("Data setup complete.");
         System.out.println("current date: "+currentDate);
         System.out.println("sharedProjectIdFromResponse:" +sharedProjectIdFromResponse);
     }
+    
+    
     
     //Inject User-Agent value from the XML configuration
     @BeforeMethod
@@ -82,7 +85,7 @@ public class Building_Tests {
     }
     
     
- // Load the sharedProjectId from config.properties
+ //Load the sharedProjectId from config.properties
     private void loadSharedProjectIdFromConfigFile() {
         Properties properties = new Properties();
         try (FileInputStream input = new FileInputStream("C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\src\\test\\resources\\config_projectId.properties")) {
@@ -99,6 +102,8 @@ public class Building_Tests {
     }
     
     
+    
+    //Get all buildings
     @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here too
     public void test_GetBuildings() {
         try {
@@ -118,7 +123,8 @@ public class Building_Tests {
     }
     
     
-    @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class, dependsOnMethods = "test_CreateProject") // Retry logic applied here
+    //Add new building
+    @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_AddBuilding() {
         try {
         	System.out.println("Shared Project ID from Project_Tests: " + Project_Tests.sharedProjectIdFromResponse);
@@ -132,7 +138,7 @@ public class Building_Tests {
             Assert.assertEquals(response.getStatusCode(), 200);
             logger.info("Building is added successfully to Project ID:" +sharedProjectIdFromResponse);
             
-            // Retrieve projectId from response
+            // Retrieve buildingId from response
             buildingIdFromResponse = response.jsonPath().getString("buildingId");
             logger.info("Building Id (From response): " + buildingIdFromResponse);
             

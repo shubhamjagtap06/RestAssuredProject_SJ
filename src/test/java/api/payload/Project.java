@@ -42,7 +42,7 @@ public class Project {
 	boolean isArchived;
 	int lastUpdated;
 	
-	
+	//Generate Getters and Setters
 	public String getProjectId() {
 		return projectId;
 	}

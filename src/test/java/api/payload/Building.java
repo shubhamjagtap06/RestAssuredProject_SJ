@@ -42,7 +42,7 @@ public class Building {
 	boolean isDeleted;
 	boolean isArchived;
 	
-	
+	//Generate Getters and Setters
 	public String getProjectId() {
 		return projectId;
 	}

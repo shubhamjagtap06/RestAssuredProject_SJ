@@ -148,16 +148,10 @@ public class ExtentReportManager implements ITestListener {
         }
     }
     
-    String reportFolder = System.getProperty("user.dir") + "\\ExtentReports1_CM";
-    	File index2File = new File(reportFolder + "\\index.html");
-    {
-    	if (index2File.exists()) 
-    	{
-        boolean deleted = index2File.delete();
-        if (deleted) 
-        			{
-        	System.out.println("Deleted index.html file.");
-        			}
-         } 
-    }
+	/*
+	 * String reportFolder = System.getProperty("user.dir") + "\\ExtentReports1_CM";
+	 * File index2File = new File(reportFolder + "\\index.html"); { if
+	 * (index2File.exists()) { boolean deleted = index2File.delete(); if (deleted) {
+	 * System.out.println("Deleted index.html file."); } } }
+	 */
 }
