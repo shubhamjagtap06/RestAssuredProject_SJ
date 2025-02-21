@@ -11,6 +11,7 @@
     <classes>
     	<class name="api.test.Project_Tests"/>
     	<class name="api.test.Building_Tests"/>
+    	<class name="api.test.Floor_Tests"/>
       	<class name="api.test.DDtests"/>
       	<class name="api.test.User_Tests"/>
       	

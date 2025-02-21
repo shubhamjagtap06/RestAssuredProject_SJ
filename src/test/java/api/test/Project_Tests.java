@@ -34,6 +34,8 @@ public class Project_Tests {
 // Declare User-Agent as a class variable
     private String userAgent;
 
+    
+    
     @BeforeClass // This should execute before methods in endpoints
     public void setupData() 
     {
@@ -155,7 +157,6 @@ public class Project_Tests {
             // Pass the User-Agent header to simulate browser behavior
             Response response = ProjectEndPoints.updateProject(sharedProjectIdFromResponse, proj_payload, userAgent); // Pass userAgent to the endpoint
             response.then().log().all();
-            
             Assert.assertEquals(response.getStatusCode(), 200);
             logger.info("Project updated successfully.");
             
@@ -184,8 +185,6 @@ public class Project_Tests {
 			  System.out.println("pp:" +response.jsonPath().getInt("projects.progress"));
 			  System.out.println("pq:" +proj_payload.getProgress());
 			  Assert.assertEquals(+response.jsonPath().getInt("projects.progress"), proj_payload.getProgress());
-			 
-            
 		} catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
             Assert.fail("Test Case failed: " + e.getMessage());
@@ -199,11 +198,9 @@ public class Project_Tests {
     public void test_GetActiveProject() {
         try {
             logger.info("Getting active project with Company Id: C0001 and User ID: UID22");
-            
             // Pass the User-Agent header to simulate browser behavior
             Response response = ProjectEndPoints.getActiveProject("C0001", "UID22", userAgent); // Pass userAgent to the endpoint
             response.then().log().all();
-            
             Assert.assertEquals(response.getStatusCode(), 200);
             logger.info("Active project retrieved successfully.");
         } catch (Exception e) {
@@ -211,7 +208,6 @@ public class Project_Tests {
             Assert.fail("Test Case failed: " + e.getMessage());
         }
     }
-
     
     
     
@@ -219,11 +215,9 @@ public class Project_Tests {
     public void test_GetArchivedProject() {
         try {
             logger.info("Getting archived project with Company Id: C0001 and User ID: UID22");
-            
             // Pass the User-Agent header to simulate browser behavior
             Response response = ProjectEndPoints.getArchivedProject("C0001", "UID22", userAgent); // Pass userAgent to the endpoint
             response.then().log().all();
-            
             Assert.assertEquals(response.getStatusCode(), 200);
             logger.info("Archived project retrieved successfully.");
         } catch (Exception e) {
@@ -238,11 +232,9 @@ public class Project_Tests {
     public void test_GetProjectDetails() {
         try {
             logger.info("Getting project with Id:" +sharedProjectIdFromResponse);
-            
             // Pass the User-Agent header to simulate browser behavior
             Response response = ProjectEndPoints.getProjectDetails(sharedProjectIdFromResponse, userAgent); // Pass userAgent to the endpoint
             response.then().log().all();
-            
             Assert.assertEquals(response.getStatusCode(), 200);
             logger.info("Project details got successfully.");
         } catch (Exception e) {

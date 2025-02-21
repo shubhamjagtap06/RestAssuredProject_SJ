@@ -20,7 +20,7 @@ public class DDtests {
 
     // Adding retryAnalyzer to the @Test annotation
     @Test(priority = 1, dataProvider = "getAllData", dataProviderClass = DataProviders.class, retryAnalyzer = RetryAnalyzer.class)
-    public void testCreateProject(String companyId, String projectName, String description, 
+    public void test_CreateProject_DDT(String companyId, String projectName, String description, 
                                   String constructionScheduleFrom, String constructionScheduleTo, 
                                   int totalNoOfBuildings, int totalBuildUpArea, String areaUnit, 
                                   String addedBy, String updatedBy, int progress, boolean isActive, 
