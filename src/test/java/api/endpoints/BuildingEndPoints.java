@@ -59,7 +59,7 @@ public class BuildingEndPoints {
 	    
 	    
 	 // Update Building by Building Id
-	    public static Response updateBuilding(String BuildingId, Building payload, String userAgent) {  // implementation of (update project) endpoint
+	    public static Response updateBuilding(String BuildingId, Building payload, String userAgent) {  
 	        // Set User-Agent for multi-browser testing
 	        //String userAgent = System.getProperty("userAgent", "Mozilla/5.0"); // Default to "Mozilla/5.0" if not provided
 	        Response response = 

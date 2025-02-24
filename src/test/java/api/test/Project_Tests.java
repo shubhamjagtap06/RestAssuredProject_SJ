@@ -45,9 +45,9 @@ public class Project_Tests {
         proj_payload = new Project(); // Prepare object  
 
         // Generating projectId and setting project details
-        proj_payload.setProjectId("string");
+        proj_payload.setProjectId("string123");
         //proj_payload.setCompanyId("C0001");
-        proj_payload.setCompanyId("string");
+        proj_payload.setCompanyId("string123");
         //proj_payload.setProjectName("INTERSTELLAR");
         proj_payload.setProjectName(faker.name().firstName());
         proj_payload.setDescription(faker.name().lastName());

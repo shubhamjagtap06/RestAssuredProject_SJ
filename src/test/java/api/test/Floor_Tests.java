@@ -9,7 +9,9 @@ import api.endpoints.FloorEndPoints;
 import api.payload.Floor;
 import io.restassured.response.Response;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -148,10 +150,10 @@ public class Floor_Tests {
             logger.info("Floor is added successfully to Building ID:" +this.floor_payload.getBuildingId());
             
             // Retrieve buildingId from response
-            sharedFloorIdFromResponse = response.jsonPath().getString("buildingId");
+            sharedFloorIdFromResponse = response.jsonPath().getString("floorId");
             logger.info("Floor Id (From response): " + sharedFloorIdFromResponse);
          // Save sharedProjectIdFromResponse to config.properties file
-            //saveFloorIdToPropertiesFile(sharedFloorIdFromResponse);
+            saveFloorIdToPropertiesFile(sharedFloorIdFromResponse);
             
         } catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
@@ -159,5 +161,71 @@ public class Floor_Tests {
         }
     }
     
+    
+    
+    private void saveFloorIdToPropertiesFile(String floorId) {
+        Properties properties = new Properties();
+        try (OutputStream output = new FileOutputStream("C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\src\\test\\resources\\config_floorId.properties")) {
+            properties.setProperty("sharedFloorId", floorId);
+            properties.store(output, null);  // Save the property to file
+            logger.info("Floor ID saved to config.properties: " + floorId);
+         // To confirm the saved value, let's read the file back and log the content
+            try (FileInputStream input = new FileInputStream("C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\src\\test\\resources\\config_floorId.properties\"")) {
+                properties.load(input);
+                logger.info("Loaded Floor ID from config.properties: " + properties.getProperty("sharedFloorId"));
+            }
+        } catch (IOException io) {
+            logger.error("Error saving Floor ID to config.properties: " + io.getMessage());
+        }
+    }
+    
+    
+    
+    
+  //Get all buildings by project id
+    @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here too
+    public void test_GetAllFloorsByBuildingId() {
+        try {
+            logger.info("Getting all Floors by Building Id:" +this.floor_payload.getBuildingId());
+            
+            // Pass the User-Agent header to simulate browser behavior
+            Response response = FloorEndPoints.getFloorsByBuildingId(this.floor_payload.getBuildingId(),userAgent); // Pass userAgent to the endpoint
+            response.then().log().all();
+            
+            Assert.assertEquals(response.getStatusCode(), 200);
+            Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
+            logger.info("All Floors by Building Id retrieved successfully.");
+        } catch (Exception e) {
+            logger.error("Test case failed: " + e.getMessage());
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    //Update Floor
+    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
+    public void test_Update_Floor() {
+        try {
+            logger.info("Updating Floor with Floor Id: " +sharedFloorIdFromResponse);
+            
+            floor_payload.setBuildingId(sharedBuildingIdFromResponse);
+            floor_payload.setProjectId(sharedProjectIdFromResponse);
+            floor_payload.setFloorId(sharedFloorIdFromResponse);
+            floor_payload.setTotalBuildUpArea(30);
+            floor_payload.setProgress(80);
+            
+            // Pass the User-Agent header to simulate browser behavior
+            Response response = FloorEndPoints.updateFloor(sharedFloorIdFromResponse, floor_payload, userAgent); // Pass userAgent to the endpoint
+            response.then().log().all();
+            
+            Assert.assertEquals(response.getStatusCode(), 200);
+            logger.info("Floor updated successfully.");
+            
+        } catch (Exception e) {
+            logger.error("Test case failed: " + e.getMessage());
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+     }
     
 }

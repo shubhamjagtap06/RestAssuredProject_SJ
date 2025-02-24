@@ -8,5 +8,7 @@ public class Routes_floor {
 	
 	public static String getFloors_url = base_url+"/api/Floor";
 	public static String addFloor_url = base_url+"/api/Floor";
+	public static String getFloorsByBuildingId_url =base_url+"/api/Floor/GetFloorsByBuildingId/{buildingId}";
+	public static String updateFloorByFloorId_url =base_url+"/api/Floor/updateFloors/{floorId}";
 
 }
