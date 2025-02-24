@@ -1,13 +1,5 @@
 package api.test;
-import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
-import com.github.javafaker.Faker;
-import api.endpoints.FloorEndPoints;
-import api.payload.Floor;
-import io.restassured.response.Response;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -15,10 +7,20 @@ import java.io.OutputStream;
 import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import api.utilities.DateUtil;
-import api.utilities.RetryAnalyzer; // Import the RetryAnalyzer class
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+import com.github.javafaker.Faker;
 
-public class Floor_Tests {
+import api.endpoints.RegionEndPoints;
+import api.payload.Region;
+import api.utilities.DateUtil;
+import api.utilities.RetryAnalyzer;
+import io.restassured.response.Response;
+
+public class Region_Tests {
 	
 	// Logger initialization
     private static final Logger logger = LogManager.getLogger(Floor_Tests.class);
@@ -28,11 +30,12 @@ public class Floor_Tests {
     public static String sharedProjectIdFromResponse;
     public static String sharedBuildingIdFromResponse;
     public static String sharedFloorIdFromResponse;
+    public static String sharedRegionIdFromResponse;
     Faker faker;
-    Floor floor_payload;
+    Region region_payload;
  // Use DateUtil to get current date in the required format
     public String currentDate = DateUtil.getCurrentDateInISOFormat();
-    
+
     
     @BeforeClass 
     // This should execute before methods in endpoints
@@ -43,33 +46,38 @@ public class Floor_Tests {
         loadSharedProjectIdFromConfigFile();
         // Load the sharedProjectId from config.properties
         loadSharedBuildingIdFromConfigFile();
+        loadSharedFloorIdFromConfigFile();
         faker = new Faker(); // Prepare object
-        floor_payload = new Floor(); // Prepare object  
+        region_payload = new Region(); // Prepare object  
 
         // Generating and Setting projectId
-        floor_payload.setProjectId(sharedProjectIdFromResponse);
+        region_payload.setProjectId(sharedProjectIdFromResponse);
         //floor_payload.setBuildingId(faker.idNumber().toString());
-        floor_payload.setBuildingId(sharedBuildingIdFromResponse);
-        floor_payload.setFloorId(faker.idNumber().toString());
-        floor_payload.setLevelId(faker.idNumber().toString());
+        region_payload.setBuildingId(sharedBuildingIdFromResponse);
+        region_payload.setFloorId(sharedFloorIdFromResponse);
+        region_payload.setRegionId(faker.idNumber().toString());
         //building_payload.setBuildingId("Building_ABC");
-        floor_payload.setFloorName(faker.name().fullName());
-        floor_payload.setTotalBuildUpArea(10);
-        floor_payload.setAreaUnit("SqFt");
-        floor_payload.setAddedBy("UID22");
-        floor_payload.setUpdatedBy("UID22");
-        floor_payload.setAddedOn(currentDate);
-        floor_payload.setProgress(10);
-        floor_payload.setRecStartDate("2025-01-01T12:02:46.537Z");
-        floor_payload.setRecEndDate("2025-01-31T12:02:46.537Z");
-        floor_payload.setDeleted(false);
-        floor_payload.setArchived(false);	// Now, building_payload has data
+        region_payload.setRegionName(faker.name().fullName());
+        
+        region_payload.setComment("Comment for the region");
+        region_payload.setAddedBy("UID22");
+        region_payload.setUpdatedBy("UID22");
+        region_payload.setAddedOn(currentDate);
+        region_payload.setProgress(10);
+        region_payload.setRecentScanDate("2025-01-05T12:02:46.537Z");
+        region_payload.setRecStartDate("2025-01-01T12:02:46.537Z");
+        region_payload.setRecEndDate("2025-01-31T12:02:46.537Z");
+        region_payload.setDeleted(false);
+        	// Now, building_payload has data
         
         logger.info("Data setup complete.");
         System.out.println("current date: "+currentDate);
         System.out.println("sharedProjectIdFromResponse:" +sharedProjectIdFromResponse);
         System.out.println("sharedBuildingIdFromResponse:" +sharedBuildingIdFromResponse);
+        System.out.println("sharedFloorIdFromResponse:" +sharedFloorIdFromResponse);
+
     }
+    
     
     
   //Inject User-Agent value from the XML configuration
@@ -78,6 +86,7 @@ public class Floor_Tests {
     public void setupUserAgent(String userAgent) {
         this.userAgent = userAgent;
     }
+    
   //Load the sharedProjectId from config.properties
     private void loadSharedProjectIdFromConfigFile() {
         Properties properties = new Properties();
@@ -108,24 +117,39 @@ public class Floor_Tests {
             logger.error("Error loading Building  ID from config.properties: " + e.getMessage());
         }
     }
+  //Load the sharedBuildingId from config.properties
+    private void loadSharedFloorIdFromConfigFile() {
+        Properties properties = new Properties();
+        try (FileInputStream input = new FileInputStream("C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\src\\test\\resources\\config_floorId.properties")) {
+            properties.load(input);
+            sharedFloorIdFromResponse = properties.getProperty("sharedFloorId");
+            if (sharedFloorIdFromResponse != null) {
+                logger.info("Loaded Floor ID from config.properties: " + sharedFloorIdFromResponse);
+            } else {
+                logger.error("sharedFloorId not found in config.properties");
+            }
+        } catch (IOException e) {
+            logger.error("Error loading Floor  ID from config.properties: " + e.getMessage());
+        }
+    }
     
     
     
     
     
-  //Get all Floors
+  //Get all Regions
     @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here too
-    public void test_GetFloors() {
+    public void test_GetRegions() {
         try {
-            logger.info("Getting all Floors");
+            logger.info("Getting all Regions");
             
             // Pass the User-Agent header to simulate browser behavior
-            Response response = FloorEndPoints.getFloors(userAgent); // Pass userAgent to the endpoint
+            Response response = RegionEndPoints.getRegions(userAgent); // Pass userAgent to the endpoint
             response.then().log().all();
             
             Assert.assertEquals(response.getStatusCode(), 200);
             Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
-            logger.info("All Floors retrieved successfully.");
+            logger.info("All Regions retrieved successfully.");
         } catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
             Assert.fail("Test Case failed: " + e.getMessage());
@@ -133,27 +157,30 @@ public class Floor_Tests {
     }
     
     
-  //Add new floor
+    
+  //Add new Region
     @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
-    public void test_AddFloor() {
+    public void test_AddRegion() {
         try {
         	
-        	logger.info("Adding Floor to Project Id: " +this.floor_payload.getProjectId());
-            logger.info("Adding Floor to Building Id: " +this.floor_payload.getBuildingId());
+        	logger.info("Adding Region to Project Id: " +this.region_payload.getProjectId());
+            logger.info("Adding Region to Building Id: " +this.region_payload.getBuildingId());
+            logger.info("Adding Region to Floor Id: " +this.region_payload.getFloorId());
+  
             
             // Pass the User-Agent header to simulate browser behavior
-            Response response = FloorEndPoints.addFloor(floor_payload, userAgent); // Pass userAgent to the endpoint
+            Response response = RegionEndPoints.addRegion(region_payload, userAgent); // Pass userAgent to the endpoint
             response.then().log().all();
             
             // Assert response status code
             Assert.assertEquals(response.getStatusCode(), 200);
-            logger.info("Floor is added successfully to Building ID:" +this.floor_payload.getBuildingId());
+            logger.info("Region is added successfully to Floor ID:" +this.region_payload.getRegionId());
             
             // Retrieve buildingId from response
-            sharedFloorIdFromResponse = response.jsonPath().getString("floorId");
-            logger.info("Floor Id (From response): " + sharedFloorIdFromResponse);
+            sharedRegionIdFromResponse = response.jsonPath().getString("regionId");
+            logger.info("Region Id (From response): " + sharedRegionIdFromResponse);
          // Save sharedProjectIdFromResponse to config.properties file
-            saveFloorIdToPropertiesFile(sharedFloorIdFromResponse);
+            saveRegionIdToPropertiesFile(sharedRegionIdFromResponse);
             
         } catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
@@ -163,38 +190,37 @@ public class Floor_Tests {
     
     
     
-    private void saveFloorIdToPropertiesFile(String floorId) {
+    private void saveRegionIdToPropertiesFile(String regionId) {
         Properties properties = new Properties();
-        try (OutputStream output = new FileOutputStream("C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\src\\test\\resources\\config_floorId.properties")) {
-            properties.setProperty("sharedFloorId", floorId);
+        try (OutputStream output = new FileOutputStream("C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\src\\test\\resources\\config_regionId.properties")) {
+            properties.setProperty("sharedRegionId", regionId);
             properties.store(output, null);  // Save the property to file
-            logger.info("Floor ID saved to config.properties: " + floorId);
+            logger.info("Region ID saved to config.properties: " + regionId);
          // To confirm the saved value, let's read the file back and log the content
-            try (FileInputStream input = new FileInputStream("C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\src\\test\\resources\\config_floorId.properties\"")) {
+            try (FileInputStream input = new FileInputStream("C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\src\\test\\resources\\config_regionId.properties\"")) {
                 properties.load(input);
-                logger.info("Loaded Floor ID from config.properties: " + properties.getProperty("sharedFloorId"));
+                logger.info("Loaded Region ID from config.properties: " + properties.getProperty("sharedRegionId"));
             }
         } catch (IOException io) {
-            logger.error("Error saving Floor ID to config.properties: " + io.getMessage());
+            logger.error("Error saving Region ID to config.properties: " + io.getMessage());
         }
     }
     
     
     
-    
-  //Get all floors by building id
+  //Get all regions by floor id
     @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here too
-    public void test_GetAllFloorsByBuildingId() {
+    public void test_GetAllRegionsByFloorId() {
         try {
-            logger.info("Getting all Floors by Building Id:" +this.floor_payload.getBuildingId());
+            logger.info("Getting all Regions by Floor Id:" +this.region_payload.getFloorId());
             
             // Pass the User-Agent header to simulate browser behavior
-            Response response = FloorEndPoints.getFloorsByBuildingId(this.floor_payload.getBuildingId(),userAgent); // Pass userAgent to the endpoint
+            Response response = RegionEndPoints.getRegionsByFloorId(this.region_payload.getFloorId(),userAgent); // Pass userAgent to the endpoint
             response.then().log().all();
             
             Assert.assertEquals(response.getStatusCode(), 200);
             Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
-            logger.info("All Floors by Building Id retrieved successfully.");
+            logger.info("All Regions by Floor Id retrieved successfully.");
         } catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
             Assert.fail("Test Case failed: " + e.getMessage());
@@ -203,29 +229,30 @@ public class Floor_Tests {
     
     
     
-    //Update Floor
+  //Update Region
     @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
-    public void test_Update_Floor() {
+    public void test_Update_Region() {
         try {
-            logger.info("Updating Floor with Floor Id: " +sharedFloorIdFromResponse);
+            logger.info("Updating Region with Region Id: " +sharedRegionIdFromResponse);
             
-            floor_payload.setBuildingId(sharedBuildingIdFromResponse);
-            floor_payload.setProjectId(sharedProjectIdFromResponse);
-            floor_payload.setFloorId(sharedFloorIdFromResponse);
-            floor_payload.setTotalBuildUpArea(30);
-            floor_payload.setProgress(80);
+            region_payload.setBuildingId(sharedBuildingIdFromResponse);
+            region_payload.setProjectId(sharedProjectIdFromResponse);
+            region_payload.setFloorId(sharedFloorIdFromResponse);
+            region_payload.setRegionId(sharedRegionIdFromResponse);
+            region_payload.setProgress(80);
+            region_payload.setComment("Comment updated");
             
             // Pass the User-Agent header to simulate browser behavior
-            Response response = FloorEndPoints.updateFloor(sharedFloorIdFromResponse, floor_payload, userAgent); // Pass userAgent to the endpoint
+            Response response = RegionEndPoints.updateRegion(sharedRegionIdFromResponse, region_payload, userAgent); // Pass userAgent to the endpoint
             response.then().log().all();
             
             Assert.assertEquals(response.getStatusCode(), 200);
-            logger.info("Floor updated successfully.");
+            logger.info("Region updated successfully.");
             
         } catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
             Assert.fail("Test Case failed: " + e.getMessage());
         }
-     }
+}
     
 }
