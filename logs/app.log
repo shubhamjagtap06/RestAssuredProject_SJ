@@ -89,3 +89,94 @@
 2025-02-21 16:31:36 [main] INFO : Getting JWT token...
 2025-02-21 16:31:37 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMTM1Njg3LCJleHAiOjE3NDAyMjIwODcsImlhdCI6MTc0MDEzNTY4N30.a6ZS36PjqnS9y2hoVHB9pLG2mlvprE_hezUVPFaBcyw
 2025-02-21 16:31:37 [main] INFO : User logged out successfully.
+2025-02-24 10:35:28 [main] INFO : Setting up data for tests...
+2025-02-24 10:35:29 [main] INFO : Data setup complete.
+2025-02-24 10:35:29 [main] INFO : Creating project with Project Id: string
+2025-02-24 10:35:29 [main] INFO : Getting JWT token...
+2025-02-24 10:35:30 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMzczNTI4LCJleHAiOjE3NDA0NTk5MjgsImlhdCI6MTc0MDM3MzUyOH0.oWbUkFxK6gsPlEMEfJ_C8LJq4QLFpMcUYaH96oMhD84
+2025-02-24 10:35:30 [main] INFO : Project created successfully.
+2025-02-24 10:35:30 [main] INFO : Project Id (From response): Proj657
+2025-02-24 10:35:30 [main] INFO : Project ID saved to config.properties: Proj657
+2025-02-24 10:35:30 [main] ERROR: Error saving Project ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_projectId.properties" (The filename, directory name, or volume label syntax is incorrect)
+2025-02-24 10:35:30 [main] INFO : Getting project with Id: Proj657
+2025-02-24 10:35:31 [main] INFO : Project retrieved successfully.
+2025-02-24 10:35:31 [main] INFO : Updating project with Id: Proj657
+2025-02-24 10:35:31 [main] INFO : Project updated successfully.
+2025-02-24 10:35:31 [main] INFO : Project Id (From updated response): Proj657
+2025-02-24 10:35:31 [main] INFO : Project Id exists and is not null: Proj657
+2025-02-24 10:35:31 [main] INFO : Getting active project with Company Id: C0001 and User ID: UID22
+2025-02-24 10:35:31 [main] INFO : Active project retrieved successfully.
+2025-02-24 10:35:31 [main] INFO : Getting archived project with Company Id: C0001 and User ID: UID22
+2025-02-24 10:35:31 [main] INFO : Archived project retrieved successfully.
+2025-02-24 10:35:31 [main] INFO : Getting project with Id:Proj657
+2025-02-24 10:35:31 [main] INFO : Project details got successfully.
+2025-02-24 10:35:31 [main] INFO : Setting up data for tests...
+2025-02-24 10:35:31 [main] INFO : Loaded Project ID from config.properties: Proj657
+2025-02-24 10:35:31 [main] INFO : Data setup complete.
+2025-02-24 10:35:31 [main] INFO : Getting all Buildings
+2025-02-24 10:35:31 [main] INFO : Getting JWT token...
+2025-02-24 10:35:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMzczNTI5LCJleHAiOjE3NDA0NTk5MjksImlhdCI6MTc0MDM3MzUyOX0.IBA16JebSdGZyzHIRuixecIejTzS1RmIWkFqadi0eXI
+2025-02-24 10:35:31 [main] INFO : All Buildings retrieved successfully.
+2025-02-24 10:35:31 [main] INFO : Adding Building to Project Id: Proj657
+2025-02-24 10:35:31 [main] INFO : Getting JWT token...
+2025-02-24 10:35:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMzczNTI5LCJleHAiOjE3NDA0NTk5MjksImlhdCI6MTc0MDM3MzUyOX0.IBA16JebSdGZyzHIRuixecIejTzS1RmIWkFqadi0eXI
+2025-02-24 10:35:31 [main] INFO : Building is added successfully to Project ID:Proj657
+2025-02-24 10:35:31 [main] INFO : Building Id (From response): c2cce59c-05c9-4a54-b6b4-54733f523351
+2025-02-24 10:35:31 [main] INFO : Building ID saved to config.properties: c2cce59c-05c9-4a54-b6b4-54733f523351
+2025-02-24 10:35:31 [main] ERROR: Error saving Building ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_buildingId.properties" (The filename, directory name, or volume label syntax is incorrect)
+2025-02-24 10:35:31 [main] INFO : Getting all Buildings by Project Id:Proj657
+2025-02-24 10:35:31 [main] INFO : Getting JWT token...
+2025-02-24 10:35:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMzczNTMwLCJleHAiOjE3NDA0NTk5MzAsImlhdCI6MTc0MDM3MzUzMH0.CqQc-Nlo_191TCHsbMOWLVk4DVonYU6dvPbZFRUhlhw
+2025-02-24 10:35:31 [main] INFO : All Buildings by Project Id retrieved successfully.
+2025-02-24 10:35:31 [main] INFO : Updating Building with Building Id: c2cce59c-05c9-4a54-b6b4-54733f523351
+2025-02-24 10:35:31 [main] INFO : Building updated successfully.
+2025-02-24 10:35:31 [main] INFO : Setting up data for tests...
+2025-02-24 10:35:31 [main] INFO : Loaded Project ID from config.properties: Proj657
+2025-02-24 10:35:31 [main] INFO : Loaded Building ID from config.properties: c2cce59c-05c9-4a54-b6b4-54733f523351
+2025-02-24 10:35:31 [main] INFO : Data setup complete.
+2025-02-24 10:35:31 [main] INFO : Getting all Floors
+2025-02-24 10:35:31 [main] INFO : Getting JWT token...
+2025-02-24 10:35:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMzczNTMwLCJleHAiOjE3NDA0NTk5MzAsImlhdCI6MTc0MDM3MzUzMH0.CqQc-Nlo_191TCHsbMOWLVk4DVonYU6dvPbZFRUhlhw
+2025-02-24 10:35:31 [main] INFO : All Floors retrieved successfully.
+2025-02-24 10:35:31 [main] INFO : Adding Floor to Project Id: Proj657
+2025-02-24 10:35:31 [main] INFO : Adding Floor to Building Id: c2cce59c-05c9-4a54-b6b4-54733f523351
+2025-02-24 10:35:31 [main] INFO : Getting JWT token...
+2025-02-24 10:35:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMzczNTMwLCJleHAiOjE3NDA0NTk5MzAsImlhdCI6MTc0MDM3MzUzMH0.CqQc-Nlo_191TCHsbMOWLVk4DVonYU6dvPbZFRUhlhw
+2025-02-24 10:35:32 [main] INFO : Floor is added successfully to Building ID:c2cce59c-05c9-4a54-b6b4-54733f523351
+2025-02-24 10:35:32 [main] INFO : Floor Id (From response): null
+2025-02-24 10:35:32 [main] INFO : Starting testCreateProject with companyId: ABC01
+2025-02-24 10:35:32 [main] INFO : Project payload: api.payload.Project@274783f8
+2025-02-24 10:35:32 [main] INFO : Making API call to create project...
+2025-02-24 10:35:32 [main] INFO : Getting JWT token...
+2025-02-24 10:35:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMzczNTMxLCJleHAiOjE3NDA0NTk5MzEsImlhdCI6MTc0MDM3MzUzMX0.mOegtaJrbk8wbyOLT9c_kd5nwHDvDBIP-9rvT9yDhG8
+2025-02-24 10:35:32 [main] INFO : Project created successfully with status code: 200
+2025-02-24 10:35:32 [main] INFO : Starting testCreateProject with companyId: ABC01
+2025-02-24 10:35:32 [main] INFO : Project payload: api.payload.Project@a1c87e6
+2025-02-24 10:35:32 [main] INFO : Making API call to create project...
+2025-02-24 10:35:32 [main] INFO : Getting JWT token...
+2025-02-24 10:35:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMzczNTMxLCJleHAiOjE3NDA0NTk5MzEsImlhdCI6MTc0MDM3MzUzMX0.mOegtaJrbk8wbyOLT9c_kd5nwHDvDBIP-9rvT9yDhG8
+2025-02-24 10:35:32 [main] INFO : Project created successfully with status code: 200
+2025-02-24 10:35:32 [main] INFO : Starting setup...
+2025-02-24 10:35:32 [main] INFO : Config file loaded successfully.
+2025-02-24 10:35:32 [main] INFO : Starting testLogin...
+2025-02-24 10:35:33 [main] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
+2025-02-24 10:35:33 [main] INFO : Starting test_GetAllUser...
+2025-02-24 10:35:33 [main] INFO : Getting JWT token...
+2025-02-24 10:35:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMzczNTMxLCJleHAiOjE3NDA0NTk5MzEsImlhdCI6MTc0MDM3MzUzMX0.mOegtaJrbk8wbyOLT9c_kd5nwHDvDBIP-9rvT9yDhG8
+2025-02-24 10:35:33 [main] INFO : Retrieved all users successfully.
+2025-02-24 10:35:33 [main] INFO : Starting test_GetUserByEmailId...
+2025-02-24 10:35:33 [main] INFO : Getting JWT token...
+2025-02-24 10:35:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMzczNTMxLCJleHAiOjE3NDA0NTk5MzEsImlhdCI6MTc0MDM3MzUzMX0.mOegtaJrbk8wbyOLT9c_kd5nwHDvDBIP-9rvT9yDhG8
+2025-02-24 10:35:33 [main] INFO : Retrieved user by email successfully.
+2025-02-24 10:35:33 [main] INFO : Starting test_forgotPassword...
+2025-02-24 10:35:33 [main] INFO : Getting JWT token...
+2025-02-24 10:35:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMzczNTMxLCJleHAiOjE3NDA0NTk5MzEsImlhdCI6MTc0MDM3MzUzMX0.mOegtaJrbk8wbyOLT9c_kd5nwHDvDBIP-9rvT9yDhG8
+2025-02-24 10:35:33 [main] INFO : Forgot password link sent successfully
+2025-02-24 10:35:33 [main] INFO : Starting test_sendOtpToEmail...
+2025-02-24 10:35:33 [main] INFO : Getting JWT token...
+2025-02-24 10:35:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMzczNTMyLCJleHAiOjE3NDA0NTk5MzIsImlhdCI6MTc0MDM3MzUzMn0.16_bKhvoGqog7DuM5txh37pLVHqsdU0XseTJjYaIrKM
+2025-02-24 10:35:34 [main] INFO : Send OTP to email sent successfully
+2025-02-24 10:35:34 [main] INFO : Starting testLogout...
+2025-02-24 10:35:34 [main] INFO : Getting JWT token...
+2025-02-24 10:35:34 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwMzczNTMyLCJleHAiOjE3NDA0NTk5MzIsImlhdCI6MTc0MDM3MzUzMn0.16_bKhvoGqog7DuM5txh37pLVHqsdU0XseTJjYaIrKM
+2025-02-24 10:35:34 [main] INFO : User logged out successfully.
