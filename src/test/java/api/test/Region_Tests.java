@@ -18,6 +18,8 @@ import api.endpoints.RegionEndPoints;
 import api.payload.Region;
 import api.utilities.DateUtil;
 import api.utilities.RetryAnalyzer;
+import io.restassured.RestAssured;
+import io.restassured.config.HttpClientConfig;
 import io.restassured.response.Response;
 
 public class Region_Tests {
@@ -40,6 +42,13 @@ public class Region_Tests {
     @BeforeClass 
     // This should execute before methods in endpoints
     public void setupData() {
+    	
+    	// Set up global timeouts for RestAssured (connection and socket timeouts)
+        RestAssured.config = RestAssured.config().httpClient(
+            HttpClientConfig.httpClientConfig()
+                .setParam("http.connection.timeout", 5000)  // 5 seconds connection timeout
+                .setParam("http.socket.timeout", 5000)      // 5 seconds read timeout
+        );
         logger.info("Setting up data for tests...");
         
      // Load the sharedProjectId from config.properties
@@ -152,6 +161,9 @@ public class Region_Tests {
             logger.info("All Regions retrieved successfully.");
         } catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
             Assert.fail("Test Case failed: " + e.getMessage());
         }
     }
@@ -184,6 +196,9 @@ public class Region_Tests {
             
         } catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
             Assert.fail("Test Case failed: " + e.getMessage());
         }
     }
@@ -223,6 +238,9 @@ public class Region_Tests {
             logger.info("All Regions by Floor Id retrieved successfully.");
         } catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
             Assert.fail("Test Case failed: " + e.getMessage());
         }
     }
@@ -251,6 +269,9 @@ public class Region_Tests {
             
         } catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
             Assert.fail("Test Case failed: " + e.getMessage());
         }
 }
