@@ -72,10 +72,13 @@ public class Region_Tests {
         region_payload.setAddedBy("UID22");
         region_payload.setUpdatedBy("UID22");
         region_payload.setAddedOn(currentDate);
-        region_payload.setProgress(10);
-        region_payload.setRecentScanDate("2025-01-05T12:02:46.537Z");
+        region_payload.setProgress(0);
+        //region_payload.setRecentScanDate("2025-01-05T12:02:46.537Z");
+        region_payload.setRecentScanDate("2025-01-01T12:02:46.537Z");
         region_payload.setRecStartDate("2025-01-01T12:02:46.537Z");
+        //region_payload.setRecStartDate(currentDate);
         region_payload.setRecEndDate("2025-01-31T12:02:46.537Z");
+        //region_payload.setRecEndDate(currentDate);
         region_payload.setDeleted(false);
         	// Now, building_payload has data
         
