@@ -159,7 +159,7 @@ public class Floor_Tests {
 
     private void saveFloorIdToPropertiesFile(String floorId) {
         Properties properties = new Properties();
-        try (OutputStream output = new FileOutputStream("path_to_floorId.properties")) {
+        try (OutputStream output = new FileOutputStream("C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\src\\test\\resources\\config_floorId.properties")) {
             properties.setProperty("sharedFloorId", floorId);
             properties.store(output, null);
             logger.info("Floor ID saved to config.properties: " + floorId);
@@ -199,7 +199,7 @@ public class Floor_Tests {
             floor_payload.setProjectId(sharedProjectIdFromResponse);
             floor_payload.setFloorId(sharedFloorIdFromResponse);
             floor_payload.setTotalBuildUpArea(30);
-            floor_payload.setProgress(80);
+            floor_payload.setProgress(50);
 
             Response response = FloorEndPoints.updateFloor(sharedFloorIdFromResponse, floor_payload, userAgent);
             response.then().log().all();

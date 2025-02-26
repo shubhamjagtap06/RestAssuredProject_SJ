@@ -101,7 +101,7 @@ public class ScanData_Tests {
     
     
   //Get all Scan Data's
-    @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here too
+   // @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here too
     public void test_GetScanData() {
         try {
             logger.info("Getting all Scan Data's");

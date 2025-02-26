@@ -3,18 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.User_Tests">
+      <class name="api.test.ScanData_Tests">
         <methods>
+          <include name="setupData"/>
+          <include name="test_AddScanDate"/>
+          <include name="test_GetScanData"/>
           <include name="setupUserAgent"/>
-          <include name="test_forgotPassword"/>
-          <include name="test_GetUserByEmailId"/>
-          <include name="testLogin"/>
-          <include name="test_sendOtpToEmail"/>
-          <include name="testLogout"/>
-          <include name="test_GetAllUser"/>
-          <include name="setup"/>
         </methods>
-      </class> <!-- api.test.User_Tests -->
+      </class> <!-- api.test.ScanData_Tests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

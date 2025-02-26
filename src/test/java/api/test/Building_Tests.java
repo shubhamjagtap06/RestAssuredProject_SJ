@@ -202,7 +202,7 @@ public class Building_Tests {
             building_payload.setBuildingId(sharedBuildingIdFromResponse);
             building_payload.setProjectId(sharedProjectIdFromResponse);
             building_payload.setTotalBuildUpArea(20);
-            building_payload.setProgress(80);
+            building_payload.setProgress(50);
             
             // Pass the User-Agent header to simulate browser behavior
             Response response = BuildingEndPoints.updateBuilding(sharedBuildingIdFromResponse, building_payload, userAgent); // Pass userAgent to the endpoint

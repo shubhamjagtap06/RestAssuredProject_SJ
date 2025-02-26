@@ -50,7 +50,7 @@ public class Project_Tests {
         //proj_payload.setCompanyId("string1234");
         proj_payload.setCompanyId("C0001");
         proj_payload.setProjectName(faker.name().firstName());
-        proj_payload.setProjectName("Windside12345");
+        proj_payload.setProjectName("ABCDE");
         proj_payload.setDescription(faker.name().lastName());
         proj_payload.setConstructionScheduleFrom("2025-01-01T12:03:55.621Z");
         proj_payload.setConstructionScheduleTo("2025-12-31T12:03:55.621Z");

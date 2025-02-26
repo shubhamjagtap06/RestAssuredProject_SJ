@@ -74,7 +74,8 @@ public class Region_Tests {
         region_payload.setAddedOn(currentDate);
         region_payload.setProgress(0);
         //region_payload.setRecentScanDate("2025-01-05T12:02:46.537Z");
-        region_payload.setRecentScanDate("2025-01-01T12:02:46.537Z");
+        //region_payload.setRecentScanDate("2025-01-01T12:02:46.537Z");
+        region_payload.setRecentScanDate("0001-01-01T00:00:00");
         region_payload.setRecStartDate("2025-01-01T12:02:46.537Z");
         //region_payload.setRecStartDate(currentDate);
         region_payload.setRecEndDate("2025-01-31T12:02:46.537Z");
@@ -87,6 +88,7 @@ public class Region_Tests {
         System.out.println("sharedProjectIdFromResponse:" +sharedProjectIdFromResponse);
         System.out.println("sharedBuildingIdFromResponse:" +sharedBuildingIdFromResponse);
         System.out.println("sharedFloorIdFromResponse:" +sharedFloorIdFromResponse);
+        
 
     }
     
@@ -251,7 +253,7 @@ public class Region_Tests {
     
     
   //Update Region
-    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
+   @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_Update_Region() {
         try {
             logger.info("Updating Region with Region Id: " +sharedRegionIdFromResponse);
@@ -260,8 +262,8 @@ public class Region_Tests {
             region_payload.setProjectId(sharedProjectIdFromResponse);
             region_payload.setFloorId(sharedFloorIdFromResponse);
             region_payload.setRegionId(sharedRegionIdFromResponse);
-            region_payload.setProgress(80);
-            region_payload.setComment("Comment updated");
+            region_payload.setProgress(50);
+            region_payload.setComment("Region Comment updated");
             
             // Pass the User-Agent header to simulate browser behavior
             Response response = RegionEndPoints.updateRegion(sharedRegionIdFromResponse, region_payload, userAgent); // Pass userAgent to the endpoint
