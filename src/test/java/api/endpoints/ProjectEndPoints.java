@@ -54,6 +54,7 @@ public class ProjectEndPoints {
     public static Response getProject(String ProjectId, String userAgent) {  // implementation of (get/read project) endpoint
         // Set User-Agent for multi-browser testing
         //String userAgent = System.getProperty("userAgent", "Mozilla/5.0"); // Default to "Mozilla/5.0" if not provided
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
         Response response = 
         given()
             .headers("Authorization", "Bearer " + bearerToken)
@@ -69,6 +70,7 @@ public class ProjectEndPoints {
     public static Response updateProject(String ProjectId, Project payload, String userAgent) {  // implementation of (update project) endpoint
         // Set User-Agent for multi-browser testing
         //String userAgent = System.getProperty("userAgent", "Mozilla/5.0"); // Default to "Mozilla/5.0" if not provided
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
         Response response = 
         given()
             .headers("Authorization", "Bearer " + bearerToken)
@@ -87,6 +89,7 @@ public class ProjectEndPoints {
     public static Response deleteProject(String ProjectId, String userAgent) {  // implementation of (delete project) endpoint
         // Set User-Agent for multi-browser testing
         //String userAgent = System.getProperty("userAgent", "Mozilla/5.0"); // Default to "Mozilla/5.0" if not provided
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
         Response response = 
         given()
             .headers("Authorization", "Bearer " + bearerToken)
@@ -102,6 +105,7 @@ public class ProjectEndPoints {
     public static Response getActiveProject(String CompanyId, String UserId, String userAgent) {  // implementation of (get/read project) endpoint
         // Set User-Agent for multi-browser testing
         //String userAgent = System.getProperty("userAgent", "Mozilla/5.0"); // Default to "Mozilla/5.0" if not provided
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
         Response response = 
         given()
             .headers("Authorization", "Bearer " + bearerToken)
@@ -118,6 +122,7 @@ public class ProjectEndPoints {
     public static Response getArchivedProject(String CompanyId, String UserId, String userAgent) {  // implementation of (get/read project) endpoint
         // Set User-Agent for multi-browser testing
         //String userAgent = System.getProperty("userAgent", "Mozilla/5.0"); // Default to "Mozilla/5.0" if not provided
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
         Response response = 
         given()
             .headers("Authorization", "Bearer " + bearerToken)
@@ -132,6 +137,7 @@ public class ProjectEndPoints {
     
  // Get Project details by project Id
     public static Response getProjectDetails(String ProjectId, String userAgent) {  // implementation of (get/read project) endpoint
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
         Response response = 
         given()
             .headers("Authorization", "Bearer " + bearerToken)

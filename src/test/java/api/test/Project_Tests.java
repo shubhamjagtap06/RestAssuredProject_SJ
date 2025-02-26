@@ -22,6 +22,7 @@ import api.utilities.RetryAnalyzer; // Import the RetryAnalyzer class
 import java.net.SocketTimeoutException;
 import java.util.concurrent.TimeoutException;
 import org.apache.http.conn.ConnectTimeoutException;
+import api.assertions.ProjectAssertions; // Import the custom assertions class
 
 @SuppressWarnings("unused")
 public class Project_Tests {
@@ -41,7 +42,6 @@ public class Project_Tests {
                 .setParam("http.connection.timeout", 5000)  // 5 seconds connection timeout
                 .setParam("http.socket.timeout", 5000)      // 5 seconds read timeout
         );
-
         logger.info("Setting up data for tests...");
         faker = new Faker();
         proj_payload = new Project();
@@ -50,7 +50,7 @@ public class Project_Tests {
         //proj_payload.setCompanyId("string1234");
         proj_payload.setCompanyId("C0001");
         proj_payload.setProjectName(faker.name().firstName());
-        proj_payload.setProjectName("ABCDE");
+        proj_payload.setProjectName("Amsterdam");
         proj_payload.setDescription(faker.name().lastName());
         proj_payload.setConstructionScheduleFrom("2025-01-01T12:03:55.621Z");
         proj_payload.setConstructionScheduleTo("2025-12-31T12:03:55.621Z");
@@ -73,6 +73,8 @@ public class Project_Tests {
         this.userAgent = userAgent;
     }
 
+    
+    
     @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
     public void test_CreateProject() {
         try {
@@ -81,12 +83,16 @@ public class Project_Tests {
             Response response = ProjectEndPoints.createProject(proj_payload, userAgent);
             response.then().log().all();
 
-            Assert.assertEquals(response.getStatusCode(), 200);
+            //Assert.assertEquals(response.getStatusCode(), 200);
+            // Use custom assertion for status code
+            ProjectAssertions.assertStatusCode(response, 200);
             logger.info("Project created successfully.");
 
             sharedProjectIdFromResponse = response.jsonPath().getString("projects.projectId");
             logger.info("Project Id (From response): " + sharedProjectIdFromResponse);
-            Assert.assertNotNull(sharedProjectIdFromResponse);
+            //Assert.assertNotNull(sharedProjectIdFromResponse);
+         // Use custom assertion for non-null project ID
+            ProjectAssertions.assertNotNull(sharedProjectIdFromResponse, "Project ID");
 
             saveProjectIdToPropertiesFile(sharedProjectIdFromResponse);
 
@@ -115,7 +121,9 @@ public class Project_Tests {
         }
     }
 
-    @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
+    
+    
+   @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
     public void test_GetProject() {
         try {
             logger.info("Getting project with Id: " + sharedProjectIdFromResponse);
@@ -123,7 +131,9 @@ public class Project_Tests {
             Response response = ProjectEndPoints.getProject(sharedProjectIdFromResponse, userAgent);
             response.then().log().all();
 
-            Assert.assertEquals(response.getStatusCode(), 200);
+            //Assert.assertEquals(response.getStatusCode(), 200);
+         // Use custom assertion for status code
+            ProjectAssertions.assertStatusCode(response, 200);
             logger.info("Project retrieved successfully.");
         } catch (Exception e) {
             logger.error("Error occurred while retrieving the project: " + e.getMessage());
@@ -135,7 +145,9 @@ public class Project_Tests {
         }
     }
 
-    @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
+    
+    
+   @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
     public void test_UpdateProject() {
         try {
             logger.info("Updating project with Id: " + sharedProjectIdFromResponse);
@@ -147,17 +159,94 @@ public class Project_Tests {
             Response response = ProjectEndPoints.updateProject(sharedProjectIdFromResponse, proj_payload, userAgent);
             response.then().log().all();
 
-            Assert.assertEquals(response.getStatusCode(), 200);
+            //Assert.assertEquals(response.getStatusCode(), 200);
+         // Use custom assertion for status code
+            ProjectAssertions.assertStatusCode(response, 200);
             logger.info("Project updated successfully.");
 
             UpdatedprojectIdFromResponse = response.jsonPath().getString("projects.projectId");
             logger.info("Updated Project Id (From updated response): " + UpdatedprojectIdFromResponse);
-            Assert.assertNotNull(UpdatedprojectIdFromResponse);
+            //Assert.assertNotNull(UpdatedprojectIdFromResponse);
+            // Use custom assertion for non-null updated project ID
+            ProjectAssertions.assertNotNull(UpdatedprojectIdFromResponse, "Updated Project ID");
+
 
             Assert.assertEquals(response.jsonPath().getInt("projects.progress"), proj_payload.getProgress());
 
         } catch (Exception e) {
             logger.error("Error occurred while updating the project: " + e.getMessage());
+            // Check if it's a timeout-related exception and handle separately
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+   
+    @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetActiveProject() {
+        try {
+            logger.info("Getting Active projects with Company Id: C0001");
+
+            Response response = ProjectEndPoints.getActiveProject("C0001", "UID22", userAgent);
+            response.then().log().all();
+
+            //Assert.assertEquals(response.getStatusCode(), 200);
+         // Use custom assertion for status code
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Active Projects retrieved successfully.");
+        } catch (Exception e) {
+            logger.error("Error occurred while retrieving the active projects: " + e.getMessage());
+            // Check if it's a timeout-related exception and handle separately
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetArchivedProject() {
+        try {
+        	logger.info("Getting Archived projects with Company Id: C0001");
+
+        	 Response response = ProjectEndPoints.getArchivedProject("C0001", "UID22", userAgent);
+             response.then().log().all();
+
+            //Assert.assertEquals(response.getStatusCode(), 200);
+         // Use custom assertion for status code
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Archived Projects retrieved successfully.");
+        } catch (Exception e) {
+            logger.error("Error occurred while retrieving the archived projects: " + e.getMessage());
+            // Check if it's a timeout-related exception and handle separately
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetProjectDetails() {
+        try {
+            logger.info("Getting project details with Id: " + sharedProjectIdFromResponse);
+
+            Response response = ProjectEndPoints.getProjectDetails(sharedProjectIdFromResponse, userAgent);
+            response.then().log().all();
+
+            //Assert.assertEquals(response.getStatusCode(), 200);
+         // Use custom assertion for status code
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Project Details retrieved successfully.");
+        } catch (Exception e) {
+            logger.error("Error occurred while retrieving the project details: " + e.getMessage());
             // Check if it's a timeout-related exception and handle separately
             if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
                 logger.error("Timeout error: " + e.getCause().getMessage());

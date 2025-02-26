@@ -60,7 +60,7 @@ public class Building_Tests {
         //building_payload.setBuildingId("Building_ABC");
         building_payload.setBuildingName(faker.name().fullName());
         building_payload.setConstructionScheduleFrom("2025-02-01T12:03:55.621Z");
-        building_payload.setConstructionScheduleTo("2025-02-28T12:03:55.621Z");
+        building_payload.setConstructionScheduleTo("2025-06-01T12:03:55.621Z");
         building_payload.setTotalNoOfFloors(0);
         building_payload.setTotalBuildUpArea(10);
         building_payload.setAreaUnit("SqFt");
