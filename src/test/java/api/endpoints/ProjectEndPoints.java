@@ -147,4 +147,20 @@ public class ProjectEndPoints {
             .get(Routes_project.get_ProjectDetailsByProjId_url);  // Refer URL from Routes class
         return response;
     }
+    
+    
+    
+    
+ // Get Project details by project Id
+    public static Response getTimeLineByProjectId(String ProjectId, String userAgent) {  // implementation of (get/read project) endpoint
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("projectId", ProjectId)
+            .header("User-Agent", userAgent)  // Add User-Agent here
+        .when()
+            .get(Routes_project.get_ProjectTimelineByProjId_url);  // Refer URL from Routes class
+        return response;
+    }
 }

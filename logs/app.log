@@ -935,3 +935,70 @@
 2025-02-27 11:43:41 [main] INFO : Getting JWT token...
 2025-02-27 11:43:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM2ODE5LCJleHAiOjE3NDA3MjMyMTksImlhdCI6MTc0MDYzNjgxOX0.zcSsPCotuiUBDWqABtf_kN18Yy3ETFU5mmjrWfX676c
 2025-02-27 11:43:41 [main] INFO : Remove Toggle Archive Building by Building Id successfully.
+2025-02-27 12:33:08 [main] INFO : Starting testCreateProject with companyId: ABC01
+2025-02-27 12:33:08 [main] INFO : Project payload: api.payload.Project@2c9d90fc
+2025-02-27 12:33:08 [main] INFO : Making API call to create project...
+2025-02-27 12:33:08 [main] INFO : Getting JWT token...
+2025-02-27 12:33:09 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM5Nzg3LCJleHAiOjE3NDA3MjYxODcsImlhdCI6MTc0MDYzOTc4N30.NAM06wgb85v3uEPE3jy1QyLpKPA8xu5WIwZMdaMc308
+2025-02-27 12:33:10 [main] INFO : Project created successfully with status code: 200
+2025-02-27 12:33:10 [main] INFO : Starting testCreateProject with companyId: ABC01
+2025-02-27 12:33:10 [main] INFO : Project payload: api.payload.Project@5dfc7b3f
+2025-02-27 12:33:10 [main] INFO : Making API call to create project...
+2025-02-27 12:33:10 [main] INFO : Getting JWT token...
+2025-02-27 12:33:10 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM5Nzg3LCJleHAiOjE3NDA3MjYxODcsImlhdCI6MTc0MDYzOTc4N30.NAM06wgb85v3uEPE3jy1QyLpKPA8xu5WIwZMdaMc308
+2025-02-27 12:33:10 [main] INFO : Project created successfully with status code: 200
+2025-02-27 12:33:10 [main] INFO : Starting testCreateProject with companyId: ABC01
+2025-02-27 12:33:10 [main] INFO : Project payload: api.payload.Project@3ebfe048
+2025-02-27 12:33:10 [main] INFO : Making API call to create project...
+2025-02-27 12:33:10 [main] INFO : Getting JWT token...
+2025-02-27 12:33:10 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM5Nzg4LCJleHAiOjE3NDA3MjYxODgsImlhdCI6MTc0MDYzOTc4OH0.7RuqA7tfuVuli7p6S6Jr6ISTqOIblIX6hEwRXpWQ_Ko
+2025-02-27 12:33:10 [main] INFO : Project created successfully with status code: 200
+2025-02-27 12:33:10 [main] INFO : Starting testCreateProject with companyId: ABC01
+2025-02-27 12:33:10 [main] INFO : Project payload: api.payload.Project@15c900be
+2025-02-27 12:33:10 [main] INFO : Making API call to create project...
+2025-02-27 12:33:10 [main] INFO : Getting JWT token...
+2025-02-27 12:33:10 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM5Nzg4LCJleHAiOjE3NDA3MjYxODgsImlhdCI6MTc0MDYzOTc4OH0.7RuqA7tfuVuli7p6S6Jr6ISTqOIblIX6hEwRXpWQ_Ko
+2025-02-27 12:33:10 [main] INFO : Project created successfully with status code: 200
+2025-02-27 16:22:31 [main] INFO : Setting up data for tests...
+2025-02-27 16:22:31 [main] INFO : Data setup complete.
+2025-02-27 16:22:31 [main] INFO : Creating project with Project Id: string1234
+2025-02-27 16:22:31 [main] INFO : Getting JWT token...
+2025-02-27 16:22:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjUzNTUwLCJleHAiOjE3NDA3Mzk5NTAsImlhdCI6MTc0MDY1MzU1MH0.YtKs3ii7TGlyMZUQyjpr4LaDlak0e3CRUcj7yF1gI3g
+2025-02-27 16:22:33 [main] INFO : Status Code is: 200
+2025-02-27 16:22:33 [main] INFO : Project created successfully.
+2025-02-27 16:22:33 [main] INFO : Project Id (From response): Proj791
+2025-02-27 16:22:33 [main] INFO : Project ID is not null.
+2025-02-27 16:22:33 [main] INFO : Project ID saved to config.properties: Proj791
+2025-02-27 16:22:33 [main] INFO : Loaded Project ID from config.properties: Proj791
+2025-02-27 16:22:33 [main] INFO : Getting project with Id: Proj791
+2025-02-27 16:22:33 [main] INFO : Getting JWT token...
+2025-02-27 16:22:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjUzNTUwLCJleHAiOjE3NDA3Mzk5NTAsImlhdCI6MTc0MDY1MzU1MH0.YtKs3ii7TGlyMZUQyjpr4LaDlak0e3CRUcj7yF1gI3g
+2025-02-27 16:22:33 [main] INFO : Status Code is: 200
+2025-02-27 16:22:33 [main] INFO : Project retrieved successfully.
+2025-02-27 16:22:33 [main] INFO : Updating project with Id: Proj791
+2025-02-27 16:22:33 [main] INFO : Getting JWT token...
+2025-02-27 16:22:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjUzNTUxLCJleHAiOjE3NDA3Mzk5NTEsImlhdCI6MTc0MDY1MzU1MX0.iP5oA6w8lS2bki7iWS01U-kUtmiFPYflIyqNOw1MySo
+2025-02-27 16:22:33 [main] INFO : Status Code is: 200
+2025-02-27 16:22:33 [main] INFO : Project updated successfully.
+2025-02-27 16:22:33 [main] INFO : Updated Project Id (From updated response): Proj791
+2025-02-27 16:22:33 [main] INFO : Updated Project ID is not null.
+2025-02-27 16:22:33 [main] INFO : Getting Active projects with Company Id: C0001
+2025-02-27 16:22:33 [main] INFO : Getting JWT token...
+2025-02-27 16:22:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjUzNTUxLCJleHAiOjE3NDA3Mzk5NTEsImlhdCI6MTc0MDY1MzU1MX0.iP5oA6w8lS2bki7iWS01U-kUtmiFPYflIyqNOw1MySo
+2025-02-27 16:22:33 [main] INFO : Status Code is: 200
+2025-02-27 16:22:33 [main] INFO : Active Projects retrieved successfully.
+2025-02-27 16:22:33 [main] INFO : Getting Archived projects with Company Id: C0001
+2025-02-27 16:22:33 [main] INFO : Getting JWT token...
+2025-02-27 16:22:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjUzNTUxLCJleHAiOjE3NDA3Mzk5NTEsImlhdCI6MTc0MDY1MzU1MX0.iP5oA6w8lS2bki7iWS01U-kUtmiFPYflIyqNOw1MySo
+2025-02-27 16:22:33 [main] INFO : Status Code is: 200
+2025-02-27 16:22:33 [main] INFO : Archived Projects retrieved successfully.
+2025-02-27 16:22:33 [main] INFO : Getting project details with Id: Proj791
+2025-02-27 16:22:33 [main] INFO : Getting JWT token...
+2025-02-27 16:22:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjUzNTUxLCJleHAiOjE3NDA3Mzk5NTEsImlhdCI6MTc0MDY1MzU1MX0.iP5oA6w8lS2bki7iWS01U-kUtmiFPYflIyqNOw1MySo
+2025-02-27 16:22:33 [main] INFO : Status Code is: 200
+2025-02-27 16:22:33 [main] INFO : Project Details retrieved successfully.
+2025-02-27 16:22:33 [main] INFO : Getting project Timeline with Project Id: Proj791
+2025-02-27 16:22:33 [main] INFO : Getting JWT token...
+2025-02-27 16:22:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjUzNTUxLCJleHAiOjE3NDA3Mzk5NTEsImlhdCI6MTc0MDY1MzU1MX0.iP5oA6w8lS2bki7iWS01U-kUtmiFPYflIyqNOw1MySo
+2025-02-27 16:22:33 [main] INFO : Status Code is: 200
+2025-02-27 16:22:33 [main] INFO : Project TimeLine Details retrieved successfully.

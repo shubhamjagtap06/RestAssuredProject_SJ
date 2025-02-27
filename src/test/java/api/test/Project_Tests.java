@@ -47,8 +47,8 @@ public class Project_Tests {
         proj_payload = new Project();
 
         proj_payload.setProjectId("string1234");
-        //proj_payload.setCompanyId("string1234");
-        proj_payload.setCompanyId("C0001");
+        proj_payload.setCompanyId("string1234");
+        //proj_payload.setCompanyId("C0001");
         proj_payload.setProjectName(faker.name().firstName());
         proj_payload.setProjectName("Amsterdam");
         proj_payload.setDescription(faker.name().lastName());
@@ -247,6 +247,31 @@ public class Project_Tests {
             logger.info("Project Details retrieved successfully.");
         } catch (Exception e) {
             logger.error("Error occurred while retrieving the project details: " + e.getMessage());
+            // Check if it's a timeout-related exception and handle separately
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+    @Test(priority = 7, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetTimeLineByProjectId() {
+        try {
+            logger.info("Getting project Timeline with Project Id: " + sharedProjectIdFromResponse);
+
+            Response response = ProjectEndPoints.getTimeLineByProjectId(sharedProjectIdFromResponse, userAgent);
+            response.then().log().all();
+
+            //Assert.assertEquals(response.getStatusCode(), 200);
+         // Use custom assertion for status code
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Project TimeLine Details retrieved successfully.");
+        } catch (Exception e) {
+            logger.error("Error occurred while retrieving the project TimeLine details: " + e.getMessage());
             // Check if it's a timeout-related exception and handle separately
             if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
                 logger.error("Timeout error: " + e.getCause().getMessage());

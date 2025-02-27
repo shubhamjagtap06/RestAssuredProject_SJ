@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-27T11:43:39 IST" name="Construct Monitor Test Suite" finished-at="2025-02-27T11:43:41 IST" duration-ms="2011">
+  <suite started-at="2025-02-27T16:22:31 IST" name="Construct Monitor Test Suite" finished-at="2025-02-27T16:22:33 IST" duration-ms="2321">
     <groups>
     </groups>
-    <test started-at="2025-02-27T11:43:39 IST" name="Test" finished-at="2025-02-27T11:43:41 IST" duration-ms="2011">
-      <class name="api.test.Building_Tests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:39 IST" name="setupData" finished-at="2025-02-27T11:43:40 IST" duration-ms="303" status="PASS">
+    <test started-at="2025-02-27T16:22:31 IST" name="Test" finished-at="2025-02-27T16:22:33 IST" duration-ms="2321">
+      <class name="api.test.Project_Tests">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:31 IST" name="setupData" finished-at="2025-02-27T16:22:31 IST" duration-ms="372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:40 IST" name="setupUserAgent" finished-at="2025-02-27T11:43:40 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:31 IST" name="setupUserAgent" finished-at="2025-02-27T16:22:31 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_GetBuildings()[pri:1, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:40 IST" name="test_GetBuildings" finished-at="2025-02-27T11:43:41 IST" duration-ms="1121" status="PASS">
+        <test-method signature="test_CreateProject()[pri:1, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:31 IST" name="test_CreateProject" finished-at="2025-02-27T16:22:33 IST" duration-ms="1527" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_GetBuildings -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:41 IST" name="setupUserAgent" finished-at="2025-02-27T11:43:41 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- test_CreateProject -->
+        <test-method signature="test_GetProject()[pri:2, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:33 IST" name="test_GetProject" finished-at="2025-02-27T16:22:33 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_GetProject -->
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:33 IST" name="setupUserAgent" finished-at="2025-02-27T16:22:33 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,15 +41,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_AddBuilding()[pri:2, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:41 IST" name="test_AddBuilding" finished-at="2025-02-27T11:43:41 IST" duration-ms="270" status="PASS">
+        <test-method signature="test_UpdateProject()[pri:3, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:33 IST" name="test_UpdateProject" finished-at="2025-02-27T16:22:33 IST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_AddBuilding -->
-        <test-method signature="test_GetAllBuildingsByProjectId()[pri:3, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:41 IST" name="test_GetAllBuildingsByProjectId" finished-at="2025-02-27T11:43:41 IST" duration-ms="48" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_GetAllBuildingsByProjectId -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:41 IST" name="setupUserAgent" finished-at="2025-02-27T11:43:41 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- test_UpdateProject -->
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:33 IST" name="setupUserAgent" finished-at="2025-02-27T16:22:33 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,11 +56,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_Update_Building()[pri:4, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:41 IST" name="test_Update_Building" finished-at="2025-02-27T11:43:41 IST" duration-ms="60" status="PASS">
+        <test-method signature="test_GetActiveProject()[pri:4, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:33 IST" name="test_GetActiveProject" finished-at="2025-02-27T16:22:33 IST" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_Update_Building -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:41 IST" name="setupUserAgent" finished-at="2025-02-27T11:43:41 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- test_GetActiveProject -->
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:33 IST" name="setupUserAgent" finished-at="2025-02-27T16:22:33 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,7 +71,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:41 IST" name="setupUserAgent" finished-at="2025-02-27T11:43:41 IST" duration-ms="0" status="PASS">
+        <test-method signature="test_GetArchivedProject()[pri:5, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:33 IST" name="test_GetArchivedProject" finished-at="2025-02-27T16:22:33 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_GetArchivedProject -->
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:33 IST" name="setupUserAgent" finished-at="2025-02-27T16:22:33 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,15 +86,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_toggleArchiveBuilding()[pri:5, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:41 IST" name="test_toggleArchiveBuilding" finished-at="2025-02-27T11:43:41 IST" duration-ms="36" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_toggleArchiveBuilding -->
-        <test-method signature="test_GetArchivedBuildingsByProjectId()[pri:6, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:41 IST" name="test_GetArchivedBuildingsByProjectId" finished-at="2025-02-27T11:43:41 IST" duration-ms="31" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_GetArchivedBuildingsByProjectId -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:41 IST" name="setupUserAgent" finished-at="2025-02-27T11:43:41 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:33 IST" name="setupUserAgent" finished-at="2025-02-27T16:22:33 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,11 +97,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
-        <test-method signature="test_removeToggleArchiveBuilding()[pri:7, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:41 IST" name="test_removeToggleArchiveBuilding" finished-at="2025-02-27T11:43:41 IST" duration-ms="35" status="PASS">
+        <test-method signature="test_GetProjectDetails()[pri:6, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:33 IST" name="test_GetProjectDetails" finished-at="2025-02-27T16:22:33 IST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_removeToggleArchiveBuilding -->
-        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.Building_Tests@2d36e77e]" started-at="2025-02-27T11:43:41 IST" name="setupUserAgent" finished-at="2025-02-27T11:43:41 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- test_GetProjectDetails -->
+        <test-method signature="test_GetTimeLineByProjectId()[pri:7, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:33 IST" name="test_GetTimeLineByProjectId" finished-at="2025-02-27T16:22:33 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_GetTimeLineByProjectId -->
+        <test-method is-config="true" signature="setupUserAgent(java.lang.String)[pri:0, instance:api.test.Project_Tests@4d722ac9]" started-at="2025-02-27T16:22:33 IST" name="setupUserAgent" finished-at="2025-02-27T16:22:33 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,7 +116,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupUserAgent -->
-      </class> <!-- api.test.Building_Tests -->
+      </class> <!-- api.test.Project_Tests -->
     </test> <!-- Test -->
   </suite> <!-- Construct Monitor Test Suite -->
 </testng-results>
