@@ -74,4 +74,57 @@ public class BuildingEndPoints {
 	            .post(Routes_building.updateBuildingByBuildingId_url);  // Refer URL from Routes class
 	        return response;
 	    }
+	    
+	    
+	    
+	 // Toggle Archive Building
+	    public static Response ToggleArchiveBuilding(String BuildingId, String userId, String userAgent) {   
+	        // Get the token for authorization
+	        bearerToken = api.test.User_Tests.getToken(userAgent);
+	        Response response = 
+	        given()
+	            .headers("Authorization", "Bearer " + bearerToken)
+	            .contentType(ContentType.JSON)  // From Postman or Swagger (part of request)
+	            .accept(ContentType.JSON)
+	            .pathParam("buildingId", BuildingId)
+	            .pathParam("uid", userId)
+	            .header("User-Agent", userAgent)  // Add User-Agent here
+	        .when()
+	            .post(Routes_building.toggleArchiveBuilding_url);  // Refer URL from Routes class
+	        return response;
+	    }
+	    
+	    
+	    
+	    //Get Archived Buildings by Project Id
+	    public static Response getArchivedBuildingsByProjectId(String ProjectId, String userAgent) {  // implementation of (get/read project) endpoint
+	       // Get the token for authorization
+	        bearerToken = api.test.User_Tests.getToken(userAgent);
+	        Response response = 
+	        given()
+	            .headers("Authorization", "Bearer " + bearerToken)
+	            .pathParam("projectId", ProjectId)
+	            .header("User-Agent", userAgent)  // Add User-Agent here
+	        .when()
+	            .get(Routes_building.getArchivedBuildingsByProjectId_url);  // Refer URL from Routes class
+	        return response;
+	    }
+	    
+	    
+	    
+	 // Remove Toggle Archive Building
+	    public static Response RemoveToggleArchiveBuilding(String BuildingId, String userAgent) {   
+	        // Get the token for authorization
+	        bearerToken = api.test.User_Tests.getToken(userAgent);
+	        Response response = 
+	        given()
+	            .headers("Authorization", "Bearer " + bearerToken)
+	            .contentType(ContentType.JSON)  // From Postman or Swagger (part of request)
+	            .accept(ContentType.JSON)
+	            .pathParam("buildingId", BuildingId)
+	            .header("User-Agent", userAgent)  // Add User-Agent here
+	        .when()
+	            .post(Routes_building.removeToggleArchiveBuilding_url);  // Refer URL from Routes class
+	        return response;
+	    }
 }

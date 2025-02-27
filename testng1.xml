@@ -9,9 +9,9 @@
  <test name="Test">
  	<parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"/>
     <classes>
-    	<class name="api.test.Project_Tests"/>
-    	<!-- <class name="api.test.Building_Tests"/>
-    	<class name="api.test.Floor_Tests"/>
+    	<!-- <class name="api.test.Project_Tests"/> -->
+    	<class name="api.test.Building_Tests"/>
+    	<!-- <class name="api.test.Floor_Tests"/>
     	<class name="api.test.Region_Tests"/>
     	<class name="api.test.ScanData_Tests"/>
       	<class name="api.test.DDtests"/>

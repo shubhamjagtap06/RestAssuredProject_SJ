@@ -124,6 +124,8 @@ public class Building_Tests {
         }
     }
     
+    
+    
     // Add new building
     @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_AddBuilding() {
@@ -153,7 +155,6 @@ public class Building_Tests {
             Assert.fail("Test Case failed: " + e.getMessage());
         }
     }
-    
     private void saveBuildingIdToPropertiesFile(String buildingId) {
         Properties properties = new Properties();
         try (OutputStream output = new FileOutputStream("C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\src\\test\\resources\\config_buildingId.properties")) {
@@ -169,6 +170,8 @@ public class Building_Tests {
             logger.error("Error saving Building ID to config.properties: " + io.getMessage());
         }
     }
+    
+    
     
     // Get all buildings by project id
     @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here too
@@ -193,6 +196,8 @@ public class Building_Tests {
         }
     }
     
+    
+    
     // Update Building
     @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here
     public void test_Update_Building() {
@@ -211,6 +216,83 @@ public class Building_Tests {
             Assert.assertEquals(response.getStatusCode(), 200);
             logger.info("Building updated successfully.");
             
+        } catch (Exception e) {
+            logger.error("Test case failed: " + e.getMessage());
+            // Check if it's a timeout-related exception and handle separately
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+ // Toggle Archive for building by building id
+    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class) 
+    public void test_toggleArchiveBuilding() {
+        try {
+            logger.info("Toggle Archive Building by Building Id:" + this.building_payload.getBuildingId());
+            
+            // Pass the User-Agent header to simulate browser behavior
+            Response response = BuildingEndPoints.ToggleArchiveBuilding(sharedBuildingIdFromResponse, "UID22", userAgent);// Pass userAgent to the endpoint
+            response.then().log().all();
+            
+            Assert.assertEquals(response.getStatusCode(), 200);
+            Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
+            logger.info("Toggle Archive Building by Building Id successfully.");
+        } catch (Exception e) {
+            logger.error("Test case failed: " + e.getMessage());
+            // Check if it's a timeout-related exception and handle separately
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+ // Get all Archived buildings by project id
+    @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here too
+    public void test_GetArchivedBuildingsByProjectId() {
+        try {
+            logger.info("Getting Archived Buildings by Project Id:" + this.building_payload.getProjectId());
+            
+            // Pass the User-Agent header to simulate browser behavior
+            Response response = BuildingEndPoints.getArchivedBuildingsByProjectId(this.building_payload.getProjectId(), userAgent); // Pass userAgent to the endpoint
+            response.then().log().all();
+            
+            Assert.assertEquals(response.getStatusCode(), 200);
+            Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
+            logger.info("All Archived Buildings by Project Id retrieved successfully.");
+        } catch (Exception e) {
+            logger.error("Test case failed: " + e.getMessage());
+            // Check if it's a timeout-related exception and handle separately
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+ // Toggle Archive for building by building id
+    @Test(priority = 7, retryAnalyzer = RetryAnalyzer.class) 
+    public void test_removeToggleArchiveBuilding() {
+        try {
+            logger.info("Remove Toggle Archive Building by Building Id:" + this.building_payload.getBuildingId());
+            
+            // Pass the User-Agent header to simulate browser behavior
+            Response response = BuildingEndPoints.RemoveToggleArchiveBuilding(sharedBuildingIdFromResponse, userAgent);// Pass userAgent to the endpoint
+            response.then().log().all();
+            
+            Assert.assertEquals(response.getStatusCode(), 200);
+            Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
+            logger.info("Remove Toggle Archive Building by Building Id successfully.");
         } catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
             // Check if it's a timeout-related exception and handle separately

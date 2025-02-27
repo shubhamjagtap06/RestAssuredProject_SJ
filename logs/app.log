@@ -799,3 +799,139 @@
 2025-02-26 14:45:10 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNTYxMzA3LCJleHAiOjE3NDA2NDc3MDcsImlhdCI6MTc0MDU2MTMwN30.kfyjJfcphTAH2mlaJJh4kStYRDQvnH2uJClDQ_leedQ
 2025-02-26 14:45:10 [main] INFO : Status Code is: 200
 2025-02-26 14:45:10 [main] INFO : Archived Projects retrieved successfully.
+2025-02-27 11:18:58 [main] INFO : Setting up data for tests...
+2025-02-27 11:18:58 [main] INFO : Loaded Project ID from config.properties: Proj772
+2025-02-27 11:18:58 [main] INFO : Data setup complete.
+2025-02-27 11:18:58 [main] INFO : Getting all Buildings
+2025-02-27 11:18:58 [main] INFO : Getting JWT token...
+2025-02-27 11:18:59 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1MzM3LCJleHAiOjE3NDA3MjE3MzcsImlhdCI6MTc0MDYzNTMzN30.7rcGutfxMd11s-TJGSAInC2X0a27fpyEMWHI_Oe14hg
+2025-02-27 11:18:59 [main] INFO : All Buildings retrieved successfully.
+2025-02-27 11:18:59 [main] INFO : Adding Building to Project Id: Proj772
+2025-02-27 11:18:59 [main] INFO : Getting JWT token...
+2025-02-27 11:19:00 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1MzM3LCJleHAiOjE3NDA3MjE3MzcsImlhdCI6MTc0MDYzNTMzN30.7rcGutfxMd11s-TJGSAInC2X0a27fpyEMWHI_Oe14hg
+2025-02-27 11:19:00 [main] INFO : Building is added successfully to Project ID:Proj772
+2025-02-27 11:19:00 [main] INFO : Building Id (From response): 8ce33bb2-c490-4283-97be-4617aae7ad57
+2025-02-27 11:19:00 [main] INFO : Building ID saved to config.properties: 8ce33bb2-c490-4283-97be-4617aae7ad57
+2025-02-27 11:19:00 [main] INFO : Loaded Building ID from config.properties: 8ce33bb2-c490-4283-97be-4617aae7ad57
+2025-02-27 11:19:00 [main] INFO : Getting all Buildings by Project Id:Proj772
+2025-02-27 11:19:00 [main] INFO : Getting JWT token...
+2025-02-27 11:19:00 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1MzM4LCJleHAiOjE3NDA3MjE3MzgsImlhdCI6MTc0MDYzNTMzOH0.cBSmNkec8a882oUf1CMcDkJ5rSL_TvrlPBsbPrfcHMY
+2025-02-27 11:19:00 [main] INFO : All Buildings by Project Id retrieved successfully.
+2025-02-27 11:19:00 [main] INFO : Updating Building with Building Id: 8ce33bb2-c490-4283-97be-4617aae7ad57
+2025-02-27 11:19:00 [main] INFO : Building updated successfully.
+2025-02-27 11:19:00 [main] INFO : Toggle Archive Building by Building Id:8ce33bb2-c490-4283-97be-4617aae7ad57
+2025-02-27 11:19:00 [main] INFO : Getting JWT token...
+2025-02-27 11:19:00 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1MzM4LCJleHAiOjE3NDA3MjE3MzgsImlhdCI6MTc0MDYzNTMzOH0.cBSmNkec8a882oUf1CMcDkJ5rSL_TvrlPBsbPrfcHMY
+2025-02-27 11:19:00 [main] INFO : Toggle Archive Building by Building Id successfully.
+2025-02-27 11:19:37 [main] INFO : Setting up data for tests...
+2025-02-27 11:19:37 [main] INFO : Loaded Project ID from config.properties: Proj772
+2025-02-27 11:19:37 [main] INFO : Data setup complete.
+2025-02-27 11:19:37 [main] INFO : Getting all Buildings
+2025-02-27 11:19:37 [main] INFO : Getting JWT token...
+2025-02-27 11:19:38 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1Mzc1LCJleHAiOjE3NDA3MjE3NzUsImlhdCI6MTc0MDYzNTM3NX0.Un3_rAjzOgzdUHm2lXDFV_7VcCcekeg1r82wHGx6Meo
+2025-02-27 11:19:38 [main] INFO : All Buildings retrieved successfully.
+2025-02-27 11:19:38 [main] INFO : Adding Building to Project Id: Proj772
+2025-02-27 11:19:38 [main] INFO : Getting JWT token...
+2025-02-27 11:19:38 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1Mzc2LCJleHAiOjE3NDA3MjE3NzYsImlhdCI6MTc0MDYzNTM3Nn0.N96grYjkke3x34JCqtnwiI---zurR4CQU1ApKQQJFM4
+2025-02-27 11:19:38 [main] INFO : Building is added successfully to Project ID:Proj772
+2025-02-27 11:19:38 [main] INFO : Building Id (From response): e9614f3e-6f92-4d5f-a2ad-f2742d2bd778
+2025-02-27 11:19:38 [main] INFO : Building ID saved to config.properties: e9614f3e-6f92-4d5f-a2ad-f2742d2bd778
+2025-02-27 11:19:38 [main] INFO : Loaded Building ID from config.properties: e9614f3e-6f92-4d5f-a2ad-f2742d2bd778
+2025-02-27 11:19:38 [main] INFO : Getting all Buildings by Project Id:Proj772
+2025-02-27 11:19:38 [main] INFO : Getting JWT token...
+2025-02-27 11:19:38 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1Mzc2LCJleHAiOjE3NDA3MjE3NzYsImlhdCI6MTc0MDYzNTM3Nn0.N96grYjkke3x34JCqtnwiI---zurR4CQU1ApKQQJFM4
+2025-02-27 11:19:38 [main] INFO : All Buildings by Project Id retrieved successfully.
+2025-02-27 11:19:38 [main] INFO : Updating Building with Building Id: e9614f3e-6f92-4d5f-a2ad-f2742d2bd778
+2025-02-27 11:19:39 [main] INFO : Building updated successfully.
+2025-02-27 11:19:39 [main] INFO : Toggle Archive Building by Building Id:e9614f3e-6f92-4d5f-a2ad-f2742d2bd778
+2025-02-27 11:19:39 [main] INFO : Getting JWT token...
+2025-02-27 11:19:39 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1Mzc2LCJleHAiOjE3NDA3MjE3NzYsImlhdCI6MTc0MDYzNTM3Nn0.N96grYjkke3x34JCqtnwiI---zurR4CQU1ApKQQJFM4
+2025-02-27 11:19:39 [main] INFO : Toggle Archive Building by Building Id successfully.
+2025-02-27 11:26:23 [main] INFO : Setting up data for tests...
+2025-02-27 11:26:23 [main] INFO : Loaded Project ID from config.properties: Proj772
+2025-02-27 11:26:23 [main] INFO : Data setup complete.
+2025-02-27 11:26:23 [main] INFO : Getting all Buildings
+2025-02-27 11:26:23 [main] INFO : Getting JWT token...
+2025-02-27 11:26:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1NzgxLCJleHAiOjE3NDA3MjIxODEsImlhdCI6MTc0MDYzNTc4MX0.yLWdR6ipd8B0flcEhpEI3atqENNKLN11zPuaul4UxpQ
+2025-02-27 11:26:24 [main] INFO : All Buildings retrieved successfully.
+2025-02-27 11:26:24 [main] INFO : Adding Building to Project Id: Proj772
+2025-02-27 11:26:24 [main] INFO : Getting JWT token...
+2025-02-27 11:26:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1NzgyLCJleHAiOjE3NDA3MjIxODIsImlhdCI6MTc0MDYzNTc4Mn0.KK0xNTsvuGiqcN4g0W6U8X2cHZZ1xMb8kVv9eDBHMkU
+2025-02-27 11:26:24 [main] INFO : Building is added successfully to Project ID:Proj772
+2025-02-27 11:26:24 [main] INFO : Building Id (From response): 064f51bd-c6f4-4132-b11a-3e9d016d7764
+2025-02-27 11:26:24 [main] INFO : Building ID saved to config.properties: 064f51bd-c6f4-4132-b11a-3e9d016d7764
+2025-02-27 11:26:24 [main] INFO : Loaded Building ID from config.properties: 064f51bd-c6f4-4132-b11a-3e9d016d7764
+2025-02-27 11:26:24 [main] INFO : Getting all Buildings by Project Id:Proj772
+2025-02-27 11:26:24 [main] INFO : Getting JWT token...
+2025-02-27 11:26:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1NzgyLCJleHAiOjE3NDA3MjIxODIsImlhdCI6MTc0MDYzNTc4Mn0.KK0xNTsvuGiqcN4g0W6U8X2cHZZ1xMb8kVv9eDBHMkU
+2025-02-27 11:26:24 [main] INFO : All Buildings by Project Id retrieved successfully.
+2025-02-27 11:26:24 [main] INFO : Getting Archived Buildings by Project Id:Proj772
+2025-02-27 11:26:24 [main] INFO : Getting JWT token...
+2025-02-27 11:26:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1NzgyLCJleHAiOjE3NDA3MjIxODIsImlhdCI6MTc0MDYzNTc4Mn0.KK0xNTsvuGiqcN4g0W6U8X2cHZZ1xMb8kVv9eDBHMkU
+2025-02-27 11:26:24 [main] INFO : All Archived Buildings by Project Id retrieved successfully.
+2025-02-27 11:26:24 [main] INFO : Updating Building with Building Id: 064f51bd-c6f4-4132-b11a-3e9d016d7764
+2025-02-27 11:26:24 [main] INFO : Building updated successfully.
+2025-02-27 11:26:24 [main] INFO : Toggle Archive Building by Building Id:064f51bd-c6f4-4132-b11a-3e9d016d7764
+2025-02-27 11:26:24 [main] INFO : Getting JWT token...
+2025-02-27 11:26:25 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1NzgyLCJleHAiOjE3NDA3MjIxODIsImlhdCI6MTc0MDYzNTc4Mn0.KK0xNTsvuGiqcN4g0W6U8X2cHZZ1xMb8kVv9eDBHMkU
+2025-02-27 11:26:25 [main] INFO : Toggle Archive Building by Building Id successfully.
+2025-02-27 11:26:53 [main] INFO : Setting up data for tests...
+2025-02-27 11:26:53 [main] INFO : Loaded Project ID from config.properties: Proj772
+2025-02-27 11:26:53 [main] INFO : Data setup complete.
+2025-02-27 11:26:53 [main] INFO : Getting all Buildings
+2025-02-27 11:26:53 [main] INFO : Getting JWT token...
+2025-02-27 11:26:54 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1ODEyLCJleHAiOjE3NDA3MjIyMTIsImlhdCI6MTc0MDYzNTgxMn0.w6FDvnEqfe4LlMI2YnqRiDZ2J1OWF9LbSFyJEpm2PMc
+2025-02-27 11:26:54 [main] INFO : All Buildings retrieved successfully.
+2025-02-27 11:26:54 [main] INFO : Adding Building to Project Id: Proj772
+2025-02-27 11:26:54 [main] INFO : Getting JWT token...
+2025-02-27 11:26:54 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1ODEyLCJleHAiOjE3NDA3MjIyMTIsImlhdCI6MTc0MDYzNTgxMn0.w6FDvnEqfe4LlMI2YnqRiDZ2J1OWF9LbSFyJEpm2PMc
+2025-02-27 11:26:55 [main] INFO : Building is added successfully to Project ID:Proj772
+2025-02-27 11:26:55 [main] INFO : Building Id (From response): 8c5b7fbe-8be1-4f19-b21a-b3471380d49d
+2025-02-27 11:26:55 [main] INFO : Building ID saved to config.properties: 8c5b7fbe-8be1-4f19-b21a-b3471380d49d
+2025-02-27 11:26:55 [main] INFO : Loaded Building ID from config.properties: 8c5b7fbe-8be1-4f19-b21a-b3471380d49d
+2025-02-27 11:26:55 [main] INFO : Getting all Buildings by Project Id:Proj772
+2025-02-27 11:26:55 [main] INFO : Getting JWT token...
+2025-02-27 11:26:55 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1ODEzLCJleHAiOjE3NDA3MjIyMTMsImlhdCI6MTc0MDYzNTgxM30.Iddkta0si5xeJyasARLfYIIZQkay_Pm1SBetseQD_IA
+2025-02-27 11:26:55 [main] INFO : All Buildings by Project Id retrieved successfully.
+2025-02-27 11:26:55 [main] INFO : Updating Building with Building Id: 8c5b7fbe-8be1-4f19-b21a-b3471380d49d
+2025-02-27 11:26:55 [main] INFO : Building updated successfully.
+2025-02-27 11:26:55 [main] INFO : Toggle Archive Building by Building Id:8c5b7fbe-8be1-4f19-b21a-b3471380d49d
+2025-02-27 11:26:55 [main] INFO : Getting JWT token...
+2025-02-27 11:26:55 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1ODEzLCJleHAiOjE3NDA3MjIyMTMsImlhdCI6MTc0MDYzNTgxM30.Iddkta0si5xeJyasARLfYIIZQkay_Pm1SBetseQD_IA
+2025-02-27 11:26:55 [main] INFO : Toggle Archive Building by Building Id successfully.
+2025-02-27 11:26:55 [main] INFO : Getting Archived Buildings by Project Id:Proj772
+2025-02-27 11:26:55 [main] INFO : Getting JWT token...
+2025-02-27 11:26:55 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM1ODEzLCJleHAiOjE3NDA3MjIyMTMsImlhdCI6MTc0MDYzNTgxM30.Iddkta0si5xeJyasARLfYIIZQkay_Pm1SBetseQD_IA
+2025-02-27 11:26:55 [main] INFO : All Archived Buildings by Project Id retrieved successfully.
+2025-02-27 11:43:40 [main] INFO : Setting up data for tests...
+2025-02-27 11:43:40 [main] INFO : Loaded Project ID from config.properties: Proj772
+2025-02-27 11:43:40 [main] INFO : Data setup complete.
+2025-02-27 11:43:40 [main] INFO : Getting all Buildings
+2025-02-27 11:43:40 [main] INFO : Getting JWT token...
+2025-02-27 11:43:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM2ODE4LCJleHAiOjE3NDA3MjMyMTgsImlhdCI6MTc0MDYzNjgxOH0.MUPft7LeysqhzLk1ADi3sDx4h_mHh_n-xxTjw2punso
+2025-02-27 11:43:41 [main] INFO : All Buildings retrieved successfully.
+2025-02-27 11:43:41 [main] INFO : Adding Building to Project Id: Proj772
+2025-02-27 11:43:41 [main] INFO : Getting JWT token...
+2025-02-27 11:43:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM2ODE5LCJleHAiOjE3NDA3MjMyMTksImlhdCI6MTc0MDYzNjgxOX0.zcSsPCotuiUBDWqABtf_kN18Yy3ETFU5mmjrWfX676c
+2025-02-27 11:43:41 [main] INFO : Building is added successfully to Project ID:Proj772
+2025-02-27 11:43:41 [main] INFO : Building Id (From response): f59db14c-6b3c-4137-af3f-13b12b2d3ce7
+2025-02-27 11:43:41 [main] INFO : Building ID saved to config.properties: f59db14c-6b3c-4137-af3f-13b12b2d3ce7
+2025-02-27 11:43:41 [main] INFO : Loaded Building ID from config.properties: f59db14c-6b3c-4137-af3f-13b12b2d3ce7
+2025-02-27 11:43:41 [main] INFO : Getting all Buildings by Project Id:Proj772
+2025-02-27 11:43:41 [main] INFO : Getting JWT token...
+2025-02-27 11:43:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM2ODE5LCJleHAiOjE3NDA3MjMyMTksImlhdCI6MTc0MDYzNjgxOX0.zcSsPCotuiUBDWqABtf_kN18Yy3ETFU5mmjrWfX676c
+2025-02-27 11:43:41 [main] INFO : All Buildings by Project Id retrieved successfully.
+2025-02-27 11:43:41 [main] INFO : Updating Building with Building Id: f59db14c-6b3c-4137-af3f-13b12b2d3ce7
+2025-02-27 11:43:41 [main] INFO : Building updated successfully.
+2025-02-27 11:43:41 [main] INFO : Toggle Archive Building by Building Id:f59db14c-6b3c-4137-af3f-13b12b2d3ce7
+2025-02-27 11:43:41 [main] INFO : Getting JWT token...
+2025-02-27 11:43:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM2ODE5LCJleHAiOjE3NDA3MjMyMTksImlhdCI6MTc0MDYzNjgxOX0.zcSsPCotuiUBDWqABtf_kN18Yy3ETFU5mmjrWfX676c
+2025-02-27 11:43:41 [main] INFO : Toggle Archive Building by Building Id successfully.
+2025-02-27 11:43:41 [main] INFO : Getting Archived Buildings by Project Id:Proj772
+2025-02-27 11:43:41 [main] INFO : Getting JWT token...
+2025-02-27 11:43:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM2ODE5LCJleHAiOjE3NDA3MjMyMTksImlhdCI6MTc0MDYzNjgxOX0.zcSsPCotuiUBDWqABtf_kN18Yy3ETFU5mmjrWfX676c
+2025-02-27 11:43:41 [main] INFO : All Archived Buildings by Project Id retrieved successfully.
+2025-02-27 11:43:41 [main] INFO : Remove Toggle Archive Building by Building Id:f59db14c-6b3c-4137-af3f-13b12b2d3ce7
+2025-02-27 11:43:41 [main] INFO : Getting JWT token...
+2025-02-27 11:43:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNjM2ODE5LCJleHAiOjE3NDA3MjMyMTksImlhdCI6MTc0MDYzNjgxOX0.zcSsPCotuiUBDWqABtf_kN18Yy3ETFU5mmjrWfX676c
+2025-02-27 11:43:41 [main] INFO : Remove Toggle Archive Building by Building Id successfully.
