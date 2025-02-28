@@ -20,7 +20,8 @@ public class Routes_project {
 	public static String get_archivedProject_url =	base_url+"/api/Project/GetArchivedProject/{CompanyId}/{UserId}";
 	public static String get_ProjectDetailsByProjId_url = base_url+"/api/Project/GetProjectDetails/{projectId}";
 	public static String get_ProjectTimelineByProjId_url = base_url+"/api/Project/GetTimelineByProjectId/{projectId}";
-	
+	public static String get_AreaByProjId_url = base_url+"/api/Project/GetAreaByProjectId/{projectId}";
+	public static String get_CompanyDetailsByProjId_url = base_url+"/api/Project/GetCompanyDetailsByProjectId/{projectId}";
 	
 	
 	

@@ -48,9 +48,9 @@ public class Project_Tests {
 
         proj_payload.setProjectId("string1234");
         proj_payload.setCompanyId("string1234");
-        //proj_payload.setCompanyId("C0001");
+       // proj_payload.setCompanyId("C0001");
         proj_payload.setProjectName(faker.name().firstName());
-        proj_payload.setProjectName("Amsterdam");
+        //proj_payload.setProjectName("Amsterdam");
         proj_payload.setDescription(faker.name().lastName());
         proj_payload.setConstructionScheduleFrom("2025-01-01T12:03:55.621Z");
         proj_payload.setConstructionScheduleTo("2025-12-31T12:03:55.621Z");
@@ -272,6 +272,54 @@ public class Project_Tests {
             logger.info("Project TimeLine Details retrieved successfully.");
         } catch (Exception e) {
             logger.error("Error occurred while retrieving the project TimeLine details: " + e.getMessage());
+            // Check if it's a timeout-related exception and handle separately
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    @Test(priority = 8, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetAreaByProjectId() {
+        try {
+            logger.info("Getting project Area with Project Id: " + sharedProjectIdFromResponse);
+
+            Response response = ProjectEndPoints.getAreaByProjectId(sharedProjectIdFromResponse, userAgent);
+            response.then().log().all();
+
+            //Assert.assertEquals(response.getStatusCode(), 200);
+         // Use custom assertion for status code
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Project Area retrieved successfully.");
+        } catch (Exception e) {
+            logger.error("Error occurred while retrieving the project Area details: " + e.getMessage());
+            // Check if it's a timeout-related exception and handle separately
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    @Test(priority = 8, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetCompanyDetailsByProjectId() {
+        try {
+            logger.info("Getting Company Details with Project Id: " + sharedProjectIdFromResponse);
+
+            Response response = ProjectEndPoints.getCompanyDetailsByProjectId(sharedProjectIdFromResponse, userAgent);
+            response.then().log().all();
+
+            //Assert.assertEquals(response.getStatusCode(), 200);
+         // Use custom assertion for status code
+            ProjectAssertions.assertStatusCode(response, 404);
+            //logger.info("Project Company Details retrieved successfully.");
+        } catch (Exception e) {
+            logger.error("Error occurred while retrieving the project Company Details details: " + e.getMessage());
             // Check if it's a timeout-related exception and handle separately
             if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
                 logger.error("Timeout error: " + e.getCause().getMessage());

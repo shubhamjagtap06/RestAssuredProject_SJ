@@ -151,7 +151,7 @@ public class ProjectEndPoints {
     
     
     
- // Get Project details by project Id
+ // Get Timeline by project Id
     public static Response getTimeLineByProjectId(String ProjectId, String userAgent) {  // implementation of (get/read project) endpoint
     	bearerToken = api.test.User_Tests.getToken(userAgent);
         Response response = 
@@ -161,6 +161,38 @@ public class ProjectEndPoints {
             .header("User-Agent", userAgent)  // Add User-Agent here
         .when()
             .get(Routes_project.get_ProjectTimelineByProjId_url);  // Refer URL from Routes class
+        return response;
+    }
+    
+    
+    
+    
+    // Get Area by project Id
+    public static Response getAreaByProjectId(String ProjectId, String userAgent) {  // implementation of (get/read project) endpoint
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("projectId", ProjectId)
+            .header("User-Agent", userAgent)  // Add User-Agent here
+        .when()
+            .get(Routes_project.get_AreaByProjId_url);  // Refer URL from Routes class
+        return response;
+    }
+    
+    
+    
+    
+    // Get company details by project Id
+    public static Response getCompanyDetailsByProjectId(String ProjectId, String userAgent) {  // implementation of (get/read project) endpoint
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("projectId", ProjectId)
+            .header("User-Agent", userAgent)  // Add User-Agent here
+        .when()
+            .get(Routes_project.get_CompanyDetailsByProjId_url);  // Refer URL from Routes class
         return response;
     }
 }

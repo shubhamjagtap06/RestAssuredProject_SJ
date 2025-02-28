@@ -9,8 +9,8 @@
     <classes>
       <class name="api.test.Project_Tests">
         <methods>
-          <include name="test_GetArchivedProject"/>
           <include name="setupUserAgent"/>
+          <include name="test_GetCompanyDetailsByProjectId"/>
           <include name="setupData"/>
         </methods>
       </class> <!-- api.test.Project_Tests -->
