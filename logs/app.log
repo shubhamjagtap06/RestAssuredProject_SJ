@@ -1,637 +1,260 @@
-2025-02-28 16:22:39 [main] INFO : Setting up data for tests...
-2025-02-28 16:22:39 [main] INFO : Data setup complete.
-2025-02-28 16:22:39 [main] INFO : Creating project with Project Id: string1234
-2025-02-28 16:22:39 [main] INFO : Getting JWT token...
-2025-02-28 16:22:40 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU3LCJleHAiOjE3NDA4MjYzNTcsImlhdCI6MTc0MDczOTk1N30.HrOGl0NoW7XIRbL56__G0ScVTpNkoZbHyhO1YRS8A0Q
-2025-02-28 16:22:40 [main] INFO : Status Code is: 200
-2025-02-28 16:22:40 [main] INFO : Project created successfully.
-2025-02-28 16:22:40 [main] INFO : Project Id (From response): Proj812
-2025-02-28 16:22:40 [main] INFO : Project ID is not null.
-2025-02-28 16:22:40 [main] INFO : Project ID saved to config.properties: Proj812
-2025-02-28 16:22:40 [main] INFO : Loaded Project ID from config.properties: Proj812
-2025-02-28 16:22:40 [main] INFO : Getting project with Id: Proj812
-2025-02-28 16:22:40 [main] INFO : Getting JWT token...
-2025-02-28 16:22:40 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU4LCJleHAiOjE3NDA4MjYzNTgsImlhdCI6MTc0MDczOTk1OH0.vq0G8xau5Ds9QwpU0JuiQN_GR7lHAt-xdfU409PSdPA
-2025-02-28 16:22:40 [main] INFO : Status Code is: 200
-2025-02-28 16:22:40 [main] INFO : Project retrieved successfully.
-2025-02-28 16:22:41 [main] INFO : Updating project with Id: Proj812
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU4LCJleHAiOjE3NDA4MjYzNTgsImlhdCI6MTc0MDczOTk1OH0.vq0G8xau5Ds9QwpU0JuiQN_GR7lHAt-xdfU409PSdPA
-2025-02-28 16:22:41 [main] INFO : Status Code is: 200
-2025-02-28 16:22:41 [main] INFO : Project updated successfully.
-2025-02-28 16:22:41 [main] INFO : Updated Project Id (From updated response): Proj812
-2025-02-28 16:22:41 [main] INFO : Updated Project ID is not null.
-2025-02-28 16:22:41 [main] INFO : Getting Active projects with Company Id: C0001
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU4LCJleHAiOjE3NDA4MjYzNTgsImlhdCI6MTc0MDczOTk1OH0.vq0G8xau5Ds9QwpU0JuiQN_GR7lHAt-xdfU409PSdPA
-2025-02-28 16:22:41 [main] INFO : Status Code is: 200
-2025-02-28 16:22:41 [main] INFO : Active Projects retrieved successfully.
-2025-02-28 16:22:41 [main] INFO : Getting Archived projects with Company Id: C0001
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU4LCJleHAiOjE3NDA4MjYzNTgsImlhdCI6MTc0MDczOTk1OH0.vq0G8xau5Ds9QwpU0JuiQN_GR7lHAt-xdfU409PSdPA
-2025-02-28 16:22:41 [main] INFO : Status Code is: 200
-2025-02-28 16:22:41 [main] INFO : Archived Projects retrieved successfully.
-2025-02-28 16:22:41 [main] INFO : Getting project details with Id: Proj812
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU4LCJleHAiOjE3NDA4MjYzNTgsImlhdCI6MTc0MDczOTk1OH0.vq0G8xau5Ds9QwpU0JuiQN_GR7lHAt-xdfU409PSdPA
-2025-02-28 16:22:41 [main] INFO : Status Code is: 200
-2025-02-28 16:22:41 [main] INFO : Project Details retrieved successfully.
-2025-02-28 16:22:41 [main] INFO : Getting project Timeline with Project Id: Proj812
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU4LCJleHAiOjE3NDA4MjYzNTgsImlhdCI6MTc0MDczOTk1OH0.vq0G8xau5Ds9QwpU0JuiQN_GR7lHAt-xdfU409PSdPA
-2025-02-28 16:22:41 [main] INFO : Status Code is: 200
-2025-02-28 16:22:41 [main] INFO : Project TimeLine Details retrieved successfully.
-2025-02-28 16:22:41 [main] INFO : Getting project Area with Project Id: Proj812
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU4LCJleHAiOjE3NDA4MjYzNTgsImlhdCI6MTc0MDczOTk1OH0.vq0G8xau5Ds9QwpU0JuiQN_GR7lHAt-xdfU409PSdPA
-2025-02-28 16:22:41 [main] INFO : Status Code is: 200
-2025-02-28 16:22:41 [main] INFO : Project Area retrieved successfully.
-2025-02-28 16:22:41 [main] INFO : Getting Company Details with Project Id: Proj812
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU4LCJleHAiOjE3NDA4MjYzNTgsImlhdCI6MTc0MDczOTk1OH0.vq0G8xau5Ds9QwpU0JuiQN_GR7lHAt-xdfU409PSdPA
-2025-02-28 16:22:41 [main] INFO : Status Code is: 404
-2025-02-28 16:22:41 [main] INFO : Setting up data for tests...
-2025-02-28 16:22:41 [main] INFO : Loaded Project ID from config.properties: Proj812
-2025-02-28 16:22:41 [main] INFO : Data setup complete.
-2025-02-28 16:22:41 [main] INFO : Getting all Buildings
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU4LCJleHAiOjE3NDA4MjYzNTgsImlhdCI6MTc0MDczOTk1OH0.vq0G8xau5Ds9QwpU0JuiQN_GR7lHAt-xdfU409PSdPA
-2025-02-28 16:22:41 [main] INFO : All Buildings retrieved successfully.
-2025-02-28 16:22:41 [main] INFO : Adding Building to Project Id: Proj812
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU4LCJleHAiOjE3NDA4MjYzNTgsImlhdCI6MTc0MDczOTk1OH0.vq0G8xau5Ds9QwpU0JuiQN_GR7lHAt-xdfU409PSdPA
-2025-02-28 16:22:41 [main] INFO : Building is added successfully to Project ID:Proj812
-2025-02-28 16:22:41 [main] INFO : Building Id (From response): 74a64c0c-3736-4ac2-a4de-9c93fd6c928d
-2025-02-28 16:22:41 [main] INFO : Building ID saved to config.properties: 74a64c0c-3736-4ac2-a4de-9c93fd6c928d
-2025-02-28 16:22:41 [main] INFO : Loaded Building ID from config.properties: 74a64c0c-3736-4ac2-a4de-9c93fd6c928d
-2025-02-28 16:22:41 [main] INFO : Getting all Buildings by Project Id:Proj812
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU5LCJleHAiOjE3NDA4MjYzNTksImlhdCI6MTc0MDczOTk1OX0.G6cZ94LyFK3dU4KEBQeMXMfZGD3N0Ny0mK90ZID11vw
-2025-02-28 16:22:41 [main] INFO : All Buildings by Project Id retrieved successfully.
-2025-02-28 16:22:41 [main] INFO : Updating Building with Building Id: 74a64c0c-3736-4ac2-a4de-9c93fd6c928d
-2025-02-28 16:22:41 [main] INFO : Building updated successfully.
-2025-02-28 16:22:41 [main] INFO : Toggle Archive Building by Building Id:74a64c0c-3736-4ac2-a4de-9c93fd6c928d
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU5LCJleHAiOjE3NDA4MjYzNTksImlhdCI6MTc0MDczOTk1OX0.G6cZ94LyFK3dU4KEBQeMXMfZGD3N0Ny0mK90ZID11vw
-2025-02-28 16:22:41 [main] INFO : Toggle Archive Building by Building Id successfully.
-2025-02-28 16:22:41 [main] INFO : Getting Archived Buildings by Project Id:Proj812
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU5LCJleHAiOjE3NDA4MjYzNTksImlhdCI6MTc0MDczOTk1OX0.G6cZ94LyFK3dU4KEBQeMXMfZGD3N0Ny0mK90ZID11vw
-2025-02-28 16:22:41 [main] INFO : All Archived Buildings by Project Id retrieved successfully.
-2025-02-28 16:22:41 [main] INFO : Remove Toggle Archive Building by Building Id:74a64c0c-3736-4ac2-a4de-9c93fd6c928d
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU5LCJleHAiOjE3NDA4MjYzNTksImlhdCI6MTc0MDczOTk1OX0.G6cZ94LyFK3dU4KEBQeMXMfZGD3N0Ny0mK90ZID11vw
-2025-02-28 16:22:41 [main] INFO : Remove Toggle Archive Building by Building Id successfully.
-2025-02-28 16:22:41 [main] INFO : Setting up data for tests...
-2025-02-28 16:22:41 [main] INFO : Loaded Project ID: Proj812
-2025-02-28 16:22:41 [main] INFO : Loaded Building ID: 74a64c0c-3736-4ac2-a4de-9c93fd6c928d
-2025-02-28 16:22:41 [main] INFO : Data setup complete.
-2025-02-28 16:22:41 [main] INFO : Getting all Floors
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU5LCJleHAiOjE3NDA4MjYzNTksImlhdCI6MTc0MDczOTk1OX0.G6cZ94LyFK3dU4KEBQeMXMfZGD3N0Ny0mK90ZID11vw
-2025-02-28 16:22:41 [main] INFO : All Floors retrieved successfully.
-2025-02-28 16:22:41 [main] INFO : Adding Floor to Project Id: Proj812
-2025-02-28 16:22:41 [main] INFO : Adding Floor to Building Id: 74a64c0c-3736-4ac2-a4de-9c93fd6c928d
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU5LCJleHAiOjE3NDA4MjYzNTksImlhdCI6MTc0MDczOTk1OX0.G6cZ94LyFK3dU4KEBQeMXMfZGD3N0Ny0mK90ZID11vw
-2025-02-28 16:22:41 [main] INFO : Floor is added successfully to Building ID:74a64c0c-3736-4ac2-a4de-9c93fd6c928d
-2025-02-28 16:22:41 [main] INFO : Floor Id (From response): 3a1b1bc8-2749-4907-a9bb-3a4a8e273be4
-2025-02-28 16:22:41 [main] INFO : Floor ID saved to config.properties: 3a1b1bc8-2749-4907-a9bb-3a4a8e273be4
-2025-02-28 16:22:41 [main] INFO : Getting all Floors by Building Id:74a64c0c-3736-4ac2-a4de-9c93fd6c928d
-2025-02-28 16:22:41 [main] INFO : Getting JWT token...
-2025-02-28 16:22:41 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU5LCJleHAiOjE3NDA4MjYzNTksImlhdCI6MTc0MDczOTk1OX0.G6cZ94LyFK3dU4KEBQeMXMfZGD3N0Ny0mK90ZID11vw
-2025-02-28 16:22:41 [main] INFO : All Floors by Building Id retrieved successfully.
-2025-02-28 16:22:41 [main] INFO : Updating Floor with Floor Id: 3a1b1bc8-2749-4907-a9bb-3a4a8e273be4
-2025-02-28 16:22:42 [main] INFO : Floor updated successfully.
-2025-02-28 16:22:42 [main] INFO : Setting up data for tests...
-2025-02-28 16:22:42 [main] INFO : Loaded Project ID from config.properties: Proj812
-2025-02-28 16:22:42 [main] INFO : Loaded Building ID from config.properties: 74a64c0c-3736-4ac2-a4de-9c93fd6c928d
-2025-02-28 16:22:42 [main] INFO : Loaded Floor ID from config.properties: 3a1b1bc8-2749-4907-a9bb-3a4a8e273be4
-2025-02-28 16:22:42 [main] INFO : Data setup complete.
-2025-02-28 16:22:42 [main] INFO : Getting all Regions
-2025-02-28 16:22:42 [main] INFO : Getting JWT token...
-2025-02-28 16:22:42 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU5LCJleHAiOjE3NDA4MjYzNTksImlhdCI6MTc0MDczOTk1OX0.G6cZ94LyFK3dU4KEBQeMXMfZGD3N0Ny0mK90ZID11vw
-2025-02-28 16:22:42 [main] INFO : All Regions retrieved successfully.
-2025-02-28 16:22:42 [main] INFO : Adding Region to Project Id: Proj812
-2025-02-28 16:22:42 [main] INFO : Adding Region to Building Id: 74a64c0c-3736-4ac2-a4de-9c93fd6c928d
-2025-02-28 16:22:42 [main] INFO : Adding Region to Floor Id: 3a1b1bc8-2749-4907-a9bb-3a4a8e273be4
-2025-02-28 16:22:42 [main] INFO : Getting JWT token...
-2025-02-28 16:22:42 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU5LCJleHAiOjE3NDA4MjYzNTksImlhdCI6MTc0MDczOTk1OX0.G6cZ94LyFK3dU4KEBQeMXMfZGD3N0Ny0mK90ZID11vw
-2025-02-28 16:22:42 [main] INFO : Region is added successfully to Floor ID:com.github.javafaker.IdNumber@21dd405a
-2025-02-28 16:22:42 [main] INFO : Region Id (From response): b4a87939-ed70-4701-adc9-eac3400c9283
-2025-02-28 16:22:42 [main] INFO : Region ID saved to config.properties: b4a87939-ed70-4701-adc9-eac3400c9283
-2025-02-28 16:22:42 [main] ERROR: Error saving Region ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_regionId.properties" (The filename, directory name, or volume label syntax is incorrect)
-2025-02-28 16:22:42 [main] INFO : Getting all Regions by Floor Id:3a1b1bc8-2749-4907-a9bb-3a4a8e273be4
-2025-02-28 16:22:42 [main] INFO : Getting JWT token...
-2025-02-28 16:22:42 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU5LCJleHAiOjE3NDA4MjYzNTksImlhdCI6MTc0MDczOTk1OX0.G6cZ94LyFK3dU4KEBQeMXMfZGD3N0Ny0mK90ZID11vw
-2025-02-28 16:22:42 [main] INFO : All Regions by Floor Id retrieved successfully.
-2025-02-28 16:22:42 [main] INFO : Updating Region with Region Id: b4a87939-ed70-4701-adc9-eac3400c9283
-2025-02-28 16:22:42 [main] INFO : Region updated successfully.
-2025-02-28 16:22:42 [main] INFO : Setting up data for tests...
-2025-02-28 16:22:42 [main] INFO : Loaded Region ID from config.properties: b4a87939-ed70-4701-adc9-eac3400c9283
-2025-02-28 16:22:42 [main] INFO : Data setup complete.
-2025-02-28 16:22:42 [main] INFO : Adding Scan Date to Region Id: b4a87939-ed70-4701-adc9-eac3400c9283
-2025-02-28 16:22:42 [main] INFO : Getting JWT token...
-2025-02-28 16:22:42 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTU5LCJleHAiOjE3NDA4MjYzNTksImlhdCI6MTc0MDczOTk1OX0.G6cZ94LyFK3dU4KEBQeMXMfZGD3N0Ny0mK90ZID11vw
-2025-02-28 16:22:42 [main] INFO : Scan Date is added successfully to Region ID:b4a87939-ed70-4701-adc9-eac3400c9283
-2025-02-28 16:22:42 [main] INFO : Scan Date Id (From response): b96fd252-b9c0-4ad5-a45f-eb72373c0ebf
-2025-02-28 16:22:42 [main] INFO : scandate ID saved to config.properties: b96fd252-b9c0-4ad5-a45f-eb72373c0ebf
-2025-02-28 16:22:42 [main] ERROR: Error saving scandate ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_regionId.properties" (The filename, directory name, or volume label syntax is incorrect)
-2025-02-28 16:22:43 [main] INFO : Starting testCreateProject with companyId: ABC01
-2025-02-28 16:22:43 [main] INFO : Project payload: api.payload.Project@46febe84
-2025-02-28 16:22:43 [main] INFO : Making API call to create project...
-2025-02-28 16:22:43 [main] INFO : Getting JWT token...
-2025-02-28 16:22:43 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTYwLCJleHAiOjE3NDA4MjYzNjAsImlhdCI6MTc0MDczOTk2MH0.cSpwYMLBiUK_wJp6mWvlamUsjmBZNUrs7rULR8wUjE0
-2025-02-28 16:22:43 [main] INFO : Project created successfully with status code: 200
-2025-02-28 16:22:43 [main] INFO : Starting testCreateProject with companyId: ABC01
-2025-02-28 16:22:43 [main] INFO : Project payload: api.payload.Project@1267d81a
-2025-02-28 16:22:43 [main] INFO : Making API call to create project...
-2025-02-28 16:22:43 [main] INFO : Getting JWT token...
-2025-02-28 16:22:43 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTYwLCJleHAiOjE3NDA4MjYzNjAsImlhdCI6MTc0MDczOTk2MH0.cSpwYMLBiUK_wJp6mWvlamUsjmBZNUrs7rULR8wUjE0
-2025-02-28 16:22:43 [main] INFO : Project created successfully with status code: 200
-2025-02-28 16:22:43 [main] INFO : Starting testCreateProject with companyId: ABC01
-2025-02-28 16:22:43 [main] INFO : Project payload: api.payload.Project@78b9c5d8
-2025-02-28 16:22:43 [main] INFO : Making API call to create project...
-2025-02-28 16:22:43 [main] INFO : Getting JWT token...
-2025-02-28 16:22:43 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTYwLCJleHAiOjE3NDA4MjYzNjAsImlhdCI6MTc0MDczOTk2MH0.cSpwYMLBiUK_wJp6mWvlamUsjmBZNUrs7rULR8wUjE0
-2025-02-28 16:22:43 [main] INFO : Project created successfully with status code: 200
-2025-02-28 16:22:43 [main] INFO : Starting testCreateProject with companyId: ABC01
-2025-02-28 16:22:43 [main] INFO : Project payload: api.payload.Project@6551611e
-2025-02-28 16:22:43 [main] INFO : Making API call to create project...
-2025-02-28 16:22:43 [main] INFO : Getting JWT token...
-2025-02-28 16:22:43 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTYxLCJleHAiOjE3NDA4MjYzNjEsImlhdCI6MTc0MDczOTk2MX0.rs3eIJWeb7SSpxWuOyPjz-wCuaAa-YLX_D_v0XKQNWg
-2025-02-28 16:22:43 [main] INFO : Project created successfully with status code: 200
-2025-02-28 16:22:43 [main] INFO : Starting setup...
-2025-02-28 16:22:43 [main] INFO : Config file loaded successfully.
-2025-02-28 16:22:43 [main] INFO : Starting testLogin...
-2025-02-28 16:22:43 [main] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
-2025-02-28 16:22:43 [main] INFO : Starting test_GetAllUser...
-2025-02-28 16:22:43 [main] INFO : Getting JWT token...
-2025-02-28 16:22:43 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTYxLCJleHAiOjE3NDA4MjYzNjEsImlhdCI6MTc0MDczOTk2MX0.rs3eIJWeb7SSpxWuOyPjz-wCuaAa-YLX_D_v0XKQNWg
-2025-02-28 16:22:43 [main] INFO : Retrieved all users successfully.
-2025-02-28 16:22:43 [main] INFO : Starting test_GetUserByEmailId...
-2025-02-28 16:22:43 [main] INFO : Getting JWT token...
-2025-02-28 16:22:43 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTYxLCJleHAiOjE3NDA4MjYzNjEsImlhdCI6MTc0MDczOTk2MX0.rs3eIJWeb7SSpxWuOyPjz-wCuaAa-YLX_D_v0XKQNWg
-2025-02-28 16:22:43 [main] INFO : Retrieved user by email successfully.
-2025-02-28 16:22:43 [main] INFO : Starting test_forgotPassword...
-2025-02-28 16:22:43 [main] INFO : Getting JWT token...
-2025-02-28 16:22:43 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTYxLCJleHAiOjE3NDA4MjYzNjEsImlhdCI6MTc0MDczOTk2MX0.rs3eIJWeb7SSpxWuOyPjz-wCuaAa-YLX_D_v0XKQNWg
-2025-02-28 16:22:43 [main] INFO : Forgot password link sent successfully
-2025-02-28 16:22:43 [main] INFO : Starting test_sendOtpToEmail...
-2025-02-28 16:22:43 [main] INFO : Getting JWT token...
-2025-02-28 16:22:43 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTYxLCJleHAiOjE3NDA4MjYzNjEsImlhdCI6MTc0MDczOTk2MX0.rs3eIJWeb7SSpxWuOyPjz-wCuaAa-YLX_D_v0XKQNWg
-2025-02-28 16:22:44 [main] INFO : Send OTP to email sent successfully
-2025-02-28 16:22:44 [main] INFO : Starting testLogout...
-2025-02-28 16:22:44 [main] INFO : Getting JWT token...
-2025-02-28 16:22:44 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwNzM5OTYxLCJleHAiOjE3NDA4MjYzNjEsImlhdCI6MTc0MDczOTk2MX0.rs3eIJWeb7SSpxWuOyPjz-wCuaAa-YLX_D_v0XKQNWg
-2025-02-28 16:22:44 [main] INFO : User logged out successfully.
-2025-03-03 10:50:24 [main] INFO : Setting up data for tests...
-2025-03-03 10:50:24 [main] INFO : Data setup complete.
-2025-03-03 10:50:24 [main] INFO : Creating project with Project Id: string1234
-2025-03-03 10:50:24 [main] INFO : Getting JWT token...
-2025-03-03 10:50:25 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjIyLCJleHAiOjE3NDEwNjU2MjIsImlhdCI6MTc0MDk3OTIyMn0.ysi4Zxf1ijPTjRzK9vrk7mUtU6I9m06QhV-QsIBjo5M
-2025-03-03 10:50:26 [main] INFO : Status Code is: 200
-2025-03-03 10:50:26 [main] INFO : Project created successfully.
-2025-03-03 10:50:26 [main] INFO : Project Id (From response): Proj822
-2025-03-03 10:50:26 [main] INFO : Project ID is not null.
-2025-03-03 10:50:26 [main] INFO : Project ID saved to config.properties: Proj822
-2025-03-03 10:50:26 [main] INFO : Loaded Project ID from config.properties: Proj822
-2025-03-03 10:50:26 [main] INFO : Getting project with Id: Proj822
-2025-03-03 10:50:26 [main] INFO : Getting JWT token...
-2025-03-03 10:50:26 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjIyLCJleHAiOjE3NDEwNjU2MjIsImlhdCI6MTc0MDk3OTIyMn0.ysi4Zxf1ijPTjRzK9vrk7mUtU6I9m06QhV-QsIBjo5M
-2025-03-03 10:50:26 [main] INFO : Status Code is: 200
-2025-03-03 10:50:26 [main] INFO : Project retrieved successfully.
-2025-03-03 10:50:26 [main] INFO : Updating project with Id: Proj822
-2025-03-03 10:50:26 [main] INFO : Getting JWT token...
-2025-03-03 10:50:26 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjIzLCJleHAiOjE3NDEwNjU2MjMsImlhdCI6MTc0MDk3OTIyM30.ei7YDaez8OU9WaZ5KjQnopVOIaV3-Xfmr5WGw-82dao
-2025-03-03 10:50:26 [main] INFO : Status Code is: 200
-2025-03-03 10:50:26 [main] INFO : Project updated successfully.
-2025-03-03 10:50:26 [main] INFO : Updated Project Id (From updated response): Proj822
-2025-03-03 10:50:26 [main] INFO : Updated Project ID is not null.
-2025-03-03 10:50:26 [main] INFO : Getting Active projects with Company Id: C0001
-2025-03-03 10:50:26 [main] INFO : Getting JWT token...
-2025-03-03 10:50:26 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjIzLCJleHAiOjE3NDEwNjU2MjMsImlhdCI6MTc0MDk3OTIyM30.ei7YDaez8OU9WaZ5KjQnopVOIaV3-Xfmr5WGw-82dao
-2025-03-03 10:50:26 [main] INFO : Status Code is: 200
-2025-03-03 10:50:26 [main] INFO : Active Projects retrieved successfully.
-2025-03-03 10:50:26 [main] INFO : Getting Archived projects with Company Id: C0001
-2025-03-03 10:50:26 [main] INFO : Getting JWT token...
-2025-03-03 10:50:26 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjIzLCJleHAiOjE3NDEwNjU2MjMsImlhdCI6MTc0MDk3OTIyM30.ei7YDaez8OU9WaZ5KjQnopVOIaV3-Xfmr5WGw-82dao
-2025-03-03 10:50:26 [main] INFO : Status Code is: 200
-2025-03-03 10:50:26 [main] INFO : Archived Projects retrieved successfully.
-2025-03-03 10:50:26 [main] INFO : Getting project details with Id: Proj822
-2025-03-03 10:50:26 [main] INFO : Getting JWT token...
-2025-03-03 10:50:26 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjIzLCJleHAiOjE3NDEwNjU2MjMsImlhdCI6MTc0MDk3OTIyM30.ei7YDaez8OU9WaZ5KjQnopVOIaV3-Xfmr5WGw-82dao
-2025-03-03 10:50:26 [main] INFO : Status Code is: 200
-2025-03-03 10:50:26 [main] INFO : Project Details retrieved successfully.
-2025-03-03 10:50:26 [main] INFO : Getting project Timeline with Project Id: Proj822
-2025-03-03 10:50:26 [main] INFO : Getting JWT token...
-2025-03-03 10:50:26 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjIzLCJleHAiOjE3NDEwNjU2MjMsImlhdCI6MTc0MDk3OTIyM30.ei7YDaez8OU9WaZ5KjQnopVOIaV3-Xfmr5WGw-82dao
-2025-03-03 10:50:26 [main] INFO : Status Code is: 200
-2025-03-03 10:50:26 [main] INFO : Project TimeLine Details retrieved successfully.
-2025-03-03 10:50:26 [main] INFO : Getting project Area with Project Id: Proj822
-2025-03-03 10:50:26 [main] INFO : Getting JWT token...
-2025-03-03 10:50:26 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjIzLCJleHAiOjE3NDEwNjU2MjMsImlhdCI6MTc0MDk3OTIyM30.ei7YDaez8OU9WaZ5KjQnopVOIaV3-Xfmr5WGw-82dao
-2025-03-03 10:50:26 [main] INFO : Status Code is: 200
-2025-03-03 10:50:26 [main] INFO : Project Area retrieved successfully.
-2025-03-03 10:50:26 [main] INFO : Getting Company Details with Project Id: Proj822
-2025-03-03 10:50:26 [main] INFO : Getting JWT token...
-2025-03-03 10:50:26 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjIzLCJleHAiOjE3NDEwNjU2MjMsImlhdCI6MTc0MDk3OTIyM30.ei7YDaez8OU9WaZ5KjQnopVOIaV3-Xfmr5WGw-82dao
-2025-03-03 10:50:26 [main] INFO : Status Code is: 404
-2025-03-03 10:50:26 [main] INFO : Setting up data for tests...
-2025-03-03 10:50:26 [main] INFO : Loaded Project ID from config.properties: Proj822
-2025-03-03 10:50:26 [main] INFO : Data setup complete.
-2025-03-03 10:50:26 [main] INFO : Getting all Buildings
-2025-03-03 10:50:26 [main] INFO : Getting JWT token...
-2025-03-03 10:50:26 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjIzLCJleHAiOjE3NDEwNjU2MjMsImlhdCI6MTc0MDk3OTIyM30.ei7YDaez8OU9WaZ5KjQnopVOIaV3-Xfmr5WGw-82dao
-2025-03-03 10:50:27 [main] INFO : All Buildings retrieved successfully.
-2025-03-03 10:50:27 [main] INFO : Adding Building to Project Id: Proj822
-2025-03-03 10:50:27 [main] INFO : Getting JWT token...
-2025-03-03 10:50:27 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjIzLCJleHAiOjE3NDEwNjU2MjMsImlhdCI6MTc0MDk3OTIyM30.ei7YDaez8OU9WaZ5KjQnopVOIaV3-Xfmr5WGw-82dao
-2025-03-03 10:50:27 [main] INFO : Building is added successfully to Project ID:Proj822
-2025-03-03 10:50:27 [main] INFO : Building Id (From response): d3269da3-c917-48eb-9a13-b5bc25aba35a
-2025-03-03 10:50:27 [main] INFO : Building ID saved to config.properties: d3269da3-c917-48eb-9a13-b5bc25aba35a
-2025-03-03 10:50:27 [main] INFO : Loaded Building ID from config.properties: d3269da3-c917-48eb-9a13-b5bc25aba35a
-2025-03-03 10:50:27 [main] INFO : Getting all Buildings by Project Id:Proj822
-2025-03-03 10:50:27 [main] INFO : Getting JWT token...
-2025-03-03 10:50:27 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI0LCJleHAiOjE3NDEwNjU2MjQsImlhdCI6MTc0MDk3OTIyNH0.F1UAFMNofzf2optmpgQZnL4jtdhJrBRq8nSUK2__H8g
-2025-03-03 10:50:27 [main] INFO : All Buildings by Project Id retrieved successfully.
-2025-03-03 10:50:27 [main] INFO : Updating Building with Building Id: d3269da3-c917-48eb-9a13-b5bc25aba35a
-2025-03-03 10:50:27 [main] INFO : Building updated successfully.
-2025-03-03 10:50:27 [main] INFO : Toggle Archive Building by Building Id:d3269da3-c917-48eb-9a13-b5bc25aba35a
-2025-03-03 10:50:27 [main] INFO : Getting JWT token...
-2025-03-03 10:50:27 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI0LCJleHAiOjE3NDEwNjU2MjQsImlhdCI6MTc0MDk3OTIyNH0.F1UAFMNofzf2optmpgQZnL4jtdhJrBRq8nSUK2__H8g
-2025-03-03 10:50:27 [main] INFO : Toggle Archive Building by Building Id successfully.
-2025-03-03 10:50:27 [main] INFO : Getting Archived Buildings by Project Id:Proj822
-2025-03-03 10:50:27 [main] INFO : Getting JWT token...
-2025-03-03 10:50:27 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI0LCJleHAiOjE3NDEwNjU2MjQsImlhdCI6MTc0MDk3OTIyNH0.F1UAFMNofzf2optmpgQZnL4jtdhJrBRq8nSUK2__H8g
-2025-03-03 10:50:27 [main] INFO : All Archived Buildings by Project Id retrieved successfully.
-2025-03-03 10:50:27 [main] INFO : Remove Toggle Archive Building by Building Id:d3269da3-c917-48eb-9a13-b5bc25aba35a
-2025-03-03 10:50:27 [main] INFO : Getting JWT token...
-2025-03-03 10:50:27 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI0LCJleHAiOjE3NDEwNjU2MjQsImlhdCI6MTc0MDk3OTIyNH0.F1UAFMNofzf2optmpgQZnL4jtdhJrBRq8nSUK2__H8g
-2025-03-03 10:50:27 [main] INFO : Remove Toggle Archive Building by Building Id successfully.
-2025-03-03 10:50:27 [main] INFO : Setting up data for tests...
-2025-03-03 10:50:27 [main] INFO : Loaded Project ID: Proj822
-2025-03-03 10:50:27 [main] INFO : Loaded Building ID: d3269da3-c917-48eb-9a13-b5bc25aba35a
-2025-03-03 10:50:27 [main] INFO : Data setup complete.
-2025-03-03 10:50:27 [main] INFO : Getting all Floors
-2025-03-03 10:50:27 [main] INFO : Getting JWT token...
-2025-03-03 10:50:27 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI0LCJleHAiOjE3NDEwNjU2MjQsImlhdCI6MTc0MDk3OTIyNH0.F1UAFMNofzf2optmpgQZnL4jtdhJrBRq8nSUK2__H8g
-2025-03-03 10:50:27 [main] INFO : All Floors retrieved successfully.
-2025-03-03 10:50:27 [main] INFO : Adding Floor to Project Id: Proj822
-2025-03-03 10:50:27 [main] INFO : Adding Floor to Building Id: d3269da3-c917-48eb-9a13-b5bc25aba35a
-2025-03-03 10:50:27 [main] INFO : Getting JWT token...
-2025-03-03 10:50:27 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI0LCJleHAiOjE3NDEwNjU2MjQsImlhdCI6MTc0MDk3OTIyNH0.F1UAFMNofzf2optmpgQZnL4jtdhJrBRq8nSUK2__H8g
-2025-03-03 10:50:27 [main] INFO : Floor is added successfully to Building ID:d3269da3-c917-48eb-9a13-b5bc25aba35a
-2025-03-03 10:50:27 [main] INFO : Floor Id (From response): 7b024d22-f1f8-4ec0-a9de-048db31f41e2
-2025-03-03 10:50:27 [main] INFO : Floor ID saved to config.properties: 7b024d22-f1f8-4ec0-a9de-048db31f41e2
-2025-03-03 10:50:27 [main] INFO : Getting all Floors by Building Id:d3269da3-c917-48eb-9a13-b5bc25aba35a
-2025-03-03 10:50:27 [main] INFO : Getting JWT token...
-2025-03-03 10:50:27 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI0LCJleHAiOjE3NDEwNjU2MjQsImlhdCI6MTc0MDk3OTIyNH0.F1UAFMNofzf2optmpgQZnL4jtdhJrBRq8nSUK2__H8g
-2025-03-03 10:50:27 [main] INFO : All Floors by Building Id retrieved successfully.
-2025-03-03 10:50:27 [main] INFO : Updating Floor with Floor Id: 7b024d22-f1f8-4ec0-a9de-048db31f41e2
-2025-03-03 10:50:27 [main] INFO : Floor updated successfully.
-2025-03-03 10:50:27 [main] INFO : Setting up data for tests...
-2025-03-03 10:50:27 [main] INFO : Loaded Project ID from config.properties: Proj822
-2025-03-03 10:50:27 [main] INFO : Loaded Building ID from config.properties: d3269da3-c917-48eb-9a13-b5bc25aba35a
-2025-03-03 10:50:27 [main] INFO : Loaded Floor ID from config.properties: 7b024d22-f1f8-4ec0-a9de-048db31f41e2
-2025-03-03 10:50:27 [main] INFO : Data setup complete.
-2025-03-03 10:50:27 [main] INFO : Getting all Regions
-2025-03-03 10:50:27 [main] INFO : Getting JWT token...
-2025-03-03 10:50:27 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI0LCJleHAiOjE3NDEwNjU2MjQsImlhdCI6MTc0MDk3OTIyNH0.F1UAFMNofzf2optmpgQZnL4jtdhJrBRq8nSUK2__H8g
-2025-03-03 10:50:27 [main] INFO : All Regions retrieved successfully.
-2025-03-03 10:50:27 [main] INFO : Adding Region to Project Id: Proj822
-2025-03-03 10:50:27 [main] INFO : Adding Region to Building Id: d3269da3-c917-48eb-9a13-b5bc25aba35a
-2025-03-03 10:50:27 [main] INFO : Adding Region to Floor Id: 7b024d22-f1f8-4ec0-a9de-048db31f41e2
-2025-03-03 10:50:27 [main] INFO : Getting JWT token...
-2025-03-03 10:50:27 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI0LCJleHAiOjE3NDEwNjU2MjQsImlhdCI6MTc0MDk3OTIyNH0.F1UAFMNofzf2optmpgQZnL4jtdhJrBRq8nSUK2__H8g
-2025-03-03 10:50:27 [main] INFO : Region is added successfully to Floor ID:com.github.javafaker.IdNumber@7296675e
-2025-03-03 10:50:27 [main] INFO : Region Id (From response): 9da0ee0a-2ea5-451a-8646-ba5e33ee331f
-2025-03-03 10:50:27 [main] INFO : Region ID saved to config.properties: 9da0ee0a-2ea5-451a-8646-ba5e33ee331f
-2025-03-03 10:50:27 [main] ERROR: Error saving Region ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_regionId.properties" (The filename, directory name, or volume label syntax is incorrect)
-2025-03-03 10:50:27 [main] INFO : Getting all Regions by Floor Id:7b024d22-f1f8-4ec0-a9de-048db31f41e2
-2025-03-03 10:50:27 [main] INFO : Getting JWT token...
-2025-03-03 10:50:27 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI0LCJleHAiOjE3NDEwNjU2MjQsImlhdCI6MTc0MDk3OTIyNH0.F1UAFMNofzf2optmpgQZnL4jtdhJrBRq8nSUK2__H8g
-2025-03-03 10:50:27 [main] INFO : All Regions by Floor Id retrieved successfully.
-2025-03-03 10:50:27 [main] INFO : Updating Region with Region Id: 9da0ee0a-2ea5-451a-8646-ba5e33ee331f
-2025-03-03 10:50:27 [main] INFO : Region updated successfully.
-2025-03-03 10:50:27 [main] INFO : Setting up data for tests...
-2025-03-03 10:50:27 [main] INFO : Loaded Region ID from config.properties: 9da0ee0a-2ea5-451a-8646-ba5e33ee331f
-2025-03-03 10:50:27 [main] INFO : Data setup complete.
-2025-03-03 10:50:27 [main] INFO : Adding Scan Date to Region Id: 9da0ee0a-2ea5-451a-8646-ba5e33ee331f
-2025-03-03 10:50:27 [main] INFO : Getting JWT token...
-2025-03-03 10:50:27 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI0LCJleHAiOjE3NDEwNjU2MjQsImlhdCI6MTc0MDk3OTIyNH0.F1UAFMNofzf2optmpgQZnL4jtdhJrBRq8nSUK2__H8g
-2025-03-03 10:50:28 [main] INFO : Scan Date is added successfully to Region ID:9da0ee0a-2ea5-451a-8646-ba5e33ee331f
-2025-03-03 10:50:28 [main] INFO : Scan Date Id (From response): eba58709-d05c-4e22-9e3e-32f0742b0cd3
-2025-03-03 10:50:28 [main] INFO : scandate ID saved to config.properties: eba58709-d05c-4e22-9e3e-32f0742b0cd3
-2025-03-03 10:50:28 [main] ERROR: Error saving scandate ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_regionId.properties" (The filename, directory name, or volume label syntax is incorrect)
-2025-03-03 10:50:29 [main] INFO : Starting testCreateProject with companyId: ABC01
-2025-03-03 10:50:29 [main] INFO : Project payload: api.payload.Project@228ec493
-2025-03-03 10:50:29 [main] INFO : Making API call to create project...
-2025-03-03 10:50:29 [main] INFO : Getting JWT token...
-2025-03-03 10:50:29 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI1LCJleHAiOjE3NDEwNjU2MjUsImlhdCI6MTc0MDk3OTIyNX0.8It0V7PVsZ3Ep_v2jJ2F9FlMu8DeWXELDCrcUgi4puA
-2025-03-03 10:50:29 [main] INFO : Project created successfully with status code: 200
-2025-03-03 10:50:29 [main] INFO : Starting testCreateProject with companyId: ABC01
-2025-03-03 10:50:29 [main] INFO : Project payload: api.payload.Project@66844ccf
-2025-03-03 10:50:29 [main] INFO : Making API call to create project...
-2025-03-03 10:50:29 [main] INFO : Getting JWT token...
-2025-03-03 10:50:29 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI2LCJleHAiOjE3NDEwNjU2MjYsImlhdCI6MTc0MDk3OTIyNn0.BEusxoVei8bsFYfFFSLrbH0erJdL6szqFpAkHLzC6jw
-2025-03-03 10:50:29 [main] INFO : Project created successfully with status code: 200
-2025-03-03 10:50:29 [main] INFO : Starting testCreateProject with companyId: ABC01
-2025-03-03 10:50:29 [main] INFO : Project payload: api.payload.Project@3c521d01
-2025-03-03 10:50:29 [main] INFO : Making API call to create project...
-2025-03-03 10:50:29 [main] INFO : Getting JWT token...
-2025-03-03 10:50:29 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI2LCJleHAiOjE3NDEwNjU2MjYsImlhdCI6MTc0MDk3OTIyNn0.BEusxoVei8bsFYfFFSLrbH0erJdL6szqFpAkHLzC6jw
-2025-03-03 10:50:29 [main] INFO : Project created successfully with status code: 200
-2025-03-03 10:50:29 [main] INFO : Starting testCreateProject with companyId: ABC01
-2025-03-03 10:50:29 [main] INFO : Project payload: api.payload.Project@7cff9bb2
-2025-03-03 10:50:29 [main] INFO : Making API call to create project...
-2025-03-03 10:50:29 [main] INFO : Getting JWT token...
-2025-03-03 10:50:29 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI2LCJleHAiOjE3NDEwNjU2MjYsImlhdCI6MTc0MDk3OTIyNn0.BEusxoVei8bsFYfFFSLrbH0erJdL6szqFpAkHLzC6jw
-2025-03-03 10:50:29 [main] INFO : Project created successfully with status code: 200
-2025-03-03 10:50:29 [main] INFO : Starting setup...
-2025-03-03 10:50:29 [main] INFO : Config file loaded successfully.
-2025-03-03 10:50:29 [main] INFO : Starting testLogin...
-2025-03-03 10:50:29 [main] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
-2025-03-03 10:50:29 [main] INFO : Starting test_GetAllUser...
-2025-03-03 10:50:29 [main] INFO : Getting JWT token...
-2025-03-03 10:50:29 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI2LCJleHAiOjE3NDEwNjU2MjYsImlhdCI6MTc0MDk3OTIyNn0.BEusxoVei8bsFYfFFSLrbH0erJdL6szqFpAkHLzC6jw
-2025-03-03 10:50:29 [main] INFO : Retrieved all users successfully.
-2025-03-03 10:50:29 [main] INFO : Starting test_GetUserByEmailId...
-2025-03-03 10:50:29 [main] INFO : Getting JWT token...
-2025-03-03 10:50:29 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI2LCJleHAiOjE3NDEwNjU2MjYsImlhdCI6MTc0MDk3OTIyNn0.BEusxoVei8bsFYfFFSLrbH0erJdL6szqFpAkHLzC6jw
-2025-03-03 10:50:29 [main] INFO : Retrieved user by email successfully.
-2025-03-03 10:50:29 [main] INFO : Starting test_forgotPassword...
-2025-03-03 10:50:29 [main] INFO : Getting JWT token...
-2025-03-03 10:50:29 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI2LCJleHAiOjE3NDEwNjU2MjYsImlhdCI6MTc0MDk3OTIyNn0.BEusxoVei8bsFYfFFSLrbH0erJdL6szqFpAkHLzC6jw
-2025-03-03 10:50:29 [main] INFO : Forgot password link sent successfully
-2025-03-03 10:50:29 [main] INFO : Starting test_sendOtpToEmail...
-2025-03-03 10:50:29 [main] INFO : Getting JWT token...
-2025-03-03 10:50:29 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI2LCJleHAiOjE3NDEwNjU2MjYsImlhdCI6MTc0MDk3OTIyNn0.BEusxoVei8bsFYfFFSLrbH0erJdL6szqFpAkHLzC6jw
-2025-03-03 10:50:29 [main] INFO : Send OTP to email sent successfully
-2025-03-03 10:50:29 [main] INFO : Starting testLogout...
-2025-03-03 10:50:29 [main] INFO : Getting JWT token...
-2025-03-03 10:50:29 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTc5MjI2LCJleHAiOjE3NDEwNjU2MjYsImlhdCI6MTc0MDk3OTIyNn0.BEusxoVei8bsFYfFFSLrbH0erJdL6szqFpAkHLzC6jw
-2025-03-03 10:50:29 [main] INFO : User logged out successfully.
-2025-03-03 11:49:52 [main] INFO : Setting up data for tests...
-2025-03-03 11:49:52 [main] INFO : Loaded Project ID from config.properties: Proj822
-2025-03-03 11:49:52 [main] INFO : Loaded Building ID from config.properties: d3269da3-c917-48eb-9a13-b5bc25aba35a
-2025-03-03 11:49:52 [main] INFO : Loaded Floor ID from config.properties: 7b024d22-f1f8-4ec0-a9de-048db31f41e2
-2025-03-03 11:49:52 [main] INFO : Loaded Region ID from config.properties: 9da0ee0a-2ea5-451a-8646-ba5e33ee331f
-2025-03-03 11:49:52 [main] INFO : Data setup complete.
-2025-03-03 11:49:52 [main] INFO : Getting Global Parameter Status By Company Id: C0001
-2025-03-03 11:49:52 [main] INFO : Getting JWT token...
-2025-03-03 11:49:53 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTgyNzkwLCJleHAiOjE3NDEwNjkxOTAsImlhdCI6MTc0MDk4Mjc5MH0.xyNLrnGxFiHP-D6aVoRTA3TpA5BlEIHSPuNOzKwzGJY
-2025-03-03 11:49:53 [main] INFO : All Global Parameter Status By Company Id retrieved successfully.
-2025-03-03 11:49:53 [main] INFO : Getting Project Parameter Status By Project Id:Proj822
-2025-03-03 11:49:53 [main] INFO : Getting JWT token...
-2025-03-03 11:49:53 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTgyNzkwLCJleHAiOjE3NDEwNjkxOTAsImlhdCI6MTc0MDk4Mjc5MH0.xyNLrnGxFiHP-D6aVoRTA3TpA5BlEIHSPuNOzKwzGJY
-2025-03-03 11:49:54 [main] INFO : All Project Parameter Status By Project Id retrieved successfully.
-2025-03-03 11:49:54 [main] INFO : Getting Building Parameter Status By Building Id:d3269da3-c917-48eb-9a13-b5bc25aba35a
-2025-03-03 11:49:54 [main] INFO : Getting JWT token...
-2025-03-03 11:49:54 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTgyNzkwLCJleHAiOjE3NDEwNjkxOTAsImlhdCI6MTc0MDk4Mjc5MH0.xyNLrnGxFiHP-D6aVoRTA3TpA5BlEIHSPuNOzKwzGJY
-2025-03-03 11:49:54 [main] INFO : All Building Parameter Status By Building Id retrieved successfully.
-2025-03-03 11:49:54 [main] INFO : Getting Floor Parameter Status By Floor Id: 7b024d22-f1f8-4ec0-a9de-048db31f41e2
-2025-03-03 11:49:54 [main] INFO : Getting JWT token...
-2025-03-03 11:49:54 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTgyNzkwLCJleHAiOjE3NDEwNjkxOTAsImlhdCI6MTc0MDk4Mjc5MH0.xyNLrnGxFiHP-D6aVoRTA3TpA5BlEIHSPuNOzKwzGJY
-2025-03-03 11:49:54 [main] INFO : All Floor Parameter Status By Floor Id retrieved successfully.
-2025-03-03 11:49:54 [main] INFO : Getting Region Parameter Status By Region Id: 9da0ee0a-2ea5-451a-8646-ba5e33ee331f
-2025-03-03 11:49:54 [main] INFO : Getting JWT token...
-2025-03-03 11:49:54 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTgyNzkwLCJleHAiOjE3NDEwNjkxOTAsImlhdCI6MTc0MDk4Mjc5MH0.xyNLrnGxFiHP-D6aVoRTA3TpA5BlEIHSPuNOzKwzGJY
-2025-03-03 11:49:54 [main] INFO : All Region Parameter Status By Region Id retrieved successfully.
-2025-03-03 12:08:21 [main] INFO : Starting setup...
-2025-03-03 12:08:21 [main] INFO : Config file loaded successfully.
-2025-03-03 12:08:21 [main] INFO : Starting testLogin...
-2025-03-03 12:08:22 [main] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
-2025-03-03 12:08:22 [main] INFO : Starting test_GetAllUser...
-2025-03-03 12:08:22 [main] INFO : Getting JWT token...
-2025-03-03 12:08:22 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTgzODk5LCJleHAiOjE3NDEwNzAyOTksImlhdCI6MTc0MDk4Mzg5OX0.gJbC-j6BozKgG3VlXMGvcfFe_gmuKkdm-IitCQS--t4
-2025-03-03 12:08:22 [main] INFO : Retrieved all users successfully.
-2025-03-03 12:08:22 [main] INFO : Starting test_GetUserByEmailId...
-2025-03-03 12:08:22 [main] INFO : Getting JWT token...
-2025-03-03 12:08:22 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTgzODk5LCJleHAiOjE3NDEwNzAyOTksImlhdCI6MTc0MDk4Mzg5OX0.gJbC-j6BozKgG3VlXMGvcfFe_gmuKkdm-IitCQS--t4
-2025-03-03 12:08:23 [main] INFO : Retrieved user by email successfully.
-2025-03-03 12:08:23 [main] INFO : Starting test_forgotPassword...
-2025-03-03 12:08:23 [main] INFO : Getting JWT token...
-2025-03-03 12:08:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTgzODk5LCJleHAiOjE3NDEwNzAyOTksImlhdCI6MTc0MDk4Mzg5OX0.gJbC-j6BozKgG3VlXMGvcfFe_gmuKkdm-IitCQS--t4
-2025-03-03 12:08:23 [main] INFO : Forgot password link sent successfully
-2025-03-03 12:08:23 [main] INFO : Starting test_sendOtpToEmail...
-2025-03-03 12:08:23 [main] INFO : Getting JWT token...
-2025-03-03 12:08:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTgzOTAwLCJleHAiOjE3NDEwNzAzMDAsImlhdCI6MTc0MDk4MzkwMH0.gSKHixiPLrf7L5gcjK8e2Nqdrng5i_vOac8-qRXYH-4
-2025-03-03 12:08:23 [main] INFO : Send OTP to email sent successfully
-2025-03-03 12:08:23 [main] INFO : Starting testLogout...
-2025-03-03 12:08:23 [main] INFO : Getting JWT token...
-2025-03-03 12:08:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTgzOTAwLCJleHAiOjE3NDEwNzAzMDAsImlhdCI6MTc0MDk4MzkwMH0.gSKHixiPLrf7L5gcjK8e2Nqdrng5i_vOac8-qRXYH-4
-2025-03-03 12:08:23 [main] INFO : User logged out successfully.
-2025-03-03 12:12:29 [main] INFO : Setting up data for tests...
-2025-03-03 12:12:29 [main] INFO : Data setup complete.
-2025-03-03 12:12:29 [main] INFO : Creating project with Project Id: string1234
-2025-03-03 12:12:29 [main] INFO : Getting JWT token...
-2025-03-03 12:12:30 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ3LCJleHAiOjE3NDEwNzA1NDcsImlhdCI6MTc0MDk4NDE0N30.zIL21WZVnkRLx6kLjnPW7pKfxLDsVxJk89C36X79HOY
-2025-03-03 12:12:31 [main] INFO : Status Code is: 200
-2025-03-03 12:12:31 [main] INFO : Project created successfully.
-2025-03-03 12:12:31 [main] INFO : Project Id (From response): Proj827
-2025-03-03 12:12:31 [main] INFO : Project ID is not null.
-2025-03-03 12:12:31 [main] INFO : Project ID saved to config.properties: Proj827
-2025-03-03 12:12:31 [main] INFO : Loaded Project ID from config.properties: Proj827
-2025-03-03 12:12:31 [main] INFO : Getting project with Id: Proj827
-2025-03-03 12:12:31 [main] INFO : Getting JWT token...
-2025-03-03 12:12:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:31 [main] INFO : Status Code is: 200
-2025-03-03 12:12:31 [main] INFO : Project retrieved successfully.
-2025-03-03 12:12:31 [main] INFO : Updating project with Id: Proj827
-2025-03-03 12:12:31 [main] INFO : Getting JWT token...
-2025-03-03 12:12:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:31 [main] INFO : Status Code is: 200
-2025-03-03 12:12:31 [main] INFO : Project updated successfully.
-2025-03-03 12:12:31 [main] INFO : Updated Project Id (From updated response): Proj827
-2025-03-03 12:12:31 [main] INFO : Updated Project ID is not null.
-2025-03-03 12:12:31 [main] INFO : Getting Active projects with Company Id: C0001
-2025-03-03 12:12:31 [main] INFO : Getting JWT token...
-2025-03-03 12:12:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:31 [main] INFO : Status Code is: 200
-2025-03-03 12:12:31 [main] INFO : Active Projects retrieved successfully.
-2025-03-03 12:12:31 [main] INFO : Getting Archived projects with Company Id: C0001
-2025-03-03 12:12:31 [main] INFO : Getting JWT token...
-2025-03-03 12:12:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:31 [main] INFO : Status Code is: 200
-2025-03-03 12:12:31 [main] INFO : Archived Projects retrieved successfully.
-2025-03-03 12:12:31 [main] INFO : Getting project details with Id: Proj827
-2025-03-03 12:12:31 [main] INFO : Getting JWT token...
-2025-03-03 12:12:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:31 [main] INFO : Status Code is: 200
-2025-03-03 12:12:31 [main] INFO : Project Details retrieved successfully.
-2025-03-03 12:12:31 [main] INFO : Getting project Timeline with Project Id: Proj827
-2025-03-03 12:12:31 [main] INFO : Getting JWT token...
-2025-03-03 12:12:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:31 [main] INFO : Status Code is: 200
-2025-03-03 12:12:31 [main] INFO : Project TimeLine Details retrieved successfully.
-2025-03-03 12:12:31 [main] INFO : Getting project Area with Project Id: Proj827
-2025-03-03 12:12:31 [main] INFO : Getting JWT token...
-2025-03-03 12:12:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:31 [main] INFO : Status Code is: 200
-2025-03-03 12:12:31 [main] INFO : Project Area retrieved successfully.
-2025-03-03 12:12:31 [main] INFO : Getting Company Details with Project Id: Proj827
-2025-03-03 12:12:31 [main] INFO : Getting JWT token...
-2025-03-03 12:12:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:31 [main] INFO : Status Code is: 404
-2025-03-03 12:12:31 [main] INFO : Setting up data for tests...
-2025-03-03 12:12:31 [main] INFO : Loaded Project ID from config.properties: Proj827
-2025-03-03 12:12:31 [main] INFO : Data setup complete.
-2025-03-03 12:12:31 [main] INFO : Getting all Buildings
-2025-03-03 12:12:31 [main] INFO : Getting JWT token...
-2025-03-03 12:12:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:31 [main] INFO : All Buildings retrieved successfully.
-2025-03-03 12:12:31 [main] INFO : Adding Building to Project Id: Proj827
-2025-03-03 12:12:31 [main] INFO : Getting JWT token...
-2025-03-03 12:12:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:31 [main] INFO : Building is added successfully to Project ID:Proj827
-2025-03-03 12:12:31 [main] INFO : Building Id (From response): 9145a516-29f3-4186-9129-6b165b566d9b
-2025-03-03 12:12:31 [main] INFO : Building ID saved to config.properties: 9145a516-29f3-4186-9129-6b165b566d9b
-2025-03-03 12:12:31 [main] INFO : Loaded Building ID from config.properties: 9145a516-29f3-4186-9129-6b165b566d9b
-2025-03-03 12:12:31 [main] INFO : Getting all Buildings by Project Id:Proj827
-2025-03-03 12:12:31 [main] INFO : Getting JWT token...
-2025-03-03 12:12:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:31 [main] INFO : All Buildings by Project Id retrieved successfully.
-2025-03-03 12:12:31 [main] INFO : Updating Building with Building Id: 9145a516-29f3-4186-9129-6b165b566d9b
-2025-03-03 12:12:31 [main] INFO : Building updated successfully.
-2025-03-03 12:12:31 [main] INFO : Toggle Archive Building by Building Id:9145a516-29f3-4186-9129-6b165b566d9b
-2025-03-03 12:12:31 [main] INFO : Getting JWT token...
-2025-03-03 12:12:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:31 [main] INFO : Toggle Archive Building by Building Id successfully.
-2025-03-03 12:12:31 [main] INFO : Getting Archived Buildings by Project Id:Proj827
-2025-03-03 12:12:31 [main] INFO : Getting JWT token...
-2025-03-03 12:12:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:31 [main] INFO : All Archived Buildings by Project Id retrieved successfully.
-2025-03-03 12:12:31 [main] INFO : Remove Toggle Archive Building by Building Id:9145a516-29f3-4186-9129-6b165b566d9b
-2025-03-03 12:12:31 [main] INFO : Getting JWT token...
-2025-03-03 12:12:31 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:32 [main] INFO : Remove Toggle Archive Building by Building Id successfully.
-2025-03-03 12:12:32 [main] INFO : Setting up data for tests...
-2025-03-03 12:12:32 [main] INFO : Loaded Project ID: Proj827
-2025-03-03 12:12:32 [main] INFO : Loaded Building ID: 9145a516-29f3-4186-9129-6b165b566d9b
-2025-03-03 12:12:32 [main] INFO : Data setup complete.
-2025-03-03 12:12:32 [main] INFO : Getting all Floors
-2025-03-03 12:12:32 [main] INFO : Getting JWT token...
-2025-03-03 12:12:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:32 [main] INFO : All Floors retrieved successfully.
-2025-03-03 12:12:32 [main] INFO : Adding Floor to Project Id: Proj827
-2025-03-03 12:12:32 [main] INFO : Adding Floor to Building Id: 9145a516-29f3-4186-9129-6b165b566d9b
-2025-03-03 12:12:32 [main] INFO : Getting JWT token...
-2025-03-03 12:12:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:32 [main] INFO : Floor is added successfully to Building ID:9145a516-29f3-4186-9129-6b165b566d9b
-2025-03-03 12:12:32 [main] INFO : Floor Id (From response): 69df2d41-0a45-413e-8746-2beb6bea6cb8
-2025-03-03 12:12:32 [main] INFO : Floor ID saved to config.properties: 69df2d41-0a45-413e-8746-2beb6bea6cb8
-2025-03-03 12:12:32 [main] INFO : Getting all Floors by Building Id:9145a516-29f3-4186-9129-6b165b566d9b
-2025-03-03 12:12:32 [main] INFO : Getting JWT token...
-2025-03-03 12:12:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ4LCJleHAiOjE3NDEwNzA1NDgsImlhdCI6MTc0MDk4NDE0OH0.qNDFWcTFT0J02VxebBYlEq48OmM8dEORiwAHhZqt7aY
-2025-03-03 12:12:32 [main] INFO : All Floors by Building Id retrieved successfully.
-2025-03-03 12:12:32 [main] INFO : Updating Floor with Floor Id: 69df2d41-0a45-413e-8746-2beb6bea6cb8
-2025-03-03 12:12:32 [main] INFO : Floor updated successfully.
-2025-03-03 12:12:32 [main] INFO : Setting up data for tests...
-2025-03-03 12:12:32 [main] INFO : Loaded Project ID from config.properties: Proj827
-2025-03-03 12:12:32 [main] INFO : Loaded Building ID from config.properties: 9145a516-29f3-4186-9129-6b165b566d9b
-2025-03-03 12:12:32 [main] INFO : Loaded Floor ID from config.properties: 69df2d41-0a45-413e-8746-2beb6bea6cb8
-2025-03-03 12:12:32 [main] INFO : Data setup complete.
-2025-03-03 12:12:32 [main] INFO : Getting all Regions
-2025-03-03 12:12:32 [main] INFO : Getting JWT token...
-2025-03-03 12:12:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ5LCJleHAiOjE3NDEwNzA1NDksImlhdCI6MTc0MDk4NDE0OX0.lljSn7Xr1TJSTU2qtYQAzkP_hsxgM-BPq_KyWVRvxDg
-2025-03-03 12:12:32 [main] INFO : All Regions retrieved successfully.
-2025-03-03 12:12:32 [main] INFO : Adding Region to Project Id: Proj827
-2025-03-03 12:12:32 [main] INFO : Adding Region to Building Id: 9145a516-29f3-4186-9129-6b165b566d9b
-2025-03-03 12:12:32 [main] INFO : Adding Region to Floor Id: 69df2d41-0a45-413e-8746-2beb6bea6cb8
-2025-03-03 12:12:32 [main] INFO : Getting JWT token...
-2025-03-03 12:12:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ5LCJleHAiOjE3NDEwNzA1NDksImlhdCI6MTc0MDk4NDE0OX0.lljSn7Xr1TJSTU2qtYQAzkP_hsxgM-BPq_KyWVRvxDg
-2025-03-03 12:12:32 [main] INFO : Region is added successfully to Floor ID:com.github.javafaker.IdNumber@31af3f22
-2025-03-03 12:12:32 [main] INFO : Region Id (From response): d93da4e7-1b04-41a2-a0d5-6ba93f474c73
-2025-03-03 12:12:32 [main] INFO : Region ID saved to config.properties: d93da4e7-1b04-41a2-a0d5-6ba93f474c73
-2025-03-03 12:12:32 [main] ERROR: Error saving Region ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_regionId.properties" (The filename, directory name, or volume label syntax is incorrect)
-2025-03-03 12:12:32 [main] INFO : Getting all Regions by Floor Id:69df2d41-0a45-413e-8746-2beb6bea6cb8
-2025-03-03 12:12:32 [main] INFO : Getting JWT token...
-2025-03-03 12:12:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ5LCJleHAiOjE3NDEwNzA1NDksImlhdCI6MTc0MDk4NDE0OX0.lljSn7Xr1TJSTU2qtYQAzkP_hsxgM-BPq_KyWVRvxDg
-2025-03-03 12:12:32 [main] INFO : All Regions by Floor Id retrieved successfully.
-2025-03-03 12:12:32 [main] INFO : Updating Region with Region Id: d93da4e7-1b04-41a2-a0d5-6ba93f474c73
-2025-03-03 12:12:32 [main] INFO : Region updated successfully.
-2025-03-03 12:12:32 [main] INFO : Setting up data for tests...
-2025-03-03 12:12:32 [main] INFO : Loaded Region ID from config.properties: d93da4e7-1b04-41a2-a0d5-6ba93f474c73
-2025-03-03 12:12:32 [main] INFO : Data setup complete.
-2025-03-03 12:12:32 [main] INFO : Adding Scan Date to Region Id: d93da4e7-1b04-41a2-a0d5-6ba93f474c73
-2025-03-03 12:12:32 [main] INFO : Getting JWT token...
-2025-03-03 12:12:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ5LCJleHAiOjE3NDEwNzA1NDksImlhdCI6MTc0MDk4NDE0OX0.lljSn7Xr1TJSTU2qtYQAzkP_hsxgM-BPq_KyWVRvxDg
-2025-03-03 12:12:32 [main] INFO : Scan Date is added successfully to Region ID:d93da4e7-1b04-41a2-a0d5-6ba93f474c73
-2025-03-03 12:12:32 [main] INFO : Scan Date Id (From response): e92a1d24-240c-4c2e-aee6-34856574497f
-2025-03-03 12:12:32 [main] INFO : scandate ID saved to config.properties: e92a1d24-240c-4c2e-aee6-34856574497f
-2025-03-03 12:12:32 [main] ERROR: Error saving scandate ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_regionId.properties" (The filename, directory name, or volume label syntax is incorrect)
-2025-03-03 12:12:32 [main] INFO : Setting up data for tests...
-2025-03-03 12:12:32 [main] INFO : Loaded Project ID from config.properties: Proj827
-2025-03-03 12:12:32 [main] INFO : Loaded Building ID from config.properties: 9145a516-29f3-4186-9129-6b165b566d9b
-2025-03-03 12:12:32 [main] INFO : Loaded Floor ID from config.properties: 69df2d41-0a45-413e-8746-2beb6bea6cb8
-2025-03-03 12:12:32 [main] INFO : Loaded Region ID from config.properties: d93da4e7-1b04-41a2-a0d5-6ba93f474c73
-2025-03-03 12:12:32 [main] INFO : Data setup complete.
-2025-03-03 12:12:32 [main] INFO : Getting Global Parameter Status By Company Id: C0001
-2025-03-03 12:12:32 [main] INFO : Getting JWT token...
-2025-03-03 12:12:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ5LCJleHAiOjE3NDEwNzA1NDksImlhdCI6MTc0MDk4NDE0OX0.lljSn7Xr1TJSTU2qtYQAzkP_hsxgM-BPq_KyWVRvxDg
-2025-03-03 12:12:32 [main] INFO : All Global Parameter Status By Company Id retrieved successfully.
-2025-03-03 12:12:32 [main] INFO : Getting Project Parameter Status By Project Id:Proj827
-2025-03-03 12:12:32 [main] INFO : Getting JWT token...
-2025-03-03 12:12:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ5LCJleHAiOjE3NDEwNzA1NDksImlhdCI6MTc0MDk4NDE0OX0.lljSn7Xr1TJSTU2qtYQAzkP_hsxgM-BPq_KyWVRvxDg
-2025-03-03 12:12:32 [main] INFO : All Project Parameter Status By Project Id retrieved successfully.
-2025-03-03 12:12:32 [main] INFO : Getting Building Parameter Status By Building Id:9145a516-29f3-4186-9129-6b165b566d9b
-2025-03-03 12:12:32 [main] INFO : Getting JWT token...
-2025-03-03 12:12:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ5LCJleHAiOjE3NDEwNzA1NDksImlhdCI6MTc0MDk4NDE0OX0.lljSn7Xr1TJSTU2qtYQAzkP_hsxgM-BPq_KyWVRvxDg
-2025-03-03 12:12:32 [main] INFO : All Building Parameter Status By Building Id retrieved successfully.
-2025-03-03 12:12:32 [main] INFO : Getting Floor Parameter Status By Floor Id: 69df2d41-0a45-413e-8746-2beb6bea6cb8
-2025-03-03 12:12:32 [main] INFO : Getting JWT token...
-2025-03-03 12:12:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ5LCJleHAiOjE3NDEwNzA1NDksImlhdCI6MTc0MDk4NDE0OX0.lljSn7Xr1TJSTU2qtYQAzkP_hsxgM-BPq_KyWVRvxDg
-2025-03-03 12:12:32 [main] INFO : All Floor Parameter Status By Floor Id retrieved successfully.
-2025-03-03 12:12:32 [main] INFO : Getting Region Parameter Status By Region Id: d93da4e7-1b04-41a2-a0d5-6ba93f474c73
-2025-03-03 12:12:32 [main] INFO : Getting JWT token...
-2025-03-03 12:12:32 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTQ5LCJleHAiOjE3NDEwNzA1NDksImlhdCI6MTc0MDk4NDE0OX0.lljSn7Xr1TJSTU2qtYQAzkP_hsxgM-BPq_KyWVRvxDg
-2025-03-03 12:12:32 [main] INFO : All Region Parameter Status By Region Id retrieved successfully.
-2025-03-03 12:12:33 [main] INFO : Starting testCreateProject with companyId: ABC01
-2025-03-03 12:12:33 [main] INFO : Project payload: api.payload.Project@4fd1458d
-2025-03-03 12:12:33 [main] INFO : Making API call to create project...
-2025-03-03 12:12:33 [main] INFO : Getting JWT token...
-2025-03-03 12:12:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTUwLCJleHAiOjE3NDEwNzA1NTAsImlhdCI6MTc0MDk4NDE1MH0.wDQxyeTIaQb2iXrEgOhFw2k8zy3umtOPR2sQhulThUA
-2025-03-03 12:12:33 [main] INFO : Project created successfully with status code: 200
-2025-03-03 12:12:33 [main] INFO : Starting testCreateProject with companyId: ABC01
-2025-03-03 12:12:33 [main] INFO : Project payload: api.payload.Project@35982083
-2025-03-03 12:12:33 [main] INFO : Making API call to create project...
-2025-03-03 12:12:33 [main] INFO : Getting JWT token...
-2025-03-03 12:12:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTUwLCJleHAiOjE3NDEwNzA1NTAsImlhdCI6MTc0MDk4NDE1MH0.wDQxyeTIaQb2iXrEgOhFw2k8zy3umtOPR2sQhulThUA
-2025-03-03 12:12:33 [main] INFO : Project created successfully with status code: 200
-2025-03-03 12:12:33 [main] INFO : Starting testCreateProject with companyId: ABC01
-2025-03-03 12:12:33 [main] INFO : Project payload: api.payload.Project@1f112da2
-2025-03-03 12:12:33 [main] INFO : Making API call to create project...
-2025-03-03 12:12:33 [main] INFO : Getting JWT token...
-2025-03-03 12:12:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTUwLCJleHAiOjE3NDEwNzA1NTAsImlhdCI6MTc0MDk4NDE1MH0.wDQxyeTIaQb2iXrEgOhFw2k8zy3umtOPR2sQhulThUA
-2025-03-03 12:12:33 [main] INFO : Project created successfully with status code: 200
-2025-03-03 12:12:33 [main] INFO : Starting testCreateProject with companyId: ABC01
-2025-03-03 12:12:33 [main] INFO : Project payload: api.payload.Project@127302ec
-2025-03-03 12:12:33 [main] INFO : Making API call to create project...
-2025-03-03 12:12:33 [main] INFO : Getting JWT token...
-2025-03-03 12:12:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTUwLCJleHAiOjE3NDEwNzA1NTAsImlhdCI6MTc0MDk4NDE1MH0.wDQxyeTIaQb2iXrEgOhFw2k8zy3umtOPR2sQhulThUA
-2025-03-03 12:12:33 [main] INFO : Project created successfully with status code: 200
-2025-03-03 12:12:33 [main] INFO : Starting setup...
-2025-03-03 12:12:33 [main] INFO : Config file loaded successfully.
-2025-03-03 12:12:33 [main] INFO : Starting testLogin...
-2025-03-03 12:12:33 [main] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
-2025-03-03 12:12:33 [main] INFO : Starting test_GetAllUser...
-2025-03-03 12:12:33 [main] INFO : Getting JWT token...
-2025-03-03 12:12:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTUwLCJleHAiOjE3NDEwNzA1NTAsImlhdCI6MTc0MDk4NDE1MH0.wDQxyeTIaQb2iXrEgOhFw2k8zy3umtOPR2sQhulThUA
-2025-03-03 12:12:33 [main] INFO : Retrieved all users successfully.
-2025-03-03 12:12:33 [main] INFO : Starting test_GetUserByEmailId...
-2025-03-03 12:12:33 [main] INFO : Getting JWT token...
-2025-03-03 12:12:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTUwLCJleHAiOjE3NDEwNzA1NTAsImlhdCI6MTc0MDk4NDE1MH0.wDQxyeTIaQb2iXrEgOhFw2k8zy3umtOPR2sQhulThUA
-2025-03-03 12:12:33 [main] INFO : Retrieved user by email successfully.
-2025-03-03 12:12:33 [main] INFO : Starting test_forgotPassword...
-2025-03-03 12:12:33 [main] INFO : Getting JWT token...
-2025-03-03 12:12:33 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTUwLCJleHAiOjE3NDEwNzA1NTAsImlhdCI6MTc0MDk4NDE1MH0.wDQxyeTIaQb2iXrEgOhFw2k8zy3umtOPR2sQhulThUA
-2025-03-03 12:12:34 [main] INFO : Forgot password link sent successfully
-2025-03-03 12:12:34 [main] INFO : Starting test_sendOtpToEmail...
-2025-03-03 12:12:34 [main] INFO : Getting JWT token...
-2025-03-03 12:12:34 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTUwLCJleHAiOjE3NDEwNzA1NTAsImlhdCI6MTc0MDk4NDE1MH0.wDQxyeTIaQb2iXrEgOhFw2k8zy3umtOPR2sQhulThUA
-2025-03-03 12:12:34 [main] INFO : Send OTP to email sent successfully
-2025-03-03 12:12:34 [main] INFO : Starting testLogout...
-2025-03-03 12:12:34 [main] INFO : Getting JWT token...
-2025-03-03 12:12:34 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTg0MTUxLCJleHAiOjE3NDEwNzA1NTEsImlhdCI6MTc0MDk4NDE1MX0.FUhchSswIIqVmJjzL_w1WFrymmMsdj_eLCAkETg7zrA
-2025-03-03 12:12:34 [main] INFO : User logged out successfully.
+2025-03-03 16:24:21 [main] INFO : Setting up data for tests...
+2025-03-03 16:24:21 [main] INFO : Data setup complete.
+2025-03-03 16:24:21 [main] INFO : Creating project with Project Id: string1234
+2025-03-03 16:24:21 [main] INFO : Getting JWT token...
+2025-03-03 16:24:22 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjU5LCJleHAiOjE3NDEwODU2NTksImlhdCI6MTc0MDk5OTI1OX0.ea57wMC6D6R8wz10gb-mk_RWAgHj_d2F4IIih4F34GQ
+2025-03-03 16:24:22 [main] INFO : Status Code is: 200
+2025-03-03 16:24:22 [main] INFO : Project created successfully.
+2025-03-03 16:24:22 [main] INFO : Project Id (From response): Proj848
+2025-03-03 16:24:22 [main] INFO : Project ID is not null.
+2025-03-03 16:24:22 [main] INFO : Project ID saved to config.properties: Proj848
+2025-03-03 16:24:22 [main] INFO : Loaded Project ID from config.properties: Proj848
+2025-03-03 16:24:22 [main] INFO : Getting project with Id: Proj848
+2025-03-03 16:24:22 [main] INFO : Getting JWT token...
+2025-03-03 16:24:22 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjU5LCJleHAiOjE3NDEwODU2NTksImlhdCI6MTc0MDk5OTI1OX0.ea57wMC6D6R8wz10gb-mk_RWAgHj_d2F4IIih4F34GQ
+2025-03-03 16:24:23 [main] INFO : Status Code is: 200
+2025-03-03 16:24:23 [main] INFO : Project retrieved successfully.
+2025-03-03 16:24:23 [main] INFO : Updating project with Id: Proj848
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjU5LCJleHAiOjE3NDEwODU2NTksImlhdCI6MTc0MDk5OTI1OX0.ea57wMC6D6R8wz10gb-mk_RWAgHj_d2F4IIih4F34GQ
+2025-03-03 16:24:23 [main] INFO : Status Code is: 200
+2025-03-03 16:24:23 [main] INFO : Project updated successfully.
+2025-03-03 16:24:23 [main] INFO : Updated Project Id (From updated response): Proj848
+2025-03-03 16:24:23 [main] INFO : Updated Project ID is not null.
+2025-03-03 16:24:23 [main] INFO : Getting Active projects with Company Id: C0001
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjU5LCJleHAiOjE3NDEwODU2NTksImlhdCI6MTc0MDk5OTI1OX0.ea57wMC6D6R8wz10gb-mk_RWAgHj_d2F4IIih4F34GQ
+2025-03-03 16:24:23 [main] INFO : Status Code is: 200
+2025-03-03 16:24:23 [main] INFO : Active Projects retrieved successfully.
+2025-03-03 16:24:23 [main] INFO : Getting Archived projects with Company Id: C0001
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjU5LCJleHAiOjE3NDEwODU2NTksImlhdCI6MTc0MDk5OTI1OX0.ea57wMC6D6R8wz10gb-mk_RWAgHj_d2F4IIih4F34GQ
+2025-03-03 16:24:23 [main] INFO : Status Code is: 200
+2025-03-03 16:24:23 [main] INFO : Archived Projects retrieved successfully.
+2025-03-03 16:24:23 [main] INFO : Getting project details with Id: Proj848
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjU5LCJleHAiOjE3NDEwODU2NTksImlhdCI6MTc0MDk5OTI1OX0.ea57wMC6D6R8wz10gb-mk_RWAgHj_d2F4IIih4F34GQ
+2025-03-03 16:24:23 [main] INFO : Status Code is: 200
+2025-03-03 16:24:23 [main] INFO : Project Details retrieved successfully.
+2025-03-03 16:24:23 [main] INFO : Getting project Timeline with Project Id: Proj848
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjU5LCJleHAiOjE3NDEwODU2NTksImlhdCI6MTc0MDk5OTI1OX0.ea57wMC6D6R8wz10gb-mk_RWAgHj_d2F4IIih4F34GQ
+2025-03-03 16:24:23 [main] INFO : Status Code is: 200
+2025-03-03 16:24:23 [main] INFO : Project TimeLine Details retrieved successfully.
+2025-03-03 16:24:23 [main] INFO : Getting project Area with Project Id: Proj848
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:23 [main] INFO : Status Code is: 200
+2025-03-03 16:24:23 [main] INFO : Project Area retrieved successfully.
+2025-03-03 16:24:23 [main] INFO : Getting Company Details with Project Id: Proj848
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:23 [main] INFO : Status Code is: 404
+2025-03-03 16:24:23 [main] INFO : Setting up data for tests...
+2025-03-03 16:24:23 [main] INFO : Loaded Project ID from config.properties: Proj848
+2025-03-03 16:24:23 [main] INFO : Data setup complete.
+2025-03-03 16:24:23 [main] INFO : Getting all Buildings
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:23 [main] INFO : All Buildings retrieved successfully.
+2025-03-03 16:24:23 [main] INFO : Adding Building to Project Id: Proj848
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:23 [main] INFO : Building is added successfully to Project ID:Proj848
+2025-03-03 16:24:23 [main] INFO : Building Id (From response): 8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:23 [main] INFO : Building ID saved to config.properties: 8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:23 [main] INFO : Loaded Building ID from config.properties: 8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:23 [main] INFO : Getting all Buildings by Project Id:Proj848
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:23 [main] INFO : All Buildings by Project Id retrieved successfully.
+2025-03-03 16:24:23 [main] INFO : Updating Building with Building Id: 8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:23 [main] INFO : Building updated successfully.
+2025-03-03 16:24:23 [main] INFO : Toggle Archive Building by Building Id:8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:23 [main] INFO : Toggle Archive Building by Building Id successfully.
+2025-03-03 16:24:23 [main] INFO : Getting Archived Buildings by Project Id:Proj848
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:23 [main] INFO : All Archived Buildings by Project Id retrieved successfully.
+2025-03-03 16:24:23 [main] INFO : Remove Toggle Archive Building by Building Id:8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:23 [main] INFO : Remove Toggle Archive Building by Building Id successfully.
+2025-03-03 16:24:23 [main] INFO : Setting up data for tests...
+2025-03-03 16:24:23 [main] INFO : Loaded Project ID: Proj848
+2025-03-03 16:24:23 [main] INFO : Loaded Building ID: 8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:23 [main] INFO : Data setup complete.
+2025-03-03 16:24:23 [main] INFO : Getting all Floors
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:23 [main] INFO : All Floors retrieved successfully.
+2025-03-03 16:24:23 [main] INFO : Adding Floor to Project Id: Proj848
+2025-03-03 16:24:23 [main] INFO : Adding Floor to Building Id: 8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:23 [main] INFO : Floor is added successfully to Building ID:8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:23 [main] INFO : Floor Id (From response): 2b8447c2-f26d-4cb0-ad2f-df2246e4e17d
+2025-03-03 16:24:23 [main] INFO : Floor ID saved to config.properties: 2b8447c2-f26d-4cb0-ad2f-df2246e4e17d
+2025-03-03 16:24:23 [main] INFO : Getting all Floors by Building Id:8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:23 [main] INFO : All Floors by Building Id retrieved successfully.
+2025-03-03 16:24:23 [main] INFO : Updating Floor with Floor Id: 2b8447c2-f26d-4cb0-ad2f-df2246e4e17d
+2025-03-03 16:24:23 [main] INFO : Floor updated successfully.
+2025-03-03 16:24:23 [main] INFO : Setting up data for tests...
+2025-03-03 16:24:23 [main] INFO : Loaded Project ID from config.properties: Proj848
+2025-03-03 16:24:23 [main] INFO : Loaded Building ID from config.properties: 8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:23 [main] INFO : Loaded Floor ID from config.properties: 2b8447c2-f26d-4cb0-ad2f-df2246e4e17d
+2025-03-03 16:24:23 [main] INFO : Data setup complete.
+2025-03-03 16:24:23 [main] INFO : Getting all Regions
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:23 [main] INFO : All Regions retrieved successfully.
+2025-03-03 16:24:23 [main] INFO : Adding Region to Project Id: Proj848
+2025-03-03 16:24:23 [main] INFO : Adding Region to Building Id: 8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:23 [main] INFO : Adding Region to Floor Id: 2b8447c2-f26d-4cb0-ad2f-df2246e4e17d
+2025-03-03 16:24:23 [main] INFO : Getting JWT token...
+2025-03-03 16:24:23 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:24 [main] INFO : Region is added successfully to Floor ID:com.github.javafaker.IdNumber@57be0d93
+2025-03-03 16:24:24 [main] INFO : Region Id (From response): c6377393-645d-419a-b268-ad512a7305b0
+2025-03-03 16:24:24 [main] INFO : Region ID saved to config.properties: c6377393-645d-419a-b268-ad512a7305b0
+2025-03-03 16:24:24 [main] ERROR: Error saving Region ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_regionId.properties" (The filename, directory name, or volume label syntax is incorrect)
+2025-03-03 16:24:24 [main] INFO : Getting all Regions by Floor Id:2b8447c2-f26d-4cb0-ad2f-df2246e4e17d
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:24 [main] INFO : All Regions by Floor Id retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Updating Region with Region Id: c6377393-645d-419a-b268-ad512a7305b0
+2025-03-03 16:24:24 [main] INFO : Region updated successfully.
+2025-03-03 16:24:24 [main] INFO : Setting up data for tests...
+2025-03-03 16:24:24 [main] INFO : Loaded Project ID from config.properties: Proj848
+2025-03-03 16:24:24 [main] INFO : Loaded Building ID from config.properties: 8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:24 [main] INFO : Loaded Floor ID from config.properties: 2b8447c2-f26d-4cb0-ad2f-df2246e4e17d
+2025-03-03 16:24:24 [main] INFO : Loaded Region ID from config.properties: c6377393-645d-419a-b268-ad512a7305b0
+2025-03-03 16:24:24 [main] INFO : Data setup complete.
+2025-03-03 16:24:24 [main] INFO : Getting all Scan Data's
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:24 [main] INFO : All Scan Data's retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Adding Scan Date to Region Id: c6377393-645d-419a-b268-ad512a7305b0
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:24 [main] INFO : Scan Date is added successfully to Region ID:c6377393-645d-419a-b268-ad512a7305b0
+2025-03-03 16:24:24 [main] INFO : Scan Date Id (From response): 14d20736-a36f-41f6-a50f-59a9e23775a3
+2025-03-03 16:24:24 [main] INFO : scandate ID saved to config.properties: 14d20736-a36f-41f6-a50f-59a9e23775a3
+2025-03-03 16:24:24 [main] ERROR: Error saving scandate ID to config.properties: C:\RestAssured_tool\Workspace_CM\RestAssured_CM\src\test\resources\config_regionId.properties" (The filename, directory name, or volume label syntax is incorrect)
+2025-03-03 16:24:24 [main] INFO : Getting Scan Data By Region Id
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:24 [main] INFO : Getting Scan Data By Region Id retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Getting Projects Progress By Project Id:Proj848
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:24 [main] INFO : Getting Projects Progress By Project Id retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Getting Building Progress By Building Id:8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYwLCJleHAiOjE3NDEwODU2NjAsImlhdCI6MTc0MDk5OTI2MH0.BfZiB2cGrb273vu-f7577wEO291bI_Jrc8vQKdlTmsA
+2025-03-03 16:24:24 [main] INFO : Getting Building Progress By Building Id retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Getting Floor Progress By Floor Id:2b8447c2-f26d-4cb0-ad2f-df2246e4e17d
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYxLCJleHAiOjE3NDEwODU2NjEsImlhdCI6MTc0MDk5OTI2MX0._a_SeIWUnKhQ8C8ZSrVbg_V9NZhbeKjT0-2fS7BaZ-I
+2025-03-03 16:24:24 [main] INFO : Getting Floor Progress By Floor Id retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Getting Region Progress By Region Id:c6377393-645d-419a-b268-ad512a7305b0
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYxLCJleHAiOjE3NDEwODU2NjEsImlhdCI6MTc0MDk5OTI2MX0._a_SeIWUnKhQ8C8ZSrVbg_V9NZhbeKjT0-2fS7BaZ-I
+2025-03-03 16:24:24 [main] INFO : Getting Region Progress By Region Id retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Getting All Customers DiskSpace
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYxLCJleHAiOjE3NDEwODU2NjEsImlhdCI6MTc0MDk5OTI2MX0._a_SeIWUnKhQ8C8ZSrVbg_V9NZhbeKjT0-2fS7BaZ-I
+2025-03-03 16:24:24 [main] INFO : Getting All Customers DiskSpace retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Getting Company DiskSpace By Company Id: C0001
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYxLCJleHAiOjE3NDEwODU2NjEsImlhdCI6MTc0MDk5OTI2MX0._a_SeIWUnKhQ8C8ZSrVbg_V9NZhbeKjT0-2fS7BaZ-I
+2025-03-03 16:24:24 [main] INFO : Getting Company DiskSpace By Company Id retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Getting Waiting Processes List
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYxLCJleHAiOjE3NDEwODU2NjEsImlhdCI6MTc0MDk5OTI2MX0._a_SeIWUnKhQ8C8ZSrVbg_V9NZhbeKjT0-2fS7BaZ-I
+2025-03-03 16:24:24 [main] INFO : Getting Waiting Processes List retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Checking Json Files
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYxLCJleHAiOjE3NDEwODU2NjEsImlhdCI6MTc0MDk5OTI2MX0._a_SeIWUnKhQ8C8ZSrVbg_V9NZhbeKjT0-2fS7BaZ-I
+2025-03-03 16:24:24 [main] INFO : Checking Json Files done successfully.
+2025-03-03 16:24:24 [main] INFO : Getting Stack Item
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYxLCJleHAiOjE3NDEwODU2NjEsImlhdCI6MTc0MDk5OTI2MX0._a_SeIWUnKhQ8C8ZSrVbg_V9NZhbeKjT0-2fS7BaZ-I
+2025-03-03 16:24:24 [main] INFO : Getting Stack Item retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Setting up data for tests...
+2025-03-03 16:24:24 [main] INFO : Loaded Project ID from config.properties: Proj848
+2025-03-03 16:24:24 [main] INFO : Loaded Building ID from config.properties: 8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:24 [main] INFO : Loaded Floor ID from config.properties: 2b8447c2-f26d-4cb0-ad2f-df2246e4e17d
+2025-03-03 16:24:24 [main] INFO : Loaded Region ID from config.properties: c6377393-645d-419a-b268-ad512a7305b0
+2025-03-03 16:24:24 [main] INFO : Data setup complete.
+2025-03-03 16:24:24 [main] INFO : Getting Global Parameter Status By Company Id: C0001
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYxLCJleHAiOjE3NDEwODU2NjEsImlhdCI6MTc0MDk5OTI2MX0._a_SeIWUnKhQ8C8ZSrVbg_V9NZhbeKjT0-2fS7BaZ-I
+2025-03-03 16:24:24 [main] INFO : All Global Parameter Status By Company Id retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Getting Project Parameter Status By Project Id:Proj848
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYxLCJleHAiOjE3NDEwODU2NjEsImlhdCI6MTc0MDk5OTI2MX0._a_SeIWUnKhQ8C8ZSrVbg_V9NZhbeKjT0-2fS7BaZ-I
+2025-03-03 16:24:24 [main] INFO : All Project Parameter Status By Project Id retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Getting Building Parameter Status By Building Id:8a4ec3f7-9da9-4737-9b25-5952031b566b
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYxLCJleHAiOjE3NDEwODU2NjEsImlhdCI6MTc0MDk5OTI2MX0._a_SeIWUnKhQ8C8ZSrVbg_V9NZhbeKjT0-2fS7BaZ-I
+2025-03-03 16:24:24 [main] INFO : All Building Parameter Status By Building Id retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Getting Floor Parameter Status By Floor Id: 2b8447c2-f26d-4cb0-ad2f-df2246e4e17d
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYxLCJleHAiOjE3NDEwODU2NjEsImlhdCI6MTc0MDk5OTI2MX0._a_SeIWUnKhQ8C8ZSrVbg_V9NZhbeKjT0-2fS7BaZ-I
+2025-03-03 16:24:24 [main] INFO : All Floor Parameter Status By Floor Id retrieved successfully.
+2025-03-03 16:24:24 [main] INFO : Getting Region Parameter Status By Region Id: c6377393-645d-419a-b268-ad512a7305b0
+2025-03-03 16:24:24 [main] INFO : Getting JWT token...
+2025-03-03 16:24:24 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYxLCJleHAiOjE3NDEwODU2NjEsImlhdCI6MTc0MDk5OTI2MX0._a_SeIWUnKhQ8C8ZSrVbg_V9NZhbeKjT0-2fS7BaZ-I
+2025-03-03 16:24:24 [main] INFO : All Region Parameter Status By Region Id retrieved successfully.
+2025-03-03 16:24:25 [main] INFO : Starting testCreateProject with companyId: ABC01
+2025-03-03 16:24:25 [main] INFO : Project payload: api.payload.Project@335f5370
+2025-03-03 16:24:25 [main] INFO : Making API call to create project...
+2025-03-03 16:24:25 [main] INFO : Getting JWT token...
+2025-03-03 16:24:25 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYyLCJleHAiOjE3NDEwODU2NjIsImlhdCI6MTc0MDk5OTI2Mn0.7XXBTiQquWSI_E0zB2C2Wprz0EmUnN9QWVTiErOVvao
+2025-03-03 16:24:25 [main] INFO : Project created successfully with status code: 200
+2025-03-03 16:24:25 [main] INFO : Starting testCreateProject with companyId: ABC01
+2025-03-03 16:24:25 [main] INFO : Project payload: api.payload.Project@199763ea
+2025-03-03 16:24:25 [main] INFO : Making API call to create project...
+2025-03-03 16:24:25 [main] INFO : Getting JWT token...
+2025-03-03 16:24:25 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYyLCJleHAiOjE3NDEwODU2NjIsImlhdCI6MTc0MDk5OTI2Mn0.7XXBTiQquWSI_E0zB2C2Wprz0EmUnN9QWVTiErOVvao
+2025-03-03 16:24:25 [main] INFO : Project created successfully with status code: 200
+2025-03-03 16:24:25 [main] INFO : Starting testCreateProject with companyId: ABC01
+2025-03-03 16:24:25 [main] INFO : Project payload: api.payload.Project@7a140446
+2025-03-03 16:24:25 [main] INFO : Making API call to create project...
+2025-03-03 16:24:25 [main] INFO : Getting JWT token...
+2025-03-03 16:24:25 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYyLCJleHAiOjE3NDEwODU2NjIsImlhdCI6MTc0MDk5OTI2Mn0.7XXBTiQquWSI_E0zB2C2Wprz0EmUnN9QWVTiErOVvao
+2025-03-03 16:24:25 [main] INFO : Project created successfully with status code: 200
+2025-03-03 16:24:25 [main] INFO : Starting testCreateProject with companyId: ABC01
+2025-03-03 16:24:25 [main] INFO : Project payload: api.payload.Project@58ef7429
+2025-03-03 16:24:25 [main] INFO : Making API call to create project...
+2025-03-03 16:24:25 [main] INFO : Getting JWT token...
+2025-03-03 16:24:25 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYyLCJleHAiOjE3NDEwODU2NjIsImlhdCI6MTc0MDk5OTI2Mn0.7XXBTiQquWSI_E0zB2C2Wprz0EmUnN9QWVTiErOVvao
+2025-03-03 16:24:25 [main] INFO : Project created successfully with status code: 200
+2025-03-03 16:24:25 [main] INFO : Starting setup...
+2025-03-03 16:24:25 [main] INFO : Config file loaded successfully.
+2025-03-03 16:24:25 [main] INFO : Starting testLogin...
+2025-03-03 16:24:25 [main] INFO : User logged in successfully. UserID: UID22, CompanyID: C0001
+2025-03-03 16:24:25 [main] INFO : Starting test_GetAllUser...
+2025-03-03 16:24:25 [main] INFO : Getting JWT token...
+2025-03-03 16:24:25 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYyLCJleHAiOjE3NDEwODU2NjIsImlhdCI6MTc0MDk5OTI2Mn0.7XXBTiQquWSI_E0zB2C2Wprz0EmUnN9QWVTiErOVvao
+2025-03-03 16:24:25 [main] INFO : Retrieved all users successfully.
+2025-03-03 16:24:25 [main] INFO : Starting test_GetUserByEmailId...
+2025-03-03 16:24:25 [main] INFO : Getting JWT token...
+2025-03-03 16:24:25 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYyLCJleHAiOjE3NDEwODU2NjIsImlhdCI6MTc0MDk5OTI2Mn0.7XXBTiQquWSI_E0zB2C2Wprz0EmUnN9QWVTiErOVvao
+2025-03-03 16:24:25 [main] INFO : Retrieved user by email successfully.
+2025-03-03 16:24:25 [main] INFO : Starting test_forgotPassword...
+2025-03-03 16:24:25 [main] INFO : Getting JWT token...
+2025-03-03 16:24:25 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjYyLCJleHAiOjE3NDEwODU2NjIsImlhdCI6MTc0MDk5OTI2Mn0.7XXBTiQquWSI_E0zB2C2Wprz0EmUnN9QWVTiErOVvao
+2025-03-03 16:24:28 [main] INFO : Forgot password link sent successfully
+2025-03-03 16:24:28 [main] INFO : Starting test_sendOtpToEmail...
+2025-03-03 16:24:28 [main] INFO : Getting JWT token...
+2025-03-03 16:24:28 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjY1LCJleHAiOjE3NDEwODU2NjUsImlhdCI6MTc0MDk5OTI2NX0.vViibfzYw8slxBFHwR8p3E7p83XDvx0kahoUx1ikdTI
+2025-03-03 16:24:29 [main] INFO : Send OTP to email sent successfully
+2025-03-03 16:24:29 [main] INFO : Starting testLogout...
+2025-03-03 16:24:29 [main] INFO : Getting JWT token...
+2025-03-03 16:24:29 [main] INFO : JWT Token obtained: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3VzZXJkYXRhIjoiU2h1YmhhbSBKYWd0YXAiLCJuYW1lIjoiIiwibmJmIjoxNzQwOTk5MjY2LCJleHAiOjE3NDEwODU2NjYsImlhdCI6MTc0MDk5OTI2Nn0.6pO0_pPzaJq01bJgG-mp5f8L6TXxRPK9E7fYgU6HFy4
+2025-03-03 16:24:29 [main] INFO : User logged out successfully.

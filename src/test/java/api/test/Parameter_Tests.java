@@ -94,7 +94,7 @@ public class Parameter_Tests {
             logger.error("Error loading Building ID from config.properties: " + e.getMessage());
         }
     }
-  //Load the sharedBuildingId from config.properties
+  //Load the sharedFloorId from config.properties
     private void loadSharedFloorIdFromConfigFile() {
         Properties properties = new Properties();
         try (FileInputStream input = new FileInputStream("C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\src\\test\\resources\\config_floorId.properties")) {
@@ -109,7 +109,7 @@ public class Parameter_Tests {
             logger.error("Error loading Floor ID from config.properties: " + e.getMessage());
         }
     }
-  //Load the sharedBuildingId from config.properties
+  //Load the sharedRegionId from config.properties
     private void loadSharedRegionIdFromConfigFile() {
         Properties properties = new Properties();
         try (FileInputStream input = new FileInputStream("C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\src\\test\\resources\\config_regionId.properties")) {
