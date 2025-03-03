@@ -24,18 +24,30 @@
             <class name="api.test.Floor_Tests"/>
         </classes>
     </test>
-    <test name="RegionTests_04_Chrome">
+    <test name="RegionTests_06_Chrome">
         <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"/>
         <classes>
             <class name="api.test.Region_Tests"/>
         </classes>
     </test>
-	<test name="DataDrivenTests_05_Chrome">
+    <test name="ScanDataTests_04_Chrome">
+        <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"/>
+        <classes>
+            <class name="api.test.ScanData_Tests"/>
+        </classes>
+    </test>
+    <test name="ParameterTests_05_Chrome">
+        <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"/>
+        <classes>
+            <class name="api.test.Parameter_Tests"/>
+        </classes>
+    </test>
+	<test name="DataDrivenTests_07_Chrome">
         <classes>
             <class name="api.test.DDtests"/>
         </classes>
     </test>
-	<test name="UserTests_06_Chrome">
+	<test name="UserTests_08_Chrome">
         <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"/>
         <classes>
             <class name="api.test.User_Tests"/>
@@ -43,6 +55,7 @@
     </test>
     
     
+
 
     <!-- Test for Edge Browser -->
     <test name="ProjectTests_01_Edge">
@@ -69,15 +82,25 @@
             <class name="api.test.Region_Tests"/>
         </classes>
     </test>
-
-    <!-- <test name="DataDrivenTests_02_Edge">
+    <test name="ScanDataTests_05_Edge">
+        <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64"/>
+        <classes>
+            <class name="api.test.ScanData_Tests"/>
+        </classes>
+    </test>
+    <test name="ParameterTests_06_Edge">
+        <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64"/>
+        <classes>
+            <class name="api.test.Parameter_Tests"/>
+        </classes>
+    </test>
+    <!-- <test name="DataDrivenTests_07_Edge">
         <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64"/>
         <classes>
             <class name="api.test.DDtests"/>
         </classes>
     </test> -->
-
-    <test name="UserTests_06_Edge">
+	<test name="UserTests_08_Edge">
         <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64"/>
         <classes>
             <class name="api.test.User_Tests"/>

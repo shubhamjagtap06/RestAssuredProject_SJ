@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Construct Monitor Test Suite]" guice-stage="DEVELOPMENT">
+<suite thread-count="4" parallel="tests" name="Failed suite [RESTAssuredSuite]">
   <listeners>
     <listener class-name="api.utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="4" parallel="tests" name="UserTests_08(failed)">
     <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"/>
     <classes>
-      <class name="api.test.ScanData_Tests">
+      <class name="api.test.User_Tests">
         <methods>
-          <include name="setupData"/>
-          <include name="test_CheckJsonFiles"/>
           <include name="setupUserAgent"/>
+          <include name="test_forgotPassword"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- api.test.ScanData_Tests -->
+      </class> <!-- api.test.User_Tests -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Construct Monitor Test Suite] -->
+  </test> <!-- UserTests_08(failed) -->
+</suite> <!-- Failed suite [RESTAssuredSuite] -->

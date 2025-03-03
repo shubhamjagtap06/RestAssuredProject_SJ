@@ -4,28 +4,16 @@
   <listeners>
     <listener class-name="api.utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="4" parallel="tests" name="ProjectTests_01_Edge(failed)">
-    <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/91.0.864.64"/>
-    <classes>
-      <class name="api.test.ProjectTests">
-        <methods>
-          <include name="test_UpdateProject"/>
-          <include name="setupUserAgent"/>
-          <include name="setupData"/>
-        </methods>
-      </class> <!-- api.test.ProjectTests -->
-    </classes>
-  </test> <!-- ProjectTests_01_Edge(failed) -->
-  <test thread-count="4" parallel="tests" name="ProjectTests_01_Chrome(failed)">
+  <test thread-count="4" parallel="tests" name="UserTests_08(failed)">
     <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"/>
     <classes>
-      <class name="api.test.ProjectTests">
+      <class name="api.test.User_Tests">
         <methods>
-          <include name="test_UpdateProject"/>
           <include name="setupUserAgent"/>
-          <include name="setupData"/>
+          <include name="test_forgotPassword"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- api.test.ProjectTests -->
+      </class> <!-- api.test.User_Tests -->
     </classes>
-  </test> <!-- ProjectTests_01_Chrome(failed) -->
+  </test> <!-- UserTests_08(failed) -->
 </suite> <!-- Failed suite [RESTAssuredSuite] -->
