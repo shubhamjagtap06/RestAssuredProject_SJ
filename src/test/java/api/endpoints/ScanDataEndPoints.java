@@ -2,6 +2,7 @@ package api.endpoints;
 import static io.restassured.RestAssured.*;
 
 import api.payload.ScanData;
+import api.routes.Routes_scandata;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
