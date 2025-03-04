@@ -13,5 +13,11 @@ public class Routes_building {
 	public static String toggleArchiveBuilding_url =base_url+"/api/Building/ToggleArchive/{buildingId}/{uid}";
 	public static String getArchivedBuildingsByProjectId_url =base_url+"/api/Building/GetArchivedBuilding/{projectId}";
 	public static String removeToggleArchiveBuilding_url =base_url+"/api/Building/RemoveToggleArchive/{buildingId}";
+	
+	public static String getBuildingByBuildingId_url =base_url+"/api/Building/GetBuildingByBuildingId/{BuildingId}";
+	public static String getArchivedBuildings_url =base_url+"/api/Building/GetArchivedBuildings";
+	public static String getBuildingHistory_url =base_url+"/api/Building/GetBuildingHistory/{BuildingId}";
+	public static String getAllBuildingHistory_url =base_url+"/api/Building/GetAllBuildingHistory";
+	public static String checkIsRevitFileUploaded_url =base_url+"/api/Building/CheckIsRevitFileUploaded/{BuildingId}";
 
 }

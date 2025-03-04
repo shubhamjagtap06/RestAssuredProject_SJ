@@ -128,4 +128,87 @@ public class BuildingEndPoints {
 	            .post(Routes_building.removeToggleArchiveBuilding_url);  // Refer URL from Routes class
 	        return response;
 	    }
+	    
+	    
+	    
+	    
+	 // Get Building by Building Id
+	    public static Response getBuildingByBuildingId(String BuildingId, String userAgent) {  
+	       // Get the token for authorization
+	        bearerToken = api.test.User_Tests.getToken(userAgent);
+	        Response response = 
+	        given()
+	            .headers("Authorization", "Bearer " + bearerToken)
+	            .pathParam("BuildingId", BuildingId)
+	            .header("User-Agent", userAgent)  
+	        .when()
+	            .get(Routes_building.getBuildingByBuildingId_url);  
+	        return response;
+	    }
+	    
+	    
+	    
+	    
+	    //Get all Archived Buildings 
+	    public static Response getArchivedBuildings(String userAgent) {  
+		       // Get the token for authorization
+		        bearerToken = api.test.User_Tests.getToken(userAgent);
+		        Response response = 
+		        given()
+		            .headers("Authorization", "Bearer " + bearerToken)
+		            .header("User-Agent", userAgent) 
+		        .when()
+		            .get(Routes_building.getArchivedBuildings_url);  
+		        return response;
+		    }
+	    
+	    
+	    
+	    
+	 // Get Building History by Building Id
+	    public static Response getBuildingHistoryByBuildingId(String BuildingId, String userAgent) {  
+	       // Get the token for authorization
+	        bearerToken = api.test.User_Tests.getToken(userAgent);
+	        Response response = 
+	        given()
+	            .headers("Authorization", "Bearer " + bearerToken)
+	            .pathParam("BuildingId", BuildingId)
+	            .header("User-Agent", userAgent)  
+	        .when()
+	            .get(Routes_building.getBuildingHistory_url);  
+	        return response;
+	    }
+	    
+	    
+	    
+	    
+	 // Get all Buildings History 
+	    public static Response getAllBuildingsHistory(String userAgent) {  
+	       // Get the token for authorization
+	        bearerToken = api.test.User_Tests.getToken(userAgent);
+	        Response response = 
+	        given()
+	            .headers("Authorization", "Bearer " + bearerToken)
+	            .header("User-Agent", userAgent)  
+	        .when()
+	            .get(Routes_building.getAllBuildingHistory_url);  
+	        return response;
+	    }
+	    
+	    
+	    
+	    
+	 // Check is revit file uploaded by building id
+	    public static Response checkIsRevitFileUploadedByBuildingId(String BuildingId, String userAgent) {  
+	       // Get the token for authorization
+	        bearerToken = api.test.User_Tests.getToken(userAgent);
+	        Response response = 
+	        given()
+	            .headers("Authorization", "Bearer " + bearerToken)
+	            .pathParam("BuildingId", BuildingId)
+	            .header("User-Agent", userAgent)  
+	        .when()
+	            .get(Routes_building.checkIsRevitFileUploaded_url);  
+	        return response;
+	    }
 }

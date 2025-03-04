@@ -7,13 +7,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"/>
     <classes>
-      <class name="api.test.ScanData_Tests">
+      <class name="api.test.Building_Tests">
         <methods>
-          <include name="setupData"/>
-          <include name="test_CheckJsonFiles"/>
           <include name="setupUserAgent"/>
+          <include name="test_GetArchivedBuildings"/>
+          <include name="setupData"/>
         </methods>
-      </class> <!-- api.test.ScanData_Tests -->
+      </class> <!-- api.test.Building_Tests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Construct Monitor Test Suite] -->

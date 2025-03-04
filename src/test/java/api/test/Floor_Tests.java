@@ -111,6 +111,9 @@ public class Floor_Tests {
         }
     }
 
+    
+    
+    
     // Get all Floors
     @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
     public void test_GetFloors() {
@@ -132,6 +135,9 @@ public class Floor_Tests {
         }
     }
 
+    
+    
+    
     // Add new floor
     @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
     public void test_AddFloor() {
@@ -168,6 +174,9 @@ public class Floor_Tests {
         }
     }
 
+    
+    
+    
     // Get all floors by building id
     @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
     public void test_GetAllFloorsByBuildingId() {
@@ -189,6 +198,9 @@ public class Floor_Tests {
         }
     }
 
+    
+    
+    
     // Update Floor
     @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
     public void test_Update_Floor() {
@@ -206,6 +218,101 @@ public class Floor_Tests {
 
             Assert.assertEquals(response.getStatusCode(), 200);
             logger.info("Floor updated successfully.");
+        } catch (Exception e) {
+            logger.error("Test case failed: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+ // Get floor by floor id
+    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetFloorByFloorId() {
+        try {
+            logger.info("Getting Floor by floor Id:" + sharedFloorIdFromResponse);
+
+            Response response = FloorEndPoints.getFloorByFloorId(sharedFloorIdFromResponse, userAgent);
+            response.then().log().all();
+
+            Assert.assertEquals(response.getStatusCode(), 200);
+            Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
+            logger.info("Floor by floor Id retrieved successfully.");
+        } catch (Exception e) {
+            logger.error("Test case failed: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+ // Get Archived Floors
+    @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetArchivedFloors() {
+        try {
+            logger.info("Getting all Archived Floors");
+
+            Response response = FloorEndPoints.getArchivedFloors(userAgent);
+            response.then().log().all();
+
+            Assert.assertEquals(response.getStatusCode(), 200);
+            Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
+            logger.info("All Archived Floors retrieved successfully.");
+        } catch (Exception e) {
+            logger.error("Test case failed: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+ // Get All Floors History
+    @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetAllFloorsHistory() {
+        try {
+            logger.info("Getting All Floors History");
+
+            Response response = FloorEndPoints.getAllFloorsHistory(userAgent);
+            response.then().log().all();
+
+            Assert.assertEquals(response.getStatusCode(), 200);
+            Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
+            logger.info("All Floors History retrieved successfully.");
+        } catch (Exception e) {
+            logger.error("Test case failed: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+ // Get floor by floor id
+    @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetBargraphByFloorId() {
+        try {
+            logger.info("Getting Bargraph by floor Id:" + sharedFloorIdFromResponse);
+
+            Response response = FloorEndPoints.getFloorByFloorId(sharedFloorIdFromResponse, userAgent);
+            response.then().log().all();
+
+            Assert.assertEquals(response.getStatusCode(), 200);
+            Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
+            logger.info("Bargraph by floor Id retrieved successfully.");
         } catch (Exception e) {
             logger.error("Test case failed: " + e.getMessage());
             if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {

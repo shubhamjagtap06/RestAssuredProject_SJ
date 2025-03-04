@@ -78,4 +78,66 @@ public class FloorEndPoints {
         return response;
     }
     
+    
+    
+ // Get Floor by Floor Id
+    public static Response getFloorByFloorId(String FloorId, String userAgent) {  
+       // Get the token for authorization
+        bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("FloorId", FloorId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_floor.getFloorByFloorId_url);  
+        return response;
+    }
+    
+    
+    
+  //Get Archived Floors
+  	public static Response getArchivedFloors(String userAgent) {  
+  	       // Get the token for authorization
+  	        bearerToken = api.test.User_Tests.getToken(userAgent);
+  	        Response response = 
+  	        given()
+  	            .headers("Authorization", "Bearer " + bearerToken)
+  	            .header("User-Agent", userAgent)  
+  	        .when()
+  	            .get(Routes_floor.getArchivedFloors_url);  
+  	        return response;
+  	    }
+  	
+  	
+  	
+  //Get All Floor History
+  	public static Response getAllFloorsHistory(String userAgent) {  
+  	       // Get the token for authorization
+  	        bearerToken = api.test.User_Tests.getToken(userAgent);
+  	        Response response = 
+  	        given()
+  	            .headers("Authorization", "Bearer " + bearerToken)
+  	            .header("User-Agent", userAgent)  
+  	        .when()
+  	            .get(Routes_floor.getAllFloorHistory_url);  
+  	        return response;
+  	    }
+  	
+  	
+  	
+ // Get Bargraph by Floor Id
+    public static Response getBargraphByFloorId(String FloorId, String userAgent) {  
+       // Get the token for authorization
+        bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("FloorId", FloorId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_floor.getBargraphByFloorId_url);  
+        return response;
+    }
+    
 }

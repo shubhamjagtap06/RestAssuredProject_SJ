@@ -10,5 +10,12 @@ public class Routes_floor {
 	public static String addFloor_url = base_url+"/api/Floor";
 	public static String getFloorsByBuildingId_url =base_url+"/api/Floor/GetFloorsByBuildingId/{buildingId}";
 	public static String updateFloorByFloorId_url =base_url+"/api/Floor/updateFloors/{floorId}";
+	
+	public static String getFloorByFloorId_url =base_url+"/api/Floor/GetFloorByFloorId/{FloorId}";
+	public static String getArchivedFloors_url =base_url+"/api/Floor/GetArchivedFloors";
+	public static String getAllFloorHistory_url =base_url+"/api/Floor/GetAllFloorHistory";
+	public static String getBargraphByFloorId_url =base_url+"/api/Floor/GetBargraphByFloorId/{FloorId}";
+	
+
 
 }
