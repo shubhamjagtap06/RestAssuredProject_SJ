@@ -15,7 +15,7 @@ public class ProjectEndPoints {
     
     static String bearerToken;
     
-    // Create project
+ // Create project
     public static Response createProject(Project payload, String userAgent) {  // implementation of (create project) endpoint //Accept userAgent as a parameter
         // Get the token for authorization
         bearerToken = api.test.User_Tests.getToken(userAgent);
@@ -34,7 +34,7 @@ public class ProjectEndPoints {
     }
     
     
- // Create project for DDT
+// Create project for DDT
     public static Response createProject1(Project payload) {  // implementation of (create project) endpoint //Accept userAgent as a parameter
         // Get the token for authorization
         bearerToken = api.test.User_Tests.getToken1();
@@ -51,7 +51,7 @@ public class ProjectEndPoints {
     }
 
     
-   // Get Project
+ // Get Project
     public static Response getProject(String ProjectId, String userAgent) {  // implementation of (get/read project) endpoint
         // Set User-Agent for multi-browser testing
         //String userAgent = System.getProperty("userAgent", "Mozilla/5.0"); // Default to "Mozilla/5.0" if not provided
@@ -67,7 +67,7 @@ public class ProjectEndPoints {
     }
 
     
-    // Update project
+ // Update project
     public static Response updateProject(String ProjectId, Project payload, String userAgent) {  // implementation of (update project) endpoint
         // Set User-Agent for multi-browser testing
         //String userAgent = System.getProperty("userAgent", "Mozilla/5.0"); // Default to "Mozilla/5.0" if not provided
@@ -86,7 +86,7 @@ public class ProjectEndPoints {
     }
 
     
-    // Delete project
+ // Delete project
     public static Response deleteProject(String ProjectId, String userAgent) {  // implementation of (delete project) endpoint
         // Set User-Agent for multi-browser testing
         //String userAgent = System.getProperty("userAgent", "Mozilla/5.0"); // Default to "Mozilla/5.0" if not provided
@@ -102,7 +102,7 @@ public class ProjectEndPoints {
     }
 
     
-    // Get Active Project
+ // Get Active Project
     public static Response getActiveProject(String CompanyId, String UserId, String userAgent) {  // implementation of (get/read project) endpoint
         // Set User-Agent for multi-browser testing
         //String userAgent = System.getProperty("userAgent", "Mozilla/5.0"); // Default to "Mozilla/5.0" if not provided
@@ -119,7 +119,7 @@ public class ProjectEndPoints {
     }
 
     
-    // Get Archived Project
+ // Get Archived Project
     public static Response getArchivedProject(String CompanyId, String UserId, String userAgent) {  // implementation of (get/read project) endpoint
         // Set User-Agent for multi-browser testing
         //String userAgent = System.getProperty("userAgent", "Mozilla/5.0"); // Default to "Mozilla/5.0" if not provided
@@ -168,7 +168,7 @@ public class ProjectEndPoints {
     
     
     
-    // Get Area by project Id
+  // Get Area by project Id
     public static Response getAreaByProjectId(String ProjectId, String userAgent) {  // implementation of (get/read project) endpoint
     	bearerToken = api.test.User_Tests.getToken(userAgent);
         Response response = 
@@ -184,7 +184,7 @@ public class ProjectEndPoints {
     
     
     
-    // Get company details by project Id
+  // Get company details by project Id
     public static Response getCompanyDetailsByProjectId(String ProjectId, String userAgent) {  // implementation of (get/read project) endpoint
     	bearerToken = api.test.User_Tests.getToken(userAgent);
         Response response = 
@@ -194,6 +194,67 @@ public class ProjectEndPoints {
             .header("User-Agent", userAgent)  // Add User-Agent here
         .when()
             .get(Routes_project.get_CompanyDetailsByProjId_url);  // Refer URL from Routes class
+        return response;
+    }
+    
+    
+    
+ // Get projects by company id and user id
+    public static Response getProjectByCompanyIdUserId(String CompanyId, String UserId, String userAgent) {  // implementation of (get/read project) endpoint
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("CompanyId", CompanyId)
+            .pathParam("UserId", UserId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_Projects_url); 
+        return response;
+    }
+    
+    
+    
+ // Get company wise project by company id
+    public static Response getCompanyWiseProjectByCompanyId(String CompanyId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("CompanyId", CompanyId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_CompanyWiseProject_url);  
+        return response;
+    }
+    
+    
+    
+ // Get project by project Id
+    public static Response getProjectByProjectId(String ProjectId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("ProjectId", ProjectId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_ProjectByProjectId_url);  
+        return response;
+    }
+    
+    
+    
+ // Get Acc Details by project Id
+    public static Response getAccDetailsByProjectId(String ProjectId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("ProjectId", ProjectId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_AccDetailsByProjectId_url);  
         return response;
     }
 }

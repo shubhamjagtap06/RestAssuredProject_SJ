@@ -15,6 +15,7 @@
     	<class name="api.test.Region_Tests"/>
     	<class name="api.test.ScanData_Tests"/>
     	<class name="api.test.Parameter_Tests"/>
+    	<class name="api.test.License_Tests"/>
       	<class name="api.test.DDtests"/>
       	<class name="api.test.User_Tests"/>
    </classes>

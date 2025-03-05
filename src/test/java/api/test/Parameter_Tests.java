@@ -230,4 +230,26 @@ public class Parameter_Tests {
             Assert.fail("Test Case failed: " + e.getMessage());
         }
     }
+    
+    
+    
+    
+  //Get Parameter Master
+    @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class) // Retry logic applied here too
+    public void test_GetParameterMaster() {
+        try {
+            logger.info("Getting Parameter Master: ");
+            Response response = ParameterEndPoints.ParameterMaster(userAgent); // Pass userAgent to the endpoint
+            response.then().log().all();
+            Assert.assertEquals(response.getStatusCode(), 200);
+            Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
+            logger.info("Getting Parameter Master retrieved successfully.");
+        } catch (Exception e) {
+            logger.error("Test case failed: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
 }

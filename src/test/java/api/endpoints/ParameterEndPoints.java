@@ -92,6 +92,20 @@ public class ParameterEndPoints {
             .get(Routes_parameter.get_RegionParameterStatus_url);  // Refer URL from Routes class
         return response;
     }
+    
+    
+    
+ // Get Parameter Master
+    public static Response ParameterMaster(String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_parameter.parameterMaster_url); 
+        return response;
+    }
 	
 	
 

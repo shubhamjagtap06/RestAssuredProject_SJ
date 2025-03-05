@@ -18,5 +18,9 @@ public class Routes_parameter {
 	public static String get_FloorParameterStatus_url = base_url +"/api/Parameter/GetFloorParameterStatus/{FloorId}";
 	public static String get_RegionParameterStatus_url = base_url +"/api/Parameter/GetRegionParameterStatus/{RegionId}";
 
+	
+	//Parameter Master module URLs
+	public static String parameterMaster_url = base_url +"/api/ParameterMaster";
+
 
 }

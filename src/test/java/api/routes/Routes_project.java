@@ -23,7 +23,10 @@ public class Routes_project {
 	public static String get_AreaByProjId_url = base_url+"/api/Project/GetAreaByProjectId/{projectId}";
 	public static String get_CompanyDetailsByProjId_url = base_url+"/api/Project/GetCompanyDetailsByProjectId/{projectId}";
 	
-	
+	public static String get_Projects_url = base_url+"/api/Project/GetProject/{CompanyId}/{UserId}";
+	public static String get_CompanyWiseProject_url = base_url+"/api/Project/GetCompanyWiseProject/{CompanyId}";
+	public static String get_ProjectByProjectId_url = base_url+"/api/Project/GetProjectByProjectId/{ProjectId}";
+	public static String get_AccDetailsByProjectId_url = base_url+"/api/Project/GetAccDetails/{ProjectId}";
 	
 	
 	
