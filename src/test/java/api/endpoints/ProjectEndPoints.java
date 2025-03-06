@@ -257,4 +257,213 @@ public class ProjectEndPoints {
             .get(Routes_project.get_AccDetailsByProjectId_url);  
         return response;
     }
+    
+    
+    
+    
+ // Get Site Address by project Id
+    public static Response getSiteAddressByProjectId(String ProjectId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("ProjectId", ProjectId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_SiteAddressByProjectId_url);  
+        return response;
+    }
+    
+    
+    
+    
+ // Get Finance by project Id
+    public static Response getFinanceByProjectId(String ProjectId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("ProjectId", ProjectId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_FinanceByProjectId_url);  
+        return response;
+    }
+    
+    
+    
+    
+ // Get Project Archived Details by project Id
+    public static Response getProjectArchivedDetailsByProjectId(String ProjectId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("ProjectId", ProjectId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_ProjectArchivedDetailsByProjectId_url);  
+        return response;
+    }
+    
+    
+    
+    
+ // Get Project Company by project Id
+    public static Response getProjectCompanyByProjectId(String ProjectId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("ProjectId", ProjectId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_ProjectCompanyByProjectId_url);  
+        return response;
+    }
+    
+    
+    
+    
+ // Get Project History by project Id
+    public static Response getProjectHistoryByProjectId(String ProjectId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("ProjectId", ProjectId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_ProjectHistoryByProjectId_url);  
+        return response;
+    }
+    
+    
+    
+    
+ // Get All Project History 
+    public static Response getAllProjectHistory(String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_AllProjectHistory_url);  
+        return response;
+    }
+    
+    
+    
+    
+ // Get HeattMap values by project Id
+    public static Response getHeatMapValuesByProjectId(String ProjectId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("ProjectId", ProjectId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_HeatMapValuesByProjectId_url);  
+        return response;
+    }
+    
+    
+    
+    
+ // Get LineGraph values by project Id and building id
+    public static Response getLineGraphValuesByProjectIdBuildingId(String ProjectId, String BuildingId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("ProjectId", ProjectId)
+            .pathParam("BuildingId", BuildingId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_LineGraphValuesByProjectIdBuildingId_url);  
+        return response;
+    }
+    
+    
+    
+    
+ // Get LineGraph values all buildings by project Id 
+    public static Response getLineGraphValuesAllBuildingsByProjectId(String ProjectId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("ProjectId", ProjectId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_LineGraphValuesAllBuildingsByProjectId_url);  
+        return response;
+    }
+    
+    
+    
+    
+ // Get Single LineGraph values by project Id 
+    public static Response getSingleLineGraphValueByProjectId(String ProjectId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("ProjectId", ProjectId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_SingleLineGraphValuesByProjectId_url);  
+        return response;
+    }
+    
+    
+    
+    
+ // Get Project LineGraph values by project Id and building id
+    public static Response getProjectLineGraphValuesByProjectIdBuildingId(String ProjectId, String BuildingId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("ProjectId", ProjectId)
+            .pathParam("BuildingId", BuildingId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.get_ProjectLineGraphValuesByProjectIdBuildingId_url);  
+        return response;
+    }
+    
+    
+    
+    
+ // Add project data to archive server by project Id 
+    public static Response addProjectDataToArchiveServerByProjectId(String ProjectId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("ProjectId", ProjectId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.addProjectDataToArchiveServerByProjectId_url);  
+        return response;
+    }
+    
+    
+    
+    
+ // Add project data to file server by project Id 
+    public static Response addProjectDataToFileServerByProjectId(String ProjectId, String userAgent) {  
+    	bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("ProjectId", ProjectId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_project.addProjectDataToFileServerByProjectId_url);  
+        return response;
+    }
 }

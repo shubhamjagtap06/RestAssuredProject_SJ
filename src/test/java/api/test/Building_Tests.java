@@ -6,7 +6,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
+
+import api.assertions.ProjectAssertions;
 import api.endpoints.BuildingEndPoints;
+import api.endpoints.ProjectEndPoints;
 import api.payload.Building;
 import io.restassured.RestAssured;
 import io.restassured.config.HttpClientConfig;
@@ -421,4 +424,45 @@ public class Building_Tests {
             Assert.fail("Test Case failed: " + e.getMessage());
         }
     }
+    
+    
+    
+  // Project Tests
+    
+  @Test(priority = 13, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetLineGraphValuesByProjectIdBuildingId() {
+        try {
+            logger.info("Getting Line Graph Values By Project Id Building Id: "+sharedProjectIdFromResponse +sharedBuildingIdFromResponse);
+            Response response = ProjectEndPoints.getLineGraphValuesByProjectIdBuildingId(sharedProjectIdFromResponse, sharedBuildingIdFromResponse, userAgent);
+            response.then().log().all();
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Getting Line Graph Values By Project Id Building Id retrived successfully");
+        } catch (Exception e) {
+            logger.error("Error occurred while Getting Line Graph Values By Project Id Building Id: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+  
+  
+  
+  
+  @Test(priority = 14, retryAnalyzer = RetryAnalyzer.class)
+  public void test_GetProjectLineGraphValuesByProjectIdBuildingId() {
+      try {
+          logger.info("Getting Project Line Graph Values By Project Id Building Id : "+sharedProjectIdFromResponse +sharedBuildingIdFromResponse);
+          Response response = ProjectEndPoints.getProjectLineGraphValuesByProjectIdBuildingId(sharedProjectIdFromResponse, sharedBuildingIdFromResponse, userAgent);
+          response.then().log().all();
+          ProjectAssertions.assertStatusCode(response, 200);
+          logger.info("Getting Project Line Graph Values By Project Id Building Id retrived successfully");
+      } catch (Exception e) {
+          logger.error("Error occurred while Project Line Graph Values By Project Id Building Id: " + e.getMessage());
+          if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+              logger.error("Timeout error: " + e.getCause().getMessage());
+          }
+          Assert.fail("Test Case failed: " + e.getMessage());
+      }
+  }
 }

@@ -28,6 +28,17 @@ public class Routes_project {
 	public static String get_ProjectByProjectId_url = base_url+"/api/Project/GetProjectByProjectId/{ProjectId}";
 	public static String get_AccDetailsByProjectId_url = base_url+"/api/Project/GetAccDetails/{ProjectId}";
 	
-	
-	
+	public static String get_SiteAddressByProjectId_url = base_url+"/api/Project/GetSiteAddressByProjectId/{ProjectId}";
+	public static String get_FinanceByProjectId_url = base_url+"/api/Project/GetFinanceByProjectId/{ProjectId}";
+	public static String get_ProjectArchivedDetailsByProjectId_url = base_url+"/api/Project/GetProjectArchivedDetails/{ProjectId}";
+	public static String get_ProjectCompanyByProjectId_url = base_url+"/api/Project/GetProjectCompany/{ProjectId}";
+	public static String get_ProjectHistoryByProjectId_url = base_url+"/api/Project/GetProjectHistory/{ProjectId}";
+	public static String get_AllProjectHistory_url = base_url+"/api/Project/GetAllProjectHistory";
+	public static String get_HeatMapValuesByProjectId_url = base_url+"/api/Project/GetHeatMapValues/{ProjectId}";
+	public static String get_LineGraphValuesByProjectIdBuildingId_url = base_url+"/api/Project/GetLineGraphValues/{ProjectId}/{BuildingId}";
+	public static String get_LineGraphValuesAllBuildingsByProjectId_url = base_url+"/api/Project/GetLineGraphValuesAllBuildings/{ProjectId}";
+	public static String get_SingleLineGraphValuesByProjectId_url = base_url+"/api/Project/GetSingleLineGraphValues/{ProjectId}";
+	public static String get_ProjectLineGraphValuesByProjectIdBuildingId_url = base_url+"/api/Project/GetProjectLineGraphValuesBuilding/{ProjectId}/{BuildingId}";
+	public static String addProjectDataToArchiveServerByProjectId_url = base_url+"/api/Project/AddProjectDataToArchiveServer/{ProjectId}";
+	public static String addProjectDataToFileServerByProjectId_url = base_url+"/api/Project/AddProjectDataToFileServer/{ProjectId}";
 }

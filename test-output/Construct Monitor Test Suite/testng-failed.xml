@@ -10,7 +10,7 @@
       <class name="api.test.Project_Tests">
         <methods>
           <include name="setupUserAgent"/>
-          <include name="test_GetAccDetailsByProjectId"/>
+          <include name="test_addProjectDataToArchiveServerByProjectId"/>
           <include name="setupData"/>
         </methods>
       </class> <!-- api.test.Project_Tests -->

@@ -18,17 +18,18 @@ import java.io.OutputStream;
 import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import api.utilities.RetryAnalyzer; // Import the RetryAnalyzer class
+import api.utilities.RetryAnalyzer; 			//Import the RetryAnalyzer class
 import java.net.SocketTimeoutException;
 import java.util.concurrent.TimeoutException;
 import org.apache.http.conn.ConnectTimeoutException;
-import api.assertions.ProjectAssertions; // Import the custom assertions class
+import api.assertions.ProjectAssertions; 		//Import the custom assertions class
 
 @SuppressWarnings("unused")
 public class Project_Tests {
 
     private static final Logger logger = LogManager.getLogger(Project_Tests.class);
     public static String sharedProjectIdFromResponse;
+    public static String sharedBuildingIdFromResponse;
     public String UpdatedprojectIdFromResponse;
     Faker faker;
     Project proj_payload;
@@ -45,7 +46,6 @@ public class Project_Tests {
         logger.info("Setting up data for tests...");
         faker = new Faker();
         proj_payload = new Project();
-
         proj_payload.setProjectId("string1234");
         proj_payload.setCompanyId("string1234");
         //proj_payload.setCompanyId("C0001");
@@ -66,7 +66,6 @@ public class Project_Tests {
         proj_payload.setLastUpdated(0);
         logger.info("Data setup complete.");
     }
-
     @BeforeMethod
     @Parameters("User-Agent")
     public void setupUserAgent(String userAgent) {
@@ -75,22 +74,20 @@ public class Project_Tests {
 
     
     
+    
     @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
     public void test_CreateProject() {
         try {
             logger.info("Creating project with Project Id: " + this.proj_payload.getProjectId());
-
             Response response = ProjectEndPoints.createProject(proj_payload, userAgent);
             response.then().log().all();
-
             //Assert.assertEquals(response.getStatusCode(), 200);
             // Use custom assertion for status code
             ProjectAssertions.assertStatusCode(response, 200);
             logger.info("Project created successfully.");
-
             sharedProjectIdFromResponse = response.jsonPath().getString("projects.projectId");
             logger.info("Project Id (From response): " + sharedProjectIdFromResponse);
-            //Assert.assertNotNull(sharedProjectIdFromResponse);
+         //Assert.assertNotNull(sharedProjectIdFromResponse);
          // Use custom assertion for non-null project ID
             ProjectAssertions.assertNotNull(sharedProjectIdFromResponse, "Project ID");
 
@@ -105,7 +102,6 @@ public class Project_Tests {
             Assert.fail("Test Case failed: " + e.getMessage());
         }
     }
-
     private void saveProjectIdToPropertiesFile(String projectId) {
         Properties properties = new Properties();
         try (OutputStream output = new FileOutputStream("C:\\RestAssured_tool\\Workspace_CM\\RestAssured_CM\\src\\test\\resources\\config_projectId.properties")) {
@@ -121,6 +117,7 @@ public class Project_Tests {
         }
     }
 
+    
     
     
    @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
@@ -146,24 +143,21 @@ public class Project_Tests {
     }
 
     
+   
     
    @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
     public void test_UpdateProject() {
         try {
             logger.info("Updating project with Id: " + sharedProjectIdFromResponse);
-
             proj_payload.setProjectId(sharedProjectIdFromResponse);
             proj_payload.setDescription(faker.name().lastName());
             proj_payload.setProgress(20);
-
             Response response = ProjectEndPoints.updateProject(sharedProjectIdFromResponse, proj_payload, userAgent);
             response.then().log().all();
-
-            //Assert.assertEquals(response.getStatusCode(), 200);
-         // Use custom assertion for status code
+         //Assert.assertEquals(response.getStatusCode(), 200);
+         //Use custom assertion for status code
             ProjectAssertions.assertStatusCode(response, 200);
             logger.info("Project updated successfully.");
-
             UpdatedprojectIdFromResponse = response.jsonPath().getString("projects.projectId");
             logger.info("Updated Project Id (From updated response): " + UpdatedprojectIdFromResponse);
             //Assert.assertNotNull(UpdatedprojectIdFromResponse);
@@ -183,6 +177,7 @@ public class Project_Tests {
         }
     }
     
+   
     
    
     @Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
@@ -209,6 +204,7 @@ public class Project_Tests {
     
     
     
+    
     @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
     public void test_GetArchivedProject() {
         try {
@@ -230,6 +226,7 @@ public class Project_Tests {
             Assert.fail("Test Case failed: " + e.getMessage());
         }
     }
+    
     
     
     
@@ -282,6 +279,7 @@ public class Project_Tests {
     
     
     
+    
     @Test(priority = 8, retryAnalyzer = RetryAnalyzer.class)
     public void test_GetAreaByProjectId() {
         try {
@@ -303,6 +301,7 @@ public class Project_Tests {
             Assert.fail("Test Case failed: " + e.getMessage());
         }
     }
+    
     
     
     
@@ -402,6 +401,273 @@ public class Project_Tests {
             logger.info("Getting Acc Details By Project Id retrived successfully");
         } catch (Exception e) {
             logger.error("Error occurred while Getting Acc Details By Project Id: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+    //0603
+    @Test(priority = 14, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetSiteAddressByProjectId() {
+        try {
+            logger.info("Getting Site Address By Project Id: Project ABCDE ID: Proj767 ");
+            Response response = ProjectEndPoints.getSiteAddressByProjectId("Proj767", userAgent);
+            response.then().log().all();
+            //ProjectAssertions.assertStatusCode(response, 404);
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Getting Site Address By Project Id retrived successfully");
+        } catch (Exception e) {
+            logger.error("Error occurred while Getting Site Address By Project Id: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+    @Test(priority = 15, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetFinanceByProjectId() {
+        try {
+            logger.info("Getting Finance By Project Id: "+sharedProjectIdFromResponse);
+            Response response = ProjectEndPoints.getFinanceByProjectId(sharedProjectIdFromResponse, userAgent);
+            response.then().log().all();
+            //ProjectAssertions.assertStatusCode(response, 200);
+            ProjectAssertions.assertStatusCode(response, 404);
+            logger.info("Getting Finance By Project Id retrived successfully");
+        } catch (Exception e) {
+            logger.error("Error occurred while Getting Finance By Project Id: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+    @Test(priority = 16, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetProjectArchivedDetailsByProjectId() {
+        try {
+            logger.info("Getting Project Archived Details By Project Id: "+sharedProjectIdFromResponse);
+            Response response = ProjectEndPoints.getProjectArchivedDetailsByProjectId(sharedProjectIdFromResponse, userAgent);
+            response.then().log().all();
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Getting Project Archived Details By Project Id retrived successfully");
+        } catch (Exception e) {
+            logger.error("Error occurred while Getting Project Archived Details By Project Id: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+    @Test(priority = 17, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetProjectCompanyByProjectId() {
+        try {
+            logger.info("Getting Project Company By Project Id: "+sharedProjectIdFromResponse);
+            Response response = ProjectEndPoints.getProjectCompanyByProjectId(sharedProjectIdFromResponse, userAgent);
+            response.then().log().all();
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Getting Project Company By Project Id retrived successfully");
+        } catch (Exception e) {
+            logger.error("Error occurred while Getting Project Company By Project Id: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+    @Test(priority = 18, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetProjectHistoryByProjectId() {
+        try {
+            logger.info("Getting Project History By Project Id: "+sharedProjectIdFromResponse);
+            Response response = ProjectEndPoints.getProjectHistoryByProjectId(sharedProjectIdFromResponse, userAgent);
+            response.then().log().all();
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Getting Project History By Project Id retrived successfully");
+        } catch (Exception e) {
+            logger.error("Error occurred while Getting Project History By Project Id: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+    @Test(priority = 19, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetAllProjectHistory() {
+        try {
+            logger.info("Getting All Project History ");
+            Response response = ProjectEndPoints.getAllProjectHistory(userAgent);
+            response.then().log().all();
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Getting All Project History retrived successfully");
+        } catch (Exception e) {
+            logger.error("Error occurred while Getting All Project History " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+    @Test(priority = 20, retryAnalyzer = RetryAnalyzer.class)
+    public void test_GetHeatMapValuesByProjectId() {
+        try {
+            logger.info("Getting Heat Map Values By Project Id: "+sharedProjectIdFromResponse);
+            Response response = ProjectEndPoints.getHeatMapValuesByProjectId(sharedProjectIdFromResponse, userAgent);
+            response.then().log().all();
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Getting Heat Map Values Project Id retrived successfully");
+        } catch (Exception e) {
+            logger.error("Error occurred while Getting Heat Map Values By Project Id: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+	/*
+	 * //@Test(priority = 21, retryAnalyzer = RetryAnalyzer.class) public void
+	 * test_GetLineGraphValuesByProjectIdBuildingId() { try {
+	 * logger.info("Getting Line Graph Values By Project Id Building Id: "
+	 * +sharedProjectIdFromResponse +sharedBuildingIdFromResponse); Response
+	 * response = ProjectEndPoints.getLineGraphValuesByProjectIdBuildingId(
+	 * sharedProjectIdFromResponse, sharedBuildingIdFromResponse, userAgent);
+	 * response.then().log().all(); ProjectAssertions.assertStatusCode(response,
+	 * 200); logger.
+	 * info("Getting Line Graph Values By Project Id Building Id retrived successfully"
+	 * ); } catch (Exception e) { logger.
+	 * error("Error occurred while Getting Line Graph Values By Project Id Building Id: "
+	 * + e.getMessage()); if (e.getCause() instanceof
+	 * java.net.SocketTimeoutException || e.getCause() instanceof
+	 * org.apache.http.conn.ConnectTimeoutException) {
+	 * logger.error("Timeout error: " + e.getCause().getMessage()); }
+	 * Assert.fail("Test Case failed: " + e.getMessage()); } }
+	 */
+    
+    
+    
+    
+    @Test(priority = 22, retryAnalyzer = RetryAnalyzer.class)
+    public void test_getLineGraphValuesAllBuildingsByProjectId() {
+        try {
+            logger.info("Getting Line Graph Values All Buildings By Project id: "+sharedProjectIdFromResponse);
+            Response response = ProjectEndPoints.getLineGraphValuesAllBuildingsByProjectId(sharedProjectIdFromResponse, userAgent);
+            response.then().log().all();
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Getting Line Graph Values All Buildings By Project Id retrived successfully");
+        } catch (Exception e) {
+            logger.error("Error occurred while Getting Line Graph Values All Buildings By Project Id: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+    @Test(priority = 23, retryAnalyzer = RetryAnalyzer.class)
+    public void test_getSingleLineGraphValueByProjectId() {
+        try {
+            logger.info("Getting Single Line Graph Value By ProjectId: "+sharedProjectIdFromResponse);
+            Response response = ProjectEndPoints.getSingleLineGraphValueByProjectId(sharedProjectIdFromResponse, userAgent);
+            response.then().log().all();
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Getting Single Line Graph Value By Project Id retrived successfully");
+        } catch (Exception e) {
+            logger.error("Error occurred while Getting Single Line Graph Value By Project Id: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+	/*
+	 * // @Test(priority = 24, retryAnalyzer = RetryAnalyzer.class) public void
+	 * test_GetProjectLineGraphValuesByProjectIdBuildingId() { try {
+	 * logger.info("Getting Project Line Graph Values By Project Id Building Id : "
+	 * +sharedProjectIdFromResponse +sharedBuildingIdFromResponse); Response
+	 * response = ProjectEndPoints.getProjectLineGraphValuesByProjectIdBuildingId(
+	 * sharedProjectIdFromResponse, sharedBuildingIdFromResponse, userAgent);
+	 * response.then().log().all(); ProjectAssertions.assertStatusCode(response,
+	 * 200); logger.
+	 * info("Getting Project Line Graph Values By Project Id Building Id retrived successfully"
+	 * ); } catch (Exception e) { logger.
+	 * error("Error occurred while Project Line Graph Values By Project Id Building Id: "
+	 * + e.getMessage()); if (e.getCause() instanceof
+	 * java.net.SocketTimeoutException || e.getCause() instanceof
+	 * org.apache.http.conn.ConnectTimeoutException) {
+	 * logger.error("Timeout error: " + e.getCause().getMessage()); }
+	 * Assert.fail("Test Case failed: " + e.getMessage()); } }
+	 */
+    
+    
+    
+    
+    @Test(priority = 25, retryAnalyzer = RetryAnalyzer.class)
+    public void test_addProjectDataToArchiveServerByProjectId() {
+        try {
+            logger.info("Getting add Project Data To Archive Server By Project Id: "+sharedProjectIdFromResponse);
+            Response response = ProjectEndPoints.addProjectDataToArchiveServerByProjectId(sharedProjectIdFromResponse, userAgent);
+            response.then().log().all();
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Getting add Project Data To Archive Server By Project Id");
+        } catch (Exception e) {
+            logger.error("Error occurred while Getting add Project Data To Archive Server By Project Id: " + e.getMessage());
+            if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+                logger.error("Timeout error: " + e.getCause().getMessage());
+            }
+            Assert.fail("Test Case failed: " + e.getMessage());
+        }
+    }
+    
+    
+    
+    
+    @Test(priority = 26, retryAnalyzer = RetryAnalyzer.class)
+    public void test_addProjectDataToFileServerByProjectId() {
+        try {
+            logger.info("Getting add Project Data To File Server By Project Id: "+sharedProjectIdFromResponse);
+            Response response = ProjectEndPoints.addProjectDataToFileServerByProjectId(sharedProjectIdFromResponse, userAgent);
+            response.then().log().all();
+            ProjectAssertions.assertStatusCode(response, 200);
+            logger.info("Getting add Project Data To File Server By Project Id");
+        } catch (Exception e) {
+            logger.error("Error occurred while Getting add Project Data To File Server By Project Id: " + e.getMessage());
             if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
                 logger.error("Timeout error: " + e.getCause().getMessage());
             }
