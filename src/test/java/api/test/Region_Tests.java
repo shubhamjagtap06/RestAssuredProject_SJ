@@ -279,6 +279,72 @@ public class Region_Tests {
             }
             Assert.fail("Test Case failed: " + e.getMessage());
         }
-}
+   }
+   
+   
+   
+   
+ //Get region by region id
+   @Test(priority = 5, retryAnalyzer = RetryAnalyzer.class) 
+   public void test_GetRegionByRegionId() {
+       try {
+           logger.info("Getting Region by Region Id:" +sharedRegionIdFromResponse);
+           Response response = RegionEndPoints.getRegionByRegionId(sharedRegionIdFromResponse,userAgent); 
+           response.then().log().all();
+           Assert.assertEquals(response.getStatusCode(), 200);
+           Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
+           logger.info("Region by Region Id retrieved successfully.");
+       } catch (Exception e) {
+           logger.error("Test case failed: " + e.getMessage());
+           if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+               logger.error("Timeout error: " + e.getCause().getMessage());
+           }
+           Assert.fail("Test Case failed: " + e.getMessage());
+       }
+   }
+   
+   
+   
+   
+ //Get Id by region id
+   @Test(priority = 6, retryAnalyzer = RetryAnalyzer.class) 
+   public void test_GetIdByRegionId() {
+       try {
+           logger.info("Getting Ids by Region Id:" +sharedRegionIdFromResponse);
+           Response response = RegionEndPoints.getIdByRegionId(sharedRegionIdFromResponse,userAgent); 
+           response.then().log().all();
+           Assert.assertEquals(response.getStatusCode(), 200);
+           Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
+           logger.info("Gettings Ids by Region Id retrieved successfully.");
+       } catch (Exception e) {
+           logger.error("Test case failed: " + e.getMessage());
+           if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+               logger.error("Timeout error: " + e.getCause().getMessage());
+           }
+           Assert.fail("Test Case failed: " + e.getMessage());
+       }
+   }
+   
+   
+   
+   
+ //Get all region history
+   @Test(priority = 7, retryAnalyzer = RetryAnalyzer.class) 
+   public void test_GetAllRegionHistory() {
+       try {
+           logger.info("Getting All Region History:" +sharedRegionIdFromResponse);
+           Response response = RegionEndPoints.getAllRegionHistory(userAgent); 
+           response.then().log().all();
+           Assert.assertEquals(response.getStatusCode(), 200);
+           Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
+           logger.info("Gettings All Region History retrieved successfully.");
+       } catch (Exception e) {
+           logger.error("Test case failed: " + e.getMessage());
+           if (e.getCause() instanceof java.net.SocketTimeoutException || e.getCause() instanceof org.apache.http.conn.ConnectTimeoutException) {
+               logger.error("Timeout error: " + e.getCause().getMessage());
+           }
+           Assert.fail("Test Case failed: " + e.getMessage());
+       }
+   }
     
 }

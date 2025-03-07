@@ -75,4 +75,54 @@ public class RegionEndPoints {
             .post(Routes_region.updateRegionByRegionId_url);  // Refer URL from Routes class
         return response;
     }
+    
+    
+    
+    
+ // Get Region by Region Id
+    public static Response getRegionByRegionId(String RegionId, String userAgent) {  
+       // Get the token for authorization
+        bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("RegionId", RegionId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_region.getRegionByRegionId_url);  
+        return response;
+    }
+    
+    
+    
+    
+ // Get Ids by Region Id
+    public static Response getIdByRegionId(String RegionId, String userAgent) {  
+       // Get the token for authorization
+        bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .pathParam("RegionId", RegionId)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_region.getIdByRegionId_url);  
+        return response;
+    }
+    
+    
+    
+    
+ // Get all Region history
+    public static Response getAllRegionHistory(String userAgent) {  
+       // Get the token for authorization
+        bearerToken = api.test.User_Tests.getToken(userAgent);
+        Response response = 
+        given()
+            .headers("Authorization", "Bearer " + bearerToken)
+            .header("User-Agent", userAgent)  
+        .when()
+            .get(Routes_region.getAllRegionHistory_url);  
+        return response;
+    }
 }

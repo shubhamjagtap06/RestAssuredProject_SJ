@@ -47,10 +47,10 @@ public class Project_Tests {
         faker = new Faker();
         proj_payload = new Project();
         proj_payload.setProjectId("string1234");
-        proj_payload.setCompanyId("string1234");
-        //proj_payload.setCompanyId("C0001");
-        proj_payload.setProjectName(faker.name().firstName());
-        //proj_payload.setProjectName("Amsterdam");
+        //proj_payload.setCompanyId("string1234");
+        proj_payload.setCompanyId("C0001");
+        //proj_payload.setProjectName(faker.name().firstName());
+        proj_payload.setProjectName("Cincinnati");
         proj_payload.setDescription(faker.name().lastName());
         proj_payload.setConstructionScheduleFrom("2025-01-01T12:03:55.621Z");
         proj_payload.setConstructionScheduleTo("2025-12-31T12:03:55.621Z");
@@ -145,13 +145,15 @@ public class Project_Tests {
     
    
     
-   @Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
+   @Test(priority = 26, retryAnalyzer = RetryAnalyzer.class)
     public void test_UpdateProject() {
         try {
             logger.info("Updating project with Id: " + sharedProjectIdFromResponse);
-            proj_payload.setProjectId(sharedProjectIdFromResponse);
+           proj_payload.setProjectId(sharedProjectIdFromResponse);
+            //proj_payload.setProjectId("Proj950");
             proj_payload.setDescription(faker.name().lastName());
             proj_payload.setProgress(20);
+            //Response response = ProjectEndPoints.updateProject(sharedProjectIdFromResponse, proj_payload, userAgent);
             Response response = ProjectEndPoints.updateProject(sharedProjectIdFromResponse, proj_payload, userAgent);
             response.then().log().all();
          //Assert.assertEquals(response.getStatusCode(), 200);
