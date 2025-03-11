@@ -17,6 +17,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+
 public class ExtentReportManager implements ITestListener {
 
     public ExtentSparkReporter sparkReporter;
@@ -146,7 +147,14 @@ public class ExtentReportManager implements ITestListener {
             e.printStackTrace();
             System.err.println("Error copying the report: " + e.getMessage());
         }
+        
+        // After writing the report, convert the generated HTML to PDF
+        String htmlReportPath = System.getProperty("user.dir") + "\\ExtentReports1_CM\\" + repName;
+        String pdfReportPath = System.getProperty("user.dir") + "\\ExtentReports1_CM\\" + repName.replace(".html", ".pdf");
+        
+        HtmlToPdfConverter.convertHtmlToPdf(htmlReportPath, pdfReportPath);
     }
+
     
 	/*
 	 * String reportFolder = System.getProperty("user.dir") + "\\ExtentReports1_CM";
