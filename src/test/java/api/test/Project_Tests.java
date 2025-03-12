@@ -47,10 +47,10 @@ public class Project_Tests {
         faker = new Faker();
         proj_payload = new Project();
         proj_payload.setProjectId("string1234");
-        //proj_payload.setCompanyId("string1234");
-        proj_payload.setCompanyId("C0001");
-        //proj_payload.setProjectName(faker.name().firstName());
-        proj_payload.setProjectName("Cincinnati");
+        proj_payload.setCompanyId("string1234");
+        //proj_payload.setCompanyId("C0001");
+        proj_payload.setProjectName(faker.name().firstName());
+        //proj_payload.setProjectName("Cincinnati");
         proj_payload.setDescription(faker.name().lastName());
         proj_payload.setConstructionScheduleFrom("2025-01-01T12:03:55.621Z");
         proj_payload.setConstructionScheduleTo("2025-12-31T12:03:55.621Z");

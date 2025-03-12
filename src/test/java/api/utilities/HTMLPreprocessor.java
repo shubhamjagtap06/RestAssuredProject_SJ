@@ -12,7 +12,6 @@ public class HTMLPreprocessor {
 
     public static String preprocessHtml(String filePath) throws IOException {
         String htmlContent = new String(Files.readAllBytes(Paths.get(filePath)), StandardCharsets.UTF_8);
-
         // Debug: Print the HTML before processing
         System.out.println("Before Preprocessing: ");
         System.out.println(htmlContent);
@@ -36,6 +35,7 @@ public class HTMLPreprocessor {
         return cleanedHtml;
     }
 
+    
     // Helper method to fix malformed comments
     private static void fixMalformedComments(Document doc) {
         // Manually fix comments: Ensure they are in the proper form <!-- comment -->
@@ -47,6 +47,7 @@ public class HTMLPreprocessor {
         }
     }
 
+    
     // Helper method to fix unclosed tags
     private static void fixUnclosedTags(Document doc) {
         // Jsoup generally handles unclosed tags, but let's make sure we close common ones like <div>, <span>, <a>, etc.

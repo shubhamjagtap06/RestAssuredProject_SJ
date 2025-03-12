@@ -1,9 +1,5 @@
 package api.utilities;
 
-import org.testng.ITestListener;
-import org.testng.ITestResult;
-import org.testng.ITestContext;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -11,38 +7,59 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.FillPatternType;
+import org.apache.poi.ss.usermodel.Font;
+import org.apache.poi.ss.usermodel.IndexedColors;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+@SuppressWarnings("unused")
+public class HtmlReportManager implements ITestListener {
 
-public class ExtentReportManager implements ITestListener {
-
-    public ExtentSparkReporter sparkReporter;
-    public ExtentReports extent;
-    public ExtentTest test;
-
+    private ExtentReports extent;
+    private ExtentSparkReporter sparkReporter;
+    private String reportPath;
+    private ExtentTest test;
     String repName;
-
+    String excelFileName;
+    Workbook workbook;
+    Sheet sheet;
+    private String application = "Construct Monitor Report";
+    private String os = "Windows 11 Pro";
+    private String userName = "SEZ5850";
+    private String environment = "QA";
+    private String user = "Shubham Jagtap";
+    private ExcelReportManager excelReportManager;
+    
+    @Override
     public void onStart(ITestContext testContext) {
         System.out.println("Extent Report: onStart is called");
 
         // Create timestamp for report file name
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
         repName = "Test-Report-" + timeStamp + ".html"; // Ensure report name has timestamp
-        //repName = "Test-Report.html"; // Ensure report name has timestamp
-        System.out.println("Report Name: "+repName);
+        excelFileName = "TestResults-" + timeStamp + ".xlsx";  // Excel report name with timestamp
 
+     // Initialize ExcelReportManager to handle Excel report creation
+        excelReportManager = new ExcelReportManager();
+        
         
         // Define report folder and ensure it exists
         String reportFolder = System.getProperty("user.dir") + "\\ExtentReports1_CM";
-        //String reportFolder = "C:\\RestAssuredProject\\RestAssuredProject_SJ-master\\New1_ExtentReports";
-        //String reportFolder = "D:\\CM_Reports";
         File reportDir = new File(reportFolder);
         if (!reportDir.exists()) {
-            boolean created = reportDir.mkdirs(); // Ensure folder creation
+            boolean created = reportDir.mkdirs();
             if (created) {
                 System.out.println("Created ExtentReports folder: " + reportFolder);
             } else {
@@ -50,14 +67,18 @@ public class ExtentReportManager implements ITestListener {
             }
         }
 
-        
-		/*
-		 * File index1File = new File(reportFolder + "\\index.html"); if
-		 * (index1File.exists()) { boolean deleted = index1File.delete(); if (deleted) {
-		 * System.out.println("Deleted index.html file."); } }
-		 */
-        
-        // Clear previous reports to avoid conflicts
+        // Delete previous Excel reports before creating a new one
+        File previousExcelFile = new File(reportFolder + "\\" + excelFileName);
+        if (previousExcelFile.exists()) {
+            boolean deleted = previousExcelFile.delete(); // Delete the old Excel report
+            if (deleted) {
+                System.out.println("Deleted previous Excel report: " + previousExcelFile.getName());
+            } else {
+                System.out.println("Failed to delete the previous Excel report.");
+            }
+        }
+
+        // Clear previous HTML reports to avoid conflicts
         File[] files = reportDir.listFiles();
         if (files != null) {
             for (File file : files) {
@@ -70,9 +91,9 @@ public class ExtentReportManager implements ITestListener {
             }
         }
 
-        // Define the full path for the report file
+        // Define the full path for the HTML report
         String reportPath = reportFolder + "\\" + repName;
-        System.out.println("Report Path: " + reportPath);
+        System.out.println("HTML Report Path: " + reportPath);
 
         // Initialize ExtentSparkReporter with the report path
         sparkReporter = new ExtentSparkReporter(reportPath);
@@ -82,45 +103,62 @@ public class ExtentReportManager implements ITestListener {
 
         extent = new ExtentReports();
         extent.attachReporter(sparkReporter);
-        extent.setSystemInfo("Application", "Construct Monitor Report");
-        extent.setSystemInfo("Operating System", System.getProperty("os.name"));
-        extent.setSystemInfo("User Name", System.getProperty("user.name"));
-        extent.setSystemInfo("Environment", "QA");
-        extent.setSystemInfo("User", "Shubham Jagtap");
+        extent.setSystemInfo("Application", application);
+        extent.setSystemInfo("Operating System", os);
+        extent.setSystemInfo("User Name", userName);
+        extent.setSystemInfo("Environment", environment);
+        extent.setSystemInfo("User", user);
+
+        
     }
 
-    
+    @Override
     public void onTestSuccess(ITestResult result) {
-        test = extent.createTest(result.getName());
+    	test = extent.createTest(result.getName());
         test.assignCategory(result.getMethod().getGroups());
         test.createNode(result.getName());
         test.log(Status.PASS, "Test Passed");
+     // Log result to Excel report
+        excelReportManager.logTestResult(result.getName(), "PASS");  // Ensure this is being called
     }
 
-    
+    @Override
     public void onTestFailure(ITestResult result) {
         test = extent.createTest(result.getName());
         test.assignCategory(result.getMethod().getGroups());
         test.createNode(result.getName());
         test.log(Status.FAIL, "Test Failed");
         test.log(Status.FAIL, result.getThrowable().getMessage());
+     // Log result to Excel report
+        excelReportManager.logTestResult(result.getName(), "FAIL");  // Ensure this is being called
+    
     }
 
-    
+    @Override
     public void onTestSkipped(ITestResult result) {
         test = extent.createTest(result.getName());
         test.assignCategory(result.getMethod().getGroups());
         test.createNode(result.getName());
         test.log(Status.SKIP, "Test Skipped");
         test.log(Status.SKIP, result.getThrowable().getMessage());
+     // Log result to Excel report
+        excelReportManager.logTestResult(result.getName(), "SKIP");  // Ensure this is being called
     }
 
-    
+    @Override
     public void onFinish(ITestContext testContext) {
-        System.out.println("Extent Report: onFinish is called");
-        extent.flush();  // Ensure the report is written at the end of the test suite
+    	System.out.println("Extent Report: onFinish is called");
+        extent.flush();  // Ensure the Extent report is written at the end of the test suite
         System.out.println("Extent Report written successfully.");
+
         
+     // Save the Excel report
+        try {
+            excelReportManager.saveReport();  // Ensure the Excel report is saved at the end
+            excelReportManager.copyReportToFolder(System.getProperty("user.dir") + "\\ExtentReports1_CM");
+        } catch (IOException e) {
+            System.err.println("Error generating Excel report: " + e.getMessage());
+        }
         
         
      // Copy the generated report to the same folder with "_copy" suffix as timestamp and repname not working
@@ -130,15 +168,12 @@ public class ExtentReportManager implements ITestListener {
             File originalReportFile = new File(System.getProperty("user.dir") + "\\ExtentReports1_CM\\" + repName1);
             if (originalReportFile.exists()) {
                 // Create a new file name for the copy (e.g., append "_copy" to the original report name)
-            	
-                String copiedReportName = repName1.replace("index.html", repName);
+            	String copiedReportName = repName1.replace("index.html", repName);
                 File copiedReportFile = new File(System.getProperty("user.dir") + "\\ExtentReports1_CM\\" + copiedReportName);
-
                 // Copy the original report to the new file
                 Path originalPath = originalReportFile.toPath();
                 Path copiedPath = copiedReportFile.toPath();
                 Files.copy(originalPath, copiedPath, StandardCopyOption.REPLACE_EXISTING);
-
                 System.out.println("Report copied successfully to: " + copiedReportFile.getAbsolutePath());
             } else {
                 System.out.println("Original report file not found to copy.");
@@ -147,19 +182,5 @@ public class ExtentReportManager implements ITestListener {
             e.printStackTrace();
             System.err.println("Error copying the report: " + e.getMessage());
         }
-        
-        // After writing the report, convert the generated HTML to PDF
-        String htmlReportPath = System.getProperty("user.dir") + "\\ExtentReports1_CM\\" + repName;
-        String pdfReportPath = System.getProperty("user.dir") + "\\ExtentReports1_CM\\" + repName.replace(".html", ".pdf");
-        
-        HtmlToPdfConverter.convertHtmlToPdf(htmlReportPath, pdfReportPath);
     }
-
-    
-	/*
-	 * String reportFolder = System.getProperty("user.dir") + "\\ExtentReports1_CM";
-	 * File index2File = new File(reportFolder + "\\index.html"); { if
-	 * (index2File.exists()) { boolean deleted = index2File.delete(); if (deleted) {
-	 * System.out.println("Deleted index.html file."); } } }
-	 */
 }
