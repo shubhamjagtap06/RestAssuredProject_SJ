@@ -17,6 +17,9 @@ public class ExcelReportManager {
     private Sheet sheet;
     private String excelFileName;
     private int rowNum = 10;
+    private int totalTestCases = 0;  // To keep track of total test cases executed
+    private int passCount = 0;       // To keep track of the number of passed test cases
+    private int failCount = 0;       // To keep track of the number of failed test cases
 
     // Define hardcoded data (project info)
     String application = "Construct Monitor Report";
@@ -128,6 +131,9 @@ public class ExcelReportManager {
 
 
     public void logTestResult(String testName, String status) {
+    	// Increment the total test case count
+        totalTestCases++;
+        
     	 // Create a new row for the test result
         Row row = sheet.createRow(rowNum++);
         
@@ -141,13 +147,15 @@ public class ExcelReportManager {
         row.getCell(0).setCellStyle(defaultStyle);  // Test Case Name column
         row.getCell(2).setCellStyle(defaultStyle);  // Time column
         
-        // Apply green or red fill to the Status cell (column 1) based on the status
+     // Apply green or red fill to the Status cell (column 1) based on the status
         if (status.equalsIgnoreCase("PASS")) {
             // Apply green fill for PASS status
+            passCount++;  // Increment pass count
             CellStyle greenStyle = createGreenFillCellStyle();
             row.getCell(1).setCellStyle(greenStyle);  // Status column
         } else if (status.equalsIgnoreCase("FAIL")) {
             // Apply red fill for FAIL status
+            failCount++;  // Increment fail count
             CellStyle redStyle = createRedFillCellStyle();
             row.getCell(1).setCellStyle(redStyle);  // Status column
         } else {
@@ -159,6 +167,8 @@ public class ExcelReportManager {
 
 
     public void saveReport() throws IOException {
+    	// Write all test results and the summary
+        addSummaryRow();
         // Auto-size columns for the Excel sheet
         int numColumns = 0;
         for (int rowIndex = 0; rowIndex <= sheet.getLastRowNum(); rowIndex++) {
@@ -167,11 +177,9 @@ public class ExcelReportManager {
                 numColumns = Math.max(numColumns, row.getPhysicalNumberOfCells());
             }
         }
-
         for (int i = 0; i < numColumns; i++) {
             sheet.autoSizeColumn(i);
         }
-
         // Write the Excel report to a file
         try (FileOutputStream fileOut = new FileOutputStream(excelFileName)) {
             workbook.write(fileOut);
@@ -179,6 +187,7 @@ public class ExcelReportManager {
         }
     }
 
+    
     public void copyReportToFolder(String folderPath) throws IOException {
         // Copy the Excel report to a new folder
         Path sourcePath = new File(excelFileName).toPath();
@@ -186,4 +195,34 @@ public class ExcelReportManager {
         Files.copy(sourcePath, destinationPath, StandardCopyOption.REPLACE_EXISTING);
         System.out.println("Excel Report copied successfully to: " + destinationPath);
     }
+    
+    
+    public void addSummaryRow() {// Add an empty row before the summary (to keep one empty row before the totals)
+        sheet.createRow(rowNum++);
+
+        // Create a new row for summary at the bottom of the test results
+        Row summaryRow = sheet.createRow(rowNum++);
+        
+        // Apply yellow bold style to the label cells
+        CellStyle yellowBoldStyle = createYellowBoldCellStyle();
+
+        // Set the labels and apply the yellow bold style to them
+        Cell cell1 = summaryRow.createCell(0);
+        cell1.setCellValue("Total Test Cases Executed");
+        cell1.setCellStyle(yellowBoldStyle);
+
+        Cell cell2 = summaryRow.createCell(1);
+        cell2.setCellValue("Total Pass");
+        cell2.setCellStyle(yellowBoldStyle);
+
+        Cell cell3 = summaryRow.createCell(2);
+        cell3.setCellValue("Total Fail");
+        cell3.setCellStyle(yellowBoldStyle);
+
+        // Add the actual counts in the next row
+        Row countRow = sheet.createRow(rowNum++);
+        countRow.createCell(0).setCellValue(totalTestCases);  // Total Test Cases executed
+        countRow.createCell(1).setCellValue(passCount);       // Total Pass test cases
+        countRow.createCell(2).setCellValue(failCount);       // Total Fail test cases
+}
 }
