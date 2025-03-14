@@ -7,6 +7,19 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
+
+import javax.mail.Authenticator;
+import javax.mail.Message;
+import javax.mail.Multipart;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
+
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.FillPatternType;
 import org.apache.poi.ss.usermodel.Font;
@@ -147,28 +160,26 @@ public class HtmlReportManager implements ITestListener {
 
     @Override
     public void onFinish(ITestContext testContext) {
-    	System.out.println("Extent Report: onFinish is called");
+        System.out.println("Extent Report: onFinish is called");
         extent.flush();  // Ensure the Extent report is written at the end of the test suite
         System.out.println("Extent Report written successfully.");
 
-        
-     // Save the Excel report
+        // Save the Excel report
         try {
             excelReportManager.saveReport();  // Ensure the Excel report is saved at the end
             excelReportManager.copyReportToFolder(System.getProperty("user.dir") + "\\ExtentReports1_CM");
         } catch (IOException e) {
             System.err.println("Error generating Excel report: " + e.getMessage());
         }
-        
-        
-     // Copy the generated report to the same folder with "_copy" suffix as timestamp and repname not working
+
+        // Copy the generated report to the same folder with "_copy" suffix as timestamp and repname not working
         try {
-        	String repName1 = "index.html";
+            String repName1 = "index.html";
             // Get the original report file path
             File originalReportFile = new File(System.getProperty("user.dir") + "\\ExtentReports1_CM\\" + repName1);
             if (originalReportFile.exists()) {
                 // Create a new file name for the copy (e.g., append "_copy" to the original report name)
-            	String copiedReportName = repName1.replace("index.html", repName);
+                String copiedReportName = repName1.replace("index.html", repName);
                 File copiedReportFile = new File(System.getProperty("user.dir") + "\\ExtentReports1_CM\\" + copiedReportName);
                 // Copy the original report to the new file
                 Path originalPath = originalReportFile.toPath();
@@ -182,5 +193,105 @@ public class HtmlReportManager implements ITestListener {
             e.printStackTrace();
             System.err.println("Error copying the report: " + e.getMessage());
         }
+
+        // Send Reports via Email (pass the timestamped HTML file)
+        sendEmail("akash.gunjegaon@neilsoft.com", "Neilsoft@1", "shubham.jagtap@neilsoft.com", repName);
+}
+    
+    
+    
+    
+    
+    public void sendEmail(String senderEmail, String appPassword, String recipientEmail, String reportName) {
+        System.out.println("Attempting to send email via Gmail...");
+
+        Properties properties = new Properties();
+        properties.put("mail.smtp.auth", "true");
+        properties.put("mail.smtp.starttls.enable", "true");
+        properties.put("mail.smtp.host", "webmail.neilsoft.com");
+        properties.put("mail.smtp.port", "587");
+
+        // Create a session with authentication
+        Session session = Session.getInstance(properties, new Authenticator() {
+            protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication(senderEmail, appPassword);
+            }
+        });
+
+        try {
+            // Create email message
+            Message message = new MimeMessage(session);
+            message.setFrom(new InternetAddress(senderEmail));
+
+            // Adding recipients
+            message.addRecipient(Message.RecipientType.TO, new InternetAddress(recipientEmail));
+            message.addRecipient(Message.RecipientType.CC, new InternetAddress("divya.chaudhari@neilsoft.com"));
+
+            message.setSubject("Test Execution Report");
+
+            // Find the report based on the timestamped name (repName)
+            File reportsDir = new File(System.getProperty("user.dir") + "\\ExtentReports1_CM");
+            File htmlReport = new File(reportsDir, reportName); // Use the passed report name
+
+            // Check if the HTML report exists
+            if (!htmlReport.exists()) {
+                System.out.println("HTML report not found.");
+                return;
+            }
+
+            // Check if Excel report exists
+            File latestExcelReport = getLatestFile(reportsDir, ".xlsx");
+            if (latestExcelReport == null || !latestExcelReport.exists()) {
+                System.out.println("Excel report not found.");
+                return;
+            }
+
+            // Create email parts
+            MimeBodyPart textPart = new MimeBodyPart();
+            textPart.setText("Dear Team,\n\nPlease find attached the latest test execution reports.\n\nRegards,\nShubham Jagtap\nNeilsoft QA Automation");
+
+            // HTML report part
+            MimeBodyPart htmlReportPart = new MimeBodyPart();
+            htmlReportPart.attachFile(htmlReport);
+            htmlReportPart.setFileName(htmlReport.getName());
+
+            // Excel report part
+            MimeBodyPart excelPart = new MimeBodyPart();
+            excelPart.attachFile(latestExcelReport);
+            excelPart.setFileName(latestExcelReport.getName());
+
+            // Combine all parts
+            Multipart multipart = new MimeMultipart();
+            multipart.addBodyPart(textPart);
+            multipart.addBodyPart(htmlReportPart);
+            multipart.addBodyPart(excelPart);
+
+            // Set the content of the message
+            message.setContent(multipart);
+
+            // Send email
+            Transport.send(message);
+            System.out.println("Email sent successfully with HTML and Excel report!");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+
+
+    
+    private File getLatestFile(File directory, String extension) {
+	    File[] files = directory.listFiles((dir, name) -> name.toLowerCase().endsWith(extension));
+	    if (files == null || files.length == 0) {
+	        return null; // No files found
+	    }
+ 
+	    File latestFile = files[0]; // Assume first file is the latest
+	    for (File file : files) {
+	        if (file.lastModified() > latestFile.lastModified()) {
+	            latestFile = file;
+	        }
+	    }
+	    return latestFile;
+	}
 }
