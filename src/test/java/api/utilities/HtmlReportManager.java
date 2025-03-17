@@ -195,7 +195,7 @@ public class HtmlReportManager implements ITestListener {
         }
 
         // Send Reports via Email (pass the timestamped HTML file)
-        sendEmail("akash.gunjegaon@neilsoft.com", "Neilsoft@1", "shubham.jagtap@neilsoft.com", repName);
+        sendEmail("shubham.jagtap@neilsoft.com", "Neilsoft@1", "shubham.jagtap@neilsoft.com", repName);
 }
     
     

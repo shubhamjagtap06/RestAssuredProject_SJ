@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.ScanData_Tests">
+      <class name="api.test.SummaryReport_Tests">
         <methods>
           <include name="setupData"/>
-          <include name="test_AddScanDate"/>
-          <include name="test_GetScanData"/>
+          <include name="test_GetRegionParameterProgress"/>
           <include name="setupUserAgent"/>
         </methods>
-      </class> <!-- api.test.ScanData_Tests -->
+      </class> <!-- api.test.SummaryReport_Tests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
