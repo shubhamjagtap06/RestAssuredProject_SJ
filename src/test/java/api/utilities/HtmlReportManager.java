@@ -203,76 +203,61 @@ public class HtmlReportManager implements ITestListener {
     
     
     public void sendEmail(String senderEmail, String appPassword, String recipientEmail, String reportName) {
-        System.out.println("Attempting to send email via Gmail...");
-
+        System.out.println("Attempting to send email via Outlook...");
         Properties properties = new Properties();
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");
         properties.put("mail.smtp.host", "webmail.neilsoft.com");
         properties.put("mail.smtp.port", "587");
-
         // Create a session with authentication
         Session session = Session.getInstance(properties, new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(senderEmail, appPassword);
             }
         });
-
         try {
             // Create email message
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(senderEmail));
-
             // Adding recipients
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(recipientEmail));
             message.addRecipient(Message.RecipientType.CC, new InternetAddress("divya.chaudhari@neilsoft.com"));
-
             message.setSubject("Test Execution Report");
-
             // Find the report based on the timestamped name (repName)
             File reportsDir = new File(System.getProperty("user.dir") + "\\ExtentReports1_CM");
             File htmlReport = new File(reportsDir, reportName); // Use the passed report name
-
             // Check if the HTML report exists
             if (!htmlReport.exists()) {
                 System.out.println("HTML report not found.");
                 return;
             }
-
             // Check if Excel report exists
             File latestExcelReport = getLatestFile(reportsDir, ".xlsx");
             if (latestExcelReport == null || !latestExcelReport.exists()) {
                 System.out.println("Excel report not found.");
                 return;
             }
-
             // Create email parts
             MimeBodyPart textPart = new MimeBodyPart();
             textPart.setText("Dear Team,\n\nPlease find attached the latest test execution reports.\n\nRegards,\nShubham Jagtap\nNeilsoft QA Automation");
-
             // HTML report part
             MimeBodyPart htmlReportPart = new MimeBodyPart();
             htmlReportPart.attachFile(htmlReport);
             htmlReportPart.setFileName(htmlReport.getName());
-
             // Excel report part
             MimeBodyPart excelPart = new MimeBodyPart();
             excelPart.attachFile(latestExcelReport);
             excelPart.setFileName(latestExcelReport.getName());
-
             // Combine all parts
             Multipart multipart = new MimeMultipart();
             multipart.addBodyPart(textPart);
             multipart.addBodyPart(htmlReportPart);
             multipart.addBodyPart(excelPart);
-
             // Set the content of the message
             message.setContent(multipart);
-
             // Send email
             Transport.send(message);
             System.out.println("Email sent successfully with HTML and Excel report!");
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -285,7 +270,6 @@ public class HtmlReportManager implements ITestListener {
 	    if (files == null || files.length == 0) {
 	        return null; // No files found
 	    }
- 
 	    File latestFile = files[0]; // Assume first file is the latest
 	    for (File file : files) {
 	        if (file.lastModified() > latestFile.lastModified()) {
