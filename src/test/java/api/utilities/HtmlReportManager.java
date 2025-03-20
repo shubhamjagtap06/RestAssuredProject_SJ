@@ -59,7 +59,7 @@ public class HtmlReportManager implements ITestListener {
     public void onStart(ITestContext testContext) {
         System.out.println("Extent Report: onStart is called");
 
-        // Create timestamp for report file name
+     // Create timestamp for report file name
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
         repName = "Test-Report-" + timeStamp + ".html"; // Ensure report name has timestamp
         excelFileName = "TestResults-" + timeStamp + ".xlsx";  // Excel report name with timestamp
@@ -68,8 +68,8 @@ public class HtmlReportManager implements ITestListener {
         excelReportManager = new ExcelReportManager();
         
         
-        // Define report folder and ensure it exists
-        String reportFolder = System.getProperty("user.dir") + "\\ExtentReports1_CM";
+     // Define report folder and ensure it exists
+        String reportFolder = System.getProperty("user.dir") + "\\ExtentReports_CM";
         File reportDir = new File(reportFolder);
         if (!reportDir.exists()) {
             boolean created = reportDir.mkdirs();
@@ -80,7 +80,7 @@ public class HtmlReportManager implements ITestListener {
             }
         }
 
-        // Delete previous Excel reports before creating a new one
+     // Delete previous Excel reports before creating a new one
         File previousExcelFile = new File(reportFolder + "\\" + excelFileName);
         if (previousExcelFile.exists()) {
             boolean deleted = previousExcelFile.delete(); // Delete the old Excel report
@@ -91,7 +91,7 @@ public class HtmlReportManager implements ITestListener {
             }
         }
 
-        // Clear previous HTML reports to avoid conflicts
+      // Clear previous HTML reports to avoid conflicts
         File[] files = reportDir.listFiles();
         if (files != null) {
             for (File file : files) {
@@ -104,7 +104,7 @@ public class HtmlReportManager implements ITestListener {
             }
         }
 
-        // Define the full path for the HTML report
+      // Define the full path for the HTML report
         String reportPath = reportFolder + "\\" + repName;
         System.out.println("HTML Report Path: " + reportPath);
 
@@ -135,6 +135,7 @@ public class HtmlReportManager implements ITestListener {
         excelReportManager.logTestResult(result.getName(), "PASS");  // Ensure this is being called
     }
 
+    
     @Override
     public void onTestFailure(ITestResult result) {
         test = extent.createTest(result.getName());
@@ -147,6 +148,7 @@ public class HtmlReportManager implements ITestListener {
     
     }
 
+    
     @Override
     public void onTestSkipped(ITestResult result) {
         test = extent.createTest(result.getName());
@@ -158,29 +160,30 @@ public class HtmlReportManager implements ITestListener {
         excelReportManager.logTestResult(result.getName(), "SKIP");  // Ensure this is being called
     }
 
+    
     @Override
     public void onFinish(ITestContext testContext) {
         System.out.println("Extent Report: onFinish is called");
         extent.flush();  // Ensure the Extent report is written at the end of the test suite
         System.out.println("Extent Report written successfully.");
 
-        // Save the Excel report
+     // Save the Excel report
         try {
             excelReportManager.saveReport();  // Ensure the Excel report is saved at the end
-            excelReportManager.copyReportToFolder(System.getProperty("user.dir") + "\\ExtentReports1_CM");
+            excelReportManager.copyReportToFolder(System.getProperty("user.dir") + "\\ExtentReports_CM");
         } catch (IOException e) {
             System.err.println("Error generating Excel report: " + e.getMessage());
         }
 
-        // Copy the generated report to the same folder with "_copy" suffix as timestamp and repname not working
+     // Copy the generated report to the same folder with "_copy" suffix as timestamp and repname not working
         try {
             String repName1 = "index.html";
             // Get the original report file path
-            File originalReportFile = new File(System.getProperty("user.dir") + "\\ExtentReports1_CM\\" + repName1);
+            File originalReportFile = new File(System.getProperty("user.dir") + "\\ExtentReports_CM\\" + repName1);
             if (originalReportFile.exists()) {
                 // Create a new file name for the copy (e.g., append "_copy" to the original report name)
                 String copiedReportName = repName1.replace("index.html", repName);
-                File copiedReportFile = new File(System.getProperty("user.dir") + "\\ExtentReports1_CM\\" + copiedReportName);
+                File copiedReportFile = new File(System.getProperty("user.dir") + "\\ExtentReports_CM\\" + copiedReportName);
                 // Copy the original report to the new file
                 Path originalPath = originalReportFile.toPath();
                 Path copiedPath = copiedReportFile.toPath();
@@ -193,8 +196,12 @@ public class HtmlReportManager implements ITestListener {
             e.printStackTrace();
             System.err.println("Error copying the report: " + e.getMessage());
         }
+        
+        
+        
+        
 
-        // Send Reports via Email (pass the timestamped HTML file)
+     // Send Reports via Email (pass the timestamped HTML file)
         sendEmail("shubham.jagtap@neilsoft.com", "Neilsoft@1", "shubham.jagtap@neilsoft.com", repName);
 }
     
@@ -224,7 +231,7 @@ public class HtmlReportManager implements ITestListener {
             message.addRecipient(Message.RecipientType.CC, new InternetAddress("divya.chaudhari@neilsoft.com"));
             message.setSubject("Test Execution Report");
             // Find the report based on the timestamped name (repName)
-            File reportsDir = new File(System.getProperty("user.dir") + "\\ExtentReports1_CM");
+            File reportsDir = new File(System.getProperty("user.dir") + "\\ExtentReports_CM");
             File htmlReport = new File(reportsDir, reportName); // Use the passed report name
             // Check if the HTML report exists
             if (!htmlReport.exists()) {

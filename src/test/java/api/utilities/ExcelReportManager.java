@@ -23,7 +23,7 @@ public class ExcelReportManager {
 
     // Define hardcoded data (project info)
     String application = "Construct Monitor Report";
-    String os = "Windows 10";
+    String os = "Windows 11";
     String userName = "SEZ5850";
     String environment = "QA";
     String user = "Shubham Jagtap";
