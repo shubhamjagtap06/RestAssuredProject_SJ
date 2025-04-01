@@ -20,6 +20,7 @@ public class ExcelReportManager {
     private int totalTestCases = 0;  // To keep track of total test cases executed
     private int passCount = 0;       // To keep track of the number of passed test cases
     private int failCount = 0;       // To keep track of the number of failed test cases
+    private int skipCount = 0; 		// To track skipped test cases
 
     // Define hardcoded data (project info)
     String application = "Construct Monitor Report";
@@ -130,40 +131,39 @@ public class ExcelReportManager {
     
 
 
-    public void logTestResult(String testName, String status) {
-    	// Increment the total test case count
+    public void logTestResult(String testName, String status) {// Increment the total test case count
         totalTestCases++;
-        
-    	 // Create a new row for the test result
+
+        // Create a new row for the test result
         Row row = sheet.createRow(rowNum++);
-        
+
         // Set the values for the test case name, status, and time
         row.createCell(0).setCellValue(testName);  // Test case name
         row.createCell(1).setCellValue(status);    // Test status
         row.createCell(2).setCellValue(new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date()));  // Test time
-        
+
         // Apply default style (no fill or bold) to Test Case Name and Time columns
         CellStyle defaultStyle = createDefaultStyle();
         row.getCell(0).setCellStyle(defaultStyle);  // Test Case Name column
         row.getCell(2).setCellStyle(defaultStyle);  // Time column
-        
-     // Apply green or red fill to the Status cell (column 1) based on the status
+
+        // Apply green or red fill to the Status cell (column 1) based on the status
         if (status.equalsIgnoreCase("PASS")) {
-            // Apply green fill for PASS status
             passCount++;  // Increment pass count
             CellStyle greenStyle = createGreenFillCellStyle();
             row.getCell(1).setCellStyle(greenStyle);  // Status column
         } else if (status.equalsIgnoreCase("FAIL")) {
-            // Apply red fill for FAIL status
             failCount++;  // Increment fail count
             CellStyle redStyle = createRedFillCellStyle();
             row.getCell(1).setCellStyle(redStyle);  // Status column
+        } else if (status.equalsIgnoreCase("SKIP")) {
+            skipCount++;  // Increment skip count
+            CellStyle skipStyle = createDefaultStyle();  // Apply default style (or you can create a new style for skipped tests)
+            row.getCell(1).setCellStyle(skipStyle);  // Status column
         } else {
-            // Default to no fill for SKIP or other statuses
             CellStyle defaultStatusStyle = createDefaultStyle();
             row.getCell(1).setCellStyle(defaultStatusStyle);  // Status column
-        }
-    }
+        }}
 
 
     public void saveReport() throws IOException {
@@ -197,7 +197,9 @@ public class ExcelReportManager {
     }
     
     
-    public void addSummaryRow() {// Add an empty row before the summary (to keep one empty row before the totals)
+    public void addSummaryRow() {
+    	// Add an empty row before the summary (to keep one empty row before the totals)
+    
         sheet.createRow(rowNum++);
 
         // Create a new row for summary at the bottom of the test results
@@ -205,6 +207,11 @@ public class ExcelReportManager {
         
         // Apply yellow bold style to the label cells
         CellStyle yellowBoldStyle = createYellowBoldCellStyle();
+        
+        // Create a new style to center align the cells
+        CellStyle centerAlignedStyle = workbook.createCellStyle();
+        centerAlignedStyle.setAlignment(HorizontalAlignment.CENTER);
+        centerAlignedStyle.setVerticalAlignment(VerticalAlignment.CENTER);
 
         // Set the labels and apply the yellow bold style to them
         Cell cell1 = summaryRow.createCell(0);
@@ -218,11 +225,28 @@ public class ExcelReportManager {
         Cell cell3 = summaryRow.createCell(2);
         cell3.setCellValue("Total Fail");
         cell3.setCellStyle(yellowBoldStyle);
+        
+        Cell cell4 = summaryRow.createCell(3);  // Fixed column index
+        cell4.setCellValue("Total Skip");
+        cell4.setCellStyle(yellowBoldStyle);
 
-        // Add the actual counts in the next row
+        // Add the actual counts in the next row, and apply center alignment
         Row countRow = sheet.createRow(rowNum++);
-        countRow.createCell(0).setCellValue(totalTestCases);  // Total Test Cases executed
-        countRow.createCell(1).setCellValue(passCount);       // Total Pass test cases
-        countRow.createCell(2).setCellValue(failCount);       // Total Fail test cases
-}
+        Cell countCell1 = countRow.createCell(0);
+        countCell1.setCellValue(totalTestCases);  // Total Test Cases executed
+        countCell1.setCellStyle(centerAlignedStyle); // Apply center alignment style
+
+        Cell countCell2 = countRow.createCell(1);
+        countCell2.setCellValue(passCount);       // Total Pass test cases
+        countCell2.setCellStyle(centerAlignedStyle); // Apply center alignment style
+
+        Cell countCell3 = countRow.createCell(2);
+        countCell3.setCellValue(failCount);       // Total Fail test cases
+        countCell3.setCellStyle(centerAlignedStyle); // Apply center alignment style
+
+        Cell countCell4 = countRow.createCell(3);
+        countCell4.setCellValue(skipCount);       // Total Skip test cases (new column)
+        countCell4.setCellStyle(centerAlignedStyle); // Apply center alignment style}
+    }
+    
 }
